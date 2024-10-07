@@ -1,0 +1,3473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Cards</title>
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="/credit-cards/css/button-components/component-best-cards/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/home_page.css">
+  <link rel="stylesheet" href="/credit-cards/css/button-components/component-best-cards/best-cards.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+</head>
+<body>
+  
+  <div id="header-placeholder"></div>
+  <div id="secondary-header"></div>
+
+
+  <h4 class="advertisor">
+    <a id="disclosure-link" href="#" >ADVERTISER DISCLOSURE</a>
+  </h4>
+
+  <!-- Modal -->
+  <div id="disclosure-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn" class="close-btn">&times;</span>
+      <div class="modal-header">Advertiser Disclosure</div>
+      <div class="modal-body">
+        <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+        <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="ok-btn" class="ok-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+  <div id="on-this-page-panel"></div>
+  <div>
+    <h1 id="our-top-picks-section" class="section-offset">The Best Credit Cards of 2024: Rewards, Top Offers & Reviews</h1>
+    <p>Written by: <span><a href="#">Garret Yarbrough</a></span> | Edited by: <span><a href="#">Tracy Stewart</a></span> | September 25, 2024</p>
+
+    <div class="how-we-choose">
+      <div class="title">
+        <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+        <h2>How we Choose</h2>
+      </div>
+      <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+
+    </div>
+    
+    <div class="see-more-text">
+      <p class="see-more-text-content">Credit cards are a secure payment method that give you access to a limited line of credit. You can borrow from this credit limit and pay it back over time. When used responsibly, they’re a great credit-building tool that can help establish credit, build a positive credit history and help you save money. 
+        <br>
+        <br>
+        The best credit cards are particularly worth it because they provide long-term value with rewards and perks that aren’t found with other payment methods.
+        <br>
+        <br>
+        The <a>right credit card for you</a> will depend on a number of factors, your spending habits and financial goals. It may come with generous rewards rates, lengthy promotional APRs on purchases or balance transfers, generous welcome offers or favorable terms and conditions like low ongoing interest rates. Below you’ll find the top cards from our partners, followed by a detailed list of our editors’ picks and tips on how to find the right card for you.
+      </p>
+      <button class="see-more-btn" onclick="toggleText()">See More</button>
+    </div>
+
+    <div class="summary">
+      <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary<img src="/credit-cards/images/ButtonComponents/plusIcon.png" alt="plus icon"></button>
+      <div id="summary-text" class="hidden">
+        <h2>Best Credit Cards of 2024</h2>
+        <ul class="ul-best-credit-cards">
+          <li><a href="#">Wells Fargo Active Cash® Card</a> - Best for flat-rate cash rewards</li>
+          <li><a href="#">Discover it® Cash Back </a> - Best for category variety</li>
+          <li><a href="#">Chase Sapphire Preferred® Card</a> - Best for travel value</li>
+          <li><a href="#">Capital One SavorOne Cash Rewards Credit Card</a> - Best for food and entertainment</li>
+          <li><a href="#">Blue Cash Everyday® Card from American Express</a> - Best for household shopping</li>
+          <li><a href="#">Capital One Quicksilver Cash Rewards Credit Card</a> - Best starter rewards card</li>
+          <li><a href="#">Capital One Venture X Rewards Credit Card</a> - Best for travel perks</li>
+          <li><a href="#">Capital One Venture Rewards Credit Card</a> - Best for flat-rate travel rewards</li>
+          <li><a href="#">Citi Custom Cash® Card</a> - Best second rewards card</li>
+          <li><a href="#">Blue Cash Preferred® Card from American Express</a> - Best for groceries</li>
+          <li><a href="#">The Platinum Card® from American Express </a> - Best for luxury travel</li>
+          <li><a href="#">American Express® Gold Card </a> - Best for foodies</li>
+          <li><a href="#">The American Express Blue Business Cash™ Card</a> - Best business credit card</li>
+          <li><a href="#">Discover it® Student Cash Back</a> - Best student credit card</li>
+          <li><a href="#">Capital One Platinum Secured Credit Card</a> - Best secured credit card</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <h3 class="title-filter-cat">FILTER CARDS BY CATEGORY</h3>
+  <div class="button-container">
+    <button class="card-button" onclick="handleButtonClick(this, 'content-all-categories')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/all-categories.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-all-categories.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/all-categories.png" alt="icon">
+      <span>All Categories</span>
+    </button>
+  
+    <button class="card-button" onclick="handleButtonClick(this, 'content-everyday-cash-rewards')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/everyday-cash-rewards.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-everyday-cash-rewards.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/everyday-cash-rewards.png" alt="icon">
+      <span>Everyday Cash Rewards</span>
+    </button>
+  
+    <button class="card-button" onclick="handleButtonClick(this, 'content-cash-back-match')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/everyday-cash-rewards.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-everyday-cash-rewards.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/everyday-cash-rewards.png" alt="icon">
+      <span>Cash Back Match</span>
+    </button>
+  
+    <button class="card-button" onclick="handleButtonClick(this, 'content-sign-up-bonus')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/sign-up-bonus.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-sign-up-bonus.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/sign-up-bonus.png" alt="icon">
+      <span>Sign-Up Bonus</span>
+    </button>
+  
+    <button class="card-button" onclick="handleButtonClick(this, 'content-unlimited-cash-back')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/everyday-cash-rewards.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-everyday-cash-rewards.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/everyday-cash-rewards.png" alt="icon">
+      <span>Unlimited cash back</span>
+    </button>
+  
+    <button class="card-button" onclick="handleButtonClick(this, 'content-no-annual-fee')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/no-annual-fee.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-annual-fee.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/no-annual-fee.png" alt="icon">
+      <span>No Annual Fee</span>
+    </button>
+  
+    <button class="card-button" onclick="handleButtonClick(this, 'content-starter-credit-card')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/starter-credit-card.png" data-active="/credit-cards/images/buttons/updatedButtons/updated-starter-credit-card.png">
+      <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/starter-credit-card.png" alt="icon">
+      <span>Starter Credit Card</span>
+    </button>
+
+
+<div class="dropdown-more">
+  <button class="card-button dropdown-button-more" onclick="toggleDropdown(this), handleButtonClick(this, 'content-more')" data-default="/credit-cards/images/buttons/nonUpdatedButtons/more.png"  data-active="/credit-cards/images/buttons/updatedButtons/updated-more.png">
+    <img class="main-icon" src="/credit-cards/images/buttons/nonUpdatedButtons/more.png" alt="icon">
+    <span>More</span>
+  </button>
+  <div class="dropdown-content-more hidden-more">
+    <a href="#" onclick="handleItemClick('unlimitedMilesCard', this)">Unlimited Miles</a>
+    <a href="#" onclick="handleItemClick('travelCard', this)">Travel</a>
+    <a href="#" onclick="handleItemClick('maximizingCashBackCard', this)">Maximizing Cash Back</a>
+    <a href="#" onclick="handleItemClick('rewardsCard', this)">Rewards</a>
+    <a href="#" onclick="handleItemClick('diningRewardsCard', this)">Dining Rewards</a>
+    <a href="#" onclick="handleItemClick('businessCard', this)">Business</a>
+    <a href="#" onclick="handleItemClick('studentCard', this)">Student</a>
+    <a href="#" onclick="handleItemClick('noCreditCard', this)">No Credit</a>
+  </div>
+</div>
+
+<!-- Cards Content -->
+
+<div id="unlimitedMilesCard" class="card-content hidden">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR TRAVEL PERKS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Capital One Venture X Rewards Credit Card.png" alt="Capital One Venture X Rewards Credit Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+          </span>
+          <span class="rating-number">5.0</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Capital One Venture X Rewards Credit Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>10 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;10 Miles per dollar on hotels and rental cars booked through Capital One Travel.</p>
+        <p class="rewards-rate-description"><strong>5 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;5 Miles per dollar on flights and vacation rentals booked through Capital One Travel.</p>
+        <p class="rewards-rate-description"><strong>2 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;2 Miles per dollar on every purchase, every day.</p>
+  
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>75,000 miles</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$395</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>19.99% - 29.99% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>740-850 (Excellent)</strong>
+          </div>
+        </div>
+  
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Capital One's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare7" name="compare">
+        <label for="compare7">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="travelCard" class="card-content hidden">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR FLAT-RATE TRAVEL</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Capital One Venture Rewards Credit Card.png" alt="Capital One Venture Rewards Credit Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.9</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Capital One Venture Rewards Credit Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>5 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;5 Miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel.</p>
+        <p class="rewards-rate-description"><strong>2 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;2 Miles per dollar on every purchase, every day.</p>
+  
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>75,000 miles</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$95</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>19.99% - 29.99% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>670-850 (Good to Excellent)</strong>
+          </div>
+        </div>
+  
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Capital One's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare8" name="compare">
+        <label for="compare8">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="maximizingCashBackCard" class="card-content hidden">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST SECOND REWARDS CARD</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Bank Custom Cash">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.5</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Citi Custom Cash® Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>5%</strong> Earn 5% cash back on purchases in your top eligible spend category each billing cycle, up to the first $500 spent, 1% cash back thereafter.</p>
+        <p class="rewards-rate-description"><strong>4%</strong> Special Travel Offer: Earn an additional 4% cash back on hotels, car rentals, and attractions booked on Citi Travel℠ portal through 6/30/2026</p>
+        <p class="rewards-rate-description"><strong>1%</strong> Earn unlimited 1% cash back on all other purchases.</p>
+  
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>$200</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$0</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>18.74% - 28.74% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>670-850 (Good to Excellent)</strong>
+          </div>
+        </div>
+  
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Citi's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div id="rewardsCard" class="card-content hidden">
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR GROCERIES</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Blue Cash Preferred® Card from American Express.png" alt="Blue Cash Preferred® Card from American Express">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star half">&#9733;</span> <!-- Half Star -->
+        </span>
+        <span class="rating-number">4.6</span>
+        <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Blue Cash Preferred® Card from American Express</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>6%</strong>&nbsp;&nbsp;&nbsp;&nbsp;6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).</p>
+      <p class="rewards-rate-description"><strong>6%</strong>&nbsp;&nbsp;&nbsp;&nbsp;6% Cash Back on select U.S. streaming subscriptions.</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on transit including taxis/rideshare, parking, tolls, trains, buses and more.</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations.</p>
+      <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>Earn $250</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0 intro annual fee for the first year, then $95.</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>18.74% - 29.74% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670–850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div id="diningRewardsCard" class="card-content hidden">
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR FOODIES</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/American Express® Gold Card.png" alt="American Express® Gold Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star half">&#9733;</span> <!-- Half Star -->
+        </span>
+        <span class="rating-number">4.9</span>
+        <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">American Express® Gold Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>4X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent on purchases at restaurants worldwide, on up to $50,000 in purchases per calendar year, then 1X points for the rest of the year.</p>
+      <p class="rewards-rate-description"><strong>4X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent at US supermarkets, on up to $25,000 in purchases per calendar year, then 1X points for the rest of the year.</p>
+      <p class="rewards-rate-description"><strong>3X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Membership Rewards® points per dollar spent on flights booked directly with airlines or on AmexTravel.com.</p>
+      <p class="rewards-rate-description"><strong>2X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Membership Rewards® points per dollar spent on prepaid hotels and other eligible purchases booked on AmexTravel.com.</p>
+      <p class="rewards-rate-description"><strong>1X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Membership Rewards® point per dollar spent on all other eligible purchases.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>60,000 points + earn up to $100 back</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$325</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>See Pay Over Time APR</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670–850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div id="businessCard" class="card-content hidden">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST BUSINESS CREDIT CARD</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/The American Express Blue Business Cash™ Card.png" alt="The American Express Blue Business Cash™ Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star half">&#9733;</span> <!-- Half Star -->
+            <span class="star empty">&#9733;</span> <!-- Empty Star -->
+          </span>
+          <span class="rating-number">4.3</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+      </div>
+  
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">The American Express Blue Business Cash™ Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>2%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 2% cash back on all eligible purchases on up to $50,000 per calendar year, then 1%.</p>
+        <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% cash back on all eligible purchases after spending $50,000 per calendar year.</p>
+  
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>$250 statement credit</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>No annual fee</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>17.99% - 25.99% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>670–850 (Good to Excellent)</strong>
+          </div>
+        </div>
+  
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at American Express's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div id="studentCard" class="card-content hidden">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST STUDENT CREDIT CARD</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Discover it® Student Cash Back.png" alt="Discover it Student Cash Back">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.5</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Discover it® Student Cash Back</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>5%</strong> Earn 5% cash back on everyday purchases at different places each quarter, like Amazon.com, grocery stores, restaurants, gas stations, and more.</p>
+        <p class="rewards-rate-description"><strong>1%</strong> Plus, earn unlimited 1% cash back on all other purchases automatically.</p>
+  
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>Unlimited Cashback Match</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$0</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>15.24% - 24.24% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>Fair to good</strong>
+          </div>
+        </div>
+  
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Discover's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div id="noCreditCard" class="card-content hidden">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST SECURED CREDIT CARD</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Capital One Platinum Secured Credit Card.png" alt="Capital One Platinum Secured Credit Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+          </span>
+          <span class="rating-number">5.0</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Capital One Platinum Secured Credit Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>No Rewards</strong> This secured card focuses on helping you build credit.</p>
+  
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>None</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$0</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>26.99% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>No credit to average</strong>
+          </div>
+        </div>
+  
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Capital One's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- Add more cards as needed -->
+
+<!-- Container for showing the selected card -->
+<div id="card-container"></div>
+
+
+    
+  </div>
+  
+<!-- Content sections (initially hidden) -->
+<div id="content-all-categories" class="content-section hidden">
+  <!-- 1/15 -->
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR FLAT-RATE CASH REWARDS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/WellsFargoActiveCash.png" alt="Wells Fargo Active Cash Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star half">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.1</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+      </div>
+
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Wells Fargo Active Cash® Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>2%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 2% cash rewards on purchases</p>
+
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>$200 cash rewards</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$0</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>19.74%, 24.74%, or 29.74% Variable APR</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>670–850 (Good to Excellent)</strong>
+          </div>
+        </div>
+
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Wells Fargo's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 2/15 -->
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR CATEGORY VARIETY</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/DiscoverIt.png" alt="Discover it">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star half">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.6</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+      </div>
+
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Discover it® Cash Back</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 5% cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.</p>
+        <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Plus, earn unlimited 1% cash back on all other purchases - automatically.
+        </p>
+
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>Cashback Match</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$0</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>17.74% - 27.74% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>670-850 (Good to Excellent)</strong>
+          </div>
+        </div>
+
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Discover's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--3/15-->
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR TRAVEL VALUE</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/ChaseFreedom.png" alt="Chase Saphire">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.9</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+      </div>
+
+      <!-- Card Details -->
+      <div class="card-info">
+        <h2 class="card-name">Chase Sapphire Preferred® Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate</strong></p>
+        <p class="rewards-rate-description"><strong>5x</strong>&nbsp;&nbsp;&nbsp;&nbsp;5x on travel purchased through Chase Travel℠.</p>
+        <p class="rewards-rate-description"><strong>3x</strong>&nbsp;&nbsp;&nbsp;&nbsp;Plus, earn unlimited 1% cash back on all other purchases - automatically.</p>
+        <p class="rewards-rate-description"><strong>2x</strong>&nbsp;&nbsp;&nbsp;&nbsp;2x on all other travel purchases.</p>
+        <p class="rewards-rate-description"><strong>1x</strong>&nbsp;&nbsp;&nbsp;&nbsp;1x on all other purchases.</p>
+
+
+
+        <div class="card-details-summary-inline">
+          <div class="detail-item">
+            <span class="detail-label">Intro offer</span>
+            <strong>60,000 bonus points</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Annual fee</span>
+            <strong>$95</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regular APR</span>
+            <strong>21.49% - 28.49% variable</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Recommended credit</span>
+            <strong>670-850 (Good to Excellent)</strong>
+          </div>
+        </div>
+
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Discover's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare" name="compare">
+        <label for="compare">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR FOOD AND ENTERTAINMENT</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Capital One SavorOneCash RewardsCredit Card.png" alt="Capital One SavorOne Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star half">&#9733;</span>
+        </span>
+        <span class="rating-number">4.9</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Capital One SavorOne Cash Rewards Credit Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>8%</strong>&nbsp;&nbsp;&nbsp;&nbsp;8% Cash Back on Capital One Entertainment purchases</p>
+      <p class="rewards-rate-description"><strong>5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;5% Cash Back on hotels and rental cars booked through Capital One Travel (terms apply)</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on dining, entertainment, popular streaming services, and grocery stores (excluding superstores like Walmart® and Target®)</p>
+      <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on all other purchases</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>$200</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>19.99% - 29.99% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670-850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Capital One's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare4" name="compare">
+      <label for="compare4">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 5/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR HOUSEHOLD SHOPPING</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Blue Cash Everyday® Card from American Express.png" alt="Blue Cash Everyday Card from American Express">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+        </span>
+        <span class="rating-number">4.8</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Blue Cash Everyday® Card from American Express</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases, then 1%</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on U.S. online retail purchases, on up to $6,000 per year, then 1%</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations, on up to $6,000 per year, then 1%</p>
+      <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>Earn $200</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>18.74% - 29.74% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670-850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare5" name="compare">
+      <label for="compare5">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 6/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST STARTER REWARDS CARD</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Capital One Quicksilver Cash Rewards Credit Card.png" alt="Capital One Quicksilver Cash Rewards Credit Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star half">&#9733;</span>
+          <span style="color: #ccc;">&#9733;</span>
+        </span>
+        <span class="rating-number">3.7</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Capital One Quicksilver Cash Rewards Credit Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 5% cash back on hotels and rental cars booked through Capital One Travel, where you'll get Capital One's best prices on thousands of trip options. Terms apply.</p>
+      <p class="rewards-rate-description"><strong>1.5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5% cash back on every purchase, every day.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Balance transfer intro APR</span>
+          <strong>0% intro on balance transfers for 15 months</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>19.99% - 29.99% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670-850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Capital One's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare6" name="compare">
+      <label for="compare6">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 7/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR TRAVEL PERKS</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Capital One Venture X Rewards Credit Card.png" alt="Capital One Venture X Rewards Credit Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+        </span>
+        <span class="rating-number">5.0</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Capital One Venture X Rewards Credit Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>10 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;10 Miles per dollar on hotels and rental cars booked through Capital One Travel.</p>
+      <p class="rewards-rate-description"><strong>5 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;5 Miles per dollar on flights and vacation rentals booked through Capital One Travel.</p>
+      <p class="rewards-rate-description"><strong>2 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;2 Miles per dollar on every purchase, every day.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>75,000 miles</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$395</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>19.99% - 29.99% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>740-850 (Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Capital One's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare7" name="compare">
+      <label for="compare7">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 8/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR FLAT-RATE TRAVEL</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Capital One Venture Rewards Credit Card.png" alt="Capital One Venture Rewards Credit Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star half">&#9733;</span>
+        </span>
+        <span class="rating-number">4.9</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Capital One Venture Rewards Credit Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>5 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;5 Miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel.</p>
+      <p class="rewards-rate-description"><strong>2 Miles</strong>&nbsp;&nbsp;&nbsp;&nbsp;2 Miles per dollar on every purchase, every day.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>75,000 miles</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$95</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>19.99% - 29.99% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670-850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Capital One's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare8" name="compare">
+      <label for="compare8">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 9/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST SECURED CREDIT CARD</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Capital One Platinum Secured Credit Card.png" alt="Capital One Platinum Secured Credit Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+        </span>
+        <span class="rating-number">5.0</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Capital One Platinum Secured Credit Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>No Rewards</strong> This secured card focuses on helping you build credit.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>None</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>26.99% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>No credit to average</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Capital One's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 10/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST STUDENT CREDIT CARD</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Discover it® Student Cash Back.png" alt="Discover it Student Cash Back">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star half">&#9733;</span>
+        </span>
+        <span class="rating-number">4.5</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Discover it® Student Cash Back</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>5%</strong> Earn 5% cash back on everyday purchases at different places each quarter, like Amazon.com, grocery stores, restaurants, gas stations, and more.</p>
+      <p class="rewards-rate-description"><strong>1%</strong> Plus, earn unlimited 1% cash back on all other purchases automatically.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>Unlimited Cashback Match</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>15.24% - 24.24% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>Fair to good</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Discover's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 11/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST SECOND REWARDS CARD</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Bank Custom Cash">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star full">&#9733;</span>
+          <span class="star half">&#9733;</span>
+        </span>
+        <span class="rating-number">4.5</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Citi Custom Cash® Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>5%</strong> Earn 5% cash back on purchases in your top eligible spend category each billing cycle, up to the first $500 spent, 1% cash back thereafter.</p>
+      <p class="rewards-rate-description"><strong>4%</strong> Special Travel Offer: Earn an additional 4% cash back on hotels, car rentals, and attractions booked on Citi Travel℠ portal through 6/30/2026</p>
+      <p class="rewards-rate-description"><strong>1%</strong> Earn unlimited 1% cash back on all other purchases.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>$200</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>18.74% - 28.74% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670-850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at Citi's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 12/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR GROCERIES</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/Blue Cash Preferred® Card from American Express.png" alt="Blue Cash Preferred® Card from American Express">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star half">&#9733;</span> <!-- Half Star -->
+        </span>
+        <span class="rating-number">4.6</span>
+        <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">Blue Cash Preferred® Card from American Express</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>6%</strong>&nbsp;&nbsp;&nbsp;&nbsp;6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).</p>
+      <p class="rewards-rate-description"><strong>6%</strong>&nbsp;&nbsp;&nbsp;&nbsp;6% Cash Back on select U.S. streaming subscriptions.</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on transit including taxis/rideshare, parking, tolls, trains, buses and more.</p>
+      <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations.</p>
+      <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>Earn $250</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$0 intro annual fee for the first year, then $95.</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>18.74% - 29.74% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670–850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 13/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR LUXURY TRAVEL</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/The Platinum Card® from American Express.png" alt="The Platinum Card® from American Express">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star half">&#9733;</span> <!-- Half Star -->
+        </span>
+        <span class="rating-number">4.8</span>
+        <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">The Platinum Card® from American Express</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>5X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points for flights booked directly with airlines or with American Express Travel up to $500,000 on these purchases per calendar year.</p>
+      <p class="rewards-rate-description"><strong>5X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points on prepaid hotels booked with American Express Travel.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>Earn 80,000 points</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$695</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>See Pay Over Time APR</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670–850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- 14/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST FOR FOODIES</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/AmericanExpressGoldCard.png" alt="American Express® Gold Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star half">&#9733;</span> <!-- Half Star -->
+        </span>
+        <span class="rating-number">4.9</span>
+        <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">American Express® Gold Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>4X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent on purchases at restaurants worldwide, on up to $50,000 in purchases per calendar year, then 1X points for the rest of the year.</p>
+      <p class="rewards-rate-description"><strong>4X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent at US supermarkets, on up to $25,000 in purchases per calendar year, then 1X points for the rest of the year.</p>
+      <p class="rewards-rate-description"><strong>3X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Membership Rewards® points per dollar spent on flights booked directly with airlines or on AmexTravel.com.</p>
+      <p class="rewards-rate-description"><strong>2X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Membership Rewards® points per dollar spent on prepaid hotels and other eligible purchases booked on AmexTravel.com.</p>
+      <p class="rewards-rate-description"><strong>1X</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Membership Rewards® point per dollar spent on all other eligible purchases.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>60,000 points + earn up to $100 back</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>$325</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>See Pay Over Time APR</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670–850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- 19/15 -->
+<div class="credit-card-detail">
+  <h4 class="card-category">BEST BUSINESS CREDIT CARD</h4>
+  <div class="card-detail-container">
+    <!-- Card Image -->
+    <div class="card-image">
+      <img src="/credit-cards/images/CreditCardImg/The American Express Blue Business Cash™ Card.png" alt="The American Express Blue Business Cash™ Card">
+      <div class="rating">
+        <span class="rating-label">Our rating:</span>
+        <span class="stars">
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star full">&#9733;</span> <!-- Full Star -->
+          <span class="star half">&#9733;</span> <!-- Half Star -->
+          <span class="star empty">&#9733;</span> <!-- Empty Star -->
+        </span>
+        <span class="rating-number">4.3</span>
+        <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+      </div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-info">
+      <h2 class="card-name">The American Express Blue Business Cash™ Card</h2>
+      <p class="rewards-rate"><strong>Rewards rate</strong></p>
+      <p class="rewards-rate-description"><strong>2%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 2% cash back on all eligible purchases on up to $50,000 per calendar year, then 1%.</p>
+      <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% cash back on all eligible purchases after spending $50,000 per calendar year.</p>
+
+      <div class="card-details-summary-inline">
+        <div class="detail-item">
+          <span class="detail-label">Intro offer</span>
+          <strong>$250 statement credit</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Annual fee</span>
+          <strong>No annual fee</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Regular APR</span>
+          <strong>17.99% - 25.99% variable</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Recommended credit</span>
+          <strong>670–850 (Good to Excellent)</strong>
+        </div>
+      </div>
+
+      <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="extra-info">
+    <a href="#" class="rates-fees-link">See Rates & Fees</a>
+    <div class="compare-checkbox">
+      <input type="checkbox" id="compare" name="compare">
+      <label for="compare">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+</div>
+
+  
+  
+  <div id="content-everyday-cash-rewards" class="content-section hidden">
+      <!-- 1/15 -->
+      <div class="credit-card-detail">
+        <h4 class="card-category">BEST FOR FLAT-RATE CASH REWARDS</h4>
+        <div class="card-detail-container">
+          <!-- Card Image -->
+          <div class="card-image">
+            <img src="/credit-cards/images/CreditCardImg/WellsFargoActiveCash.png" alt="Wells Fargo Active Cash Card">
+            <div class="rating">
+              <span class="rating-label">Our rating:</span>
+              <span class="stars">
+                <span class="star full">&#9733;</span> <!-- Full Star -->
+                <span class="star full">&#9733;</span> <!-- Full Star -->
+                <span class="star full">&#9733;</span> <!-- Full Star -->
+                <span class="star full">&#9733;</span> <!-- Full Star -->
+                <span class="star half">&#9733;</span> <!-- Half Star -->
+              </span>
+              <span class="rating-number">4.1</span>
+              <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+            </div>
+          </div>
+    
+          <!-- Card Details -->
+          <div class="card-info">
+            <h2 class="card-name">Wells Fargo Active Cash® Card</h2>
+            <p class="rewards-rate"><strong>Rewards rate</strong></p>
+            <p class="rewards-rate-description"><strong>2%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 2% cash rewards on purchases</p>
+    
+            <div class="card-details-summary-inline">
+              <div class="detail-item">
+                <span class="detail-label">Intro offer</span>
+                <strong>$200 cash rewards</strong>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Annual fee</span>
+                <strong>$0</strong>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Regular APR</span>
+                <strong>19.74%, 24.74%, or 29.74% Variable APR</strong>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Recommended credit</span>
+                <strong>670–850 (Good to Excellent)</strong>
+              </div>
+            </div>
+    
+            <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+            <p class="secure-site-note">at Wells Fargo's secure site</p>
+          </div>
+        </div>
+    
+        <!-- Additional Information -->
+        <div class="extra-info">
+          <a href="#" class="rates-fees-link">See Rates & Fees</a>
+          <div class="compare-checkbox">
+            <input type="checkbox" id="compare" name="compare">
+            <label for="compare">Add to compare</label>
+          </div>
+        </div>
+    
+        <!-- Editor's Take & Card Details Accordion -->
+        <div class="accordion">
+          <div class="accordion-item">
+            <h5>Editor's take</h5>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-item">
+            <h5>Card details</h5>
+            <span class="accordion-icon">+</span>
+          </div>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+  <div id="content-cash-back-match" class="content-section hidden">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR CATEGORY VARIETY</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/CreditCardImg/DiscoverIt.png" alt="Discover it">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star half">&#9733;</span> <!-- Half Star -->
+            </span>
+            <span class="rating-number">4.6</span>
+            <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+          </div>
+        </div>
+  
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Discover it® Cash Back</h2>
+          <p class="rewards-rate"><strong>Rewards rate</strong></p>
+          <p class="rewards-rate-description"><strong>5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn 5% cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.</p>
+          <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Plus, earn unlimited 1% cash back on all other purchases - automatically.
+          </p>
+  
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">Intro offer</span>
+              <strong>Cashback Match</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Annual fee</span>
+              <strong>$0</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>17.74% - 27.74% variable</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>670-850 (Good to Excellent)</strong>
+            </div>
+          </div>
+  
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at Discover's secure site</p>
+        </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare" name="compare">
+          <label for="compare">Add to compare</label>
+        </div>
+      </div>
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="content-sign-up-bonus" class="content-section hidden">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR TRAVEL VALUE</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/CreditCardImg/ChaseFreedom.png" alt="Chase Saphire">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Half Star -->
+            </span>
+            <span class="rating-number">4.9</span>
+            <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+          </div>
+        </div>
+  
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Chase Sapphire Preferred® Card</h2>
+          <p class="rewards-rate"><strong>Rewards rate</strong></p>
+          <p class="rewards-rate-description"><strong>5x</strong>&nbsp;&nbsp;&nbsp;&nbsp;5x on travel purchased through Chase Travel℠.</p>
+          <p class="rewards-rate-description"><strong>3x</strong>&nbsp;&nbsp;&nbsp;&nbsp;Plus, earn unlimited 1% cash back on all other purchases - automatically.</p>
+          <p class="rewards-rate-description"><strong>2x</strong>&nbsp;&nbsp;&nbsp;&nbsp;2x on all other travel purchases.</p>
+          <p class="rewards-rate-description"><strong>1x</strong>&nbsp;&nbsp;&nbsp;&nbsp;1x on all other purchases.</p>
+  
+  
+  
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">Intro offer</span>
+              <strong>60,000 bonus points</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Annual fee</span>
+              <strong>$95</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>21.49% - 28.49% variable</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>670-850 (Good to Excellent)</strong>
+            </div>
+          </div>
+  
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at Discover's secure site</p>
+        </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare" name="compare">
+          <label for="compare">Add to compare</label>
+        </div>
+      </div>
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="content-unlimited-cash-back" class="content-section hidden">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR FOOD AND ENTERTAINMENT</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/CreditCardImg/Capital One SavorOneCash RewardsCredit Card.png" alt="Capital One SavorOne Card">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star half">&#9733;</span>
+            </span>
+            <span class="rating-number">4.9</span>
+            <span class="info-icon">&#8505;</span>
+          </div>
+        </div>
+    
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Capital One SavorOne Cash Rewards Credit Card</h2>
+          <p class="rewards-rate"><strong>Rewards rate</strong></p>
+          <p class="rewards-rate-description"><strong>8%</strong>&nbsp;&nbsp;&nbsp;&nbsp;8% Cash Back on Capital One Entertainment purchases</p>
+          <p class="rewards-rate-description"><strong>5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;5% Cash Back on hotels and rental cars booked through Capital One Travel (terms apply)</p>
+          <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on dining, entertainment, popular streaming services, and grocery stores (excluding superstores like Walmart® and Target®)</p>
+          <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on all other purchases</p>
+    
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">Intro offer</span>
+              <strong>$200</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Annual fee</span>
+              <strong>$0</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>19.99% - 29.99% variable</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>670-850 (Good to Excellent)</strong>
+            </div>
+          </div>
+    
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at Capital One's secure site</p>
+        </div>
+      </div>
+    
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare4" name="compare">
+          <label for="compare4">Add to compare</label>
+        </div>
+      </div>
+    
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div id="content-no-annual-fee" class="content-section hidden">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR HOUSEHOLD SHOPPING</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/CreditCardImg/Blue Cash Everyday® Card from American Express.png" alt="Blue Cash Everyday Card from American Express">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+            </span>
+            <span class="rating-number">4.8</span>
+            <span class="info-icon">&#8505;</span>
+          </div>
+        </div>
+    
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Blue Cash Everyday® Card from American Express</h2>
+          <p class="rewards-rate"><strong>Rewards rate</strong></p>
+          <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases, then 1%</p>
+          <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on U.S. online retail purchases, on up to $6,000 per year, then 1%</p>
+          <p class="rewards-rate-description"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations, on up to $6,000 per year, then 1%</p>
+          <p class="rewards-rate-description"><strong>1%</strong>&nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases</p>
+    
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">Intro offer</span>
+              <strong>Earn $200</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Annual fee</span>
+              <strong>$0</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>18.74% - 29.74% variable</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>670-850 (Good to Excellent)</strong>
+            </div>
+          </div>
+    
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at American Express's secure site</p>
+        </div>
+      </div>
+    
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare5" name="compare">
+          <label for="compare5">Add to compare</label>
+        </div>
+      </div>
+    
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="content-starter-credit-card" class="content-section hidden">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST STARTER REWARDS CARD</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/CreditCardImg/Capital One Quicksilver Cash Rewards Credit Card.png" alt="Capital One Quicksilver Cash Rewards Credit Card">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star half">&#9733;</span>
+              <span style="color: #ccc;">&#9733;</span>
+            </span>
+            <span class="rating-number">3.7</span>
+            <span class="info-icon">&#8505;</span>
+          </div>
+        </div>
+    
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Capital One Quicksilver Cash Rewards Credit Card</h2>
+          <p class="rewards-rate"><strong>Rewards rate</strong></p>
+          <p class="rewards-rate-description"><strong>5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 5% cash back on hotels and rental cars booked through Capital One Travel, where you'll get Capital One's best prices on thousands of trip options. Terms apply.</p>
+          <p class="rewards-rate-description"><strong>1.5%</strong>&nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5% cash back on every purchase, every day.</p>
+    
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">Annual fee</span>
+              <strong>$0</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Balance transfer intro APR</span>
+              <strong>0% intro on balance transfers for 15 months</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>19.99% - 29.99% variable</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>670-850 (Good to Excellent)</strong>
+            </div>
+          </div>
+    
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at Capital One's secure site</p>
+        </div>
+      </div>
+    
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare6" name="compare">
+          <label for="compare6">Add to compare</label>
+        </div>
+      </div>
+    
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <h2 class="methodology-h2">Our methodology and research</h2>
+  
+  <div class="methodology-container">
+    <!-- Column 1: Credit Cards Analyzed -->
+    <div class="methodology-column">
+        <img src="/credit-cards/images/methodology container/first-image-methodology.png" alt="Credit Card Icon" class="first-image-methodology">
+        <div class="methodology-highlight">3,476</div>
+        <div class="methodology-description">Credit Cards Analyzed</div>
+    </div>
+    
+    <!-- Column 2: Banks Analyzed -->
+    <div class="methodology-column">
+        <img src="/credit-cards/images/methodology container/second-image-methodology.png" alt="Bank Icon">
+        <div class="methodology-highlight">600</div>
+        <div class="methodology-description">Banks Analyzed</div>
+    </div>
+
+    <!-- Column 3: Criteria Used -->
+    <div class="methodology-column">
+        <h4 class="methodology-criteria">Criteria Used</h4>
+        <div class="methodology-description">
+            Rates and fees, rewards rates, sign-up bonuses, redemption options, credit needed,
+            miscellaneous benefits, customer service, security, ease of application.
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div id="on-this-page-panel-2"></div>
+  <div class="article-starter">
+  <div class="article-border">
+    <p style="font-size: 18px; font-style: italic;">Eligibility and Benefit level varies by Card. Terms, Conditions and Limitations Apply. Please visit <a href="#" style="text-decoration: underline;">americanexpress.com/benefitsguide</a> for more details. Underwritten by Amex Assurance Company.</p>
+    <p style="font-size: 18px; font-style: italic;">For Capital One products listed on this page, some of the benefits may be provided by Visa® or Mastercard® and may vary by product. See the respective Guide to Benefits for details, as terms and exclusions apply.</p> 
+  </div>  
+  <br>
+    <h2>Comparing the best credit cards</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Credit card</th>
+          <th>Best for</th>
+          <th>Card highlights</th>
+          <th>Annual fee</th>
+          <th>CreditCards.com Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wells Fargo Active Cash® Card</td>
+          <td>Flat-rate cash rewards</td>
+          <td>Earn unlimited 2% cash rewards on purchases</td>
+          <td>$0</td>
+          <td class="rating"><a href="#">4.1 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Discover it® Cash Back</td>
+          <td>Category variety</td>
+          <td>5% cash back on rotating quarterly categories (activation required) on up to $1,500 per quarter, then 1%<br>Cashback Match™: All rewards earned in the first year are matched at the end of your first year</td>
+          <td>$0</td>
+          <td class="rating"><a href="#">4.6 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Chase Sapphire Preferred® Card</td>
+          <td>Travel value</td>
+          <td>5X points on Chase Travel and Lyft rides (Lyft offer through March 31, 2025), 3X points on several popular non-travel categories and 2X points on general travel<br>25% increased redemption value toward travel through Chase Travel, high-caliber travel insurance along with annual hotel credits and account anniversary points</td>
+          <td>$95</td>
+          <td class="rating"><a href="#">4.9 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Capital One SavorOne Cash Rewards Credit Card</td>
+          <td>Food and entertainment</td>
+          <td>Unlimited 3% cash back on dining, entertainment, select streaming services, and grocery store purchases (excluding superstores like Walmart® and Target®).<br>Plus, 8% cash back on Capital One Entertainment purchases</td>
+          <td>$0<br><a href="#">(See rates and Fees)</a></td>
+          <td class="rating"><a href="#">4.9 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Blue Cash Everyday® Card from American Express</td>
+          <td>Household shopping</td>
+          <td>3% cash back on U.S. supermarket, U.S. gas station, and U.S. online retail purchases (up to $6,000 in combined purchases per year, then 1%)</td>
+          <td>$0</td>
+          <td class="rating"><a href="#">4.8 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Capital One Quicksilver Cash Rewards Credit Card</td>
+          <td>Starter rewards card</td>
+          <td>Unlimited 1.5% cash back on all purchases, and 5% cash back on hotels and rental cars through Capital One Travel<br>Cash back can be redeemed automatically at a set amount or date</td>
+          <td>$0<br><a href="#">(See rates and Fees)</a></td>
+          <td class="rating"><a href="#">3.7 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Capital One Venture X Rewards Credit Card</td>
+          <td>Travel perks</td>
+          <td>10X miles on hotel and rental car bookings through Capital One Travel, 5X miles on flights and vacation rentals through Capital One Travel and 2X miles on all other purchases<br>$300 annual statement credit for bookings through Capital One Travel, 10,000 account anniversary bonus miles, along with excellent travel insurance and airport lounge access</td>
+          <td>$395<br><a href="#">(See rates and Fees)</a></td>
+          <td class="rating"><a href="#">5 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Capital One Venture Rewards Credit Card</td>
+          <td>Flat-rate travel</td>
+          <td>5X miles on hotels, vacation rentals and rental cars through Capital One Travel and 2X miles on all other purchases<br>Miles redeemable for statement credits toward eligible travel purchases within the last 90 days</td>
+          <td>$95<br><a href="#">(See rates and Fees)</a></td>
+          <td class="rating"><a href="#">4.9 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Citi Custom Cash® Card</td>
+          <td>A second rewards card</td>
+          <td>5% cash back (on up to $500 each billing cycle, then 1%) on your top spending category each billing cycle</td>
+          <td>$0</td>
+          <td class="rating"><a href="#">4.5 / 5</a></td>
+        </tr>
+        <tr>
+          <td>Blue Cash Preferred® Card from American Express</td>
+          <td>Groceries</td>
+          <td>6% cash back at U.S. supermarkets (up to $6,000 per year in purchases, then 1%) and on select U.S. streaming subscriptions, 3% cash back on transit and at U.S. gas stations</td>
+          <td>$0 intro annual fee for the first year, then $95</td>
+          <td class="rating"><a href="#">4.6 / 5</a></td>
+        </tr>
+        <tr>
+          <td>The Platinum Card® from American Express</td>
+          <td>Luxury travel</td>
+          <td>5X points on directly-booked airfare, and on flights and prepaid hotels through American Express Travel (up to $500,000 per calendar year, then 1X points)<br>Up to more than $2,000 of perks per year, including airline fee credits, comprehensive airport lounge access, hotel privileges and more</td>
+          <td>$695</td>
+          <td class="rating">4.8 / 5</td>
+        </tr>
+        <tr>
+          <td>American Express® Gold Card</td>
+          <td>Foodies</td>
+          <td>4X Membership Rewards points at restaurants worldwide (on up to $50,000 in purchases per year, then 1X points) and at U.S. supermarkets (on up to $25,000 in purchases per year, then 1X points)</td>
+          <td>$325</td>
+          <td class="rating">4.9 / 5</td>
+        </tr>
+        <tr>
+          <td>The American Express Blue Business Cash™ Card</td>
+          <td>Business</td>
+          <td>2% cash back on all eligible purchases (up to $50,000 per year, then 1%)<br>Expanded Buying Power allows spending beyond the credit limit, based on creditworthiness</td>
+          <td>No annual fee</td>
+          <td class="rating">3.8 / 5</td>
+        </tr>
+        <tr>
+          <td>Discover it® Student Cash Back</td>
+          <td>Students</td>
+          <td>5% cash back on rotating quarterly categories (activation required) on up to $1,500 per quarter, then 1%<br>Cashback Match™: All rewards earned in the first year are matched at the end of your first year</td>
+          <td>$0</td>
+          <td class="rating">4.3 / 5</td>
+        </tr>
+        <tr>
+          <td>Capital One Platinum Secured Credit Card</td>
+          <td>Secured</td>
+          <td>Minimum $200 credit limit with a security deposit as low as $49 ($49, $99 or $200, depending on creditworthiness)<br>Potential credit limit increase review starting after six months</td>
+          <td>$0<br><a href="#">(See rates and Fees)</a></td>
+          <td class="rating">4.2 / 5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+
+    <h2 style="font-size: 24px;" id="best-credit-card-details-section" class="section-offset">Editor’s picks: A closer look at top-rated credit cards</h2>
+    <h3 style="font-size: 20px;">Best for flat-rate cash rewards: Wells Fargo Active Cash® Card</h3>
+    <ul class="bullet-point">
+      <li><strong>Best features:</strong>
+        The Active Cash card goes further than other flat-rate credit cards that earn a high 2% cash rewards on purchases, offering a welcome bonus and additional perks like concierge service, hotel benefits at Visa Signature Hotel collection properties worldwide and up to $600 in cellphone protection ($25 deductible applies) when you pay with your eligible Wells Fargo card.
+      </li>
+
+      <br>
+
+      <li><strong>Biggest drawbacks:</strong>
+        A credit card that earns rewards at a higher rate in your biggest spending categories could prove more valuable overall. You also can’t pool rewards across multiple Wells Fargo cards the way you can with other issuers’ cards, limiting your redemption options and value.      
+      </li>
+
+      <br>
+
+      <li><strong>Alternatives:</strong>
+        The <a href="">Chase Freedom Unlimited®</a> has a slightly lower base cash back rewards rate than the Active Cash Card (just 1.5% back on general purchases), but it comes with additional bonus categories that could easily make up the difference if you spend more on travel and dining. The Citi Double Cash® Card is also a solid alternative to the Active Cash if you want a slightly longer balance transfer offer or the ability to transfer your points (in this case, to the Citi Premier card).
+      </li>
+
+      <br>
+
+      <li><strong>Bottom line:</strong>
+        This is one of the best credit cards for anyone looking for a straightforward way to earn cash rewards on purchases.
+      </li>
+      <br>
+
+      <p style="font-size: 18px;">Read our full <a href="">Wells Fargo Active Cash Card review</a> or jump back to this <a href="">card’s offer details.</a></p>
+    </ul>
+    <br>
+
+
+
+    <h2 style="font-size: 24px;">Best for travel value: Chase Sapphire Preferred® Card</h2>
+
+    <ul class="bullet-point">
+      <li><strong>Best features:</strong> 
+        The Sapphire Preferred card’s travel perks, transfer partners, and rewards are exceptional for its relatively low annual fee. Along with high rewards rates on travel and everyday purchases, you’ll get a 25% boost in point value when you redeem for travel with Chase. This makes the card a terrific pairing option with no-annual-fee Chase rewards cards.
+      </li>
+
+      <br>
+
+      <li><strong>Biggest drawbacks:</strong> 
+        You’ll get the best value from this card if you redeem rewards for travel and take advantage of its perks. If you only travel occasionally, the card’s annual fee may be harder to justify.
+      </li>
+
+      <br>
+
+      <li><strong>Alternatives:</strong> 
+        If you want premium perks like annual travel credits and complimentary lounge access, consider upgrading to the <a href="#">Chase Sapphire Reserve® Card</a> or Capital One Venture X.
+      </li>
+
+      <br>
+
+      <li><strong>Bottom line:</strong> 
+        Frequent travelers who aren’t loyal to one airline or hotel brand can get a lot of value out of this general-purpose travel card. It offers stellar rewards value, flexibility, perks, and card combination opportunities for a low annual fee, making it a worthy choice for most wallets.
+      </li>
+
+      <br>
+    
+      <p style="font-size: 18px;">Read our full <a href="#">Chase Sapphire Preferred Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+
+    </ul>
+
+    <br>
+
+
+
+    <h2 style="font-size: 24px;">Best for food and entertainment: Capital One SavorOne Cash Rewards Credit Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> 
+      Few cards cover the combination of food and entertainment like the SavorOne. You’ll have an easy time earning an unlimited 3% cash back when grocery shopping (excluding superstores like Walmart® and Target®), eating in or out, binge-watching your favorite shows via popular streaming services, or visiting popular destinations like zoos, concerts, sporting events, and movie theaters. Plus, it’s hard to beat the 8% cash back on Capital One Entertainment purchases.
+    </li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> 
+      The SavorOne doesn’t provide the highest rewards rates for groceries or dining, or annual credits for food or entertainment. Other cards may be a better fit if you’re looking for rich bonus features and best-in-class rewards rates on those purchases.
+    </li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> 
+      If you spend heavily on groceries, you may reap more value from the <a>Blue Cash Preferred® Card from American Express</a> since it boasts a much higher cash back rate on U.S. supermarket purchases. Meanwhile, the <a>American Express® Gold Card</a> may be a better fit for foodies thanks to its dining-centric categories and perks.
+    </li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> 
+      Almost any cardholder can benefit from this no-annual-fee<a>(See rates and fees)</a> card’s unlimited 3% rewards in popular spending categories. However, entertainment fans will find the SavorOne card’s comprehensive category coverage and 8% back on Capital One Entertainment purchases provide a unique value.
+    </li>
+    <br>
+
+    <p style="font-size: 18px;">Read our full <a href="#">Capital One SavorOne Cash Rewards Credit Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+  <br>
+
+
+
+  <h2 style="font-size: 24px;">Best for household shopping: Blue Cash Everyday® Card from American Express</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This no-annual-fee card carries solid cash back rates on everyday spending at U.S. supermarkets and gas stations, and its comprehensive <a href="">online shopping category</a> can fill in the gaps for the rest of your shopping staples.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> The bonus rewards are less generous than the Blue Cash Preferred but have the same spending cap on U.S. supermarket spending (along with a cap on the other bonus categories). Similarly, this card isn’t a great fit if you’re a fan of bargain shopping since its supermarket category excludes superstores and warehouse clubs (though you may earn rewards by shopping online at these stores).</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> If you spend $270 or more each month on groceries, the Blue Cash Preferred should rake in enough cash back on U.S. supermarket purchases to make it <a href="">the more rewarding card</a>, even with its annual fee. Plus, you’ll also enjoy a slew of other bonus categories that cover common expenses. The <a href="">Bank of America® Customized Cash Rewards credit card</a> is also excellent for groceries, and it offers a similar choice category for online shopping.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> Families with a smaller grocery budget can enjoy the Blue Cash Everyday’s rewards without worrying about recouping an annual fee. But whether the card is worth it depends on where you prefer to buy your groceries.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Blue Cash Everyday Card from American Express review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best starter rewards card: Capital One Quicksilver Cash Rewards Credit Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This <a href="">popular Capital One credit card</a> has all the features you should look for in a first rewards credit card: no annual fee<a href="">(See rates and Fees)</a>, a sign-up bonus with a low spending threshold, and additional benefits like free credit monitoring and 24/7 concierge service. Its simplicity makes it easy to maximize your card value. You can also choose to redeem cash back automatically if you want to streamline the rewards process.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> A 1.5% cash back rate isn’t the best you can find on a <a href="#">flat-rate cash back card</a>. In fact, some flat-rate cards offer the same cash back rate without requiring a good credit score.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> You can earn more with the Wells Fargo Active Cash card, which offers a full 2% cash rewards on purchases. Or, if you have average credit, you might have to settle for the <a href="">Capital One QuicksilverOne Cash Rewards Credit Card</a>, which lacks the sign-up bonus and comes with an annual fee, but earns 1.5% cash back on all purchases.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> The Quicksilver is an excellent choice for your first rewards credit card thanks to its low cost and the ease with which you can earn and redeem rewards.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Capital One Quicksilver Cash Rewards Credit Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best for travel perks: Capital One Venture X Rewards Credit Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This premium card has one of the lowest annual fees for a top-of-the-line rewards card with <a href="#">luxury benefits</a> like complimentary lounge access. On top of valuable annual credits and bonus anniversary miles that easily justify the annual fee, the card also offers an impressive flat rate of 2X miles and a stellar sign-up bonus.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> Other luxury travel cards offer more perks and privileges with partner brands, including rideshare credits and complimentary hotel elite status. Competing cards may also earn more rewards on general travel, dining, and other travel-related purchases, so you’ll want to review your travel and spending habits to understand whether the Venture X is worth it.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> If you’re not deterred by the $695 annual fee<a href="">(see rates and fees)</a>, you may prefer <a href="#">The Platinum Card® from American Express</a>, which offers broader airport lounge access, more luxury travel benefits, and a larger network of transfer partners. If you’d rather avoid a high annual fee, consider the <a href="#">Chase Sapphire Preferred® Card</a>, which offers stellar value for just a $95 annual fee.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> The Venture X is a great option for anyone looking for a taste of luxury perks without paying over $500 for an annual fee<a href="">(See rates and Fees)</a>. Frequent travelers will be able to easily offset the card’s annual fee with the card’s practical features, including annual travel credits, yearly bonus miles, and generous reward opportunities.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Capital One Venture X Rewards Credit Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best for flat-rate travel rewards: Capital One Venture Rewards Credit Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This is one of the best general-purpose travel cards for people who want a straightforward travel rewards card with flexible redemption options. A decent sign-up bonus, travel benefits, flat-rate rewards, and boosted miles on eligible Capital One Travel bookings combine to make this an especially well-rounded travel card. For many travelers, the $95 annual fee<a href="">(See rates and Fees)</a> will be well worth the cost.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> The Venture card doesn’t carry any perks with a clear monetary value other than the up to $120 fee credit for a Global Entry or TSA PreCheck application you can receive every four years. That means you’ll have to rely on your rewards to make up for the $95 annual fee instead of the annual credits and perks competing cards provide.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> Though they carry the same annual fee, the <a href="#">Chase Sapphire Preferred could be more lucrative</a> than the Venture card thanks to its remarkable travel benefits and mix of bonus categories. Alternatively, you may want to <a href="#">upgrade to the Venture X card</a> since its travel credits and other perks <a href="#">may deliver more value</a> for its annual fee.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> Frequent travelers looking for a streamlined travel rewards card without complicated redemption options or fluff features may enjoy the Capital One Venture.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Capital One Venture Rewards Credit Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best second rewards card: Citi Custom Cash® Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> Few cards adapt to your spending habits like the Custom Cash card, since it automatically earns 5% cash back in your top eligible spending category (on up to $500 in spending each billing cycle). The card’s eligible categories also include a number of options that don’t typically earn such a high cash back rate, like gas stations, transit, and home improvement stores. This makes the Custom Cash an excellent secondary rewards card if your primary card covers your largest expenses.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> Since you only earn bonus cash back in one eligible spend category and all other purchases earn 1% cash back, you could lose out on a lot of cash back rewards if you put all of your spending on this card.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> Though it comes with an annual fee after the first year, the <a href="#">Blue Cash Preferred card earns more rewards</a> in multiple everyday categories, including purchases made at U.S. gas stations and U.S. supermarkets. If you take full advantage of the card’s rewards earning potential, you could offset that fee and still rake in plenty of cash back.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> The Custom Cash card is a good option for anyone looking for a well-rounded, no-annual-fee rewards card, given it also includes a sign-up bonus and promotional APR on balance transfers and purchases. To make sure you’re getting the best value, pair it with a flat-rate card or another bonus-category rewards card.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Citi Custom Cash Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best for groceries: Blue Cash Preferred® Card from American Express</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This card packs a lot of everyday value, offering substantial rewards in far more household categories than the typical cash back card. In fact, it includes one of the <a href="#">highest rewards rates for U.S. supermarkets</a> and select U.S. streaming services. It also comes with an intro APR offer on purchases and balance transfers, annual streaming credits, and outstanding rewards on transit and U.S. gas station purchases.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> There are a few caveats attached to the bonus rewards – namely the $6,000 cap on U.S. supermarket purchases per year (then 1%) and the fact that the 3% and 6% rewards are only available stateside.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> If you spend less than $3,200 on groceries each year, you might squeeze more value out of the <a href="#">Blue Cash Everyday® Card from American Express</a>. It earns rewards at a slightly lower rate but charges no annual fee and includes a lucrative U.S. online retail category.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> If you spend at least $3,200 per year at U.S. supermarkets, this will be one of the most lucrative grocery rewards cards out there, despite its ongoing annual fee.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Blue Cash Preferred Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best for luxury travel: The Platinum Card® from American Express</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> The <a href="#">Amex Platinum card’s benefits</a> include perhaps the most generous <a href="#">airport lounge access</a> available, as well as credits for expedited security screening, Uber, airline fees, and more – all of which could add up to more than $2,000 of value each year. Plus, your points could be extremely valuable if you take advantage of <a href="#">Amex’s airline and hotel transfer partners.</a></li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> The card carries an extremely high annual fee, many of its perks may be impractical for the average cardholder, and the card’s ongoing rewards rate on non-travel spending is low. If you only travel occasionally or aren’t sure you’ll use the card’s perks, the Amex Platinum probably isn’t the best fit.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> The Capital One Venture X offers a much more practical set of travel perks at a lower cost, <a href="#">making it a better option</a> if you’re a frequent traveler but don’t plan on using many of the Platinum Card’s niche features.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> This card could be either <a href="#">more than worth the cost</a> or a money pit, depending on how frequently you travel and how appealing you find its sometimes niche perks.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Amex Platinum review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best for foodies: American Express® Gold Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> On top of earning generous <a href="#">Amex Membership Rewards points</a> for airfare and purchases made at U.S. supermarkets, this card boasts one of the highest rewards rates out there for dining, including eligible takeout and delivery services like Uber Eats. It also carries an impressive welcome offer, dining credits, and other perks that make it one of the top rewards cards for dining and travel.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> The credits are doled out on a monthly basis, in up to $10 increments, which may feel limiting if you were hoping for a larger payout. Plus, the dining credit only covers a small list of options: Grubhub, The Cheesecake Factory, Goldbelly, Wine.com, and Five Guys locations (Enrollment Required). These limitations may decrease the card’s value and make it harder to offset the $325 annual fee.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> At $95 a year, the <a href="#">Citi Premier® Card</a> has a much lower annual fee. But you could end up earning more rewards if your spending habits line up with the card’s multiple 3X bonus categories, which cover restaurants, supermarkets, gas stations, air travel, and hotels.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> The Amex Gold can easily be worth the annual fee if you’re looking for a best-in-class travel card for dining worldwide, U.S. supermarket, and airfare purchases.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">American Express Gold Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best business credit card: The American Express Blue Business Cash™ Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This is a great card for business owners who want an easy-to-use business card packed with features that can help you manage operations. Along with a nice flat rate on all eligible purchases, you also get plenty of expense management tools like free employee cards and access to business software to help you track your spending. Plus, the card comes with Expanded Buying Power, which can offer some peace of mind if you get stuck with unforeseen expenses.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> You won’t earn maximum rewards for your business with a flat-rate credit card. And you’ll need to be careful not to exceed the spending cap: If you spend more than $50,000 per year, your flat rate drops to 1% for all purchases.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> Big spenders may get more value out of a card that offers unlimited flat-rate rewards. Consider the <a href="#">Ink Business Unlimited® Credit Card</a>, which offers unlimited 1.5% back on all purchases for no annual fee. The <a href="#">Capital One Spark Cash Plus</a> is another great option: It carries no preset credit limit, earns a flat 2% cash back, and includes a $150 cash bonus every year you charge $150,000 or more to the card.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> Business owners looking for cash flow solutions, along with business owners who spend less than $50,000 each year, should consider this card a top option for their wallet.</li>
+
+    <br> 
+    <p style="font-size: 18px;">Read our full <a href="#">The American Express Blue Business Cash Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best student credit card: Discover it® Student Cash Back</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> Students will be hard-pressed to find a starter credit card that offers more value than the Discover it® Student Cash Back. Not only do you get an unsecured card to help build credit, but you’ll also get the same first-year welcome offer and high rewards rate as the full-fledged Discover it® Cash Back card.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> You’ll have to keep track and enroll in quarterly rotating bonus categories, which might be more maintenance than you’re looking for.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> If you don’t want to deal with rotating bonus categories that require enrollment, the <a href="#">Capital One Quicksilver Student Cash Rewards Credit Card</a> keeps it simple by earning cash back on all your purchases. But if you spend more on staples like food and entertainment, then the <a href="#">Capital One SavorOne Student Cash Rewards Credit Card</a> could be more consistently rewarding.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> Students who want to earn rewards and enjoy <a href="#">beginner-friendly benefits</a> are a great match for this well-rounded cash back credit card.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Discover it® Student Cash Back review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+
+
+
+
+
+  <br>
+  <h2 style="font-size: 24px;">Best secured credit card: Capital One Platinum Secured Credit Card</h2>
+
+  <ul class="bullet-point">
+    <li><strong>Best features:</strong> This is perhaps the most accessible secured card available. You can put down a deposit of just $49 or $99 (if you qualify) and still get a minimum $200 credit limit. Capital One may also refund your security deposit after only six months of responsible card use — the shortest automatic account review period you’ll find.</li>
+
+    <br>
+
+    <li><strong>Biggest drawbacks:</strong> You’ll need to pay your balance in full each billing cycle to avoid the card’s high variable APR. It also doesn’t earn rewards or offer a clear path to a higher credit limit like some competing secured cards. The $1,000 maximum security deposit may make it harder to improve your credit score since keeping your <a href="#">credit utilization ratio</a> low could be challenging.</li>
+
+    <br>
+
+    <li><strong>Alternatives:</strong> The <a href="#">Discover it® Secured Credit Card</a> is another leading secured card thanks to its cash rewards, low fees, and similar review process for an unsecured credit line. Although you’ll need a $200 minimum security deposit, its higher $2,500 maximum credit limit could make it easier to keep your credit utilization ratio low.</li>
+
+    <br>
+
+    <li><strong>Bottom line:</strong> This card is a top option for people with bad credit who aren’t likely to qualify for an unsecured credit card. Just take care to review the card’s benefits guide to make sure you avoid fees and other financial missteps.</li>
+
+    <br>
+    <p style="font-size: 18px;">Read our full <a href="#">Capital One Platinum Secured Credit Card review</a> or jump back to this <a href="#">card’s offer details.</a></p>
+  </ul>
+  <br>
+
+  <h2 style="font-size: 29px;" id="types-of-credit-cards" class="section-offset">Picking the right credit card</h2>
+  <p style="font-size: 16px; line-height: 1.5;">There are numerous <a href="#">types of credit cards</a> available to consumers, ranging from straightforward, no-frills cards, to options that are packed full of features. You’ll need to <a href="#">compare credit cards</a> based on your spending habits, credit history and any desired benefits. To help you narrow it all down, we’ll detail a few credit card types and their top features.</p>
+
+
+
+
+
+
+  <div class="accordion-types-credits">
+    <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Low-interest credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p><a href="#">Low-interest credit cards</a> feature APRs lower than the <a href="#">average credit card interest rate</a>, which hovers around 20%. They can be a handy option if you need to carry a balance in an emergency. Cards with low rates usually require you to have at least a good credit score.</p>
+      <p>If you want the absolute lowest ongoing APRs available, or if you have a lower credit score, a <a href="#">credit union credit card</a> may be your best bet. You have plenty of options if you have a good credit score, which means making a decision may take more work. A great place to start your research would be comparing cards like the Discover it Balance Transfer and the <a href="#">Wells Fargo Reflect® Card</a>, one of the best low-interest cards. Both cards prioritize low-interest rates and intro APR offers. The Discover it Balance Transfer also doubles as a cash back card.</p>
+    </div>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Zero-interest credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p><a href="#">Zero-interest credit cards</a> come with introductory periods that let you avoid interest on purchases, balance transfers or both for a limited time. These intro APR periods usually give you 12 to 21 months to pay off your balance. <a href="#">When your 0% introductory period ends</a>, the card’s regular APR will apply, and you’ll begin accruing interest on any remaining balance.</p>
+      <p>To determine which zero-interest credit card is the best pick, you must evaluate your current debt and the amount of money you plan to spend in the coming months. Zero-interest cards typically have introductory APR offers for both balance transfers and purchases. However, some cards offer an extended intro APR period for one at the loss of the other. Others may include generous rewards programs alongside zero-interest offers.</p>
+      <p>Comparing two options, like the Capital One SavorOne card and the <a href="#">Citi Simplicity® Card</a>, can give you a better idea of available intro APR cards. Although the SavorOne card offers high rewards rates with an intro APR offer, the Citi Simplicity has a much longer intro APR period.</p>
+    </div>
+  </div>
+    
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Balance transfer credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p><a href="#">Balance transfer credit cards</a> provide lengthy 0% intro APR offers on balance transfers so that you can transfer your current balance from one or more cards – or sometimes eligible loans – and pay off the consolidated balance without the burden of incoming interest.</p>
+      <p>Many specialized balance transfer cards cut rewards in favor of 18-month to 21-month intro APRs, but some offer rewards. People who carry high-interest debt on one or more credit cards could save hundreds of dollars by <a href="#">doing a balance transfer</a>. When choosing the most cost-effective card, make sure you account for the card’s balance transfer fee (typically 3% to 5% of your transferred total).</p>
+      <p>The right balance transfer card for you may come down to how much debt you have on other cards. The more debt you have, the longer intro APR offer you’ll want. For high debt, you should look at cards like the Citi Simplicity Card, which has one of the longest intro APR offers available. If you have moderate debt and still want an all-around great card, consider comparing the Capital One SavorOne Cash Rewards Credit Card and the <a href="#">Bank of America® Customized Cash Rewards credit card</a>. Both cards have boosted cash back rates in several categories and generous balance transfer offers.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Rewards credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>A rewards credit card earns cash back, points or miles on eligible purchases, depending on the <a href="#">type of rewards card</a>. Reward rates may apply to all purchases or only to purchases in a specific category like gas or groceries. The best rewards credit cards also often include lucrative sign-up bonuses, intro APR offers, purchase protections or other useful perks. In exchange for an annual fee, some cards also offer especially valuable rewards rates and benefits like annual credits.</p>
+      <p>There are several rewards cards to choose from, and the right one for you will depend on your unique expenses. If you aren’t sure where to start, consider comparing the American Express Gold Card and the Capital One Quicksilver Cash Rewards credit card to better understand which type of rewards card aligns with your needs.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Cash back credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p><a href="#">Cash back credit cards</a> let you earn and redeem cash, usually in the form of statement credits, gift cards, checks or direct deposits into your bank account. They generally fall into three categories:</p>
+      <ul>
+        <li><a href="#">Flat-rate cash back cards:</a> These cards offer a high rewards rate on general purchases — usually between 1.5% and 2% cash back. They’re a good fit for people who want a simple way to earn generous rewards.</li>
+        <br>
+        <li><a href="#">Tiered bonus category cash back cards:</a> These cards offer a high rewards rate — usually between 2% and 6% cash back — in specific spending categories, like dining, gas or groceries. They’re best suited to people who spend a lot in particular bonus categories.</li>
+        <br>
+        <li><a href="#">Rotating bonus category cash back cards:</a> These cards often offer 5% cash back up to a certain spending limit in a variety of bonus categories that rotate each quarter. They’re a bit more high maintenance than flat-rate or tired bonus category cash back cards, but these cards can be great for maximizing rewards.</li>
+      </ul>
+      <p>There’s no shortage of choice regarding cash back cards, and they won’t all be right for you. If you aren’t sure where to start, consider comparing the Wells Fargo Active Cash card and the Blue Cash Everyday card from American Express. The Active Cash is an excellent example of a solid flat-rate card, while the Blue Cash Everyday is a rewarding tiered cash back card. If you can decide between the two, you may be able to determine which cash back program works best for you and whether you should consider a rotating category cash back card to fill in any gaps.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Travel credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p><a href="#">Travel credit cards</a> let you earn points or miles to redeem for future travel bookings. They often tout additional travel benefits, like annual credits, complimentary lounge access, no foreign transaction fees, airline or hotel upgrades and supplemental travel insurance. As with cash back cards, there are several types of travel rewards credit cards.</p>
+      <ul>
+        <li><a href="#">General-purpose travel credit cards:</a> Top travel cards earn points or miles that aren’t tied to specific airlines or hotels – usually 1.5X to 2X rewards on general purchases or 2X to 10X rewards in specific bonus categories. You can redeem these rewards for various travel purchases, including airfare, hotel stays, car rentals, travel experiences or vacation packages. They’re best for travelers who want the flexibility to earn rewards with various airline and hotel brands, and don’t mind transferring rewards between travel partners to get the most value for their points.</li>
+        <br>
+        <li><a href="#">Airline credit cards: </a> These cards let you earn miles and airline-specific perks you won’t find with general-purpose travel cards, including free checked bags, priority boarding and seat upgrades. Airline credit cards are a good fit for people who fly with the same carrier several times a year.</li>
+        <br>
+        <li><a href="#">Hotel credit cards:</a> These cards let you earn points and special perks at a specific hotel brand. Cardholders can earn free nights, free amenities (like in-room Wi-Fi) and room upgrades. Hotel credit cards are a good fit for people who frequently travel and stay at the same hotel chain several times a year.</li>
+      </ul>
+      <p>Choosing a travel card can be overwhelming, but a good place to begin your search will be comparing a general travel rewards card with a branded travel card partnered with the airline or the hotel you travel most frequently with. The branded card will vary by user, but if you look at how a card like the Chase Sapphire Preferred card compares to your preferred airline or hotel card, you might find you value flexibility more than niche extras — or vice versa.</p>
+    
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Credit-building credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>You may have heard that getting a credit card is one of the <a href="#">best ways to build credit</a>. That’s because there are credit cards designed specifically to help people with no, fair or even bad credit do just that.</p>
+      <ul>
+        <li>
+          <a href="#">Secured credit cards:</a> These cards require applicants to put down an upfront refundable deposit (typically between $200 to $2,500), which serves as the card’s credit limit. They’re a good option for people with bad credit or no credit who can’t qualify for a traditional, unsecured credit card.
+        </li>
+        <br>
+        <li>
+          <a href="#">Student credit cards:</a> These cards are geared toward students and recent graduates. They’re more accessible than traditional credit cards and are typically unsecured, so applicants don’t need a long credit history or security deposit to obtain one. Student cards also usually feature the best rewards rates and lowest APRs and fees compared to other credit-building cards, so they’re a great <a href="#">first credit card option</a>.
+        </li>
+        <br>
+        <li>
+          These are beginner-friendly cards geared toward credit users who would have trouble qualifying for traditional credit cards. Student cards and secured cards fall under this umbrella, but they can also include unsecured cards for people with:
+          <ul>
+            <br> 
+            <li>
+              <a href="#">No credit: </a>These cards are a good choice if you have no credit history. Some of these cards offer rewards, but watch out for fees and high purchase APRs.
+            </li>
+            <br>
+            <li>
+              <a href="#">Bad credit: </a> You can find a card that accepts bad credit with no annual fee, but many of these cards have one-off fees that you need to watch out for. The regular APR will almost certainly be high, although some offer rewards.
+            </li>
+            <br>
+            <li>
+              <a href="#">Fair credit: </a> If you are trying to improve your credit into the good or excellent category, a card that accepts fair or average credit is a good choice. There may be an annual fee, the APR may be somewhat high, and a 0% intro APR is unlikely. However, these cards typically offer the best reward rates and benefits if you’re building credit and aren’t a student.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
+
+  
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Business credit cards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p><a href="#">Business credit cards</a> are designed for entrepreneurs, small-business owners, gig workers and freelancers. When it comes to <a href="#">business credit cards versus personal cards</a>, business cards aren’t required to offer the same legal protections found with consumer cards. However, business cards set themselves apart with rewards in popular business purchases, potentially higher credit limits (or no pre-set spending limits), expense tracking tools and other features that could be valuable for managing your business.</p>
+      <p>You’ll want to find a business card with rewards rates that align with your business expenses. Sometimes, the best choice may be a flat-rate rewards card like the American Express Blue Business Cash Card. To explore tiered category rewards in specific categories, look at a card like the <a href="#">Chase Ink Business Cash® Credit Card</a>. </p>
+    </div>
+  </div>
+</div>
+  <br>
+
+
+  <div class="rest-of-article">
+    <h2 id="how-credit-cards-work-section" class="section-offset">How do credit cards work?</h2>
+    <p>In simple terms, credit cards are financial products that allow you to borrow money (usually) without collateral. Essentially, this is <a href="#">how credit cards work:</a></p>
+    <ul>
+      <li>When you want to make a purchase, you present your credit card or account number to the merchant who will then run the transaction.</li>
+      <br>
+      <li>You’ll receive a bill each month, by email or online, for all of your purchase charges and any interest charges.</li>
+      <br>
+      <li>If you don’t carry a balance month to month, then you don’t pay interest. Carry a balance, and the interest starts accumulating.</li>
+    </ul>
+    <p>Credit cards are for short-term borrowing. If you plan on borrowing long term, a <a href="#">personal loan</a> would be a better fit. A <a href="#">credit card APR</a> is much steeper and may lead to hundreds — or even thousands — of dollars in interest charges if you carry a balance long term, especially if you only pay the minimum each month. However, there are ways to avoid paying any interest and ways to make credit cards benefit your whole financial picture.</p>
+
+
+    <br> 
+    <h2>How do credit card rewards work?</h2>
+    <p>Credit card rewards come in many forms but generally fall into one of three categories: cash back, points or miles. Cash back is the most straightforward since you earn a percentage of your total spending back based on your card’s rewards rate. For example, a card that earns 5% cash back on groceries would earn $5 back on $100 in grocery purchases. You’ll typically be able to redeem cash rewards as statement credits, direct deposits, mailed checks or gift cards.</p>
+    <p>Points and miles usually work the same way, but your redemption options and the value of your rewards may differ depending on the rewards program. For example, if a card offers 5X points on dining, you’ll earn 500 points or miles on a $100 purchase, but you may get the best value for your points when you redeem them in a specific way, such as for travel (a card may earn points worth 1.5 cents per dollar when you redeem for travel, but only 0.5 cents per point when you opt for cash back).</p>
+    <p>Although every rewards program works differently, you should generally <a href="#">choose a card that earns</a>:</p>  
+
+    <ul>
+      <li><strong>Cash Back</strong> to keep things simple and save on your everyday expenses.</li>
+      <li><strong>Travel miles</strong> if you fly or stay in hotels frequently.</li>
+      <li><strong>Reward Points</strong> for flexibility to redeem rewards as either cash back or travel.</li>
+    </ul>
+
+    <br>
+    <h2>How do credit scores work?</h2>
+    <p>Issuers will evaluate your credit application by reviewing your credit score to determine your creditworthiness and assess risk based on your previous credit history. Your credit score is shaped by a wide range of factors. These factors include your on-time payment history, credit utilization ratio, the age of your oldest line of credit and number of open accounts. More recently, some credit scores even <a href="#">factor in your rental payment history</a>, which can be a huge boon to your overall credit profile.</p>
+    <p>The most commonly used credit score is the FICO score. This three-digit number is based on your credit history and ranges from 300 to 850. VantageScore, created by Equifax, Experian and TransUnion, is another widely used indicator of creditworthiness and uses a similar range to FICO. In both cases, the credit issuer operates under the assumption that those with a higher credit score pose less risk.</p>
+    <p>FICO and VantageScore group credit scores within the following ranges:</p>
+
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th>FICO Score ranges</th>
+          <th>VantageScore ranges</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>800 to 850<br><strong>Exceptional</strong></td>
+          <td>781 to 850<br><strong>Excellent</strong></td>
+        </tr>
+        <tr>
+          <td>740 to 799<br><strong>Very good</strong></td>
+          <td>661 to 780<br><strong>Good</strong></td>
+        </tr>
+        <tr>
+          <td>670 to 739<br><strong>Good</strong></td>
+          <td>601 to 660<br><strong>Fair</strong></td>
+        </tr>
+        <tr>
+          <td>580 to 669<br><strong>Fair</strong></td>
+          <td>500 to 600<br><strong>Poor</strong></td>
+        </tr>
+        <tr>
+          <td>300 to 579<br><strong>Very poor</strong></td>
+          <td>300 to 499<br><strong>Very poor</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <br>
+    <p>Naturally, a <a href="#">”good” credit score or higher</a> will net you the best credit card approval odds, interest rates and credit limit.</p>
+
+    <p>Under the Fair Credit Reporting Act, you can <a href="#">request your credit score for free</a> once every year. It’s a good idea to know your score and review your credit report to look for mistakes, which happen more than you might think. An error on your credit report can drag down your score and prevent you from being approved for credit cards, loans, apartments and more. If you do find a mistake, you can dispute it and possibly <a href="#">have the error removed from your credit report</a>.</p>
+    
+    <br>
+    <h2>How does credit card interest work?</h2>
+    <p>Credit card interest is the fee financial institutions charge you to borrow money. It’s listed as an annual percentage rate (APR) on your credit card statement or in your card’s terms and conditions. There are various <a href="#">credit card interest charges</a>, such as purchase APR, cash advance or penalty APR, but it’s purchase APR you typically encounter the most.</p>
+
+    <ul>
+      <li><strong style="color: black;">Your issuer determines your interest rate.</strong>  You will often see a range of interest rates listed with a credit card based on the prime rate, which is set by the <a href="#">Federal Reserve</a>, but your exact rate is determined by the card issuer. Your creditworthiness is the main determining factor, and if you fall into a good or excellent credit rating, you will qualify for a lower interest rate compared to people with fair or bad credit.</li>
+      <br>
+      <li><strong style="color: black;">Interest is added to any unpaid balance.</strong>  Interest is calculated by what you owe at the end of your billing cycle, including your unpaid balance from the previous cycle. Issuers typically calculate the credit card interest owed using a daily periodic rate, which is multiplied by your average daily balance and the number of days in your billing period.</li>
+      <br>
+      <li><strong style="color: black;">You can avoid paying interest.</strong>  There are two ways to avoid racking up interest if you can’t pay off your balance before your payment due date. The first is to take advantage of the <a href="#">grace period</a> found with most credit cards. These periods give you a certain amount of time (typically at least 21 days) to make purchases with your card and pay them off without dealing with interest charges. Another way to avoid paying interest is to take advantage of cards offering a 0% introductory APR on purchases or balance transfers.</li>
+    </ul>
+
+
+    <br>
+
+    <h2 id="pros-cons-of-credit-cards-section" class="section-offset">Pros and cons of credit cards</h2>
+    <p>When used responsibly, a credit card gives you substantial advantages, such as the ability to earn rewards, handle emergencies and build credit. Here are some of the most useful <a href="#">benefits of using a credit card</a>, as well as some potential drawbacks of having a credit card.</p>
+    <br>
+    <h3>Pros</h3>
+    <ul>
+      <li><strong style="color: black;">Credit building.</strong> Using a credit card responsibly can help you build credit since your card issuer will report your transaction activity to the three credit bureaus.</li>
+      <br>
+      <li><strong style="color: black;">Earning rewards.</strong> You can earn cash back, points or miles for your spending, potentially earning hundreds of dollars on purchases you would have made anyway.</li>
+      <br>
+      <li><strong style="color: black;">Access to card membership perks.</strong> Certain credit cards come with discounts, purchase protections, complimentary services or memberships. Plus, your credit card may provide more peace of mind next time you travel with benefits such as baggage delay insurance, rental car collision coverage or trip cancellation and interruption insurance.</li>
+      <br>
+      <li><strong style="color: black;">Protection against fraud.</strong> Credit cards are far more secure than debit cards since they are not tied to your bank account. Many credit cards include some form of <a href="#">fraud protection</a>, so if your card is stolen and someone makes large transactions with it, you will not be held liable. Cardholders are covered under the <a href="#">Fair Credit Building Act</a> (FCBA) in the case of fraudulent credit card transactions, so if you fear your card has been lost or stolen, or if you notice strange charges, your credit card issuer will most likely cancel your card and cover the fraudulent charges.</li>
+      <br>
+      <li><strong style="color: black;">Pay off purchases over time.</strong> Credit cards also allow you to make a purchase and repay the balance at a later date, which could come in handy if you have any unexpected expenses arise. However, it’s wise to pay off your purchases before the end of your billing cycle since accruing interest can snowball into a costly problem.</li>
+    </ul>
+
+  <br>
+  <h3>Cons</h3>
+  <ul>
+    <li><strong style="color: black;">Damaging your credit.</strong> Although properly using a credit card is one of the best ways to <a href="#">improve your credit score</a>, you can seriously <a href="#">hurt your score</a> with missteps like missing credit card payments and keeping a balance over 30% of your credit limit.</li>
+    <br>
+    <li><strong style="color: black;">Taking on credit card debt.</strong> Being able to make purchases you don’t have to pay off immediately may tempt you to spend more than you can manage.</li>
+    <br>
+    <li><strong style="color: black;">Paying fees.</strong> Depending on what you want out of a credit card, paying fees may be an unavoidable part of the cardholder experience. Luxury travel cards and high-caliber rewards cards typically pose annual fees. Luckily, they usually also come with more than enough reward opportunities and valuable perks to <a href="#">make up for the fee</a>. However, make sure you’ve read your card terms carefully to dodge late and returned payment fees, foreign transaction fees, cash advance fees and other avoidable costs.</li>
+  </ul>
+
+
+  <br>
+  <h2 id="how-to-chose-credit-card" class="section-offset">How to choose a credit card</h2>
+  <p><a href="#">Finding your ideal card</a> isn’t always an easy process. Your choice of credit card should be one that fits not only your credit score but also your spending habits and financial goals.</p>
+  <p>As you narrow down your choices, we recommend asking yourself the following questions:</p>
+  <ul>
+    <li><strong style="color: black;">What’s your credit score?</strong> Card issuers primarily look at your credit score and income to determine approvals, so a big first step in choosing a credit card involves <a href="#">checking your credit</a>. Typically, the higher the score, the better the benefits and rewards.</li>
+    <br>
+    <li><strong style="color: black;">Do you tend to carry a balance?</strong> If so, a low-interest or non-rewards zero interest credit card is a better choice than a rewards credit card, given you’re likely to lose any points, miles or cash back you earn to interest.</li>
+    <br>
+    <li><strong style="color: black;">Are you currently carrying high-interest credit card debt?</strong> If so, opt for a balance transfer credit card with a long 0% introductory APR window or a waived balance transfer fee.</li>
+    <br>
+    <li><strong style="color: black;">Can you recoup an annual fee?</strong> If you charge a lot (and pay your balances in full each month), don’t necessarily forego a card with an annual fee. A premium card may be worth it since these cards tend to carry the most lucrative benefits. Big spenders are more likely to offset the cost of the annual fee with these perks and potentially pocket more value than a <a href="#">no-annual-fee rewards card</a> may offer.</li>
+    <br>
+    <li><strong style="color: black;">Are you looking to earn cash back or miles?</strong> Travel credit cards offering points or miles can be quite lucrative, but cash back cards are generally very easy to leverage, particularly when it comes time to redeem.</li>
+    <br>
+    <li><strong style="color: black;">Do you favor a certain airline, hotel or retailer?</strong> Co-branded cards tend to carry a good return on those specific purchases, plus extra perks that make them a worthwhile addition to your wallet. However, <a href="#">store credit cards</a> usually aren’t the best option for your primary credit card due to their limited flexibility.</li>
+    <br>
+    <li><strong style="color: black;">Are you looking for a sign-up bonus?</strong> These offers let you earn bonus rewards in your first year if you spend a certain amount of money in a set time frame (usually within your first three months, but six-month time frames are somewhat common). The <a href="#">best credit card sign-up bonuses</a> have a spending requirement that you can reasonably reach based on your normal spending habits.</li>
+    <br>
+    <li><strong style="color: black;">Do you already have a credit card?</strong> It’s common to carry more than one credit card, given your financial profile and goals change over time. In fact, a common way to <a href="#">maximize your credit card rewards</a> is by pairing a flat-rate card with bonus-category or travel-specific credit cards in order to cover a wide range of spending. That way, you’ll earn the most rewards possible.</li>
+  </ul>
+
+  <br>
+  <h2 id="comparing-credit-card-features" class="section-offset">How to compare credit card features</h2>
+  <p>There’s no such thing as a one-size-fits-all credit card. Each cardholder will have a unique set of needs, and it’s unlikely that one credit card will tick off every box. When determining which credit card offers the best set of features to fit your must-haves, compromise is the name of the game. If you’re hoping to land a card that comes loaded with premium frills but doesn’t charge an annual fee, you may have to choose one or the other.</p>
+  <p>When narrowing down the type of card that’s right for you, ask yourself which of the following features you hope to avoid and which you absolutely can’t do without:</p>
+
+
+
+  <div class="accordion-types-credits">
+    <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Fees</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>While avoiding credit card fees altogether is unlikely, you could keep them to a minimum with certain cards. Annual fees and foreign transaction fees are two fees that may be hard to avoid entirely, depending on the features you need and where you’ll use your card.</p>
+      <p>You may want to consider a card with no foreign transaction fees if you often travel abroad. Capital One and Discover cards usually don’t charge foreign transaction fees, and Discover cards waive several other common card fees. However, penalty APRs and late payment fees are avoidable on other cards if you use them responsibly.</p>
+      <p>There are plenty of high-quality credit cards with no annual fee. However, cards with annual fees (which usually range from around $30 to close to $700) typically offer stronger rewards rates and more valuable perks. Whether annual fees are worth it depends on how much use you’ll get from your card’s benefits based on your lifestyle and spending habits.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Interest rates</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>A card’s interest rate is one of the most critical aspects to be aware of when choosing a card. This is the rate your card issuer will charge you for borrowing from your line of credit, and that rate can vary quite a bit based on your credit score and other factors.</p>
+      <p>The <a href="#">current average credit card APR</a> is quite high – around 20 percent variable – but your card’s APR could run much higher or lower based on your credit history. A good interest rate is often at least three to four percentage points below average.</p>
+      <p>You should prioritize your card decision based on your habits. Regarding interest rates, you should look at how reliably you’ll pay your bill each billing cycle. If you frequently pay late or miss payments, you might want to prioritize a low-interest card in your search.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Benefits</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>Credit cards often come with handy benefits for cardmembers, such as extended purchase warranties, airport lounge access, travel insurance and discounts on services or at retailers. Premium rewards cards generally offer higher-value benefits.</p>
+      <p>Cash back cards typically don’t carry as many extra perks as travel cards, but some may offer annual credits or partner perks for domestic expenses like streaming services or food delivery. You’ll need to ask yourself which perks you’ll likely use and how their value compares to the cost of holding a card.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Rewards</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>Premium cards also offer a better rewards rate on purchases. When comparing credit card rewards programs, you’ll want to weigh which bonus categories and types of rewards suit your spending habits, your redemption options and how much your rewards will be worth.</p>
+      <p>To calculate a card’s yearly <a href="#">rewards value</a>:</p>
+      <ul>
+        <li>Multiply your annual spending in a given category by a card’s rewards rate in that category (for example, $5,000 in annual grocery spending x 5 points per dollar = 25,000 points).</li>
+        <br>
+        <li>Multiply that total by the card’s rewards redemption value (for example, 15,000 points x 1 cent per point in redemption value = $250 value).</li>
+        <br>
+        <li>Subtract the annual fee (for example, $250 value – $95 annual fee = $155 total earnings).</li>
+      </ul>
+
+      <p>If you’re not sure what your points are worth, check out Bankrate’s latest <a href="#">point and mile valuations</a>.</p>
+    </div>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Introductory Bonus</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>Credit cards offer hefty introductory bonuses, also known as welcome or sign-up bonuses, to new cardholders. These bonuses are often given in the form of points or cash after the new cardholder spends a certain dollar amount within a given period of time.</p>
+      <p>Understanding a typical bonus value and spending requirement is helpful when measuring welcome offers. No-annual-fee rewards cards usually offer around a $200 to $250 value after you spend $500 to $1,000 within your first three months. Premium card welcome offers often deliver $500 to $800 in value after you spend $4,000 to $6,000, and business cards sometimes feature even bigger bonus values and spending requirements.</p>
+      <p>Choosing a card based on its welcome offer isn’t always wise because this is only short-term value. But if the sign-up bonus is your deciding factor, choose the card with the welcome offer you will most likely obtain with normal spending.</p>
+      <p style="font-style: italic;"><strong style="color: black;">Tip: </strong>To help make your decision, check out our <a href="#">compare credit cards</a> tool to find the card that is best for you.</p>
+    </div>
+  </div>
+  </div>
+
+  <h2 id="how-to-apply" class="section-offset">How to apply for a credit card</h2>
+  <h3>Check your credit score</h3>
+  <p>Before you apply for a credit card, you need to know where your credit stands and which credit cards you qualify for. A quick glance over your credit report will also help you spot any errors or potential hurdles and give you an opportunity to correct them before you apply.</p>
+  <p>You can access your credit for free at <a href="#">AnnualCreditReport.com</a>, or visit the <a href="#">FICO® Score website</a> for more info on where to view your score.</p>
+  <br>
+  <h3>Find a credit card that matches your needs</h3>
+  <p>Once you have a sense of the type of cards available to you based on your credit score, it becomes easier to narrow down the search. The card you choose should match your spending habits, budget, and financial goals. For example, is there a chance you may need to carry a balance from time to time? Will you use rewards primarily for travel or would a more flexible rewards card suit you best?</p>
+  <p>Once you’ve determined exactly what it is you’re looking for in a credit card, it’s time to apply.</p>
+  <br>
+  <h3>Apply</h3>
+  <p>There are a number of ways to <a href="#">apply for a credit card.</a> The application process is fairly standard, as you can apply by mail or online directly through the issuer’s site. You can also apply through your financial institution if you like the card’s offerings. Chances are you’ll receive more favorable terms as an existing client. Assuming your account history has remained relatively unblemished, your bank may be willing to approve you for cards you may not be able to get elsewhere.</p>
+  <p>When applying, you’ll be asked to provide basic personal information such as name, address, SSN and annual income as well as a list of current financial obligations such as your monthly housing costs or auto loan payments. When calculating your income, you may include money earned outside of work such as any government benefits or passive income.</p>
+  <br>
+  <h3>Receive a decision</h3>
+  <p>In many cases, your online application is processed right then and there, giving you an answer in a matter of seconds. Once approved, your new card will typically be mailed out to you within a week or two. Other times, the process may take a bit longer and you may receive a later decision by email, snail mail, or telephone.</p>
+  <br>
+  <h3>What happens if your credit card application is denied?</h3>
+  <p>Card issuers raised the bar for credit card approval during the pandemic and have kept the approval requirements tight as many Americans continue to struggle financially due to inflation. This has <a href="#">resulted in a decline in overall credit card ownership</a>. If your credit card application has been rejected, the issuer must provide you with an explanation for its decision, which is usually sent by email or sometimes snail mail.</p>
+  <p>There are a number of reasons why an issuer might choose to reject an application, here are a few:</p>
+  <ul>
+    <li><strong style="color: black;">Your credit score is too low.</strong> Credit cards come with an estimated minimum credit score. If your credit score falls below the required minimum, then it’s likely that you will be denied. You can sometimes check if you’re pre-approved for certain cards on the issuer’s website or you can use <a href="#">Creditcards.com’s CardMatch™ tool</a> which helps match you with personalized card offers based on your credit profile.</li>
+    <br>
+    <li><strong style="color: black;">Unreliable proof of income.</strong> If you fail to report stable or regular income in your application, the credit card issuer may ask for proof of income or deny your application. You can <a href="#">get a credit card without a job</a>, but issuers will look to see that you have a reliable way to pay back the money you borrow.</li>
+    <br>
+    <li><strong style="color: black;">You have errors on your credit report.</strong> Errors on your credit report, like unauthorized accounts, duplicate accounts, incorrect balances, or the wrong personal information like an address or misspelling can hurt your chances of approval.</li>
+    <br>
+    <li><strong style="color: black;">You’re carrying too much debt.</strong> If you already hold a credit card that you carry a balance on month-to-month or have loan accounts open which you have not made frequent payments on, then you may be denied when you apply for a new credit card because of excessive debt. Issuers will approve applications from potential borrowers who they are confident will pay their credit card bill on time.</li>
+    <br>
+    <li><strong style="color: black;">Multiple credit applications.</strong> If you have applied for several credit cards in a short period of time then an issuer will likely deny your application because they view this as risky behavior.</li>
+  </ul>
+  <br>
+  <p>If a rejection takes you by surprise, you can appeal the decision by calling the issuer’s <a href="#">reconsideration line</a>. There you can make your case to an agent and address any concerns they may have about your credit profile. There’s no guarantee that they’ll reverse the decision but it’s worth a shot for those who feel they are a good candidate for the card. If you do plan to reach out to the issuer, it’s best to call within a few days of the rejection and have a copy of your credit report handy for quick reference.</p>
+  <p>Applying for a credit card results in what is known as a hard pull on your credit, which temporarily dings your score each time. For that reason, you don’t want to apply for another card immediately after you’ve been denied. Issuers will interpret this as risky behavior.</p>
+  <br>
+  <h3 id="our-methodology" class="section-offset">How we picked the best credit cards</h3>
+  <p>Different types of credit cards are designed to help you achieve different financial goals. As a result, comparing cards across categories can be difficult. The best rewards credit card, for instance, will be characterized by a solid base rewards program, generous sign-up bonus and additional benefits. Meanwhile, the best balance transfer credit card would depend on the length of its balance transfer offer, its balance transfer fee and what its APR might be once the balance transfer expires. Having said that, we picked the best credit cards in our database by considering the following criteria.</p>
+  <ul>
+    <li><strong style="color: black;">Standout terms in the card’s category:</strong> We assessed whether a card’s terms and conditions were competitive when stacked against other cards in its respective category. For instance, for a rewards card, we looked at its rate of return on spending and evaluated whether that return was competitive, compared to other cards in the rewards category.</li>
+    <br>
+    <li><strong style="color: black;">Reasonable costs:</strong> We looked at the major costs associated with most credit cards (purchase APR, balance transfer APR, penalty APR, annual fee, foreign transaction fees, etc.) to determine if a card’s offer was competitive in its category.</li>
+    <br>
+    <li><strong style="color: black;">Overall value:</strong> If a card does carry certain fees, could those fees be justified by its other benefits? For instance, could you recoup an annual fee via the card’s rewards program? Could you still save on a balance transfer offer paying the balance transfer fee if you paid your balance off in the introductory 0% interest period?</li>
+  </ul>
+  <p>Remember, the right credit card for you will vary, depending on your spending profile and financial goals.</p>
+  <br>
+  <h3 id="more-info-credit-cards" class="section-offset">More information on credit cards</h3>
+  <p>Check out our expert guides below for more information to help you find the best credit credit cards for your needs. Plus, we’ve included a few extra CreditCards.com resources so you can effectively evaluate your options and make the most informed choice.</p>
+  <p style="color: rgb(0, 5, 51);">Credit card guides</p>
+  <ul>
+    <li><a href="#">How to choose a credit card</a></li>
+    <br>
+    <li><a href="#">Types of credit cards compared</a></li>
+    <br>
+    <li><a href="#">What you should know about credit cards</a></li>
+    <br>
+    <li><a href="#">When is a credit card annual fee worth it?</a></li>
+    <br>
+    <li><a href="#">What credit score do you need for a credit card?</a></li>
+    <br>
+    <li><a href="#">A beginner’s guide to points and miles</a></li>
+    <br>
+    <li><a href="#">How to maximize credit card rewards</a></li>
+    <br>
+    <li><a href="#">The average credit card balance – and how to pay off your debt</a></li>
+    <br>
+    <li><a href="#">Can a credit card help you beat inflation?</a></li>
+  </ul>
+  <br>
+  <p style="color: rgb(0, 5, 51);">Credit card resources</p>
+  <ul>
+    <li><a href="#">CardMatch™</a></li>
+    <br>
+    <li><a href="#">The Credit Card Comparison tool</a></li>
+    <br>
+    <li><a href="#">Credit card calculators</a></li>
+    <br>
+    <li><a href="#">Credit card reviews</a></li>
+    <br>
+    <li><a href="#">Credit card advice</a></li>
+    <br>
+    <li><a href="#">Credit card news</a></li>
+  </ul>
+
+  </div>
+
+  <br>
+
+  <h2 id="frequently-asked-questions" class="section-offset">Frequently asked questions</h2>
+
+  <div class="accordion-types-credits">
+    <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What is the best credit card?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>There is no single best credit card, but the best credit card for you depends on factors like your spending habits, financial needs and your credit profile. Our <a href="#">“How to choose a credit card”</a> guide above can help narrow down your search, but you can save some time by starting with our <a href="#">CardMatch tool</a> for a personalized list of credit card recommendations and exclusive offers.</p>
+      <p>However, credit cards aren’t created equally – some cards can certainly be stronger than others in their category. You can learn more about these exceptional credit cards in our <a href="#">“Editor’s picks”</a> above. The best credit cards on the market come and go as new cards debut and factors like welcome offers and card features change, but our partners at Bankrate bestow many of our consistently top-rated cards with a Bankrate Award. You can check out the <a href="#">2023 Bankrate Award winners</a> to help you find the right card for your wallet.</p>
+    </div>
+  </div>
+
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>How many credit cards should you have?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>The <a href="#">number of credit cards you should have</a> depends on your personal needs and spending habits. You may want to stick to one credit card if you’re new to credit, rebuilding your credit score or you just prefer a standalone card to reward all your expenses. <a href="#">Consolidating your balances</a> to a single balance transfer card may also be helpful if you’re trying to pay off your credit card debt.</p>
+      <p>On the other hand, you’ll likely want multiple credit cards if you want to maximize your value with access to a variety of bonus reward categories, additional features and redemption options. For example, one of the most common card combinations is a card with bonus categories that rewards your biggest expenses and a flat-rate rewards card to earn rewards on all your other spending. If you prefer cash back, stacking up several cards for a range of categories is one of the best ways to maximize your credit cards’ value.</p>
+      <p>However, frequent travelers may want multiple cards to shore up their travel perks and leverage the most valuable redemption options for their travel plans. For instance, <a href="#">pairing Chase cash back cards with the Sapphire Preferred</a> – or another Chase Ultimate Rewards card – allows you to receive more rewards value toward Chase travel redemptions and the <a href="#">right Chase transfer partner</a>.</p>
+      <p>Similarly, traveling often with your favorite airline or hotel may justify adding a co-branded rewards card to your current roster. A brand-specific hotel or airline card could sprinkle additional reward and loyalty perk value onto your rewards card strategy, and smooth out kinks in your travel with features like airport lounge access, complimentary hotel elite status and more.</p>
+      <p><strong style="color: black;">Learn more: </strong><a href="#">Best credit card combinations for everyday spending</a></p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What credit score do you need to get a credit card</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>There are a range of <a href="#">credit cards built for each credit score level</a>. Balance transfer credit cards and popular rewards cards often require <a href="#">good to excellent credit</a> – a FICO score of 670 or higher, or a VantageScore of 660 or higher. However, there are plenty of quality credit cards you can get with a fair credit score or lower. In fact, you could even qualify for some <a href="#">credit cards if you have no credit history</a>, such as secured credit cards or student credit cards (if you’re enrolled in college)</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What credit cards are easiest to get?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>The easiest credit cards to get are starter credit cards like secured and student cards, which don’t require a particular credit score to be eligible. To make the application process even easier, there are several <a href="#">instant approval cards</a> available at each credit level that will let you know whether you’re likely to be approved immediately after applying.</p>
+    </div>
+  </div>
+
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What is the best credit card company?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>Credit card companies consist of <a href="#">credit card networks</a> and <a href="#">credit card issuers</a>. Credit card networks support their branded cards with partner merchants and process transactions made with them. There are four major credit card networks: Visa, Mastercard, American Express and Discover. Visa and Mastercard are the two largest networks and have the highest acceptance rates worldwide, although cards on all four networks are accepted by a majority of U.S. merchants. Discover and American Express are smaller networks but they issue credit cards as well. Based on the <a href="#">latest J.D. Power Credit Card satisfaction survey</a>, American Express is the best credit card company for customer service, but Discover usually ranks in first or second place as well.</p>
+      <p>Credit card issuers provide the actual credit cards and manage your credit card account. Popular credit card issuers (besides Amex and Discover) include Chase, Capital One, Citi, Wells Fargo and Bank of America, for example. The best card issuer is the issuer that provides the cards that best support your spending habits with the rewards and features you’re interested in. For instance, Chase credit cards are some of the best for earning rewards and pairing multiple cards, Capital One focuses on streamlined rewards programs and Discover is known for cards with low rates and fees.</p>
+      <p>In terms of credit card satisfaction, J.D. Power’s 2022 survey ranked Amex, Discover and Bank of America as above average (in that respective order). Chase and Capital One earned almost identical scores and round out the survey’s top five issuers.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="before-footer">
+    <!-- About the Author -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/author.png" alt="Garrett Yarbrough" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Author</h3>
+          <h4 class="profile-name">Garrett Yarbrough</h4>
+        </div>
+      </div>
+      <p>Garrett Yarbrough is a staff writer for CreditCards.com, specializing in product news and recommendations. He strives to make navigating credit cards, earning rewards, and credit building smooth sailing for his readers.</p>
+    </div>
+  
+    <!-- About the Editor -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/editor.png" alt="Tracy Stewart" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Editor</h3>
+          <h4 class="profile-name">Tracy Stewart</h4>
+        </div>
+      </div>
+      <p>Tracy Stewart is a personal finance writer specializing in credit card loyalty programs, travel benefits, and consumer protections. He previously covered travel rewards credit cards, budget travel, and aviation news at SmarterTravel Media. His money-saving tips have appeared in the Washington Post, the Wall Street Journal, Consumer Reports, MarketWatch, Vice, People, the Zoe Report, and elsewhere.</p>
+    </div>
+  
+    <!-- About the Reviewer -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/reviewer.png" alt="Jason Steele" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Reviewer</h3>
+          <h4 class="profile-name">Jason Steele</h4>
+        </div>
+      </div>
+      <p>Jason Steele is a professional journalist and credit card expert who has been contributing to online publications since 2008. He was one of the original contributors to The Points Guy, and his work has been appearing there since 2011. He has also contributed to over 100 of the leading personal finance and travel outlets. He’s frequently interviewed and quoted by mainstream outlets on the subjects of credit cards and travel. Jason is passionate about travel rewards credit cards, which he uses to earn rewards that he can redeem for him and his family to travel around the world. Jason is also the founder and producer of CardCon, a conference for credit and credit card journalists that’s held annually.</p>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+  </div>
+  </div>
+</div>  
+  
+</div>
+
+<div id="footer-placeholder"></div>
+  <script src="/credit-cards/js/buttonComponents/bestCards.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home_page.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <title>Home Page</title>
+  <div id="header-placeholder"></div>
+</head>
+<body>
+
+  <div class="background">
+
+  <h4 class="advertisor">
+    <a id="disclosure-link" href="#">ADVERTISER DISCLOSURE</a>
+  </h4>
+  <h1 class="title">Don’t settle for any credit card.</h1>
+  <h1 class="sub-title">Find the right one.</h1>
+  <h3 class="selection">Select one of these popular card categories to get started.</h3>
+
+  <!-- Modal -->
+  <div id="disclosure-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn" class="close-btn">&times;</span>
+      <div class="modal-header">Advertiser Disclosure</div>
+      <div class="modal-body">
+        <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+        <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="ok-btn" class="ok-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="button-container">
+  <button class="button" onclick="window.location.href='/credit-cards/html/button-components/component-best-cards/best-cards.html';">
+    <img src="../images/buttons/best-card-btn.png">
+    Best Cards
+  
+  </button>
+
+  <button class="button" onclick="window.location.href='../html/button-components/cero-apr.html';">
+    <img src="../images/buttons/0-APR-btn.png">
+    0% APR
+  </button>
+
+  <button class="button" onclick="window.location.href='../html/button-components/balance-transfer.html';">
+    <img src="../images/buttons/balance-transfer-btn.png">
+    Balance Transfer
+  </button>
+  </div>
+
+  <br>
+  
+  <div class="button-container">
+  <button class="button" onclick="window.location.href='../html/button-components/cash-back.html';">
+    <img src="../images/buttons/cash-back-btn.png">
+    Cash Back
+  </button>
+
+  <button class="button" onclick="window.location.href='../html/button-components/rewards.html';">
+    <img src="../images/buttons/rewards-btn.png">
+    Rewards
+  </button>
+
+  <button class="button" onclick="window.location.href='../html/button-components/card-match.html';">
+    <img src="../images/buttons/card-match-btn.png">
+    CardMatch
+  </button>
+  </div>
+
+  <div class="images-container">
+  <h4>As seen on: </h4>
+  <img src="../images/AsSeenOnImg/WallStreet.png">
+  <img src="../images/AsSeenOnImg/Bloomberg.png">
+  <img src="../images/AsSeenOnImg/NewYorkTimes.png">
+  <img src="../images/AsSeenOnImg/Entrepeneur.png">
+  <img src="../images/AsSeenOnImg/Fox.png">
+  <img src="../images/AsSeenOnImg/CR.png">
+  </div>
+  </div>
+
+  <h1 class="title">The tools you need. The advice you <br>want. A team you can trust.</h1>
+  <br>
+  <br> 
+  <!-- First Section: A top-notch team of experts -->
+<div class="second-part-container">
+  <div class="left-content">
+    <img src="../images/second-small-icons/team-first-icon.png" alt="chat" class="first-icon">
+    <h2 class="title-second">A top-notch team of experts</h2>
+    <p class="p-second-part">With more than 17 years in the industry, we know credit cards, and our experts are here to share their knowledge with you. Our content is fact-checked and reviewed by top experts in the field so you know you can count on us for helpful and accurate advice.</p>
+    <a href="#">Learn more about us -></a>
+  </div>
+  <div class="right-content">
+    <img src="../images/second-small-icons/image-first.png" alt="group of people">
+  </div>
+</div>
+
+<!-- Second Section: Card listings curated for you -->
+<div class="second-part-container">
+  <!-- Left content (Image) -->
+  <div class="second-icon-left">
+    <img src="../images/second-small-icons/image-second.png" alt="wheelchair">
+  </div>
+
+  <!-- Right content (Text + Image) -->
+  <div class="right-content-second">
+    <img src="../images/second-small-icons/card-second-icon.png" alt="check" class="first-icon">
+    <h2 class="title-second">Card listings curated for you.</h2>
+    <p class="p-second-part">
+      Sifting through hundreds of cards in search of the perfect one? You don't have time for that. Leave it to us, and we’ll find the best pre-qualified and special offers for you, all conveniently curated on a personalized page.
+    </p>
+    <a href="#">Check out CardMatch -></a>
+  </div>
+</div>
+
+<div class="second-part-container">
+  <div class="left-content">
+    <img src="../images/second-small-icons/calculations-third-icon.png" alt="chat" class="first-icon">
+    <h2 class="title-second">Helpful calculations</h2>
+    <p class="p-second-part">If math isn't your strong suit, we can help you find <br>calculations with almost zero effort. Just type in a few details<br>  and we'll calculate how long it'll take to pay off your card, or<br> how much a balance transfer could help you save.</p>
+    <a href="#">Discover savings now -></a>
+  </div>
+  <div class="right-content-third">
+    <img src="../images/second-small-icons/image-third.png" alt="man with cat">
+  </div>
+</div>
+
+<h1 class="title-reviews">Read our top card reviews</h1>
+
+<div class="images-reviews">
+  <button class="button-reviews" onclick="showReviews('cashBack', event)">Cash Back</button>
+  <button class="button-reviews" onclick="showReviews('balanceTransfer', event)">Balance Transfer</button>
+  <button class="button-reviews" onclick="showReviews('apr', event)">0% APR</button>
+  <button class="button-reviews" onclick="showReviews('rewards', event)">Rewards</button>
+  <button class="button-reviews" onclick="showReviews('travel', event)">Travel</button>
+</div>
+
+
+<!-- Cash Back section visible initially -->
+<div id="cashBack" class="review-container review-section active">
+  <div class="review-card large-card">
+    <div class="review-background">
+      <img src="../images/CreditCardImg/WellsFargoActiveCash.png" alt="Wells Fargo" class="review-image">
+    </div>
+    <p class="review-cards-title">Wells Fargo Active Cash® Card</p>
+    <div class="rating">
+      <span class="rating-label">Our rating:</span>
+      <span class="stars">
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star half">&#9733;</span> <!-- Half Star -->
+      </span>
+      <span class="rating-number">4.1</span>
+      <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+    </div>
+    <p><a href="#">Read our review</a></p>
+  </div>
+
+  <div class="review-column">
+    <!-- Small card -->
+    <div class="review-card small-card">
+      <img src="../images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Card" class="review-image">
+      <div class="small-card-text">
+        <p class="review-cards-title">Citi Custom Cash® Card</p>
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star half">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.5</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+        <p class="card-link"><a href="#">Read our review</a></p>
+      </div>
+    </div>
+
+    <!-- Small card -->
+    <div class="review-card small-card">
+      <img src="../images/CreditCardImg/ChaseFreedom.png" alt="Chase Freedom Card" class="review-image">
+      <div class="small-card-text">
+        <p class="review-cards-title">Chase Freedom Unlimited®</p>
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.5</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+        <p class="card-link"><a href="#">Read our review</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Other sections are hidden initially -->
+<div id="balanceTransfer" class="review-container review-section">
+  <div class="review-card large-card">
+    <div class="review-background">
+      <img src="../images/CreditCardImg/WellsFargoActiveCash.png" alt="Wells Fargo" class="review-image">
+    </div>
+    <p class="review-cards-title">Wells Fargo Active Cash® Card</p>
+    <div class="rating">
+      <span class="rating-label">Our rating:</span>
+      <span class="stars">
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star half">&#9733;</span> <!-- Half Star -->
+      </span>
+      <span class="rating-number">4.1</span>
+      <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+    </div>
+    <p><a href="#">Read our review</a></p>
+  </div>
+</div>
+
+
+<div id="apr" class="review-container review-section">
+  <div class="review-card large-card">
+    <div class="review-background">
+      <img src="../images/CreditCardImg/DiscoverIt.png" alt="Discover it" class="review-image">
+    </div>
+    <p class="review-cards-title">Discover it® Cash Back</p>
+    <div class="rating">
+      <span class="rating-label">Our rating:</span>
+      <span class="stars">
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star half">&#9733;</span> <!-- Half Star -->
+      </span>
+      <span class="rating-number">4.1</span>
+      <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+    </div>
+    <p><a href="#">Read our review</a></p>
+  </div> 
+  <div class="review-column">
+    <!-- Small card -->
+    <div class="review-card small-card">
+      <img src="../images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Card" class="review-image">
+      <div class="small-card-text">
+        <p class="review-cards-title">Citi Custom Cash® Card</p>
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star half">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.1</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+        <p class="card-link"><a href="#">Read our review</a></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div id="rewards" class="review-container review-section">
+  <div class="review-card large-card">
+    <div class="review-background">
+      <img src="../images/CreditCardImg/VisaCard.png" alt="Visa" class="review-image">
+    </div>
+    <p class="review-cards-title">Chase Sapphire Preferred® Card</p>
+    <div class="rating">
+      <span class="rating-label">Our rating:</span>
+      <span class="stars">
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star half">&#9733;</span> <!-- Half Star -->
+      </span>
+      <span class="rating-number">4.1</span>
+      <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+    </div>
+    <p><a href="#">Read our review</a></p>
+  </div> 
+  <div class="review-column">
+    <!-- Small card -->
+    <div class="review-card small-card">
+      <img src="../images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Card" class="review-image">
+      <div class="small-card-text">
+        <p class="review-cards-title">Citi Custom Cash® Card</p>
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star half">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.1</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div>
+        <p class="card-link"><a href="#">Read our review</a></p>
+      </div>
+    </div>
+    
+   
+      <!-- Small card -->
+      <div class="review-card small-card">
+        <img src="../images/CreditCardImg/WellsFargoActiveCash.png" alt="Wells Fargo" class="review-image">
+        <div class="small-card-text">
+          <p class="review-cards-title">Wells Fargo Active Cash® Card</p>
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star half">&#9733;</span> <!-- Half Star -->
+            </span>
+            <span class="rating-number">4.1</span>
+            <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+          </div>          <p class="card-link"><a href="#">Read our review</a></p>
+        </div>
+      </div>
+      </div>
+</div> 
+
+
+
+
+<div id="travel" class="review-container review-section">
+  <div class="review-card large-card">
+    <div class="review-background">
+      <img src="../images/CreditCardImg/VisaCard.png" alt="Visa" class="review-image">
+    </div>
+    <p class="review-cards-title">Chase Sapphire Preferred® Card</p>
+    
+    <div class="rating">
+      <span class="rating-label">Our rating:</span>
+      <span class="stars">
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Full Star -->
+        <span class="star full">&#9733;</span> <!-- Half Star -->
+      </span>
+      <span class="rating-number">4.9</span>
+      <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+    </div>    
+    <p><a href="#">Read our review</a></p>
+  </div>
+
+  <div class="review-column">
+    <!-- Small card -->
+    <div class="review-card small-card">
+      <img src="../images/CreditCardImg/CapitalOne.png" alt="Capital One" class="review-image">
+      <div class="small-card-text">
+        <p class="review-cards-title">Capital One Venture Rewards Credit Card</p>
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Full Star -->
+            <span class="star full">&#9733;</span> <!-- Half Star -->
+          </span>
+          <span class="rating-number">4.9</span>
+          <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+        </div> 
+        <p class="card-link"><a href="#">Read our review</a></p>
+      </div>
+    </div>
+    
+   
+      <!-- Small card -->
+      <div class="review-card small-card">
+        <img src="../images/CreditCardImg/PlatinumCard.png" alt="Platinum Card" class="review-image">
+        <div class="small-card-text">
+          <p class="review-cards-title">The Platinum Card® from American Express</p>
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Full Star -->
+              <span class="star full">&#9733;</span> <!-- Half Star -->
+            </span>
+            <span class="rating-number">4.8</span>
+            <span class="info-icon">&#8505;</span> <!-- Info Icon -->
+          </div> 
+          <p class="card-link"><a href="#">Read our review</a></p>
+        </div>
+      </div>
+      </div>
+</div>
+
+<div class="button-section">
+  <button id="dynamic-button" class="button-card-reviews">See all cash back card reviews</button>
+</div>
+
+
+<div class="security-section">
+  <div class="security-content">
+    <img src="../images/PriorityLogo.png" alt="Priority Logo" class="security-logo">
+    <div class="security-text">
+      <h1>Your security is our top priority</h1>
+      <p>We treat your information as we'd treat our own — with privacy and care. We do not make unsolicited phone calls and will never call you to offer services over the phone.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="footer-placeholder"></div>
+
+
+  <!-- Ensure the script is loaded at the bottom for proper DOM interaction -->
+  <script src="../js/homePage.js"></script>
+
+</body>
+
+
+</html>
+

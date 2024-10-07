@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Navigation with Icons</title>
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <!-- Include Font Awesome for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="sec-nav-bar">
+    <ul class="sec-nav-list">
+      <li class="sec-nav-item sec-selected">
+        <a href="/credit-cards/html/button-components/component-best-cards/best-cards.html" class="sec-nav-link">
+          <i class="fas fa-award"></i>
+          <span>Best Credit Cards</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-percentage"></i>
+          <span>0% APR</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-exchange-alt"></i>
+          <span>Balance Transfer</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-hand-holding-usd"></i>
+          <span>Cash Back</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-plane"></i>
+          <span>Travel</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-gift"></i>
+          <span>Rewards</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-briefcase"></i>
+          <span>Business</span>
+        </a>
+      </li>
+      <li class="sec-nav-item">
+        <a href="#" class="sec-nav-link">
+          <i class="fas fa-calendar-alt"></i>
+          <span>No Annual Fee</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    // Select all the navigation items
+  const navItems = document.querySelectorAll('.sec-nav-item');
+
+// Add click event listener to each navigation item
+  navItems.forEach(item => {
+    item.addEventListener('click', function () {
+    // Remove 'sec-selected' class from all items
+      navItems.forEach(nav => nav.classList.remove('sec-selected'));
+    
+    // Add 'sec-selected' class to the clicked item
+      this.classList.add('sec-selected');
+  });
+});
+
+  </script>
+
+</body>
+</html>
+
