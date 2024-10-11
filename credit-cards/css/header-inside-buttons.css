@@ -12,10 +12,8 @@ body {
 .sec-nav-bar {
   background-color: #f7f9fe; /* Light bluish background */
   padding: 20px 0;
-  margin-top: 80px;
+  margin-top: 0px;
   position: relative;
-  top: 0; /* Adjust this based on the height of your main header */
-  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .sec-nav-list {
@@ -29,6 +27,19 @@ body {
   text-align: center;
 }
 
+.sec-nav-item button {
+  cursor: pointer;
+  background-color: #f7f9fe; /* Light bluish background */
+  border: none;
+}
+
+
+
+
+
+
+
+
 .sec-nav-link {
   text-decoration: none;
   color: #555; /* Dark gray for text */
@@ -36,6 +47,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content vertically */
+  padding: 15px; /* Add padding to increase clickable area */
+  width: 100%; /* Make it fill the container width */
+  height: 100%; /* Make it fill the container height */
   transition: color 0.3s ease;
 }
 
@@ -47,11 +62,10 @@ body {
 
 .sec-nav-link:hover {
   color: #000; /* Change text and icon color on hover */
+  text-decoration: underline;
 }
 
-.sec-selected .sec-nav-link {
-  color: #0026ff; /* Blue color for selected link */
-}
+
 
 .sec-selected::after {
   content: "";

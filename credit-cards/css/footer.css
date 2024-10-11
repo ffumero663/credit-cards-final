@@ -48,10 +48,11 @@
   min-width: 700px;
   min-height: 40px;
   font-size: 20px;
+  margin-top: 15px;
 }
 .email-container button{
   min-width: 100px;
-  min-height: 45px;
+  min-height: 40px;
   cursor: pointer;
   background-color: #1542f8;
   border: none;

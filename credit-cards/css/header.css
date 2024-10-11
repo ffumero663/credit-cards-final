@@ -16,7 +16,7 @@
 .breadcrumb a {
   text-decoration: none;
   color: black;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .breadcrumb a:hover {
@@ -24,12 +24,12 @@
 }
 
 header {
-  position: fixed; /* Keeps the header at the top */
+  position: static; /* Keeps the header at the top */
   top: 0;
   width: 100%;
-  z-index: 1000;
   background-color: white; /* Background for the header */
   padding: 0px; /* Adjust padding for header size */
+  z-index: 1;
 }
 
 .box {
@@ -59,33 +59,43 @@ header {
 .dropdown {
   position: relative;
   display: inline-flex;
-  font-size: 19px;
+  font-size: 17px;
   margin-right: 70px;
   white-space: nowrap;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .non-dropdown {
   position: relative;
   display: inline-flex;
-  font-size: 19px;
   margin-right: 70px;
   white-space: nowrap;
   margin-top: 20px;
 
 }
 
-.dropdown::after{
-  content: "^" !important;
-  font-size: 18px;
-  margin-left: 5px;
-  transform: rotate(180deg);
-  display: inline-block;
-  vertical-align: middle; 
-  margin-bottom: 70px;
-  color: rgb(50, 110, 240);
+.non-dropdown a {
+  font-size: 17px;
+  margin-left: 10px;
+
 }
+
+.card-match-text{
+  margin-top: 25px;
+}
+
+.card-category-item{
+  display: flex;
+}
+
+.arrow-content{
+  margin-left: 5px; /* Add some space between the text and the image */
+  height: 20px; /* Adjust the height of the image if needed */
+  width: auto;
+}
+
+
 
 /* Hide dropdown content by default */
 .dropdown-content {
@@ -101,7 +111,8 @@ header {
   visibility: hidden;
   transition: visibility 0.2s, opacity 0.2s ease;
   white-space: nowrap;
-  top: 50%;
+  top: 100%;
+  margin-top: 20px;
 }
 
 /* Show dropdown on hover */
@@ -119,6 +130,8 @@ header {
   text-align: left;
 }
 
+
+
 .dropdown-content .column:last-child {
   border-right: none ;
 }
@@ -128,7 +141,7 @@ header {
   padding: 8px 0;
   text-decoration: none;
   display: block;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .dropdown-content a:hover {

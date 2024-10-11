@@ -34,7 +34,7 @@ body{
 
 .panel a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   display: block;       /* Makes the <a> fill the entire <li> container */
   padding: 10px;        /* Adds padding to make the link area larger */
   white-space: nowrap;  /* Prevents text wrapping */

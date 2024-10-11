@@ -12,71 +12,94 @@
 
   <div class="sec-nav-bar">
     <ul class="sec-nav-list">
-      <li class="sec-nav-item sec-selected">
-        <a href="/credit-cards/html/button-components/component-best-cards/best-cards.html" class="sec-nav-link">
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-best-cards/best-cards.html'" class="sec-nav-link">
           <i class="fas fa-award"></i>
           <span>Best Credit Cards</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-zero-apr/zero-apr.html'" class="sec-nav-link">
           <i class="fas fa-percentage"></i>
           <span>0% APR</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-balance-transfer/balance-transfer.html'" class="sec-nav-link">
           <i class="fas fa-exchange-alt"></i>
           <span>Balance Transfer</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='#'" class="sec-nav-link">
           <i class="fas fa-hand-holding-usd"></i>
           <span>Cash Back</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='#'" class="sec-nav-link">
           <i class="fas fa-plane"></i>
           <span>Travel</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='#'" class="sec-nav-link">
           <i class="fas fa-gift"></i>
           <span>Rewards</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='#'" class="sec-nav-link">
           <i class="fas fa-briefcase"></i>
           <span>Business</span>
-        </a>
+        </button>
       </li>
       <li class="sec-nav-item">
-        <a href="#" class="sec-nav-link">
+        <button onclick="window.location.href='#'" class="sec-nav-link">
           <i class="fas fa-calendar-alt"></i>
           <span>No Annual Fee</span>
-        </a>
+        </button>
       </li>
     </ul>
   </div>
 
   <script>
-    // Select all the navigation items
+    // Function to handle page-specific highlighting
+function setActiveLink() {
   const navItems = document.querySelectorAll('.sec-nav-item');
 
-// Add click event listener to each navigation item
+  // Get the current page URL
+  const currentPage = window.location.pathname;
+
+  // Loop through each nav item and check if its link matches the current page
   navItems.forEach(item => {
-    item.addEventListener('click', function () {
+    const link = item.querySelector('a').getAttribute('href');
+    
+    // If the current page matches the href of the item, set it as selected
+    if (currentPage.includes(link)) {
+      item.classList.add('sec-selected');
+    } else {
+      item.classList.remove('sec-selected');
+    }
+  });
+}
+
+// Set the active link when the page loads
+setActiveLink();
+
+// Add click event listeners to handle the selected state dynamically
+const navItems = document.querySelectorAll('.sec-nav-item');
+navItems.forEach(item => {
+  item.addEventListener('click', function () {
     // Remove 'sec-selected' class from all items
-      navItems.forEach(nav => nav.classList.remove('sec-selected'));
+    navItems.forEach(nav => nav.classList.remove('sec-selected'));
     
     // Add 'sec-selected' class to the clicked item
-      this.classList.add('sec-selected');
+    this.classList.add('sec-selected');
   });
 });
+
+  
 
   </script>
 

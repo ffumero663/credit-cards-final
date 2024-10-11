@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Tranfer</title>
+  <link rel="stylesheet" href="/credit-cards/css/button-components/component-balance-transfer/balance-transfer.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <div id="secondary-header"></div>
+
+  <h4 class="advertisor">
+    <a id="disclosure-link" href="#" >ADVERTISER DISCLOSURE</a>
+  </h4>
+
+  <!-- Modal -->
+  <div id="disclosure-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn" class="close-btn">&times;</span>
+      <div class="modal-header">Advertiser Disclosure</div>
+      <div class="modal-body">
+        <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+        <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="ok-btn" class="ok-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+  <div id="on-this-page-panel"></div>
+  <div>
+    <h1 id="our-top-picks-section" class="section-offset">Best Balance Transfer Credit Cards of 2024</h1>
+    <br>
+    <p>Written by: <span><a href="#">Jeanine Skowronski </a></span> | Edited by: <span><a href="#">Tracy Stewart</a></span> | Reviewed by: <span><a href="#">Sally Herigstad</a></span> | October 11, 2024</p>
+    <br>
+    <div class="how-we-choose">
+      <div class="title">
+        <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+        <h2>How we Choose</h2>
+      </div>
+      <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+
+    </div>
+    
+    <div class="see-more-text">
+      <p class="see-more-text-content">
+        There’s little doubt consumers are getting squeezed by inflation, which can make managing credit card balances 
+        even more challenging. Nearly <a href="#">three-quarters (72%) of those with credit card debt added to it</a> in 
+        the past year, according to a YouGov survey conducted for CreditCards.com at the end of 2022.
+        <br>
+        <br>
+        If you’re trying to manage your existing credit card debt or pay off a balance in full, a balance transfer 
+        credit card with a 0% or low-interest introductory period can save you plenty in interest charges. 
+        This can give you a fighting chance to work on paying down your balance.
+        <br>
+        <br>
+        Check out our picks for the best balance transfer credit cards and tips to help you with your 
+        debt repayment strategy.
+      </p>
+      <button class="see-more-btn" onclick="toggleText()">See More</button>
+    </div>
+
+    <div class="summary">
+      <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+        <img src="/credit-cards/images/ButtonComponents/plusIcon.png" alt="plus icon">
+      </button>
+      <div id="summary-text" class="hidden">
+        <h2 class="best-credit-cards-h2" >Best Credit Cards with 0% APR Offers</h2>
+        <br>
+        <ul class="ul-best-credit-cards">
+          <li><a href="#">Wells Fargo Reflect® Card: </a> Best for long intro APR on purchases and balance transfers</li>
+          <li><a href="#">Blue Cash Everyday® Card from American Express: </a> Best for grocery, gas and online rewards </li>
+          <li><a href="#">Citi Double Cash® Card: </a> Best for versatile rewards</li>
+          <li><a href="#">Wells Fargo Active Cash® Card: </a> Best for flat-rate cash rewards</li>
+          <li><a href="#">Chase Freedom Unlimited®: </a> Best for broad spending</li>
+          <li><a href="#">Blue Cash Preferred Card® from American Express: </a>Best for families</li>
+          <li><a href="#">Citi Custom Cash® Card: </a> Best for automatically maximizing rewards </li>
+          <li><a href="#">Bank of America® Customized Cash Rewards credit card: </a> Best for everyday spending </li>
+          <li><a href="#">Bank of America® Unlimited Cash Rewards credit card: </a>Best for Preferred Rewards members</li>
+          <li><a href="#">Citi® Diamond Preferred® Card: </a>Best no frills balance transfer card</li>
+          <br>
+          <h3>Additional Options: </h3>
+          <br>
+          <li>Citi Simplicity® Card: Best for intro APR + low fees</li>
+          <li>Chase Slate Edge℠: Best for staying on track</li>
+          <li>BankAmericard® credit card: Best for low interest</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div  class="card-content">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR LONG INTRO APR</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/credit-card-images-apr/Wells Fargo Reflect® Card.png" alt="Wells Fargo Reflect® Card">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star half">&#9733;</span>
+            </span>
+            <span class="rating-number">4.2</span>
+            <span class="info-icon">&#8505;</span>
+          </div>
+        </div>
+    
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Wells Fargo Reflect® Card</h2>
+          <br>
+          <p class="rewards-rate"><strong>Estimated balance transfer savings</strong></p>
+          <br>
+          <p class="rewards-rate-description">No current offer</p>
+    
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">0% Intro balance transfer APR</span>
+              <strong>0% intro APR for 21 months <br> from account opening on <br>qualifying balance transfers</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">0% Intro APR Balance Transfer Period</span>
+              <strong>0% intro APR for 21 months from<br> account opening on qualifying balance transfers</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>17.74%, 24.24%, or 29.49% Variable APR</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>740-850 (Excellent)</strong>
+            </div>
+          </div>
+    
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at Capital One's secure site</p>
+        </div>
+      </div>
+    
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare7" name="compare">
+          <label for="compare7">Add to compare</label>
+        </div>
+      </div>
+    
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR EVERYDAY SPENDING</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/CreditCardImg/Blue Cash Everyday® Card from American Express.png" alt="Blue Cash Everyday® Card from American Express">
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star half">&#9733;</span>
+            </span>
+            <span class="rating-number">4.8</span>
+            <span class="info-icon">&#8505;</span>
+          </div>
+        </div>
+
+
+        
+  
+        <!-- Card Details -->
+        <div class="card-info">
+          <h2 class="card-name">Blue Cash Everyday® Card from American Express</h2>
+          <br>
+          <p class="rewards-rate"><strong>Intro bonus</strong></p>
+          <p class="rewards-rate-description"><strong>Earn $200</strong></p>
+          <p class="rewards-rate-description">Earn a $200 statement credit after you spend $2,000 in purchases on your new Card within the first 6 months.</p>
+  
+          <div class="card-details-summary-inline">
+            <div class="detail-item">
+              <span class="detail-label">0% intro APR purchase period</span>
+              <strong>15 months</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">0% Intro APR Balance Transfer Period</span>
+              <strong>15 months</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Regular APR</span>
+              <strong>18.74% - 29.74% variable</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Recommended credit</span>
+              <strong>670-850 (Good to Excellent)</strong>
+            </div>
+          </div>
+  
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at American Express's secure site</p>
+        </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare7" name="compare">
+          <label for="compare7">Add to compare</label>
+        </div>
+      </div>
+  
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer-placeholder"></div>
+  <script src="/credit-cards/js/buttonComponents/balanceTransfer.js"></script>
+</body>
+</html>

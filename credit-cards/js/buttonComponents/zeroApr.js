@@ -4,29 +4,31 @@ fetch('/credit-cards/html/header.html')
     document.getElementById('header-placeholder').innerHTML = data;
   });
 
+
+fetch('/credit-cards/html/button-components/component-zero-apr/on-this-page.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('on-this-page-placeholder').innerHTML = data;
+  })
+
+
+fetch('/credit-cards/html/button-components/component-zero-apr/on-this-page.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('on-this-page-placeholder-two').innerHTML = data;
+  })
+
 fetch('/credit-cards/html/footer.html')
   .then(response => response.text())
   .then(data => {
-  document.getElementById('footer-placeholder').innerHTML = data;
-});
+    document.getElementById('footer-placeholder').innerHTML = data;
+  })
 
 fetch('/credit-cards/html/header-inside-buttons.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('secondary-header').innerHTML = data;
   })
-
-fetch('/credit-cards/html/button-components/component-balance-transfer/on-this-page.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('on-this-page-panel').innerHTML = data;
-  });
-
-  fetch('/credit-cards/html/button-components/component-balance-transfer/on-this-page.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('on-this-page-panel-2').innerHTML = data;
-  });
 
 
   window.onload = function() {
@@ -86,3 +88,27 @@ fetch('/credit-cards/html/button-components/component-balance-transfer/on-this-p
       button.innerHTML = 'Summary <img src="/credit-cards/images/buttonComponents/plusIcon.png" alt="plus icon">';
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const accordions = document.querySelectorAll(".accordion-item-types-credits");
+  
+    accordions.forEach(accordions => {
+      accordions.addEventListener("click", function() {
+        
+        const icon = this.querySelector(".accordion-icon-types-credits");
+        if(icon.textContent === "+"){
+          icon.textContent = "-";
+        } else {
+          icon.textContent = "+";
+        }
+  
+        const panel = this.nextElementSibling;
+        if(panel.style.display === "block"){
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      })
+    })
+  })
+
