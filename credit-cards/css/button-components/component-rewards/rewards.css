@@ -1,18 +1,20 @@
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Sofia Pro', Arial, sans-serif;
+  line-height: 1.5;
+  
 }
 
-h1, p{
-  margin-bottom: 20px;
+h3{
+  font-size: 25px;
 }
 
-#header-placeholder{
-  margin-left: 5px;
+h4{
+  font-size: 20px;
 }
 
-
-
-
+h2{
+  font-size: 30px;
+}
 
 .modal {
   display: none; 
@@ -67,6 +69,9 @@ h1, p{
   color: #000;
 }
 
+.card-content{
+  margin-left: 50px;
+}
 .ok-btn {
   background-color: #0066cc;
   color: white;
@@ -90,7 +95,6 @@ h1, p{
   font-weight: lighter;
   font-size: 0.75rem;
   color: #000533;
-
 }
 
 .container{
@@ -102,24 +106,18 @@ h1, p{
   justify-content: center ;
 }
 
-h1{
+.container h1{
   margin: 0;
-  text-align: right;
+  text-align: left;
   flex: 1;
-  margin-right: 100px;
   margin-top: 2%;
   
 }
 
-p{
-  font-weight: lighter;
-  font-size: 20px;
-  color: rgb(122, 121, 121);
-  
-}
+
 
 a{
-  text-decoration: none;
+  text-decoration: underline;
   color: #1542f8;
 }
 
@@ -177,7 +175,7 @@ a{
 .see-more-btn {
   background: none;
   border: none;
-  color: #007bff;
+  color: #1542f8;
   cursor: pointer;
   font-size: 18px;
   margin-top: 10px;
@@ -216,93 +214,19 @@ a{
 
 }
 
-#summary-text {
-  margin-top: 15px;
-  display: none; /* Initially hidden */
-}
-
-.hidden {
-  display: none; /* Class to hide the element */
-}
-
-
-
 .ul-best-credit-cards li{
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   line-height: 1.5;
 }
 
-.button-container {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping of buttons into multiple rows */
-  justify-content: center; /* Centers buttons horizontally */
-  align-items: center; /* Centers buttons vertically */
-  margin-top: 20px;
-  gap: 15px; /* Space between buttons */
-}
-
-.card-button {
-  display: flex;
-  flex-direction: column; /* Align content vertically */
-  align-items: center; /* Center the content (image and text) horizontally */
-  justify-content: center; /* Center content vertically */
-  width: 140px;
-  height: 120px;
-  background-color: white;
-  border: 1px solid rgb(198, 196, 196);
-  cursor: pointer;
-  padding: 15px; /* Padding to ensure spacing between the content and button edges */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-
-.card-button:hover {
-  transform: translateY(-5px); /* Adds a slight lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensifies shadow on hover */
-}
-
-.card-button:active,
-.card-button:focus{
-  background-color: #1542f8;
-  color: white;
-
-}
-
-.main-icon {
-  width: 50px; /* Set appropriate size for the icon */
-  height: 40px; /* Ensures the icon is well-sized */
-  margin-bottom: 10px; /* Adds space between the icon and text */
-  background-color: transparent;
-}
-
-.card-button span {
-  font-weight: lighter;
-  font-size: 14px;
-  text-align: center; /* Center the text below the icon */
-}
-
-.title-filter-cat {
-  text-align: left;
-  margin-left: 5%;
-  font-size: 14px;
+.ul-best-credit-cards h3{
+  font-size: 20px;
 }
 
 
-.hidden {
-  display: none;
-}
 
-.content-section {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 100%;
-}
-
-.card-content{
-  margin-left: 50px;
+.best-credit-cards-h2{
+  margin-top: 10px;
 }
 
 .credit-card-detail {
@@ -321,6 +245,7 @@ a{
 }
 
 .card-detail-container {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -333,24 +258,31 @@ a{
 }
 
 .card-info {
-  position: relative;
-  padding-right: 150px; /* Add padding to make space for the button */
+  position: relative; 
+  padding-right: 150px; /* Space for the button */
   width: 65%;
 }
 
 .card-name {
   margin: 0;
   text-align: left; /* Ensure card name is aligned to the left */
+  white-space: nowrap;
 }
 
 .rewards-rate {
-  font-weight: bold;
+  font-weight: lighter;
   margin-bottom: 5px;
+  color: #000533;
+  font-size: 0.875rem !important;
+  white-space: nowrap;
+
+
 }
 
 .rewards-rate-description {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 15px;
+  color: #000533;
 }
 
 .card-details-summary-inline {
@@ -364,23 +296,27 @@ a{
 .detail-item {
   display: flex;
   flex-direction: column;
-  min-width: 150px; /* Adjust as needed to ensure items fit well */
+  min-width: 350px; /* Adjust as needed to ensure items fit well */
+  font-size: 15px;
+
 }
 
 .detail-item strong {
   margin-top: 5px;
+  font-size: 15px;
 }
 
 
+
 .apply-button {
-  position: absolute; /* Position the apply button within the card-info */
-  top: 0; /* Align to the top */
-  right: 0; /* Align to the right */
+  position: absolute;
+  top: 0;
+  right:0;
   background-color: #0056d2;
-  color: #ffffff;
+  color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -421,30 +357,6 @@ a{
   
 }
 
-
-
-.accordion-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  cursor: pointer;
-  border-bottom: 1px solid #b6b4b4;
-}
-
-.accordion-item:last-child{
-  border-bottom: none;
-}
-
-.accordion-icon {
-  font-size: 25px;
-  color: #0056d2;
-  margin-right: 50px;
-  margin-top: 10px;
-}
-
-
-
-
 .rating {
   display: flex;
   align-items: center;
@@ -473,6 +385,11 @@ a{
   color: #ccc; /* Gray color for the half star (background) */
 }
 
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
+
 .star.half::before {
   content: '\2605'; /* Unicode star character */
   position: absolute;
@@ -491,87 +408,51 @@ a{
   margin-right: 5px;
 }
 
-/* Ensure the dropdown content is hidden by default */
-.hidden-more {
-  display: none;
+
+.accordion-item {
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #b6b4b4;
 }
 
-/* Dropdown Content Styling */
-.dropdown-content-more {
-  position: absolute;
-  background-color: white;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.accordion-item:last-child{
+  border-bottom: none;
+}
+
+
+.accordion-item h5{
   margin-top: 10px;
 }
 
-.dropdown-content-more a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  padding: 10px 15px;
+.accordion-icon {
+  font-size: 25px;
+  color: #0056d2;
+  margin-left: 10px;
 }
 
-.dropdown-content-more a:hover {
-  background-color: #f1f1f1;
+.hidden {
+  display: none;
 }
 
-/* Ensure the button looks clickable */
-.dropdown-button-more {
-  cursor: pointer;
-  position: relative;
-}
-
-
-.methodology-container{
+.container{
   display: flex;
-  justify-content: space-between; /* Evenly space out columns */
-  align-items: center;
-  max-width: 1000px; /* Set a maximum width to prevent the container from getting too wide */
-  margin: 20px auto; /* Center the container on the page */
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px !important;
+  margin-top: 0%;
+  justify-content: center ;
 }
 
-.methodology-column {
+.container h1{
+  margin: 0;
+  text-align: right;
   flex: 1;
-  text-align: center;
-  margin: 0 15px;
-}
-
-.methodology-column:not(:last-child) {
-  border-right: 1px solid rgb(202, 201, 201);
-}
-
-.methodology-column img{
-  width: 70px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.first-image-methodology{
-  width: 100px !important;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.methodology-description {
-  font-size: 1em;
-  color: #666;
-}
-
-.methodology-criteria {
-  color: #0070f3; /* Blue color for emphasis */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.methodology-h2{
-  margin-left: 170px;
-  margin-top: 50px;
+  margin-right: 500px;
+  margin-top: 2%;
+  
 }
 
 .article-starter{
@@ -586,13 +467,13 @@ a{
 
 .article-border{
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 1px solid #b6b4b4;
 }
 
-#on-this-page-panel-2 {
+#on-this-page-panel-2{
   position: sticky;
-  top: 100px; /* The panel will stick 20px from the top of the viewport */
+  top: 10px; /* The panel will stick 20px from the top of the viewport */
   max-width: 200px;
   margin-right: 150px;
 }
@@ -623,29 +504,23 @@ tr:nth-child(even) {
   background-color: #f7f9fe; /* Light bluish color for alternate rows */
 }
 
-
-.rating {
-  font-weight: bold;
-  color: #1a0dab; /* Keeping ratings visually highlighted */
-}
-
-.bullet-point{
-  line-height: 1.5;
-  border-bottom: 1px solid #b6b4b4;
+.section-offset{
+  flex-shrink: 0;
+  position: relative;
+  left: 0px;
+  font-size: 27px;
 
 }
 
-.bullet-point li{
-  font-size: 18px;
+.bullet-point {
+  margin-left: 20px; /* Moves the whole list to the right */
+  padding-left: 20px; /* Adds extra space inside the list */
+  list-style-position: inside; /* Keeps the bullets inside the padding */
 }
 
-.accordion-types-credits {
-  margin-top: 10px;
-  padding-top: 10px;
-  
+.bullet-point li {
+  padding-left: 10px; /* Adds more indent to each bullet point */
 }
-
-
 
 .accordion-item-types-credits {
   display: flex;
@@ -698,52 +573,6 @@ tr:nth-child(even) {
   border-bottom: none;
 }
 
-.rest-of-article{
-  padding: 30px;
-  border-bottom: 1px solid #b6b4b4;
-}
-
-.rest-of-article p{
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.rest-of-article li{
-  font-size: 18px;
-  color: rgb(122, 121, 121);
-  line-height: 1.5;
-
-}
-
-.rest-of-article h2{
-  color: rgb(0, 5, 51);
-  font-size: 29px;
-}
-
-.rest-of-article h3{
-  color: rgb(0, 5, 51);
-  font-size: 26px;
-}
-
-.score-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-}
-
-.score-table thead th {
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-.score-table tbody td {
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-  font-size: 18px;
-  text-align: center;
-}
 
 .before-footer {
   max-width: 900px;
@@ -835,21 +664,3 @@ tr:nth-child(even) {
     font-size: 15px;
   }
 }
-
-.section-offset {
-  position: relative;
-  padding-top: 140px;  /* Adjust this value based on your header height */
-  margin-top: -140px;  /* Matches padding-top to counteract the space */
-}
-
-
-
-
-
-
-
-
-
-
-
-

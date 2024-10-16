@@ -1,5 +1,11 @@
+*{
+  font-family: 'Sofia Pro', Arial, sans-serif;
+  line-height: 1.5;
+  
+}
+
 h3{
-  font-size: 24px;
+  font-size: 25px;
 }
 
 p{
@@ -11,8 +17,9 @@ h4{
 }
 
 h2{
-  font-size: 26px;
+  font-size: 30px;
 }
+
 .modal {
   display: none; 
   position: fixed; 
@@ -66,6 +73,9 @@ h2{
   color: #000;
 }
 
+.card-content{
+  margin-left: 50px;
+}
 .ok-btn {
   background-color: #0066cc;
   color: white;
@@ -252,7 +262,8 @@ a{
 
 .card-info {
   position: relative;
-  padding-right: 200px; /* Add padding to make space for the button */
+  padding-right: 150px; /* Add padding to make space for the button */
+  width: 100%;
 }
 
 .card-name {
@@ -269,7 +280,7 @@ a{
 
 .rewards-rate-description {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 15px;
   color: #000533;
 }
 
@@ -415,3 +426,236 @@ a{
   margin-right: 50px;
   margin-top: 0px;
 }
+
+.hidden {
+  display: none;
+}
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px !important;
+  margin-top: 0%;
+  justify-content: center ;
+}
+
+.container h1{
+  margin: 0;
+  text-align: right;
+  flex: 1;
+  margin-right: 500px;
+  margin-top: 2%;
+  
+}
+
+.article-starter{
+
+  width: 70%; /* Main content width */
+  padding: 10px;
+}
+
+.article-starter a{
+  text-decoration: underline;
+}
+
+.article-border{
+  margin-top: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #b6b4b4;
+}
+
+#on-this-page-panel-2{
+  position: sticky;
+  top: 10px; /* The panel will stick 20px from the top of the viewport */
+  max-width: 200px;
+  margin-right: 150px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  border-bottom: 1px solid #b6b4b4;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 12px 15px;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fe; /* Light bluish color for alternate rows */
+}
+
+.section-offset{
+  flex-shrink: 0;
+  position: relative;
+  left: 0px;
+  font-size: 27px;
+
+}
+
+.bullet-point {
+  margin-left: 20px; /* Moves the whole list to the right */
+  padding-left: 20px; /* Adds extra space inside the list */
+  list-style-position: inside; /* Keeps the bullets inside the padding */
+}
+
+.bullet-point li {
+  padding-left: 10px; /* Adds more indent to each bullet point */
+}
+
+.accordion-item-types-credits {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.accordion-icon-types-credits {
+  font-size: 28px;
+  color: #0056d2;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+.accordion-panel-types-credits {
+  display: none;
+  padding: 0 15px;
+  color: black;
+
+}
+
+.accordion-panel-types-credits p {
+  font-size: 18px;
+
+}
+
+.accordion-panel-types-credits a {
+  font-size: 18px;
+
+
+}
+
+.accordion-panel-types-credits li {
+  font-size: 18px;
+  color: rgb(122, 121, 121)
+
+}
+
+.accordion-container{
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+
+}
+
+.accordion-container:last-child{
+  border-bottom: none;
+}
+
+
+.before-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #f9f9ff; /* Light background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.before-footer-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.before-footer-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.profile-image:hover {
+  border-color: #0056d2; /* Change border color on hover */
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  color: #0056d2; /* Darker shade for headings */
+  margin: 0;
+}
+
+.profile-info .profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+.before-footer-section p {
+  font-size: 16px;
+  color: rgb(122, 121, 121);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .before-footer {
+    padding: 20px;
+  }
+
+  .before-footer-section {
+    padding: 15px;
+  }
+
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .profile-info h3 {
+    font-size: 18px;
+  }
+
+  .profile-info .profile-name {
+    font-size: 20px;
+  }
+
+  .before-footer-section p {
+    font-size: 15px;
+  }
+}
+

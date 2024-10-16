@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewards</title>
+  <link rel="stylesheet" href="/credit-cards/css/button-components/component-rewards/rewards.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <div id="secondary-header"></div>
+  <h4 class="advertisor">
+    <a id="disclosure-link" href="#" >ADVERTISER DISCLOSURE</a>
+  </h4>
+
+  <!-- Modal -->
+  <div id="disclosure-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn" class="close-btn">&times;</span>
+      <div class="modal-header">Advertiser Disclosure</div>
+      <div class="modal-body">
+        <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+        <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="ok-btn" class="ok-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+  <div id="on-this-page-panel"></div>
+  <div>
+    <h1 id="our-top-picks-section" class="section-offset">Best Rewards Credit Cards for 2024</h1>
+    <br>
+    <p>Written by: <span><a href="#">Ryan Noonan</a></span> | Edited by: <span><a href="#">Robert Thorpe</a></span> | Reviewed by: <span><a href="#">Jason Steele</a></span> | October 4, 2024</p>
+    <br>
+    <div class="how-we-choose">
+      <div class="title">
+        <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+        <h2>How we Choose</h2>
+      </div>
+      <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+
+    </div>
+    
+    <div class="see-more-text">
+      <p class="see-more-text-content">Zero-interest credit cards (or 0% intro APR credit cards) let cardholders make payments with no interest charges on purchases, balance transfers or both for a set period of time. Your entire payment (except for any fees) is applied to your balance. After the introductory period expires, you begin paying a predetermined interest rate.
+        A rewards credit card offers a reward for each eligible dollar spent with the card, such as travel miles, cash back or points. These cards can offer flat rate earnings on purchases, such as 2 percent cash back across all spending categories. Or, the card may offer a boosted reward rate for select categories, like gas, grocery or travel purchases.
+        <br>
+        <br>
+        Rewards cards often include other enticing features, such as generous welcome bonuses and cost-saving travel protections. We’ve evaluated numerous rewards credit cards to help you choose a card where you can maximize the rewards potential.
+      </p>
+      <button class="see-more-btn" onclick="toggleText()">See More</button>
+    </div>
+
+    <div class="summary">
+      <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+        <img src="/credit-cards/images/ButtonComponents/plusIcon.png" alt="plus icon">
+      </button>
+      <div id="summary-text" class="hidden">
+        <h2>Best Rewards Credit Cards</h2>
+        <br>
+        <ul class="ul-best-credit-cards">
+          <li><a href="#">Chase Sapphire Preferred® Card</a> – Best for sign-up bonus</li>
+          <li><a href="#">Capital One Venture Rewards Credit Card</a> – Best for flexible travel</li>
+          <li><a href="#">Citi Strata Premier℠ Card</a> – Best for hotel bookings</li>
+          <li><a href="#">American Express® Gold Card</a> – Best for restaurants</li>
+          <li><a href="#">Wells Fargo Active Cash® Card</a> – Best for flat-rate cash rewards</li>
+          <li><a href="#">Capital One VentureOne Rewards Credit Card</a> – Best for financing travel</li>
+          <li><a href="#">Capital One SavorOne Cash Rewards Credit Card</a> – Best for entertainment</li>
+          <li><a href="#">The Platinum Card® from American Express</a> – Best for luxury perks</li>
+          <li><a href="#">Wells Fargo Autograph Journey℠ Card</a> – Best for occasional travelers</li>
+          <li><a href="#">Capital One Venture X Rewards Credit Card</a> – Best for annual credits</li>
+          <li><a href="#">Chase Freedom Unlimited®</a> – Best for pairing with Chase cards</li>
+          <li><a href="#">Discover it® Cash Back</a> – Best for rotating bonus categories</li>
+          <li><a href="#">Blue Cash Preferred® Card from American Express</a> – Best for U.S. supermarkets</li>
+          <li><a href="#">Citi Custom Cash® Card</a> – Best second credit card</li>
+          <li><a href="#">Wells Fargo Autograph℠ Card</a> – Best for gas stations</li>
+          <li><a href="#">Bilt Mastercard®</a> – Best for renters</li>
+          <li><a href="#">Prime Visa®</a> – Best for Amazon & Whole Foods</li>
+          <li><a href="#">Bank of America® Customized Cash Rewards credit card</a> – Best for customizable bonus categories</li>
+          <li><a href="#">Blue Cash Everyday® Card from American Express</a> – Best for online shopping</li>
+          <li><a href="#">Capital One SavorOne Student Cash Rewards Credit Card</a> – Best for students</li>
+          <li><a href="#">Synchrony Premier World Mastercard®</a> – Best for cash back beginners</li>
+        </ul>
+        <br>
+        <h4>Additional Options:</h4>
+        <br>
+        <ul>
+          <li>My GM Rewards® Mastercard®: Best for GM payments & leases</li>
+      
+          <li>American Express® Green Card: Best for starter travel perks</li>
+   
+          <li>U.S. Bank Altitude® Go Visa Signature® Card: Best for dining + no annual fee</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="card-content">
+    <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR SIGN-UP BONUS</h4>
+      <div class="card-detail-container">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="/credit-cards/images/credit-card-images-apr/Chase Sapphire Preferred® Card.png" alt="Chase Sapphire Preferred® Card">
+
+          <div class="rating">
+            <span class="rating-label">Our rating:</span>
+            <span class="stars">
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+              <span class="star full">&#9733;</span>
+            </span>
+            <span class="rating-number">4.9</span>
+            <span class="info-icon">&#8505;</span>
+          </div>
+        </div>
+  
+        <!-- Card Info -->
+        <div class="card-info">
+          <h2 class="card-name">Chase Sapphire Preferred® Card</h2>
+          <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="rewards-rate"><strong>5x</strong> &nbsp;&nbsp;&nbsp;&nbsp;on travel purchased through Chase Travel℠</p>
+          <p class="rewards-rate"><strong>3x</strong> &nbsp;&nbsp;&nbsp;&nbsp;on dining, select streaming services, and online groceries</p>
+          <p class="rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;on all other travel purchases</p>
+          <p class="rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;on all other purchases</p>
+          <br>
+          <p class="rewards-rate-description"><strong>Intro offer:</strong> $300 Chase Travel℠ Credit + 60,000 bonus points</p>
+          <p class="rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+          <p class="rewards-rate-description"><strong>Regular APR:</strong> 20.99% - 27.99% variable</p>
+          <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="secure-site-note">at Chase's secure site</p>
+        </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="extra-info">
+        <a href="#" class="rates-fees-link">See Rates & Fees</a>
+        <div class="compare-checkbox">
+          <input type="checkbox" id="compare16" name="compare">
+          <label for="compare16">Add to compare</label>
+        </div>
+      </div>
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR FLEXIBLE TRAVEL</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Capital One Venture Rewards Credit Card.png" alt="Capital One Venture Rewards Credit Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+          </span>
+          <span class="rating-number">4.9</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Capital One Venture Rewards Credit Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>5 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel</p>
+        <p class="rewards-rate"><strong>2 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on every purchase, every day</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 75,000 miles</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 29.99% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Capital One's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare17" name="compare">
+        <label for="compare17">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR HOTEL BOOKINGS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/credit-card-images-apr/Citi Strata Premier℠ Card.png" alt="Citi Strata Premier℠ Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.6</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Citi Strata Premier℠ Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>10X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points per $1 spent on hotels, car rentals, and attractions booked on CitiTravel.com</p>
+        <p class="rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points per $1 on air travel and other hotel purchases, restaurants, supermarkets, gas, and EV charging stations</p>
+        <p class="rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;point per $1 spent on all other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 70,000 bonus points</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 20.74% - 28.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Citi's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare18" name="compare">
+        <label for="compare18">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR RESTAURANTS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/American Express® Gold Card.png" alt="American Express® Gold Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+          </span>
+          <span class="rating-number">4.9</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">American Express® Gold Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Membership Rewards® points per dollar spent on restaurants worldwide (up to $50,000 annually)</p>
+        <p><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on US supermarkets (up to $25,000 annually)</p>
+        <p><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on flights booked directly with airlines or on AmexTravel.com</p>
+        <p><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on prepaid hotels and other eligible purchases booked via AmexTravel.com</p>
+        <p><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on all other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 60,000 points + earn up to $100 back</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $325</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> See Pay Over Time APR</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at American Express's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare19" name="compare">
+        <label for="compare19">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR FLAT-RATE CASH REWARDS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/WellsFargoActiveCash.png" alt="Wells Fargo Active Cash® Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.1</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Wells Fargo Active Cash® Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 2% cash rewards on purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> $200 cash rewards</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.74%, 24.74%, or 29.74% Variable APR</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Wells Fargo's secure site</p>
+      </div>
+    </div>
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare16" name="compare">
+        <label for="compare16">Add to compare</label>
+      </div>
+    </div>
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR FINANCING TRAVEL</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Capital One Venture Rewards Credit Card.png" alt="Capital One VentureOne Rewards Credit Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.1</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Capital One VentureOne Rewards Credit Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>5 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on hotels and rental cars booked through Capital One Travel</p>
+        <p class="rewards-rate"><strong>1.25 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on every purchase, every day</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 20,000 miles</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 29.99% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Capital One's secure site</p>
+      </div>
+    </div>
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare16" name="compare">
+        <label for="compare16">Add to compare</label>
+      </div>
+    </div>
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR ENTERTAINMENT</h4>
+      <div class="card-detail-container">
+          <!-- Card Image -->
+          <div class="card-image">
+              <img src="/credit-cards/images/CreditCardImg/Capital One SavorOneCash RewardsCredit Card.png" alt="Capital One SavorOne Cash Rewards Credit Card">
+              <div class="rating">
+                  <span class="rating-label">Our rating:</span>
+                  <span class="stars">
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                  </span>
+                  <span class="rating-number">4.9</span>
+                  <span class="info-icon">&#8505;</span>
+              </div>
+          </div>
+
+          <!-- Card Info -->
+          <div class="card-info">
+              <h2 class="card-name">Capital One SavorOne Cash Rewards Credit Card</h2>
+              <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="rewards-rate"><strong>8%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on Capital One Entertainment purchases</p>
+              <p class="rewards-rate"><strong>5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on hotels and rental cars booked through Capital One Travel (terms apply)</p>
+              <p class="rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on dining, entertainment, popular streaming services, and at grocery stores</p>
+              <p class="rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on all other purchases</p>
+              <br>
+              <p class="rewards-rate-description"><strong>Intro offer:</strong> $200</p>
+              <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+              <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 29.99% variable</p>
+              <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="secure-site-note">at Capital One's secure site</p>
+          </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="extra-info">
+          <a href="#" class="rates-fees-link">See Rates & Fees</a>
+          <div class="compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17">Add to compare</label>
+          </div>
+      </div>
+
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+          <div class="accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+      <h4 class="card-category">BEST FOR LUXURY PERKS</h4>
+      <div class="card-detail-container">
+          <!-- Card Image -->
+          <div class="card-image">
+              <img src="/credit-cards/images/CreditCardImg/The Platinum Card® from American Express.png" alt="The Platinum Card® from American Express">
+              <div class="rating">
+                  <span class="rating-label">Our rating:</span>
+                  <span class="stars">
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                      <span class="star full">&#9733;</span>
+                      <span class="star half">&#9733;</span>
+                  </span>
+                  <span class="rating-number">4.8</span>
+                  <span class="info-icon">&#8505;</span>
+              </div>
+          </div>
+
+          <!-- Card Info -->
+          <div class="card-info">
+              <h2 class="card-name">The Platinum Card® from American Express</h2>
+              <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Membership Rewards® Points for flights booked directly with airlines or with American Express Travel (up to $500,000 per calendar year)</p>
+              <p class="rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Membership Rewards® Points on prepaid hotels booked with American Express Travel</p>
+              <br>
+              <p class="rewards-rate-description"><strong>Intro offer:</strong> Earn 80,000 points</p>
+              <p class="rewards-rate-description"><strong>Annual fee:</strong> $695</p>
+              <p class="rewards-rate-description"><strong>Regular APR:</strong> See Pay Over Time APR</p>
+              <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="secure-site-note">at American Express's secure site</p>
+          </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="extra-info">
+          <a href="#" class="rates-fees-link">See Rates & Fees</a>
+          <div class="compare-checkbox">
+              <input type="checkbox" id="compare18" name="compare">
+              <label for="compare18">Add to compare</label>
+          </div>
+      </div>
+
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="accordion">
+          <div class="accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR OCCASIONAL TRAVELERS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Wells Fargo Autograph Journey℠ Card.png" alt="Wells Fargo Autograph Journey℠ Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+          </span>
+          <span class="rating-number">3.9</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Wells Fargo Autograph Journey℠ Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on hotels</p>
+        <p class="rewards-rate"><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on airlines</p>
+        <p class="rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on other travel and restaurants</p>
+        <p class="rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 60,000 bonus points</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 20.74%, 25.74%, or 29.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Wells Fargo's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare20" name="compare">
+        <label for="compare20">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR ANNUAL CREDITS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Capital One Venture X Rewards Credit Card.png" alt="Capital One Venture X Rewards Credit Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+          </span>
+          <span class="rating-number">5.0</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Capital One Venture X Rewards Credit Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>10 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on hotels and rental cars booked through Capital One Travel</p>
+        <p class="rewards-rate"><strong>5 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on flights and vacation rentals booked through Capital One Travel</p>
+        <p class="rewards-rate"><strong>2 Miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;per dollar on every purchase, every day</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 75,000 miles</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $395</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 29.99% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Capital One's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare21" name="compare">
+        <label for="compare21">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR PAIRING WITH CHASE CARDS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/ChaseFreedom.png" alt="Chase Freedom Unlimited®">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+          </span>
+          <span class="rating-number">5.0</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Chase Freedom Unlimited®</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;cash back on travel purchased through Chase Travel℠</p>
+        <p class="rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;cash back on drugstore purchases and dining at restaurants</p>
+        <p class="rewards-rate"><strong>1.5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;cash back on all other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> Up to $300 cash back</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 28.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Chase's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compareChaseFreedom" name="compare">
+        <label for="compareChaseFreedom">Add to compare</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR ROTATING BONUS CATEGORIES</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/DiscoverIt.png" alt="Discover it® Cash Back">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.6</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Discover it® Cash Back</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;cash back on everyday purchases in different places each quarter</p>
+        <p class="rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;cash back on all other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> Cashback Match</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 17.74% - 27.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Discover's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compareDiscover" name="compare">
+        <label for="compareDiscover">Add to compare</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR U.S. SUPERMARKETS</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Blue Cash Preferred® Card from American Express.png" alt="Blue Cash Preferred® Card from American Express">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.6</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Blue Cash Preferred® Card from American Express</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>6%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back at U.S. supermarkets (up to $6,000 per year)</p>
+        <p class="rewards-rate"><strong>6%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on U.S. streaming subscriptions</p>
+        <p class="rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on transit</p>
+        <p class="rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back at U.S. gas stations</p>
+        <p class="rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> Earn $250</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0 for the first year, then $95</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 18.74% - 29.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at American Express's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare1" name="compare">
+        <label for="compare1">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST SECOND CREDIT CARD</h4>
+    <div class="card-detail-container">
+      <!-- Card Image -->
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Custom Cash® Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.5</span>
+        </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="card-info">
+        <h2 class="card-name">Citi Custom Cash® Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back in your top spend category (up to $500)</p>
+        <p class="rewards-rate"><strong>4%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on hotels, car rentals, and attractions via Citi Travel</p>
+        <p class="rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Cash Back on all other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> $200</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 18.74% - 28.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Citi's secure site</p>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare2" name="compare">
+        <label for="compare2">Add to compare</label>
+      </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR GAS STATIONS</h4>
+    <div class="card-detail-container">
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Wells Fargo Autograph℠ Card.png" alt="Wells Fargo Autograph℠ Card">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.2</span>
+        </div>
+      </div>
+
+      <div class="card-info">
+        <h2 class="card-name">Wells Fargo Autograph℠ Card</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on restaurants, travel, gas stations, transit, and popular streaming services</p>
+        <p class="rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on all other purchases</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> 20,000 bonus points</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> 19.74%, 24.74%, or 29.74% variable</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Wells Fargo's secure site</p>
+      </div>
+    </div>
+
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare20" name="compare">
+        <label for="compare20">Add to compare</label>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-content">
+  <div class="credit-card-detail">
+    <h4 class="card-category">BEST FOR RENTERS</h4>
+    <div class="card-detail-container">
+      <div class="card-image">
+        <img src="/credit-cards/images/CreditCardImg/Bilt Mastercard®.png" alt="Bilt Mastercard®">
+        <div class="rating">
+          <span class="rating-label">Our rating:</span>
+          <span class="stars">
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star full">&#9733;</span>
+            <span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-number">4.0</span>
+        </div>
+      </div>
+
+      <div class="card-info">
+        <h2 class="card-name">Bilt Mastercard®</h2>
+        <p class="rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on dining</p>
+        <p class="rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on travel</p>
+        <p class="rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on other purchases</p>
+        <p class="rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on rent without a transaction fee (up to 100,000 points/year)</p>
+        <br>
+        <p class="rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+        <p class="rewards-rate-description"><strong>Annual fee:</strong> None</p>
+        <p class="rewards-rate-description"><strong>Regular APR:</strong> See Terms</p>
+        <p class="rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        <button class="apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="secure-site-note">at Bilt's secure site</p>
+      </div>
+    </div>
+
+    <div class="extra-info">
+      <a href="#" class="rates-fees-link">See Rates & Fees</a>
+      <div class="compare-checkbox">
+        <input type="checkbox" id="compare21" name="compare">
+        <label for="compare21">Add to compare</label>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+<script src="/credit-cards/js/buttonComponents/rewards.js"></script>
+</body>
+</html>

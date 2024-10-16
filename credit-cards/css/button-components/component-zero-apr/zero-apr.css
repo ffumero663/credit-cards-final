@@ -255,7 +255,8 @@ a{
 
 .card-info {
   position: relative;
-  padding-right: 200px; /* Add padding to make space for the button */
+  padding-right: 150px; /* Add padding to make space for the button */
+  width: 65%;
 }
 
 .card-name {
@@ -410,6 +411,10 @@ a{
   border-bottom: 1px solid #b6b4b4;
 }
 
+.accordion-item:last-child{
+  border-bottom: none;
+}
+
 .accordion-item h5{
   margin-top: 10px;
 }
@@ -553,6 +558,10 @@ tr:nth-child(even) {
   font-size: 18px;
   color: rgb(122, 121, 121)
 
+}
+
+.card-content{
+  margin-left: 50px;
 }
 
 .accordion-container{

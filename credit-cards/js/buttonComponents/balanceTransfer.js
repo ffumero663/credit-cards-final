@@ -86,3 +86,26 @@ fetch('/credit-cards/html/button-components/component-balance-transfer/on-this-p
       button.innerHTML = 'Summary <img src="/credit-cards/images/buttonComponents/plusIcon.png" alt="plus icon">';
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const accordions = document.querySelectorAll(".accordion-item-types-credits");
+  
+    accordions.forEach(accordions => {
+      accordions.addEventListener("click", function() {
+        
+        const icon = this.querySelector(".accordion-icon-types-credits");
+        if(icon.textContent === "+"){
+          icon.textContent = "-";
+        } else {
+          icon.textContent = "+";
+        }
+  
+        const panel = this.nextElementSibling;
+        if(panel.style.display === "block"){
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      })
+    })
+  })
