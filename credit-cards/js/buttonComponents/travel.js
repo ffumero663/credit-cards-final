@@ -16,13 +16,13 @@ fetch('/credit-cards/html/header-inside-buttons.html')
     document.getElementById('secondary-header').innerHTML = data;
   })
 
-fetch('/credit-cards/html/button-components/component-rewards/on-this-page.html')
+fetch('/credit-cards/html/button-components/component-travel/on-this-page.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('on-this-page-panel').innerHTML = data;
   });
 
-  fetch('/credit-cards/html/button-components/component-rewards/on-this-page.html')
+  fetch('/credit-cards/html/button-components/component-travel/on-this-page.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('on-this-page-panel-2').innerHTML = data;
@@ -31,6 +31,7 @@ fetch('/credit-cards/html/button-components/component-rewards/on-this-page.html'
   function scrollToTop(){
     document.getElementById('top-of-cards').scrollIntoView({ behavior: 'smooth'})
   }
+
 
   window.onload = function() {
     // Get modal elements

@@ -13,7 +13,7 @@ body{
 }
 
 .panel h3{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .panel ul {
@@ -28,13 +28,12 @@ body{
 
 .panel ul li:hover,
 .panel ul li:focus-within {
-  background-color: rgb(236, 234, 234); /* Highlight the entire list item on hover or focus */
   width: 100%;
 }
 
 .panel a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   display: block;       /* Makes the <a> fill the entire <li> container */
   padding: 10px;        /* Adds padding to make the link area larger */
   white-space: nowrap;  /* Prevents text wrapping */
@@ -49,7 +48,6 @@ body{
 .panel a:focus,
 .panel a:active {
   border-left: 4px solid blue;      /* Adds a border on the left side */
-  background-color: rgb(236, 234, 234); /* Keeps the background consistent */
   color: #000;                    /* Change text color to make it stand out */
 }
 

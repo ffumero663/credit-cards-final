@@ -16,6 +16,20 @@ h2{
   font-size: 30px;
 }
 
+h1{
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  position: relative;
+  left: 0px;
+}
+
 .modal {
   display: none; 
   position: fixed; 
@@ -112,6 +126,23 @@ h2{
   flex: 1;
   margin-top: 2%;
   
+}
+
+.back-to-top {
+  position: relative;
+  bottom: 0px;
+  left: 50%; /* This moves the button's left edge to the middle of the page */
+  transform: translateX(-50%); /* This centers the button by moving it back by 50% of its width */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
 }
 
 
@@ -287,7 +318,7 @@ a{
 
 .card-details-summary-inline {
   display: flex; /* Use flexbox to align items in a single line */
-  flex-wrap: wrap; /* Allow wrapping if necessary */
+  flex-wrap: nowrap; /* Allow wrapping if necessary */
   gap: 20px; /* Space between each detail item */
   align-items: center; /* Align items vertically in the center */
   margin-bottom: 15px; /* Space below the detail section */
@@ -504,13 +535,7 @@ tr:nth-child(even) {
   background-color: #f7f9fe; /* Light bluish color for alternate rows */
 }
 
-.section-offset{
-  flex-shrink: 0;
-  position: relative;
-  left: 0px;
-  font-size: 27px;
 
-}
 
 .bullet-point {
   margin-left: 20px; /* Moves the whole list to the right */
@@ -532,7 +557,8 @@ tr:nth-child(even) {
 .accordion-icon-types-credits {
   font-size: 28px;
   color: #0056d2;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  
 }
 
 
@@ -565,7 +591,7 @@ tr:nth-child(even) {
 
 .accordion-container{
   border-bottom: 1px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
 }
 
