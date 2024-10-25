@@ -568,6 +568,11 @@ tr:nth-child(even) {
 
 }
 
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
+
 .accordion-panel-types-credits li {
   font-size: 18px;
   color: rgb(122, 121, 121)

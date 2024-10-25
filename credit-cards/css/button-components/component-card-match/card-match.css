@@ -125,7 +125,10 @@ a{
   width: 48%; /* Ensures equal width for both input fields */
 }
 
-
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
 
 
 /* Label styling */

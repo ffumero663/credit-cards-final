@@ -11,7 +11,10 @@ h1, p{
 }
 
 
-
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
 
 
 .modal {

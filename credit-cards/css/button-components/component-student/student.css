@@ -167,6 +167,11 @@ a{
   margin-left: 3%;
 }
 
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
+
 .title {
   display: flex;              /* Align the image and heading horizontally */
   align-items: center;        /* Center align the image and text vertically */

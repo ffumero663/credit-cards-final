@@ -651,6 +651,11 @@ tr:nth-child(even) {
   border-color: #0056d2; /* Change border color on hover */
 }
 
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
+
 .profile-info h3 {
   font-size: 20px;
   color: #0056d2; /* Darker shade for headings */

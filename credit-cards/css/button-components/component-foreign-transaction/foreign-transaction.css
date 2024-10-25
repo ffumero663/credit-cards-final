@@ -274,6 +274,11 @@ a{
   margin-bottom: 15px;
 }
 
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
+
 .card-detail-container {
   position: relative;
   display: flex;

@@ -134,6 +134,11 @@ h1{
   
 }
 
+.gray-star{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
+
 .back-to-top {
   position: relative;
   bottom: 0px;
