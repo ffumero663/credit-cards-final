@@ -397,7 +397,6 @@ a{
 .rating {
   display: flex;
   align-items: center;
-  font-family: Arial, sans-serif;
 }
 
 .rating-label {
@@ -518,7 +517,6 @@ a{
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
   margin-top: 20px;
   border-bottom: 1px solid #b6b4b4;
 }
@@ -614,7 +612,6 @@ tr:nth-child(even) {
   border-radius: 12px;
   background-color: #f9f9ff; /* Light background */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .before-footer-section {

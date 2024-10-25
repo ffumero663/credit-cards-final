@@ -279,6 +279,76 @@ a{
   color: #ccc; /* Gray color for the half star (background) */
 }
 
+.lightbulb-card-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e8f2f7;
+  margin-top: 20px;
+  
+}
+
+.lightbulb-card-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 100;
+}
+
+.lightbulb-card-section p {
+  font-size: 1em;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.lightbulb-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.lightbulb-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lightbulb-card a{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lightbulb-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.lightbulb-card p {
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.lightbulb-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lightbulb-more-cards {
+  font-size: 1em;
+  color: #888;
+}
+
+
 .card-detail-container {
   position: relative;
   display: flex;
@@ -395,7 +465,6 @@ a{
 .rating {
   display: flex;
   align-items: center;
-  font-family: Arial, sans-serif;
 }
 
 .rating-label {
@@ -515,7 +584,6 @@ a{
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
   margin-top: 20px;
   border-bottom: 1px solid #b6b4b4;
 }
@@ -610,7 +678,6 @@ tr:nth-child(even) {
   border-radius: 12px;
   background-color: #f9f9ff; /* Light background */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .before-footer-section {
