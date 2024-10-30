@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>American Express</title>
+  <link rel="stylesheet" href="/credit-cards/css/card-issuer-components/american-express.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <div class="background-photo">
+    <div class="header">
+      <div class="bank-logo">
+        <img src="/credit-cards/images/CardIssuer/centered-logo/american-express.png" alt="American Express">
+      </div>
+      <h4 class="advertisor">
+        <a id="disclosure-link" href="#">ADVERTISER DISCLOSURE</a>
+      </h4>
+    </div>
+
+    <div id="disclosure-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <div class="modal-header">Advertiser Disclosure</div>
+        <div class="modal-body">
+          <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+          <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+        </div>
+        <div class="modal-footer">
+          <button id="ok-btn" class="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Flex container for the sidebar and main content -->
+    <div class="flex-container">
+      <div id="on-this-page-panel"></div> <!-- Sidebar Panel -->
+      <div class="main-content">
+        <h1>American Express Credit Cards</h1>
+        <p>Written by: <a href="#">Tracy Stewart</a> | Edited by: <a href="#">Jeanine Skowronski</a> | Reviewed by: <a href="#">Stephanie Zito</a> | October 8, 2024</p>
+        <br>
+        <p>Known for outstanding customer service and major rewards, our partner American Express offers some of the best credit cards around for people with good or excellent credit. Whether you’re looking to earn cash back or get rewards for travel or your business, there’s an Amex card for you.</p>
+        <br>
+        <div class="how-we-choose">
+          <div class="title">
+            <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+            <h2>How we Choose</h2>
+          </div>
+          <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+    
+        </div>
+      
+        <div class="summary">
+          <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+            <img src="/credit-cards/images/CardIssuer/new-icons/plus-icon-banks.png" alt="plus icon">
+          </button>
+          <div id="summary-text" class="hidden">
+            <h2 style="color: #fff;">Best American Express credit cards of 2024: </h2>
+            <br>
+            <ul class="ul-best-credit-cards">
+              <li><a href="#">The Platinum Card® from American Express:</a> Best for luxury travel perks</li>
+              <li><a href="#">American Express® Gold Card:</a> Best for dining rewards</li>
+              <li><a href="#">Blue Cash Everyday® Card from American Express:</a> Best for no annual fee</li>
+              <li><a href="#">Blue Cash Preferred® Card from American Express:</a> Best for high cash back rates</li>
+              <li><a href="#">American Express® Business Gold Card:</a> Best for small business travel</li>
+              <li><a href="#">The Business Platinum Card® from American Express:</a> Best for luxury business travel perks</li>
+              <li><a href="#">Delta SkyMiles® Gold Business American Express Card:</a> Best for Delta-loyal small business owners</li>
+              <li><a href="#">Hilton Honors American Express Surpass® Card:</a> Best for Hilton hotel stays</li>
+              <li><a href="#">Delta SkyMiles® Platinum Business American Express Card:</a> Best for business travelers seeking elevated status</li>
+              <li><a href="#">The American Express Blue Business CashTM Card:</a> Best for cash back rewards for business</li>
+              <li><a href="#">American Express® Green Card </a> – Best for everyday travel</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="cardmatch-section">
+        <div class="icon-container">
+          <img src="/credit-cards/images/CardIssuer/new-icons/Pre-approved offers from American Express.png" alt="Icon" />
+        </div>
+        
+        <div class="text-container">
+          <p class="new-to">NEW TO CARDMATCH™</p>
+          <h2>Pre-approved offers from American Express</h2>
+          <p class="description">
+            Get pre-approved for top partner cards like The Platinum Card® from American Express or the American Express® Gold Card with help from CardMatch™. All it takes is 60 seconds to find out if you have pre-approved offers.
+          </p>
+          <br>
+          <button class="cta-button">See Matches</button>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-label">
+            <span>FILTER CARDS BY CATEGORY:</span>
+        </div>
+        <div class="filter-buttons">
+            <button id="all" class="filter-button active"><i class="fas fa-th"></i> All Categories</button>
+            <button id="cash-back" class="filter-button"><i class="fas fa-wallet"></i> Cash Back</button>
+            <button id="travel" class="filter-button"><i class="fas fa-plane"></i> Travel</button>
+            <button id="business" class="filter-button"><i class="fas fa-briefcase"></i> Business</button>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+      <!-- Column 1: Platinum Card -->
+      <div class="card">
+          <p class="category-label">BEST FOR LUXURY TRAVEL PERKS</p>
+          <h2>Platinum Card® American Express</h2>
+          <img src="/credit-cards/images/CreditCardImg/The Platinum Card® from American Express.png" alt="The Platinum Card from American Express" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.8</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare1">
+              <label for="compare1">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at American Express's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points for flights booked directly with airlines or with American Express Travel up to $500,000 on these purchases per calendar year.</li>
+                  <li><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points on prepaid hotels booked with American Express Travel.</li>
+              </ul>
+          </div>
+          <br>
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>Earn 80,000 points</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$695</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>See Pay Over Time APR</strong></li>
+            </ul>
+          </div>
+      </div>
+  
+      <!-- Column 2: Gold Card -->
+      <div class="card">
+          <p class="category-label">BEST FOR DINING REWARDS</p>
+          <h2>American Express® Gold Card</h2>
+          <img src="/credit-cards/images/CreditCardImg/American Express® Gold Card.png" alt="American Express Gold Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.9</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare2">
+              <label for="compare2">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at American Express's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent on purchases at restaurants worldwide, on up to $50,000 in purchases per calendar year, then 1X points for the rest of the year.</li>
+                  <li><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent at US supermarkets, on up to $25,000 in purchases per calendar year, then 1X points for the rest of the year.</li>
+                  <li><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Membership Rewards® points per dollar spent on flights booked directly with airlines or on AmexTravel.com.</li>
+                  <li><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Membership Rewards® points per dollar spent on prepaid hotels and other eligible purchases booked on AmexTravel.com.</li>
+                  <li><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Membership Rewards® point per dollar spent on all other eligible purchases.</li>
+              </ul>
+          </div>
+
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>60,000 points + earn up to $100 back</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$325</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>See Pay Over Time APR</strong></li>
+            </ul>
+          </div>
+
+        
+      </div>
+  
+      <!-- Column 3: Blue Cash Everyday Card -->
+      <div class="card">
+          <p class="category-label">BEST FOR NO ANNUAL FEE</p>
+          <h2>Blue Cash Everyday® Card</h2>
+          <img src="/credit-cards/images/CreditCardImg/Blue Cash Everyday® Card from American Express.png" alt="Blue Cash Everyday Card from American Express" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.8</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare3">
+              <label for="compare3">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at American Express's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases, then 1%.</li>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on U.S. online retail purchases, on up to $6,000 per year, then 1%</li>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations, on up to $6,000 per year, then 1%.</li>
+                  <li><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases.</li>
+              </ul>
+          </div>
+
+          <div></div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>60,000 points + earn up to $100 back</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$325</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>See Pay Over Time APR</strong></li>
+            </ul>
+          </div>
+      </div>
+  </div>
+  
+    
+
+
+
+        
+    </div>
+    
+      
+      
+      
+  
+
+
+
+  <script src="/credit-cards/js/cardIssuerComponents/americanExpress.js"></script>
+</body>
+</html>

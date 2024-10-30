@@ -1,0 +1,580 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofia Pro', Arial, sans-serif;
+  line-height: 1.5;
+ 
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+p{
+ margin: 0;
+ padding: 0;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+/* Background covering entire container */
+.background-photo {
+  background-image: url('/credit-cards/images/CardIssuer/background-photos/background-american-express.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  height: 77vh;
+  border-radius: 1%;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-header {
+  font-weight: bold;
+  font-size: 24px;
+  color: #0066cc;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:hover{
+  color: #0066cc;
+}
+
+.modal-body {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.modal-footer {
+  margin-top: 40px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.card-content{
+  margin-left: 50px;
+}
+.ok-btn {
+  background-color: #0066cc;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+}
+
+.ok-btn:hover {
+  background-color: #004a99;
+}
+
+
+/* Header for logo and disclosure */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.bank-logo img {
+  height: 70px;
+  margin-left: 560px;
+  margin-top: -20px;
+  
+
+}
+
+.advertisor {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.advertisor a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Flex container for sidebar and content */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar panel styling */
+#on-this-pannel {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7); /* Slight overlay for readability */
+  padding: 20px;
+  height: auto;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  color: black;
+  border-radius: 5px;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.main-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.how-we-choose {
+  max-width: 1000px;           /* Set a max-width for the entire container */
+  margin-bottom: 20px;        /* Add space below the container */
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 3%;
+  padding: 10px 20px;
+}
+
+.how-we-choose h2{
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.title {
+  display: flex;              /* Align the image and heading horizontally */
+  align-items: center;        /* Center align the image and text vertically */
+  gap: 10px; 
+                 /* Add space between the image and heading */
+}
+
+.how-we-choose p{
+  color: black;
+}
+
+.title img {
+  width: 40px;                /* Set an appropriate width for the image */
+  height: auto;               /* Keep the aspect ratio of the image */
+}
+
+.summary{
+  margin-left: 3%;
+  margin: 0;
+  padding: 0;
+}
+
+.summary button{
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.summary-btn{
+  display: flex;               /* Use flexbox to align text and image */
+  align-items: center;         /* Vertically center-align the items */
+  gap: 8px;                    /* Space between the text and the image */
+  padding: 10px 15px;          /* Add padding for a better button look */
+  background-color: transparent;   /* Button background color */
+  color: white;                /* Text color */
+  border: none;                /* Remove default border */
+  border-radius: 5px;          /* Round button corners */
+  cursor: pointer;             /* Pointer cursor on hover */
+  font-size: 1em;       
+}
+
+.summary img{
+  width: 20px;
+  height: auto;
+  margin-top: auto;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.ul-best-credit-cards li{
+  margin-bottom: 5px;
+  line-height: 1.5;
+ 
+}
+
+.ul-best-credit-cards a{
+  margin-bottom: 5px;
+  line-height: 1.5;
+
+}
+
+
+
+
+
+
+.best-credit-cards-h2{
+  margin-top: 10px;
+  
+}
+
+
+.cardmatch-section {
+  display: flex;
+  align-items: center;
+  background-color: #020d6e; /* Blue background */
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  width: 99vw;
+  margin: 0; /* Ensure no margin on all sides */
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cardmatch-section{
+  margin-left: -20px;
+}
+
+.cardmatch-section p{
+  margin: 0;
+}
+
+.icon-container {
+  background-color:#020d6e; /* Light green circle */
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+}
+
+.icon-container img {
+  width: 120px; /* Adjust icon size */
+  height: auto;
+}
+
+.text-container {
+  max-width: 600px;
+  
+}
+
+.new-to {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #0066ff; /* Bright blue for button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #0051cc; /* Darker shade for hover */
+}
+
+
+
+
+/* Main Filter Bar Container */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  gap: 20px;
+
+}
+
+/* Filter Label */
+.filter-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-label .icon-filter {
+  margin-right: 8px;
+  /* Add icon styling here (size, color) if using an icon font or SVG */
+}
+
+/* Filter Buttons Container */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual Filter Button */
+.filter-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button i {
+  margin-right: 8px;
+  /* Add icon styling here */
+}
+
+/* Active Button Styling */
+.filter-button.active {
+  background-color: #001f8e; /* Blue background */
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 450px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.category-label {
+  color: #0056b3;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 250px;
+  margin: 10px 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+  color: black;
+}
+
+.stars {
+  color: #FFA500;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.terms-link a{
+  color: #0056b3;
+  font-size: 0.9em;
+  text-decoration: underline;
+
+}
+.terms-link p{
+  color: black;
+}
+
+
+
+.compare {
+  margin: 15px 0;
+  font-size: 0.9em;
+  color: black;
+}
+
+.compare label{
+  margin-left: 5px;
+}
+
+.credit-score {
+  color: #666;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.apply-button .lock-icon {
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+.secure-note {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+.rewards-rate {
+  margin-top: 20px;
+  background-color: #f9fafc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  min-height: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.rewards-rate h3 {
+  color: #1a1a1a;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rewards-rate ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rewards-rate li {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.rewards-rate li strong {
+  font-size: 1.2em;
+  color: #1a1a1a;
+  margin-right: 5px;
+}
+
+
+
+.offer-fee-apr li {
+  border-top: 1px solid black;
+  width: 100%;
+  padding-top: 10px;
+  display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Positions items at left and right */
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.offer-fee-apr li strong {
+  text-align: right; /* Optional; align text within the strong tag */
+}
+
+.offer-fee-apr {
+  width: 100%; /* Makes the <ul> full width of its container */
+  max-width: 1200px; /* Optional: Set max width to match the container */
+  margin: 0 auto; /* Centers the <ul> if the container has limited width */
+  padding: 0 20px; /* Optional: Add padding to match the spacing of the container */
+  box-sizing: border-box; /* Ensures padding doesn’t increase total width */
+}
+
+
+
+
+
