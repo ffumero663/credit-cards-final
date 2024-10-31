@@ -115,39 +115,37 @@ fetch('/credit-cards/html/card-issuer-components/american-express/on-this-page.h
   })
 
 
+  
   document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".filter-button");
-    const cards = document.querySelectorAll(".card");
-    const allOnlyCards = document.querySelectorAll(".all-only"); // Select cards exclusive to All Categories
+    const allCards = document.querySelectorAll(".all-cat");
+    const travelCards = document.querySelectorAll(".travel");
+    const cashBackCards = document.querySelectorAll(".cash-back");
+    const businessCards = document.querySelectorAll(".business");
 
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
-            // Remove 'active' class from all buttons and add it to the clicked button
+            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove("active"));
             button.classList.add("active");
 
-            // Get the ID of the clicked button to use as a filter
-            const filterId = button.id;
+            // Hide all cards initially
+            allCards.forEach(card => card.style.display = "none");
+            travelCards.forEach(card => card.style.display = "none");
+            cashBackCards.forEach(card => card.style.display = "none");
+            businessCards.forEach(card => card.style.display = "none");
 
-            // Show or hide cards based on the selected filter
-            cards.forEach(card => {
-                // Show only "All Categories" exclusive cards if "all" is selected
-                if (filterId === "all") {
-                    if (card.classList.contains("all-only") || card.classList.contains("all")) {
-                        card.style.display = "block";
-                    } else {
-                        card.style.display = "none";
-                    }
-                } else {
-                    // Show cards that match the specific category and hide "all-only" cards
-                    if (card.classList.contains(filterId)) {
-                        card.style.display = "block";
-                    } else {
-                        card.style.display = "none";
-                    }
-                }
-            });
+            // Show cards based on the selected category
+            const category = button.id;
+            if (category === "all-cat") {
+                allCards.forEach(card => card.style.display = "block");
+            } else if (category === "travel") {
+                travelCards.forEach(card => card.style.display = "block");
+            } else if (category === "cash-back") {
+                cashBackCards.forEach(card => card.style.display = "block");
+            } else if (category === "business") {
+                businessCards.forEach(card => card.style.display = "block");
+            }
         });
     });
 });
-

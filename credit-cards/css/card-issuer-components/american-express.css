@@ -379,6 +379,19 @@ h2 {
   /* Add icon styling here (size, color) if using an icon font or SVG */
 }
 
+/* Ensure #all-categories container displays cards in columns */
+#all-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards as needed */
+}
+
+#all-categories .card {
+  flex: 1 1 calc(33.33% - 20px); /* Adjust width for three cards per row */
+  box-sizing: border-box;
+}
+
+
 /* Filter Buttons Container */
 .filter-buttons {
   display: flex;
@@ -412,7 +425,7 @@ h2 {
 }
 
 .content-container {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   gap: 20px;
 }
@@ -574,6 +587,194 @@ h2 {
   box-sizing: border-box; /* Ensures padding doesn’t increase total width */
 }
 
+.unique-card-content{
+  margin-left: 0px;
+
+}
+
+.unique-credit-card-detail {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+.unique-card-category {
+  color: #0056d2;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.unique-card-detail-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.unique-card-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.unique-card-info {
+  position: relative;
+  padding-right: 150px;
+  width: 65%;
+}
+
+.unique-card-name {
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.unique-rewards-rate {
+  font-weight: lighter;
+  margin-bottom: 5px;
+  color: #000533;
+  font-size: 0.875rem !important;
+  white-space: nowrap;
+}
+
+.unique-rewards-rate-description {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #000533;
+}
+
+.unique-card-details-summary-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.unique-apply-button {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  background-color: #0056d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.unique-apply-button:hover {
+  background-color: #0040a8;
+}
+
+.unique-secure-site-note {
+  position: absolute;
+  top: 45px;
+  right: -170px;
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+
+.unique-extra-info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.unique-rates-fees-link {
+  color: #0056d2;
+  text-decoration: none;
+}
+
+.unique-compare-checkbox label {
+  cursor: pointer;
+}
+
+.unique-accordion {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.unique-rating {
+  display: flex;
+  align-items: center;
+}
+
+.unique-rating-label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: black;
+}
+
+.unique-stars {
+  display: flex;
+  margin-right: 8px;
+}
+
+.unique-star {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-right: 2px;
+  position: relative;
+}
+
+.unique-star.half {
+  position: relative;
+  color: #ccc;
+}
+
+.unique-gray-star {
+  position: relative;
+  color: #ccc;
+}
+
+.unique-star.half::before {
+  content: '\2605';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  color: #ffcc00;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.unique-rating-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+  margin-right: 5px;
+}
+
+.unique-accordion-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #b6b4b4;
+  color: black;
+}
+
+
+.accordion-icon{
+  font-size: 20px;
+  
+}
+
+.unique-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.travel, .cash-back, .business {
+  display: none;
+}
 
 
 
