@@ -38,7 +38,7 @@
 
 .email-container{
   text-align: center;
-  background-color: rgb(234, 232, 232);
+  background-color: rgb(234, 232, 232) !important;
   min-height: 100px;
   padding: 30px;
   

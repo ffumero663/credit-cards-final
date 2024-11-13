@@ -1,0 +1,1050 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofia Pro', Arial, sans-serif;
+  line-height: 1.5;
+  
+ 
+}
+
+html, body{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+p{
+ margin: 0;
+ padding: 0;
+ margin-bottom: 20px;
+}
+
+h2{
+  margin-bottom: 20px;
+}
+
+li{
+  margin-bottom: 20px;
+}
+
+h3{
+  white-space: nowrap;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+ul, a{
+  margin-bottom: 15px !important;
+}
+
+/* Background covering entire container */
+.background-photo {
+  background-image: url('/credit-cards/images/CardIssuer/background-photos/background-american-express.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  height: 85vh;
+  border-radius: 1%;
+
+
+  max-width: 100%; /* Ensures it doesn't extend beyond the viewport */
+}
+
+.cardmatch-section, .flex-container{
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-header {
+  font-weight: bold;
+  font-size: 24px;
+  color: #0066cc;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:hover{
+  color: #0066cc;
+}
+
+.modal-body {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.modal-footer {
+  margin-top: 40px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.card-content{
+  margin-left: 50px;
+}
+.ok-btn {
+  background-color: #0066cc;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+}
+
+.ok-btn:hover {
+  background-color: #004a99;
+}
+
+
+/* Header for logo and disclosure */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.bank-logo img {
+  height: 70px;
+  margin-left: 560px;
+  margin-top: -20px;
+  
+
+}
+
+.advertisor {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.advertisor a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Flex container for sidebar and content */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar panel styling */
+#on-this-page-panel ul{
+ color: white ;
+}
+
+#on-this-page-panel:hover a, #on-this-page-panel a:active{
+  background: none;
+ }
+
+ #on-this-page-panel-2 a,
+ #on-this-page-panel-2 h3 {
+     color: black;
+ }
+
+#on-this-page-panel-2{
+  position: sticky;
+  top: 10px; /* The panel will stick 20px from the top of the viewport */
+  max-width: 200px;
+  margin-right: 150px;
+}
+
+.article-starter{
+
+  width: 70%; /* Main content width */
+  padding: 10px;
+  color: black;
+}
+
+.article-starter a{
+  text-decoration: underline;
+}
+
+.article-border{
+  margin-top: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #b6b4b4;
+}
+
+
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  color: black;
+  border-radius: 5px;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.main-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.how-we-choose {
+  max-width: 1000px;           /* Set a max-width for the entire container */
+  margin-bottom: 20px;        /* Add space below the container */
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 3%;
+  padding: 10px 20px;
+}
+
+.how-we-choose h2{
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.title {
+  display: flex;              /* Align the image and heading horizontally */
+  align-items: center;        /* Center align the image and text vertically */
+  gap: 10px; 
+                 /* Add space between the image and heading */
+}
+
+.how-we-choose p{
+  color: black;
+}
+
+.title img {
+  width: 40px;                /* Set an appropriate width for the image */
+  height: auto;               /* Keep the aspect ratio of the image */
+}
+
+.summary{
+  margin-left: 3%;
+  margin: 0;
+  padding: 0;
+}
+
+.summary button{
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.summary-btn{
+  display: flex;               /* Use flexbox to align text and image */
+  align-items: center;         /* Vertically center-align the items */
+  gap: 8px;                    /* Space between the text and the image */
+  padding: 10px 15px;          /* Add padding for a better button look */
+  background-color: transparent;   /* Button background color */
+  color: white;                /* Text color */
+  border: none;                /* Remove default border */
+  border-radius: 5px;          /* Round button corners */
+  cursor: pointer;             /* Pointer cursor on hover */
+  font-size: 1em;       
+}
+
+.summary img{
+  width: 20px;
+  height: auto;
+  margin-top: auto;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.ul-best-credit-cards li{
+  margin-bottom: 5px;
+  line-height: 1.5;
+ 
+}
+
+.ul-best-credit-cards a{
+  margin-bottom: 5px;
+  line-height: 1.5;
+
+}
+
+
+
+
+
+
+.best-credit-cards-h2{
+  margin-top: 10px;
+  
+}
+
+
+.cardmatch-section {
+  display: flex;
+  align-items: center;
+  background-color: #020d6e; /* Blue background */
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  width: 99vw;
+  margin: 0; /* Ensure no margin on all sides */
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cardmatch-section{
+  margin-left: -20px;
+}
+
+.cardmatch-section p{
+  margin: 0;
+}
+
+.icon-container {
+  background-color:#020d6e; /* Light green circle */
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+}
+
+.icon-container img {
+  width: 120px; /* Adjust icon size */
+  height: auto;
+}
+
+.text-container {
+  max-width: 600px;
+  
+}
+
+.text-container h2{
+  color: white;
+}
+
+.new-to {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #0066ff; /* Bright blue for button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #0051cc; /* Darker shade for hover */
+}
+
+
+
+
+/* Main Filter Bar Container */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  gap: 20px;
+
+}
+
+/* Filter Label */
+.filter-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-label .icon-filter {
+  margin-right: 8px;
+  /* Add icon styling here (size, color) if using an icon font or SVG */
+}
+
+/* Ensure #all-categories container displays cards in columns */
+#all-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards as needed */
+}
+
+#all-categories .card {
+  flex: 1 1 calc(33.33% - 20px); /* Adjust width for three cards per row */
+  box-sizing: border-box;
+}
+
+
+/* Filter Buttons Container */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual Filter Button */
+.filter-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button i {
+  margin-right: 8px;
+  /* Add icon styling here */
+}
+
+/* Active Button Styling */
+.filter-button.active {
+  background-color: #001f8e; /* Blue background */
+  color: white;
+}
+
+.content-container {
+  display: flex !important;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 450px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.category-label {
+  color: #0056b3;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 250px;
+  margin: 10px 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+  color: black;
+}
+
+.stars {
+  color: #FFA500;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.terms-link a{
+  color: #0056b3;
+  font-size: 0.9em;
+  text-decoration: underline;
+
+}
+.terms-link p{
+  color: black;
+}
+
+
+
+.compare {
+  margin: 15px 0;
+  font-size: 0.9em;
+  color: black;
+}
+
+.compare label{
+  margin-left: 5px;
+}
+
+.credit-score {
+  color: #666;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.apply-button .lock-icon {
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+.secure-note {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+.rewards-rate {
+  margin-top: 20px;
+  background-color: #f9fafc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  min-height: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.rewards-rate h3 {
+  color: #1a1a1a;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rewards-rate ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rewards-rate li {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.rewards-rate li strong {
+  font-size: 1.2em;
+  color: #1a1a1a;
+  margin-right: 5px;
+}
+
+
+
+.offer-fee-apr li {
+  border-top: 1px solid black;
+  width: 100%;
+  padding-top: 10px;
+  display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Positions items at left and right */
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.offer-fee-apr li strong {
+  text-align: right; /* Optional; align text within the strong tag */
+}
+
+.offer-fee-apr {
+  width: 100%; /* Makes the <ul> full width of its container */
+  max-width: 1200px; /* Optional: Set max width to match the container */
+  margin: 0 auto; /* Centers the <ul> if the container has limited width */
+  padding: 0 20px; /* Optional: Add padding to match the spacing of the container */
+  box-sizing: border-box; /* Ensures padding doesn’t increase total width */
+}
+
+.unique-card-content{
+  margin-left: 0px;
+
+}
+
+.unique-credit-card-detail {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+.unique-card-category {
+  color: #0056d2;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.unique-card-detail-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.unique-card-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.unique-card-info {
+  position: relative;
+  padding-right: 150px;
+  width: 65%;
+}
+
+.unique-card-name {
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.unique-rewards-rate {
+  font-weight: lighter;
+  margin-bottom: 5px;
+  color: #000533;
+  font-size: 0.875rem !important;
+  white-space: nowrap;
+}
+
+.unique-rewards-rate-description {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #000533;
+}
+
+.unique-card-details-summary-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.unique-apply-button {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  background-color: #0056d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.unique-apply-button:hover {
+  background-color: #0040a8;
+}
+
+.unique-secure-site-note {
+  position: absolute;
+  top: 45px;
+  right: -170px;
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+
+.unique-extra-info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.unique-rates-fees-link {
+  color: #0056d2;
+  text-decoration: none;
+}
+
+.unique-compare-checkbox label {
+  cursor: pointer;
+}
+
+.unique-accordion {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.unique-rating {
+  display: flex;
+  align-items: center;
+}
+
+.unique-rating-label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: black;
+}
+
+.unique-stars {
+  display: flex;
+  margin-right: 8px;
+}
+
+.unique-star {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-right: 2px;
+  position: relative;
+}
+
+.unique-star.half {
+  position: relative;
+  color: #ccc;
+}
+
+.unique-gray-star {
+  position: relative;
+  color: #ccc;
+}
+
+.unique-star.half::before {
+  content: '\2605';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  color: #ffcc00;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.unique-rating-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+  margin-right: 5px;
+}
+
+.unique-accordion-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #b6b4b4;
+  color: black;
+}
+
+
+.accordion-icon{
+  font-size: 20px;
+  
+}
+
+.unique-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.travel, .cash-back, .business {
+  display: none;
+}
+
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px !important;
+  margin-top: 0%;
+  padding: 0;
+  justify-content: center ;
+}
+
+.container h1{
+  margin: 0;
+  text-align: left;
+  flex: 1;
+  margin-top: 2%;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  border-bottom: 1px solid #b6b4b4;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 12px 15px;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fe; /* Light bluish color for alternate rows */
+}
+
+
+
+.bullet-point {
+  margin-left: 20px; /* Moves the whole list to the right */
+  padding-left: 20px; /* Adds extra space inside the list */
+  list-style-position: inside; /* Keeps the bullets inside the padding */
+}
+
+.bullet-point li {
+  padding-left: 10px; /* Adds more indent to each bullet point */
+}
+
+.accordion-item-types-credits {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.accordion-icon-types-credits {
+  font-size: 28px;
+  color: #0056d2;
+  margin-top: 0px;
+  
+}
+
+
+
+
+
+.accordion-panel-types-credits {
+  display: none;
+  padding: 0 15px;
+  color: black;
+
+}
+
+.accordion-panel-types-credits p {
+  font-size: 18px;
+
+}
+
+.accordion-panel-types-credits a {
+  font-size: 18px;
+
+
+}
+
+.accordion-panel-types-credits li {
+  font-size: 18px;
+  color: rgb(122, 121, 121)
+}
+
+
+.accordion-container{
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+
+}
+
+.accordion-container:last-child{
+  border-bottom: none;
+}
+
+
+.before-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #f9f9ff; /* Light background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.before-footer-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.before-footer-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.profile-image:hover {
+  border-color: #0056d2; /* Change border color on hover */
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  color: #0056d2; /* Darker shade for headings */
+  margin: 0;
+}
+
+.profile-info .profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+.before-footer-section p {
+  font-size: 16px;
+  color: rgb(122, 121, 121);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .before-footer {
+    padding: 20px;
+  }
+
+  .before-footer-section {
+    padding: 15px;
+  }
+
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .profile-info h3 {
+    font-size: 18px;
+  }
+
+  .profile-info .profile-name {
+    font-size: 20px;
+  }
+
+  .before-footer-section p {
+    font-size: 15px;
+  }
+}
+
+
+#footer-placeholder{
+  color: black;
+  width: 100vw;
+  margin-right: 10px;
+}
+
+
+
+

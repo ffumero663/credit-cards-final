@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>American Express</title>
+  <link rel="stylesheet" href="/credit-cards/css/card-issuer-components/american-express.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <div class="background-photo">
+    <div class="header">
+      <div class="bank-logo">
+        <img src="/credit-cards/images/CardIssuer/centered-logo/american-express.png" alt="American Express">
+      </div>
+      <h4 class="advertisor">
+        <a id="disclosure-link" href="#">ADVERTISER DISCLOSURE</a>
+      </h4>
+    </div>
+
+    <div id="disclosure-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <div class="modal-header">Advertiser Disclosure</div>
+        <div class="modal-body">
+          <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+          <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+        </div>
+        <div class="modal-footer">
+          <button id="ok-btn" class="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Flex container for the sidebar and main content -->
+    <div class="flex-container">
+      <div id="on-this-page-panel"></div> <!-- Sidebar Panel -->
+      <div class="main-content">
+        <h1 id="our-top-picks-section">American Express Credit Cards</h1>
+        <p>Written by: <a href="#">Tracy Stewart</a> | Edited by: <a href="#">Jeanine Skowronski</a> | Reviewed by: <a href="#">Stephanie Zito</a> | October 8, 2024</p>
+        <br>
+        <p>Known for outstanding customer service and major rewards, our partner American Express offers some of the best credit cards around for people with good or excellent credit. Whether you’re looking to earn cash back or get rewards for travel or your business, there’s an Amex card for you.</p>
+        <br>
+        <div class="how-we-choose">
+          <div class="title">
+            <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+            <h2>How we Choose</h2>
+          </div>
+          <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+    
+        </div>
+      
+        <div class="summary">
+          <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+            <img src="/credit-cards/images/CardIssuer/new-icons/plus-icon-banks.png" alt="plus icon">
+          </button>
+          <div id="summary-text" class="hidden">
+            <h2 style="color: #fff;">Best American Express credit cards of 2024: </h2>
+            <br>
+            <ul class="ul-best-credit-cards">
+              <li><a href="#">The Platinum Card® from American Express:</a> Best for luxury travel perks</li>
+              <li><a href="#">American Express® Gold Card:</a> Best for dining rewards</li>
+              <li><a href="#">Blue Cash Everyday® Card from American Express:</a> Best for no annual fee</li>
+              <li><a href="#">Blue Cash Preferred® Card from American Express:</a> Best for high cash back rates</li>
+              <li><a href="#">American Express® Business Gold Card:</a> Best for small business travel</li>
+              <li><a href="#">The Business Platinum Card® from American Express:</a> Best for luxury business travel perks</li>
+              <li><a href="#">Delta SkyMiles® Gold Business American Express Card:</a> Best for Delta-loyal small business owners</li>
+              <li><a href="#">Hilton Honors American Express Surpass® Card:</a> Best for Hilton hotel stays</li>
+              <li><a href="#">Delta SkyMiles® Platinum Business American Express Card:</a> Best for business travelers seeking elevated status</li>
+              <li><a href="#">The American Express Blue Business CashTM Card:</a> Best for cash back rewards for business</li>
+              <li><a href="#">American Express® Green Card </a> – Best for everyday travel</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="cardmatch-section">
+        <div class="icon-container">
+          <img src="/credit-cards/images/CardIssuer/new-icons/Pre-approved offers from American Express.png" alt="Icon" />
+        </div>
+        
+        <div class="text-container">
+          <p class="new-to">NEW TO CARDMATCH™</p>
+          <h2>Pre-approved offers from American Express</h2>
+          <p class="description">
+            Get pre-approved for top partner cards like The Platinum Card® from American Express or the American Express® Gold Card with help from CardMatch™. All it takes is 60 seconds to find out if you have pre-approved offers.
+          </p>
+          <br>
+          <button class="cta-button">See Matches</button>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-label">
+            <span>FILTER CARDS BY CATEGORY:</span>
+        </div>
+        <div class="filter-buttons">
+            <button id="all-cat" class="filter-button active"><i class="fas fa-th"></i> All Categories</button>
+            <button id="cash-back" class="filter-button"><i class="fas fa-wallet"></i> Cash Back</button>
+            <button id="travel" class="filter-button"><i class="fas fa-plane"></i> Travel</button>
+            <button id="business" class="filter-button"><i class="fas fa-briefcase"></i> Business</button>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+      <!-- Column 1: Platinum Card -->
+      <div class="card all-cat">
+          <p class="category-label">BEST FOR LUXURY TRAVEL PERKS</p>
+          <h2>Platinum Card® American Express</h2>
+          <img src="/credit-cards/images/CreditCardImg/The Platinum Card® from American Express.png" alt="The Platinum Card from American Express" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.8</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare1">
+              <label for="compare1">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at American Express's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points for flights booked directly with airlines or with American Express Travel up to $500,000 on these purchases per calendar year.</li>
+                  <li><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points on prepaid hotels booked with American Express Travel.</li>
+              </ul>
+          </div>
+          <br>
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>Earn 80,000 points</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$695</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>See Pay Over Time APR</strong></li>
+            </ul>
+          </div>
+      </div>
+  
+      <!-- Column 2: Gold Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR DINING REWARDS</p>
+          <h2>American Express® Gold Card</h2>
+          <img src="/credit-cards/images/CreditCardImg/American Express® Gold Card.png" alt="American Express Gold Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.9</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare2">
+              <label for="compare2">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at American Express's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent on purchases at restaurants worldwide, on up to $50,000 in purchases per calendar year, then 1X points for the rest of the year.</li>
+                  <li><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent at US supermarkets, on up to $25,000 in purchases per calendar year, then 1X points for the rest of the year.</li>
+                  <li><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Membership Rewards® points per dollar spent on flights booked directly with airlines or on AmexTravel.com.</li>
+                  <li><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Membership Rewards® points per dollar spent on prepaid hotels and other eligible purchases booked on AmexTravel.com.</li>
+                  <li><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Membership Rewards® point per dollar spent on all other eligible purchases.</li>
+              </ul>
+          </div>
+
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>60,000 points + earn up to $100 back</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$325</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>See Pay Over Time APR</strong></li>
+            </ul>
+          </div>
+
+        
+      </div>
+  
+      <!-- Column 3: Blue Cash Everyday Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR NO ANNUAL FEE</p>
+          <h2>Blue Cash Everyday® Card</h2>
+          <img src="/credit-cards/images/CreditCardImg/Blue Cash Everyday® Card from American Express.png" alt="Blue Cash Everyday Card from American Express" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.8</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare3">
+              <label for="compare3">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at American Express's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases, then 1%.</li>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on U.S. online retail purchases, on up to $6,000 per year, then 1%</li>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations, on up to $6,000 per year, then 1%.</li>
+                  <li><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases.</li>
+              </ul>
+          </div>
+
+          <div></div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>60,000 points + earn up to $100 back</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$325</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>See Pay Over Time APR</strong></li>
+            </ul>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="unique-card-content cash-back">
+        <div class="unique-credit-card-detail">
+    <div class="unique-card-detail-container">
+      
+      <!-- Card Image -->
+      <div class="unique-card-image">
+        <img src="/credit-cards/images/CreditCardImg/Blue Cash Everyday® Card from American Express.png" alt="Blue Cash Everyday® Card from American Express">
+  
+        <div class="unique-rating">
+          <span class="unique-rating-label">Our rating:</span>
+          <span class="unique-stars">
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star half">&#9733;</span>
+          </span>
+          <span class="unique-rating-number">4.8</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Info -->
+      <div class="unique-card-info">
+        <h2 class="unique-card-name">Blue Cash Everyday® Card from American Express</h2>
+        <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases, then 1%.</p>
+        <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on U.S. online retail purchases, on up to $6,000 per year, then 1%.</p>
+        <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations, on up to $6,000 per year, then 1%.</p>
+        <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases.</p>
+        <br>
+        <div class="unique-card-details-summary-inline">
+          <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn $200</p>
+          <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+          <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.74% - 29.74% variable</p>
+          <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        </div>
+        <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+        <input type="checkbox" id="compare16" name="compare">
+        <label for="compare16" style="color: black;">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="unique-accordion">
+      <div class="unique-accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">MORE CASH BACK CARDS FROM AMERICAN EXPRESS</h4>
+  <div class="unique-card-detail-container">
+    
+    <!-- Card Image -->
+    <div class="unique-card-image">
+      <img src="/credit-cards/images/CreditCardImg/Blue Cash Preferred® Card from American Express.png" alt="Blue Cash Preferred® Card from American Express">
+
+      <div class="unique-rating">
+        <span class="unique-rating-label">Our rating:</span>
+        <span class="unique-stars">
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star half">&#9733;</span>
+        </span>
+        <span class="unique-rating-number">4.6</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Info -->
+    <div class="unique-card-info">
+      <h2 class="unique-card-name">Blue Cash Preferred® Card from American Express</h2>
+      <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+      <p class="unique-rewards-rate"><strong>6%</strong> &nbsp;&nbsp;&nbsp;&nbsp;6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).</p>
+      <p class="unique-rewards-rate"><strong>6%</strong> &nbsp;&nbsp;&nbsp;&nbsp;6% Cash Back on select U.S. streaming subscriptions.</p>
+      <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back on transit including taxis/rideshare, parking, tolls, trains, buses, and more.</p>
+      <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% Cash Back at U.S. gas stations.</p>
+      <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% Cash Back on other purchases.</p>
+      <br>
+      <div class="unique-card-details-summary-inline">
+        <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn $250</p>
+        <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0 intro annual fee for the first year, then $95.</p>
+        <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.74% - 29.74% variable</p>
+        <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+      </div>
+      <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="unique-secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+    <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+    <div class="unique-compare-checkbox">
+      <input type="checkbox" id="compare17" name="compare">
+      <label for="compare17" style="color: black;">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="unique-accordion">
+    <div class="unique-accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="unique-accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <div class="unique-card-detail-container">
+    
+    <!-- Card Image -->
+    <div class="unique-card-image">
+      <img src="/credit-cards/images/CreditCardImg/The Plum Card® from American Express.png" alt="The Plum Card® from American Express">
+
+      <div class="unique-rating">
+        <span class="unique-rating-label">Our rating:</span>
+        <span class="unique-stars">
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star half">&#9733;</span>
+          <span class="unique-gray-star">&#9733;</span>
+          <span class="unique-gray-star">&#9733;</span>
+        </span>
+        <span class="unique-rating-number">2.4</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Info -->
+    <div class="unique-card-info">
+      <h2 class="unique-card-name">The Plum Card® from American Express</h2>
+      <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+      <p class="unique-rewards-rate"><strong>1.5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn an unlimited 1.5% Early Pay Discount on eligible charges paid within 10 days <br> of your statement closing date and see the discount applied to your next statement when you <br>pay at the least the Minimum Payment Due by the Payment Due Date.</p>
+      <br>
+      <div class="unique-card-details-summary-inline">
+        <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+        <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $250‡</p>
+        <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> N/A</p>
+        <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+      </div>
+      <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="unique-secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+    <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+    <div class="unique-compare-checkbox">
+      <input type="checkbox" id="compare18" name="compare">
+      <label for="compare18" style="color: black;">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="unique-accordion">
+    <div class="unique-accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="unique-accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      <div class="unique-card-content travel">
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">American Express® Gold Card</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/American Express® Gold Card.png" alt="American Express® Gold Card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.9</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">American Express® Gold Card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent on purchases at restaurants worldwide, <br>on up to $50,000 in purchases per calendar year, then 1X points for the rest of the year.</p>
+              <p class="unique-rewards-rate"><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Membership Rewards® points per dollar spent at US supermarkets, on up to $25,000 <br>in purchases per calendar year, then 1X points for the rest of the year.</p>
+              <p class="unique-rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Membership Rewards® points per dollar spent on flights booked directly with airlines or on AmexTravel.com.</p>
+              <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Membership Rewards® points per dollar spent on prepaid hotels and other eligible purchases booked on AmexTravel.com.</p>
+              <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Membership Rewards® point per dollar spent on all other eligible purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 60,000 points + earn up to $100 back</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $325</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> See Pay Over Time APR</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at American Express's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare19" name="compare">
+              <label for="compare19" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+
+          <div class="unique-credit-card-detail">
+            <h4 class="unique-card-category">MORE TRAVEL CARDS FROM AMERICAN EXPRESS</h4>
+            <div class="unique-card-detail-container">
+                
+                <!-- Card Image -->
+                <div class="unique-card-image">
+                    <img src="/credit-cards/images/CreditCardImg/The Platinum Card® from American Express.png" alt="The Platinum Card® from American Express">
+                    
+                    <div class="unique-rating">
+                        <span class="unique-rating-label">Our rating:</span>
+                        <span class="unique-stars">
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star half">&#9733;</span>
+                        </span>
+                        <span class="unique-rating-number">4.8</span>
+                        <span class="info-icon">&#8505;</span>
+                    </div>
+                </div>
+        
+                <!-- Card Info -->
+                <div class="unique-card-info">
+                    <h2 class="unique-card-name">The Platinum Card® from American Express</h2>
+                    <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                    <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points for flights booked directly with airlines or with American <br>Express Travel up to $500,000 on these purchases per calendar year.</p>
+                    <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Membership Rewards® Points on prepaid hotels booked with American Express Travel.</p>
+                    <br>
+                    <div class="unique-card-details-summary-inline">
+                        <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 80,000 points</p>
+                        <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $695</p>
+                        <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> See Pay Over Time APR</p>
+                        <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                    </div>
+                    <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                    <p class="unique-secure-site-note">at American Express's secure site</p>
+                </div>
+            </div>
+        
+            <!-- Additional Information -->
+            <div class="unique-extra-info">
+                <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+                <div class="unique-compare-checkbox">
+                    <input type="checkbox" id="compare17" name="compare">
+                    <label for="compare17" style="color: black;">Add to compare</label>
+                </div>
+            </div>
+        
+            <!-- Editor's Take & Card Details Accordion -->
+            <div class="unique-accordion">
+                <div class="unique-accordion-item">
+                    <h5>Editor's take</h5>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="unique-accordion-item">
+                    <h5>Card details</h5>
+                    <span class="accordion-icon">+</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">MORE TRAVEL CARDS FROM AMERICAN EXPRESS</h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/Hilton Honors American Express Surpass® Card.png" alt="Hilton Honors American Express Surpass Card">
+                  
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star half">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">4.7</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Hilton Honors American Express Surpass® Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>12X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 12X Hilton Honors Bonus Points for each dollar of eligible purchases charged on your Card <br>directly with a hotel or resort within the Hilton portfolio.</p>
+                  <p class="unique-rewards-rate"><strong>6X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 6X Points for each dollar of purchases on your Card at U.S. restaurants, U.S. supermarkets, <br>and at U.S. gas stations.</p>
+                  <p class="unique-rewards-rate"><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4X Points for each dollar on U.S. Online Retail Purchases.</p>
+                  <p class="unique-rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Points for all other eligible purchases on your Card.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 165,000 points</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $150</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at American Express's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compare18" name="compare">
+                  <label for="compare18" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="unique-credit-card-detail">
+        <h4 class="unique-card-category">BEST BUSINESS AIRLINE CREDIT CARD</h4>
+        <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+                <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Platinum Business American Express Card.png" alt="Delta SkyMiles Platinum Business American Express Card">
+                
+                <div class="unique-rating">
+                    <span class="unique-rating-label">Our rating:</span>
+                    <span class="unique-stars">
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star half">&#9733;</span>
+                    </span>
+                    <span class="unique-rating-number">4.8</span>
+                    <span class="info-icon">&#8505;</span>
+                </div>
+            </div>
+    
+            <!-- Card Info -->
+            <div class="unique-card-info">
+                <h2 class="unique-card-name">Delta SkyMiles® Platinum Business American Express Card</h2>
+                <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                <p class="unique-rewards-rate"><strong>1.5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1.5X miles on eligible transit and U.S. shipping purchases, plus single eligible <br> purchases of $5,000 or more. Terms and miles cap apply.</p>
+                <br>
+                <div class="unique-card-details-summary-inline">
+                    <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 70,000 Bonus Miles</p>
+                    <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $350</p>
+                    <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+                    <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                </div>
+                <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                <p class="unique-secure-site-note">at American Express's secure site</p>
+            </div>
+        </div>
+    
+        <!-- Additional Information -->
+        <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+                <input type="checkbox" id="compare16" name="compare">
+                <label for="compare16" style="color: black;">Add to compare</label>
+            </div>
+        </div>
+    
+        <!-- Editor's Take & Card Details Accordion -->
+        <div class="unique-accordion">
+            <div class="unique-accordion-item">
+                <h5>Editor's take</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+                <h5>Card details</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="unique-credit-card-detail">
+      <h4 class="unique-card-category">BEST FOR HOTEL REWARDS</h4>
+      <div class="unique-card-detail-container">
+          
+          <!-- Card Image -->
+          <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/The Hilton Honors American Express Business Card.png" alt="Hilton Honors American Express Business Card">
+              
+              <div class="unique-rating">
+                  <span class="unique-rating-label">Our rating:</span>
+                  <span class="unique-stars">
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star half">&#9733;</span>
+                      <span class="unique-gray-star">&#9733;</span>
+                  </span>
+                  <span class="unique-rating-number">4.3</span>
+                  <span class="info-icon">&#8505;</span>
+              </div>
+          </div>
+  
+          <!-- Card Info -->
+          <div class="unique-card-info">
+              <h2 class="unique-card-name">The Hilton Honors American Express Business Card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>12X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 12X Hilton Honors Bonus Points on eligible Hilton purchases.</p>
+              <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Hilton Honors Bonus Points on other purchases made with the card on the first <br>$100,000 in purchases each calendar year.</p>
+              <p class="unique-rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;3X on all other eligible purchases. Terms & Limitations Apply.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                  <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 175,000 Bonus Points</p>
+                  <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $195</p>
+                  <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+                  <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at American Express's secure site</p>
+          </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="unique-extra-info">
+          <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+          <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+          </div>
+      </div>
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="unique-accordion">
+          <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+          <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="unique-credit-card-detail">
+    <h4 class="unique-card-category">Delta SkyMiles® Gold American Express Card</h4>
+    <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+        <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Gold American Express Card.png" alt="Delta SkyMiles Gold American Express Card">
+        <div class="unique-rating">
+          <span class="unique-rating-label">Our rating:</span>
+          <span class="unique-stars">
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star half">&#9733;</span>
+          </span>
+          <span class="unique-rating-number">4.4</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Info -->
+      <div class="unique-card-info">
+        <h2 class="unique-card-name">Delta SkyMiles® Gold American Express Card</h2>
+        <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Miles on Delta purchases, at U.S. Supermarkets and at restaurants worldwide, <br>including takeout and delivery in the U.S.</p>
+        <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Mile on all other eligible purchases.</p>
+        <br>
+        <div class="unique-card-details-summary-inline">
+          <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 50,000 Bonus Miles</p>
+          <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0 introductory annual fee for the first year, then $150</p>
+          <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+          <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        </div>
+        <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+        <input type="checkbox" id="compare18" name="compare">
+        <label for="compare18" style="color: black;">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="unique-accordion">
+      <div class="unique-accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="unique-credit-card-detail">
+    <h4 class="unique-card-category">Delta SkyMiles® Gold Business American Express Card</h4>
+    <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+        <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Gold Business American Express Card.png" alt="Delta SkyMiles Gold Business American Express Card">
+        <div class="unique-rating">
+          <span class="unique-rating-label">Our rating:</span>
+          <span class="unique-stars">
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star full">&#9733;</span>
+            <span class="unique-star half">&#9733;</span>
+          </span>
+          <span class="unique-rating-number">4.3</span>
+          <span class="info-icon">&#8505;</span>
+        </div>
+      </div>
+  
+      <!-- Card Info -->
+      <div class="unique-card-info">
+        <h2 class="unique-card-name">Delta SkyMiles® Gold Business American Express Card</h2>
+        <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+        <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2 miles per dollar spent on purchases at U.S. Shipping providers and at U.S. providers for Advertising <br>in select media on up to $50,000 of purchases per category, per year.</p>
+        <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2 Miles on every dollar spent on eligible purchases made directly with Delta and on <br>every eligible dollar spent at restaurants.</p>
+        <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;Earn 1 Mile on every eligible dollar spent on purchases.</p>
+        <br>
+        <div class="unique-card-details-summary-inline">
+          <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 60,000 Bonus Miles</p>
+          <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0 introductory annual fee for the first year, then $150</p>
+          <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+          <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+        </div>
+        <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+        <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+    </div>
+  
+    <!-- Additional Information -->
+    <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+        <input type="checkbox" id="compare19" name="compare">
+        <label for="compare19" style="color: black;">Add to compare</label>
+      </div>
+    </div>
+  
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="unique-accordion">
+      <div class="unique-accordion-item">
+        <h5>Editor's take</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+        <h5>Card details</h5>
+        <span class="accordion-icon">+</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Delta SkyMiles® Blue American Express Card -->
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Delta SkyMiles® Blue American Express Card</h4>
+  <div class="unique-card-detail-container">
+    <!-- Card Image -->
+    <div class="unique-card-image">
+      <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Blue American Express Card.png" alt="Delta SkyMiles® Blue American Express Card">
+      
+      <div class="unique-rating">
+        <span class="unique-rating-label">Our rating:</span>
+        <span class="unique-stars">
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star half">&#9733;</span>
+          <span class="unique-gray-star">&#9733;</span>
+        </span>
+        <span class="unique-rating-number">3.4</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Info -->
+    <div class="unique-card-info">
+      <h2 class="unique-card-name">Delta SkyMiles® Blue American Express Card</h2>
+      <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+      <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Miles per dollar at restaurants worldwide, plus takeout and delivery in the U.S.</p>
+      <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X Miles per dollar spent on Delta purchases.</p>
+      <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X Mile on all other eligible purchases.</p>
+      
+      <div class="unique-card-details-summary-inline">
+        <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 10,000 miles</p>
+        <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+        <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+        <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670–850 (Good to Excellent)</p>
+      </div>
+      <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="unique-secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+    <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+    <div class="unique-compare-checkbox">
+      <input type="checkbox" id="compare1" name="compare">
+      <label for="compare1">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="unique-accordion">
+    <div class="unique-accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="unique-accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+<!-- Delta SkyMiles® Reserve Business American Express Card -->
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Delta SkyMiles® Reserve Business American Express Card</h4>
+  <div class="unique-card-detail-container">
+    <!-- Card Image -->
+    <div class="unique-card-image">
+      <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Reserve Business American Express Card.png" alt="Delta SkyMiles® Reserve Business American Express Card">
+      
+      <div class="unique-rating">
+        <span class="unique-rating-label">Our rating:</span>
+        <span class="unique-stars">
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star full">&#9733;</span>
+          <span class="unique-star half">&#9733;</span>
+        </span>
+        <span class="unique-rating-number">4.7</span>
+        <span class="info-icon">&#8505;</span>
+      </div>
+    </div>
+
+    <!-- Card Info -->
+    <div class="unique-card-info">
+      <h2 class="unique-card-name">Delta SkyMiles® Reserve Business American Express Card</h2>
+      <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+      <p class="unique-rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3 miles per dollar on eligible Delta purchases.</p>
+      
+      <div class="unique-card-details-summary-inline">
+        <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 80,000 Bonus Miles</p>
+        <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $650</p>
+        <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+        <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670–850 (Good to Excellent)</p>
+      </div>
+      <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+      <p class="unique-secure-site-note">at American Express's secure site</p>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+    <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+    <div class="unique-compare-checkbox">
+      <input type="checkbox" id="compare2" name="compare">
+      <label for="compare2">Add to compare</label>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="unique-accordion">
+    <div class="unique-accordion-item">
+      <h5>Editor's take</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+    <div class="unique-accordion-item">
+      <h5>Card details</h5>
+      <span class="accordion-icon">+</span>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Hilton Honors American Express Card</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/Hilton Honors American Express Card.png" alt="Hilton Honors American Express Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9734;</span>
+              </span>
+              <span class="unique-rating-number">4.4</span>
+              <span class="info-icon">&#8505;</span>
+          </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">Hilton Honors American Express Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>7X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 7X Hilton Honors Bonus Points for each dollar spent at Hilton hotels.</p>
+          <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5X Points at U.S. restaurants, supermarkets, and gas stations.</p>
+          <p class="unique-rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3X Points on all other eligible purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 100,000 points</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compare-hilton" name="compare">
+          <label for="compare-hilton" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Marriott Bonvoy Business® American Express® Card</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/Marriott Bonvoy Business® American Express® Card.png" alt="Marriott Bonvoy Business American Express Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9734;</span>
+              </span>
+              <span class="unique-rating-number">4.3</span>
+              <span class="info-icon">&#8505;</span>
+          </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">Marriott Bonvoy Business® American Express® Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>6X</strong> &nbsp;&nbsp;&nbsp;&nbsp;6x Marriott Bonvoy points on eligible purchases at participating hotels.</p>
+          <p class="unique-rewards-rate"><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;4x points on purchases at U.S. restaurants, gas stations, and shipping.</p>
+          <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;2x points on all other eligible purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 3 Free Night Awards</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $125</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compare-marriott" name="compare">
+          <label for="compare-marriott" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+</div>
+
+      
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="unique-card-content business">
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">The American Express Blue Business Cash™ Card</h4>
+          <div class="unique-card-detail-container">
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/The American Express Blue Business Cash™ Card.png" alt="The American Express Blue Business Cash™ Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star half">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">4.3</span>
+                  </div>
+              </div>
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">The American Express Blue Business Cash™ Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;cash back on eligible purchases up to $50,000 per calendar year, then 1%.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> $250 statement credit</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> No annual fee</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 25.99% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at American Express's secure site</p>
+              </div>
+          </div>
+          <div class="unique-extra-info">
+              <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compare1" name="compare">
+                  <label for="compare1" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="unique-credit-card-detail">
+        <h4 class="unique-card-category">The Blue Business® Plus Credit Card from American Express</h4>
+        <div class="unique-card-detail-container">
+            <!-- Card Image -->
+            <div class="unique-card-image">
+                <img src="/credit-cards/images/credit-card-images-apr/The Blue Business® Plus Credit Card from American Express.png" alt="The Blue Business® Plus Credit Card from American Express">
+                <div class="unique-rating">
+                    <span class="unique-rating-label">Our rating:</span>
+                    <span class="unique-stars">
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-gray-star">&#9733;</span>
+                    </span>
+                    <span class="unique-rating-number">4.1</span>
+                </div>
+            </div>
+            <!-- Card Info -->
+            <div class="unique-card-info">
+                <h2 class="unique-card-name">The Blue Business® Plus Credit Card from American Express</h2>
+                <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;points on everyday business purchases up to $50,000 per year, then 1 point per dollar.</p>
+                <br>
+                <div class="unique-card-details-summary-inline">
+                    <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 15,000 Membership Rewards® points</p>
+                    <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> No annual fee</p>
+                    <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 25.99% variable</p>
+                    <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                </div>
+                <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                <p class="unique-secure-site-note">at American Express's secure site</p>
+            </div>
+        </div>
+        <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+                <input type="checkbox" id="compare2" name="compare">
+                <label for="compare2" style="color: black;">Add to compare</label>
+            </div>
+        </div>
+        <div class="unique-accordion">
+            <div class="unique-accordion-item">
+                <h5>Editor's take</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+                <h5>Card details</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="unique-credit-card-detail">
+      <h4 class="unique-card-category">Delta SkyMiles® Platinum Business American Express Card</h4>
+      <div class="unique-card-detail-container">
+          <!-- Card Image -->
+          <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Platinum Business American Express Card.png" alt="Delta SkyMiles Platinum Business American Express Card">
+              <div class="unique-rating">
+                  <span class="unique-rating-label">Our rating:</span>
+                  <span class="unique-stars">
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star">&#9734;</span>
+                  </span>
+                  <span class="unique-rating-number">4.8</span>
+              </div>
+          </div>
+          <!-- Card Info -->
+          <div class="unique-card-info">
+              <h2 class="unique-card-name">Delta SkyMiles® Platinum Business American Express Card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>1.5X</strong>&nbsp;&nbsp;&nbsp;&nbsp; miles on eligible transit and U.S. shipping purchases, plus single eligible purchases of $5,000 or more.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                  <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 70,000 Bonus Miles</p>
+                  <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $350</p>
+                  <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+                  <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at American Express's secure site</p>
+          </div>
+      </div>
+      <div class="unique-extra-info">
+          <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+          <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare1" name="compare">
+              <label for="compare1" style="color: black;">Add to compare</label>
+          </div>
+      </div>
+      <div class="unique-accordion">
+          <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+          <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+      </div>
+  </div>
+
+  <div class="unique-credit-card-detail">
+    <h4 class="unique-card-category">American Express® Business Gold Card</h4>
+    <div class="unique-card-detail-container">
+        <!-- Card Image -->
+        <div class="unique-card-image">
+            <img src="/credit-cards/images/credit-card-images-apr/American Express® Business Gold Card.png" alt="American Express Business Gold Card">
+            <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star half">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.4</span>
+            </div>
+        </div>
+        <!-- Card Info -->
+        <div class="unique-card-info">
+            <h2 class="unique-card-name">American Express® Business Gold Card</h2>
+            <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+            <p class="unique-rewards-rate"><strong>4X</strong>&nbsp;&nbsp;&nbsp;&nbsp; points on top categories, 3X points on flights and prepaid hotels, 1X on other purchases.</p>
+            <br>
+            <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 100,000 points</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $375</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.99% - 27.99% variable</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+            </div>
+            <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+            <p class="unique-secure-site-note">at American Express's secure site</p>
+        </div>
+    </div>
+    <div class="unique-extra-info">
+        <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+        <div class="unique-compare-checkbox">
+            <input type="checkbox" id="compare2" name="compare">
+            <label for="compare2" style="color: black;">Add to compare</label>
+        </div>
+    </div>
+    <div class="unique-accordion">
+        <div class="unique-accordion-item">
+            <h5>Editor's take</h5>
+            <span class="accordion-icon">+</span>
+        </div>
+        <div class="unique-accordion-item">
+            <h5>Card details</h5>
+            <span class="accordion-icon">+</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">The Business Platinum Card® from American Express</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/PlatinumCard.png" alt="The Business Platinum Card® from American Express">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">4.9</span>
+          </div>
+      </div>
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">The Business Platinum Card® from American Express</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Membership Rewards® points on flights and prepaid hotels on AmexTravel.com</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 150,000 points</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $695</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.99% - 27.99% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compare1" name="compare">
+          <label for="compare1" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">The Plum Card® from American Express</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/The Plum Card® from American Express.png" alt="The Plum Card® from American Express">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">2.4</span>
+          </div>
+      </div>
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">The Plum Card® from American Express</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>1.5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Early Pay Discount on eligible charges paid within 10 days.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $250</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> N/A</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compare2" name="compare">
+          <label for="compare2" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">The Hilton Honors American Express Business Card</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/The Hilton Honors American Express Business Card.png" alt="The Hilton Honors American Express Business Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">4.3</span>
+          </div>
+      </div>
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">The Hilton Honors American Express Business Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>12X</strong> &nbsp;&nbsp;&nbsp;&nbsp;on Hilton purchases, 5X on U.S. restaurants, supermarkets, and gas stations, 3X on all other purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 175,000 Bonus Points</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $195</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compareHiltonBusiness" name="compare">
+          <label for="compareHiltonBusiness" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Delta SkyMiles® Gold Business American Express Card</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Gold Business American Express Card.png" alt="Delta SkyMiles® Gold Business American Express Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">4.3</span>
+          </div>
+      </div>
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">Delta SkyMiles® Gold Business American Express Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>2X</strong>&nbsp;&nbsp;&nbsp;&nbsp; miles on Delta, U.S. restaurants, and advertising on U.S. media; 1X on all other purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 60,000 Bonus Miles</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0 for the first year, then $150</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compareDeltaGoldBusiness" name="compare">
+          <label for="compareDeltaGoldBusiness" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Delta SkyMiles® Reserve Business American Express Card</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/Delta SkyMiles® Reserve Business American Express Card.png" alt="Delta SkyMiles® Reserve Business American Express Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">4.7</span>
+          </div>
+      </div>
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">Delta SkyMiles® Reserve Business American Express Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;miles per dollar on eligible Delta purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 80,000 Bonus Miles</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $650</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compareDeltaReserve" name="compare">
+          <label for="compareDeltaReserve" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Marriott Bonvoy Business® American Express® Card</h4>
+  <div class="unique-card-detail-container">
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/Marriott Bonvoy Business® American Express® Card.png" alt="Marriott Bonvoy Business® American Express® Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">4.3</span>
+          </div>
+      </div>
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">Marriott Bonvoy Business® American Express® Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>6X</strong>&nbsp;&nbsp;&nbsp;&nbsp; points on Marriott Bonvoy purchases; 4x on dining, gas, wireless, shipping; 2x on other purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 3 Free Night Awards</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $125</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.49% - 29.49% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at American Express's secure site</p>
+      </div>
+  </div>
+  <div class="unique-extra-info">
+      <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compareMarriottBonvoy" name="compare">
+          <label for="compareMarriottBonvoy" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+ 
+
+    </div>
+
+
+
+    <div class="container">
+      <div id="on-this-page-panel-2"></div>
+      <div class="article-starter">
+        <div class="article-border">
+        <p style=" font-style: italic;">All information about the American Express Cash Magnet® Card and American Express® Green Card has been collected independently by CreditCards.com and has not been reviewed by the issuer. The American Express Cash Magnet Card is no longer available through CreditCards.com. </p>
+        <p style=" font-style: italic;"> Eligibility and Benefit level varies by Card. Terms, Conditions and Limitations Apply. Please visit <a href="#">americanexpress.com/benefitsguide</a> for more details. Underwritten by Amex Assurance Company.</p>
+        </div>  
+        <h2>Comparing the best American Express credit cards</h2>
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Credit Card</th>
+                  <th>Best Use</th>
+                  <th>Annual Fee</th>
+                  <th>CreditCards.com Rating</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>The Platinum Card® from American Express</td>
+                  <td>Luxury travel perks</td>
+                  <td>$695</td>
+                  <td><a href="#">4.4 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>American Express® Gold Card</td>
+                  <td>Dining rewards</td>
+                  <td>$325</td>
+                  <td><a href="#">4.9 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Blue Cash Everyday® Card from American Express</td>
+                  <td>No annual fee</td>
+                  <td>$0</td>
+                  <td><a href="#">4.8 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Blue Cash Preferred® Card from American Express</td>
+                  <td>High cash back rates</td>
+                  <td>$0 intro annual fee for the first year, then $95</td>
+                  <td><a href="#">4.6 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>American Express® Business Gold Card</td>
+                  <td>Small business travel</td>
+                  <td>$375</td>
+                  <td><a href="#">4.6 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>The Business Platinum Card® from American Express</td>
+                  <td>Luxury business travel perks</td>
+                  <td>$695</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Delta SkyMiles® Gold Business American Express Card</td>
+                  <td>Delta-loyal small business owners</td>
+                  <td>$0 introductory annual fee for the first year, then $150</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Hilton Honors American Express Surpass® Card</td>
+                  <td>Hilton hotel stays</td>
+                  <td>$150</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Delta SkyMiles® Platinum Business American Express Card</td>
+                  <td>Status-chasing business travelers</td>
+                  <td>$350</td>
+                  <td><a href="#">4.7 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>The American Express Blue Business Cash™ Card</td>
+                  <td>Cash back rewards for business</td>
+                  <td>No annual fee</td>
+                  <td><a href="#">3.8 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Delta SkyMiles® Platinum American Express Card</td>
+                  <td>Status chasers</td>
+                  <td>$350</td>
+                  <td><a href="#">4.4 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Delta SkyMiles® Gold American Express Card</td>
+                  <td>Airline miles</td>
+                  <td>$0 introductory annual fee for the first year, then $150</td>
+                  <td><a href="#">4.0 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>The Blue Business® Plus Credit Card from American Express</td>
+                  <td>Business rewards with no annual fee</td>
+                  <td>No annual fee</td>
+                  <td><a href="#">4.0 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>American Express Green Card</td>
+                  <td>Everyday travel</td>
+                  <td>$150</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+          </tbody>
+      </table>
+      
+      
+      
+        
+        <h2 style="font-size: 26px;" id="american-credit-card-details-section" class="section-offset" >Editor’s picks: Airline rewards credit card details</h2>
+        <h3>Best for luxury travel perks: The Platinum Card® from American Express</h3>
+        <ul>
+            <li><strong>Best features:</strong> One of the <a href="#">best travel credit cards</a> on the market, the Platinum Card offers a bevy of luxury travel benefits, including airport lounge access, a statement credit for <a href="#">Global Entry or TSA PreCheck</a>, an Uber cash credit, up to a $199 CLEAR® Plus annual credit for your membership and no foreign transaction fees (see <a href="#">rates and fees</a>).</li>
+            <li><strong>Biggest drawbacks:</strong> That laundry list of premium travel benefits comes with a $695 annual fee, not waived the first year.</li>
+            <li><strong>Alternative:</strong> The <a href="#">Capital One Venture X Rewards Credit Card</a> has a smaller annual fee of $395 and has luxury perks including lounge access. Learn more about the <a href="#">Capital One Venture X vs. Amex Platinum Card</a>.</li>
+            <li><strong>Bottom line:</strong> With its first-rate travel perks, The Platinum Card from American Express offers an excellent value for frequent travelers.</li>
+        </ul>
+        <p>Read our <a href="#">Platinum Card from American Express review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+        
+        <h3>Best for dining rewards: American Express® Gold Card</h3>
+        <ul>
+            <li><strong>Best features:</strong> The American Express Gold Card has superb rewards for dining, shopping and traveling. Available in white gold in addition to rose gold and regular gold, it earns 4X points at restaurants (on up to $50,000 in purchases per calendar year, then 1X) and 4X points at U.S. supermarkets (on up to $25,000 in purchases per calendar year, then 1X). Furthermore, it earns 3X points on flights booked directly with airlines or through amextravel.com, making it a well-rounded card.</li>
+            <li><strong>Biggest drawbacks:</strong> There’s a $325 annual fee (not waived the first year).</li>
+            <li><strong>Alternative:</strong> If your budget can’t handle high fees, you can still earn high rewards if you’re willing to juggle multiple credit cards. The <a href="#">Capital One Savor Cash Rewards Credit Card</a> offers 3% cash back for dining and doesn’t charge an annual fee. Pair it with the <a href="#">Blue Cash Preferred® Card from American Express</a> ($0 intro annual fee for the first year, then $95), which offers an impressive 6% cash back at U.S. supermarkets (on up to $6,000 in purchases per year, then 1%). Both come with even more rewards-earning opportunities, making it a powerful combination to have in your wallet.</li>
+            <li><strong>Bottom line:</strong> Frequent travelers will get the most use of its travel benefits and other opportunities, particularly the 4X and 3X earning categories that make it easy to <a href="#">maximize Membership Rewards points</a> to then turn into trips.</li>
+        </ul>
+        <p>Read our <a href="#">American Express Gold Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+        
+
+        <h3>Best for no annual fee: Blue Cash Everyday® Card from American Express</h3>
+<ul>
+    <li><strong>Best features:</strong> The Blue Cash Everyday is the mini-me of the Blue Cash Preferred, with excellent cash back on groceries and when filling up your car, but with no annual fee. Earn 3% back at U.S. supermarkets, U.S. gas stations and on U.S. online retail purchases on up to $6,000 in purchases per year in each category (then 1%), perfect for the growing family.</li>
+    <li><strong>Biggest drawbacks:</strong> The spending cap may be easily topped by families with big grocery budgets.</li>
+    <li><strong>Alternative:</strong> Depending on how much you spend, the <a href="#">Blue Cash Preferred from American Express</a> might offer more bang for your buck, despite the $95 annual fee ($0 intro annual fee for the first year). For more information, take a look at <a href="#">when a credit card with an annual fee is worth it</a>.</li>
+    <li><strong>Bottom line:</strong> Large families stand to do very well in these featured rewards categories. Plus, the 0% intro APR on purchases and balance transfers for the first 15 months (18.74%-29.74% Variable APR thereafter) is attractive to those who want to make a large purchase or pay off some debt and carry the balance for a bit.</li>
+</ul>
+<p>Read our <a href="#">Blue Cash Everyday Card from American Express review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for high cash back rates: Blue Cash Preferred® Card from American Express</h3>
+<ul>
+    <li><strong>Best features:</strong> We love this card’s generous cash back rates. Earn 6% cash back at U.S. supermarkets (up to $6,000 in purchases per year, then 1%); 6% cash back on select U.S. streaming subscriptions and 3% cash back at U.S. gas stations and on transit. It also offers 1% cash back on general purchases.</li>
+    <li><strong>Biggest drawbacks:</strong> The 6% bonus at U.S. supermarkets is great, though it’s capped to $6,000 in purchases per year and 1% thereafter. There is a $95 annual fee ($0 intro annual fee for the first year).</li>
+    <li><strong>Alternative:</strong> If you don’t get the most value from grocery shopping, the <a href="#">Citi Custom Cash® Card</a> lets you decide how you want to earn high rewards, offering 5% cash back on up to $500 spent each billing cycle in your top eligible spending category, then 1%. Learn more about the <a href="#">Citi Custom Cash Card vs. American Express Blue Cash Preferred</a>.</li>
+    <li><strong>Bottom line:</strong> The Blue Cash Preferred card offers a high cash back rate on categories that will appeal to big families on the go.</li>
+</ul>
+<p>Read our <a href="#">Blue Cash Preferred from American Express review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<h3>Best for small business travel: American Express® Business Gold Card</h3>
+<ul>
+    <li><strong>Best features:</strong> This card offers a decent value to small business owners who stand to earn 100,000 points after spending $15,000 on eligible purchases in the first three months of card membership. That’s in addition to potential bonus rewards in your top two eligible categories each billing cycle such as gas and travel.</li>
+    <li><strong>Biggest drawbacks:</strong> There is an annual fee of $375, and if your spending doesn’t align with the bonus categories, you’ll get little value out of this card. Plus, depending on what you decide to do with your rewards, you may lose out on some value. While there are several ways you can use your points, redeeming for travel is consistently the most valuable route.</li>
+    <li><strong>Alternative:</strong> Instead of earning 4X points in two eligible business categories each month, the <a href="#">Capital One Spark Miles for Business</a> is a flat-rate credit card that offers an unlimited 2X miles per dollar on every purchase, giving you more freedom to earn rewards on your everyday purchases.</li>
+    <li><strong>Bottom line:</strong> Small-business owners who hope to rack up points to put towards travel will appreciate the flexible bonus rewards, lack of foreign transaction fee (see <a href="#">rates and fees</a>), and other travel perks associated with the American Express® Business Gold Card.</li>
+</ul>
+<p>Read our <a href="#">American Express® Business Gold Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for luxury business travel perks: The Business Platinum Card® from American Express</h3>
+<ul>
+    <li><strong>Best features:</strong> With a whopper of an introductory offer and excellent travel benefits, the Business Platinum Card from American Express is a solid card for high-spending business owners on the go. Earn up to 150,000 points after spending $20,000 on eligible purchases in the first three months of membership. When booking through Amextravel.com, cardholders earn 2X points per dollar on eligible travel and a 35% bonus on points redeemed through Amextravel.com with your selected qualifying airline (up to 1,000,000 points per calendar year).</li>
+    <li><strong>Biggest drawbacks:</strong> The high annual fee of $695 may scare away some business owners.</li>
+    <li><strong>Alternative:</strong> The <a href="#">American Express® Business Gold Card</a> might be a better fit for small-business travelers who don’t need all the luxury bells and whistles and who prefer a card with a smaller annual fee. Read more about the <a href="#">Amex Business Gold vs. Amex Business Platinum</a>.</li>
+    <li><strong>Bottom line:</strong> Small-business owners may balk at the high annual fee and the high spend requirement to satisfy the introductory offer, but high-budget, travel-happy businesses fit this card well.</li>
+</ul>
+<p>Read our <a href="#">The Business Platinum Card® from American Express review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<h3>Best for Delta-loyal small business owners: Delta SkyMiles® Gold Business American Express Card</h3>
+<ul>
+    <li><strong>Best features:</strong> You can earn a credit of up to $200 for future Delta flights after spending $10,000 in a calendar year. Earn two miles per dollar on eligible direct Delta purchases, at restaurants and on U.S. purchases for advertising in select media and U.S. shipping purchases (on up to $50,000 in eligible purchases per category, per year), plus one mile per dollar on all other eligible purchases.</li>
+    <li><strong>Biggest drawbacks:</strong> Compared to general-purpose travel cards, the redemption options are not as flexible. And if your business doesn’t fly Delta regularly, the welcome offer and travel perks will be lost on you.</li>
+    <li><strong>Alternative:</strong> For greater flexibility, <a href="#">American Express® Business Gold Card</a> is for small-business owners who aren’t loyal to just one airline.</li>
+    <li><strong>Bottom line:</strong> The Delta SkyMiles® Gold Business American Express Card is a low-cost travel card best for small businesses located in or around a Delta hub city or people who like Delta as their preferred airline and who frequently spend in categories such as dining, shipping, and advertising.</li>
+</ul>
+<p>Read our <a href="#">Delta SkyMiles® Gold Business American Express Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for Hilton hotel stays: Hilton Honors American Express Surpass® Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Cardholders earn 12X points for spending at participating hotels and resorts within the Hilton Portfolio; 6X points on eligible purchases at U.S. restaurants, supermarkets and gas stations; and 3X points on all other eligible purchases.</li>
+    <li><strong>Biggest drawbacks:</strong> There’s a big annual spend requirement ($15,000) to earn a free night reward.</li>
+    <li><strong>Alternative:</strong> It’s hard to beat all the Hilton perks you’ll get with the Surpass card, but if you aren’t tied to only one hotel brand, you may get better value out of the <a href="#">Chase Sapphire Preferred® Card</a>. Points are worth more when you book through Chase Ultimate Rewards and have greater flexibility.</li>
+    <li><strong>Bottom line:</strong> The Hilton Honors American Express Surpass® Card is ideal for the traveler who frequents the Hilton brand. Hilton loyalists can take advantage of elite status and Hilton’s expansive network of hotels and resorts around the world.</li>
+</ul>
+<p>Read our <a href="#">Hilton Honors American Express Surpass Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<h3>Best for business travelers seeking elevated status: Delta SkyMiles® Platinum <br> Business American Express Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Get closer to elevated Status next Medallion® Year with MQD Headstart and MQD Boost: receive $2,500 Medallion Qualification Dollars each Medallion Qualification Year and earn $1 MQD for each $20 of purchases with your Delta SkyMiles® Platinum Business American Express Card. Delta SkyMiles® Platinum Business American Express Card Members save 15% when using miles to book Award Travel on Delta flights through delta.com and the Fly Delta app. <em>Discount not applicable to partner-operated flights or to taxes and fees.</em></li>
+    <li><strong>Biggest drawbacks:</strong> There’s a $350 annual fee, and free lounge access isn’t one of this card’s perks.</li>
+    <li><strong>Alternative:</strong> Busy travelers who want more flexibility in how they travel and earn rewards should check out the <a href="#">Chase Ink Business Preferred® Credit Card</a>. It doesn’t come with all the exclusive Delta perks, but for $95 per year and offers 3 points per $1 dollar on the first $150,000 spent in combined travel and select business categories each year.</li>
+    <li><strong>Bottom line:</strong> Business owners who want to enjoy <a href="#">elite status</a> and who frequently fly Delta will find a lot of value in this card’s wide range of travel perks.</li>
+</ul>
+<p>Read our <a href="#">Delta SkyMiles Platinum Business American Express Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for cash back rewards for business: The American Express Blue Business Cash™ Card</h3>
+<ul>
+    <li><strong>Best features:</strong> With no annual fee, you can quickly rack up cash back for your business with this card. You’ll earn 2% cash back on all eligible purchases on up to $50,000 per calendar year, then 1%.</li>
+    <li><strong>Biggest drawbacks:</strong> The spending cap on 2% earnings will be a disappointment to businesses who can easily spend more than $50,000 per year.</li>
+    <li><strong>Alternative:</strong> The <a href="#">Blue Business Plus Credit Card from American Express</a> has a more complicated rewards program that can provide more value to small-business owners who want to maximize the amount of rewards they earn.</li>
+    <li><strong>Bottom line:</strong> Start-ups and small businesses will appreciate the simplicity that this flat-rate rewards card offers.</li>
+</ul>
+<p>Read our <a href="#">The American Express Blue Business Cash™ Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for travelers who want elite status: Delta SkyMiles® Platinum American Express Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Receive $2,500 Medallion® Qualification Dollars each Medallion Qualification Year and get closer to Status with MQD Headstart. Delta SkyMiles® Platinum American Express Card members get 15% off when using miles to book Award Travel on Delta flights through delta.com and the Fly Delta app. <em>Discount not applicable to partner-operated flights or to taxes and fees.</em></li>
+    <li><strong>Biggest drawbacks:</strong> A $350 annual fee and no free lounge access.</li>
+    <li><strong>Alternative:</strong> For a lower annual fee, the <a href="#">American Express Gold Card</a> won’t get you elite status with Delta. But it offers more flexibility and its own sets of features and benefits that may be more appealing.</li>
+    <li><strong>Bottom line:</strong> Frequent travelers and Delta loyalists will be delighted by the long list of travel perks, such as an annual companion certificate, discounts on inflight purchases, priority boarding and more.</li>
+</ul>
+<p>Read our <a href="#">Delta SkyMiles® Platinum American Express Card review</a>.</p>
+
+<h3>Best for airline miles: Delta SkyMiles® Gold American Express Card</h3>
+<ul>
+    <li><strong>Best features:</strong> In addition to Delta, travelers have its large network of airline partners to choose from. Best of all, miles don’t expire.</li>
+    <li><strong>Biggest drawbacks:</strong> This card doesn’t come with lounge access and won’t help you earn Delta’s elite status.</li>
+    <li><strong>Alternative:</strong> The <a href="#">Capital One Venture Rewards Credit Card</a> carries a slightly smaller $95 annual fee and provides better flexibility for people who are not loyal to Delta. The 5 miles per dollar on hotels, vacation rentals and rental cars booked through Capital One Travel along with 2 miles per dollar on all other purchases will be a better fit for people who tend to spend a lot in areas that typically only earn 1 mile per dollar with other cards.</li>
+    <li><strong>Bottom line:</strong> If you are a frequent traveler of Delta airlines, this card is a great option as you earn 2X miles on Delta purchases, at restaurants worldwide and at U.S. supermarkets.</li>
+</ul>
+<p>Read our <a href="#">Delta SkyMiles Gold American Express Card review</a>.</p>
+
+
+<h3>Best for business rewards with no annual fee: The Blue Business® Plus Credit Card from American Express</h3>
+<ul>
+    <li><strong>Best features:</strong> For small business owners, this is one of the best credit cards with no annual fee, thanks to its solid rewards and flexible financing features. Cardholders earn 2X points per dollar on everyday business purchases, up to $50,000 per year; and 1X point thereafter.</li>
+    <li><strong>Biggest drawbacks:</strong> The spending cap will disappoint businesses with large expenses over $50,000.</li>
+    <li><strong>Alternative:</strong> If you’re fine with redeeming your rewards for statement credits, the <a href="#">American Express Blue Business Cash™ Card</a> is a better fit for small-business owners looking for a simple way to earn rewards. Learn more about the <a href="#">American Express Blue Business® Plus vs. Blue Business Cash™</a>.</li>
+    <li><strong>Bottom line:</strong> Frequent business travelers will appreciate the flexibility and features that come with The Blue Business Plus Credit Card from American Express.</li>
+</ul>
+<p>Read <a href="#">The Blue Business Plus Credit Card from American Express review</a>.</p>
+
+<h3>Best for everyday travel: American Express Green Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Its expanded travel category makes it a great fit for commuters who use public transportation and rideshare services frequently. Additionally, it earns high rates for certain dining purchases.</li>
+    <li><strong>Biggest drawbacks:</strong> The American Express Green Card has a $150 annual fee that may be hard to offset if you don’t fly frequently and use the CLEAR Plus and LoungeBuddy credits.</li>
+    <li><strong>Alternatives:</strong> The <a href="#">Wells Fargo Autograph℠ Card</a>, which comes with no annual fee, may be a better option for frequent commuters since it’s extremely low-cost.</li>
+    <li><strong>Bottom line:</strong> The Amex Green Card is a solid option if you fly and commute often, as long as you take advantage of the LoungeBuddy and CLEAR Plus membership credits and redeem points for travel.</li>
+</ul>
+<p>Read our <a href="#">American Express Green Card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<div class="article-border"></div>
+
+<h3 id="amex-credit-cards-section">What is an American Express credit card?</h3>
+<p>Seen as a gold standard in card services, American Express is both an issuer and a network. That means it issues cards and services them through its own network of merchants. American Express is known for excellent benefits, including no foreign transaction fees in the case of many cards and 2.7% in others (which is lower than many other cards).</p>
+<p>But Amex is more than just a card issuer. In fact, it is tied with <a href="#">Chase</a> for having the highest purchase volume of all credit card issuers in the U.S.</p>
+
+
+<h3>Services offered by American Express</h3>
+<ul>
+  <li><strong>Credit cards. </strong>Amex is perhaps best known for its luxury rewards credit cards, which offer premium benefits in exchange for a sometimes sizable annual fee. However, it does offer a few of the best cash back credit cards for everyday spending. With exclusive partnerships with Hilton and Delta, Amex also offers cards that reward mightily for loyalty.</li>
+  <li><strong>Business cards. </strong>With a full suite of cards that cater to the business owner, Amex offers products that reward handsomely for business purchases.</li>
+  <li><strong>Savings accounts. </strong>While not well known for this offering, Amex’s savings accounts are worth a look with interest rates well above competitors.</li>
+  <li><strong>Personal loans. </strong>For the qualifying member, you can get a personal loan with well under 10% APR.</li>
+</ul>
+
+<h3 id="choosing-an-amex-card-section">How to choose an American Express credit card</h3>
+<p>American Express’ catalog of options provide a variety of ways to earn and reap benefits while using your card. With several strong rewards cards, there are specific spenders who best fit Amex’s offers.</p>
+
+
+<div style="display: flex; justify-content: space-between; padding: 20px;"> 
+  <!-- Pros Section -->
+  <div style="width: 45%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3>Who should get an Amex credit card</h3>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li><strong>Travelers. </strong> When you want to earn hotel and airline points, American Express has some of the best travel rewards on the market. Amex travel cards offer lucrative rewards rates and high-end travel benefits. Guests frequenting Marriott, Hilton and Delta have lots of opportunity, plus, using <a href="#">American Express Travel</a> to book trips with your card or redeem points for travel can come with bonus rewards and extra value.</li>
+      <br>
+      <li><strong>Foodies. </strong> No matter where you get your meals, American Express has some of the best credit cards for food purchases. From the Blue Cash Preferred to the Gold and Platinum cards, cardmembers can find industry-leading rewards rates at U.S. supermarkets as well as top-notch rewards rates at restaurants.</li>
+      <br>
+      <li><strong>Business owners. </strong> When you need a small-business credit card, Amex has you covered. Some come with no annual fee, while The Business Platinum Card carries a $695 annual price tag; some are built for simple cash back, others are for chasing travel points and loyalty status with airlines; some earn high-dollar welcome bonuses after spending a large amount, some are designed for a startup on a budget. No matter the case, your business could likely benefit from an Amex card.</li>
+    </ul>
+  </div>
+
+  <!-- Cons Section -->
+  <div style="width: 45%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3 >Who should skip Amex credit cards</h3>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li><strong>Credit builders. </strong>  If your credit history is less than stellar, it’s unlikely you’ll be approved for an American Express card. Amex cards come loaded with excellent member perks and typically require a FICO credit score in the range of 670 to 850. Those with credit scores outside this range would be better served by a card that allows them to build credit before moving up to an Amex.</li>
+      <br>
+      <li><strong>Debt holders. </strong>  Like some other financial institutions, <a href="#">Amex doesn’t offer balance transfers on its credit cards.</a> So if you carry a lot of debt on other credit cards, check out <a href="#">balance transfer credit cards.</a> Making interest-free payments for a limited time could help you save a lot of money.</li>
+      <br>
+      <li><strong>Overseas spenders. </strong>When you travel abroad or make online purchases with foreign merchants, it’s helpful to have a credit card that is widely accepted and charges <a href="#">no foreign transaction fees.</a> American Express has a large presence around the world, but it doesn’t match the global acceptance of <a href="#">Visa or Mastercard.</a> Plus, most Amex credit cards charge a foreign transaction fee. (The ones that don’t will come with an annual fee or are a Hilton or Delta <a href="#">co-branded credit card.</a>)</li>
+    </ul>
+  </div>
+</div>
+
+<h3 id="benefit-program-section">What programs does American Express offer?</h3>
+<p>Many American Express credit cards feature competitive base rewards programs and lucrative welcome offers. They also offer a number of <a href="#">valuable benefits</a> that can prove useful when shopping or traveling. These benefits, which are not exclusive to Amex’s premium products, can include:</p>
+<ul>
+  <li><strong>Extended warranty:</strong> When you make a purchase with your card, a one-year warranty is added to the original U.S. manufacturer’s warranty up to five years and for a maximum of $10,000. You can’t exceed $50,000 in a calendar year.</li>
+  
+  <li><strong>Purchase protection:</strong> When you make a purchase on your card, your purchases can be protected up to 90 days if stolen or accidentally damaged. It’s limited to $1,000 per item and $50,000 per cardmember per calendar year. With some premium cards, such as Platinum Card, the limit is $10,000 per item for up to $50,000 per calendar year.</li>
+  
+  <li><strong>Return protection:</strong> If a merchant won’t take back an eligible item within 90 days, Amex might reimburse you for the full amount minus shipping and handling for up to $300 per item and up to $1,000 per calendar year.</li>
+  
+  <li><strong>Shop small:</strong> A way to support both small businesses and their cardholders, this program is offered by many Amex cards to give you a chance at earning a bit of cash back when spending at select local merchants.</li>
+  
+  <li><strong>Transfer partners:</strong> If you want to get the biggest bang for your buck, transferring your miles to one of the many American Express airline partners is usually your best bet. <a href="#">Compare American Express transfer partners</a> with our full guide and valuations.</li>
+  
+  <li><strong>Baggage insurance plan:</strong> A travel and business card benefit, this plan varies according to the corresponding card and the state you are in.</li>
+  
+  <li><strong>Car rental loss and damage insurance:</strong> Unlike some of the <a href="#">best Chase credit cards</a>, this insurance is secondary, meaning it kicks in after other insurance, such as your personal insurance.</li>
+  
+  <li><strong>Global Assist® Hotline:</strong> Global Assist is available to all U.S. cardmembers and helps to prepare for your trip with customs information and destination guides. When you are more than 100 miles from home, benefits can include lost passport replacement assistance and translation services. There is also Premium Global Assist for superior products.</li>
+  
+  <li><strong>Statement credits:</strong> Depending on your card, you may have a few extra ways to save some money. The right Amex card will grant you statement credits to put towards travel purchases like Global Entry or TSA PreCheck and to help with paying for food through Uber Eats.</li>
+  
+  <li><strong>Travel insurance:</strong> This benefit varies by card. The most premium cards offer trip cancellation, interruption and delay insurance. Check out our <a href="#">guide to American Express travel insurance</a> for card-by-card comparisons.</li>
+  
+  <li><strong>Lounge access:</strong> No matter what type of traveler you are, American Express has some of the <a href="#">best credit cards for airport lounge access</a>. This includes the Green card’s budget-friendly LoungeBuddy credit and the Platinum card’s premium access to five lounge networks (good for more than 1,400 lounges in over 140 countries). For more information, take a look at this <a href="#">guide to American Express lounges</a>.</li>
+</ul>
+
+<p>American Express also offers several flexible payment options on certain personal and business cards. These options can include:</p>
+
+<ul>
+  <li><strong>Pay It, Plan It®:</strong> This feature, available on select personal cards, allows eligible cardholders to pay small purchase amounts (less than $100) right away through the American Express app. Alternatively, it lets them split up larger purchases (over $100) into monthly payments with a fixed fee. Learn if <a href="#">Amex’s Pay It Plan It is worth it</a>.</li>
+  
+  <li><strong>Pay Over Time:</strong> This feature, available on select personal and business cards, lets eligible cardholders carry a balance on eligible purchases, with interest.</li>
+  
+  <li><strong>Working Capital Terms:</strong> This feature allows eligible business cardholders to get access to up to $150,000 in funding.</li>
+  
+  <li><strong>Expanded Buying Power:</strong> This feature allows eligible business cardholders to spend over your credit limit (terms apply).</li>
+</ul>
+
+
+
+<h3 id="american-express-membership-rewards-section">What is the American Express Membership Rewards program?</h3>
+<p>The <a href="#">Amex Membership Rewards program</a>allows you to redeem your points in a variety of ways, whether you want to use it to give a gift or to save up for the big trip. Here are some of the ways you can redeem:</p>
+
+<h3>Redemption options</h3>
+<ul>
+    <li><strong>Travel Rewards:</strong>
+        <ul>
+            <li style="margin-left: 20px;"><strong>Transfer Points.</strong> <a href="#">American Express transfer partners</a> help you get the most mileage out of your Membership Rewards points. Though not all transfers are instantaneous, Amex has widespread connections with multiple travel partners and most of them transfer points at a 1:1 rate.</li>
+            <li style="margin-left: 20px;"><strong>Book a trip with points</strong> on <a href="#">AmexTravel.com</a>. You can use them for part or all of your flight, or a prepaid hotel, vacation package or cruise booking.</li>
+        </ul>
+    </li>
+    
+    <li><strong>Gift Cards:</strong> You can redeem for gift cards to more than 100 restaurants, retailers, or for entertainment or travel brands. You can also redeem for an Amex gift card that you can use at participating retailers.</li>
+    
+    <li><strong>Merchandise:</strong> Shop on MembershipRewards.com for such items as electronics, jewelry, sports equipment or home decor.</li>
+    
+    <li><strong>Shopping:</strong> You can use points when shopping online and in-store with participating merchants.</li>
+    
+    <li><strong>Charges:</strong> You can apply points toward eligible charges you’ve already made on your card.</li>
+    
+    <li><strong>Charity:</strong> Use your points to make donations through the online social platform <a href="#">JustGiving</a>.</li>
+</ul>
+
+<h3 id="our-methodology">How we picked the best American Express credit cards</h3>
+<p><strong>Methodology:</strong> We analyzed American Express’ suite of cards to identify its top products in popular credit card categories. Core criteria we considered in our analysis include:</p>
+<ul>
+    <li><strong>Base rewards program:</strong> Does the card’s base rewards program offer a competitive return on spending for its card category (cash back, travel, business, etc.)?</li>
+    
+    <li><strong>Additional benefits:</strong> Does the card include applicable American Express services or benefits, like purchase protection, return protection, and an extended warranty for everyday spending cards, or baggage insurance, lounge access, or trip cancellation insurance for travel credit cards?</li>
+    
+    <li><strong>Welcome offer:</strong> Welcome offers let new cardholders earn extra rewards if they spend a certain amount of money in a specified time period, usually their first three months. They’re a short-term incentive, but often quite lucrative, and can tip the scales when cards offer similar base rewards and benefits. As such, we factored welcome offers in our analysis of the best American Express cards.</li>
+    
+    <li><strong>Annual fee:</strong> Does the card carry an annual fee? Given many Amex cards do, we assessed whether that fee could be offset by the card’s rewards program, welcome offer and any additional benefits. In other words, we considered the card’s potential value.</li>
+    
+    <li><strong>Annual percentage rates (APR) and/or flexible financing options:</strong> Where applicable, are the card’s APRs comparable to the <a href="#">average APR</a> in its card category? Similarly, do cardholders have access to Amex’s flexible financing features? <em>Note:</em> It’s best practice to pay balances off in full on rewards credit cards so you don’t lose points, miles or cashback to interest.</li>
+</ul>
+
+<h3>Additional information on American Express credit cards</h3>
+<p>For more information on all things American Express credit cards, continue reading content from our credit card experts:</p>
+
+    <a href="#">7 ways to earn American Express points</a>
+    <br>
+    <br>
+    <a href="#">How to transfer a balance to an American Express credit card</a>
+    <br>
+    <br>
+    <a href="#">How to transfer your credit limit on American Express cards</a>
+    <br>
+    <br>
+    <a href="#">What are American Express points worth?</a>
+    <br>
+
+    <div class="article-border"></div>
+    <br>
+
+    <h3 id="frequently-asked-section">Frequently asked questions about rewards credit cards</h3>
+<br>
+<br>
+
+<div class="rest-of-container-two">
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What credit score is needed for an American Express credit card?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>American Express primarily offers rewards cards for personal or business use, so you generally need good-to-excellent credit to qualify for their products. That equates to a FICO credit score between 670 and 850.</p>
+      <p>Specific criteria will vary by product, and American Express considers other factors like your income or reported debt levels when considering your application. However, as a general rule of thumb, the more lucrative the rewards, the higher you can expect the credit score requirements to be. In other words, a score of 670 might qualify you for the entry-level Blue Cash Everyday Card, while the premium Platinum Card might require excellent credit (think a score of 740 or higher).</p>
+      <p>Learn more about <a href="#"> American Express’ credit score requirements</a>, plus get some tips on how to improve your credit.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Do all Amex cards have annual fees?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>American Express has a number of <a href="#">credit cards that charge no annual fee</a>. These are all great options for people who don’t want to pay every year for the privilege of enjoying a certain level of features and benefits. As long as your credit score meets Amex’s good or excellent credit requirements, you’ll find cash back cards, travel rewards and even small business cards.</p>
+      <p>American Express credit cards that charge no annual fee include:</p>
+      <ul>
+        <li>Blue Cash Everyday® Card</li>
+        <li>Cash Magnet® Card</li>
+        <li>Hilton Honors Card</li>
+        <li>Amex EveryDay® Credit Card</li>
+        <li>Delta SkyMiles® Blue American Express Card</li>
+        <li>Blue from American Express®</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What types of perks does Amex offer?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>American Express offers a number of features and benefits across all of their cards. From elevated earnings at restaurants and U.S. supermarkets, to generous travel perks and consumer protections, an Amex card brings incredible value to your wallet. Depending on the card, here is just a small sample of the <a href="#">American Express credit card benefits</a> you’re likely to find:</p>
+      <ul>
+        <li>Welcome offers</li>
+        <li>Membership Rewards® points</li>
+        <li>Cash back</li>
+        <li>Flexible payment options</li>
+        <li>Purchase and fraud protections</li>
+        <li>Access to special events like concerts, sports, and theater</li>
+        <li>Travel protections</li>
+        <li>Airline credits</li>
+        <li>Uber credit</li>
+        <li>Free first checked bag</li>
+        <li>Transferable points</li>
+        <li>No foreign transaction fee</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Can I get prequalified for Amex cards?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>American Express makes it easy to see if you’re prequalified for any credit cards. Just fill out an <a href="#">online form</a>, and Amex will perform a soft credit check that doesn’t hurt your credit score. Most people will find out what cards they qualify for in less than a minute. If you qualify for any Amex credit cards, you may even receive personalized offers, such as a higher welcome bonus or lower interest rate. But prequalification doesn’t mean you’re approved. If you find an Amex offer you like, you’ll still need to apply, and when you do, Amex performs a hard credit check.</p>
+      <p>Want to make your life even easier? Take a look at our <a href="/credit-cards/html/button-components/component-card-match/card-match.html">Cardmatch™ tool.</a> You may see special offers for credit cards within seconds. But instead of offers from only one company, you’ll see offers from multiple card issuers. Depending on your credit profile, Cardmatch™ lets you see personalized offers from a number of our partners, which include:</p>
+      <ul>
+        <li>American Express</li>
+        <li>Citi</li>
+        <li>Discover</li>
+        <li>Wells Fargo</li>
+        <li>Bank of America</li>
+        <li>Credit One Bank</li>
+      </ul>
+    </div>
+  </div>
+
+ 
+
+  <br>
+
+  <div class="before-footer">
+    <!-- About the Author -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/author.png" alt="Garrett Yarbrough" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Author</h3>
+          <h4 class="profile-name">Garrett Yarbrough</h4>
+        </div>
+      </div>
+      <p>Garrett Yarbrough is a staff writer for CreditCards.com, specializing in product news and recommendations. He strives to make navigating credit cards, earning rewards, and credit building smooth sailing for his readers.</p>
+    </div>
+  
+    <!-- About the Editor -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/editor.png" alt="Tracy Stewart" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Editor</h3>
+          <h4 class="profile-name">Tracy Stewart</h4>
+        </div>
+      </div>
+      <p>Tracy Stewart is a personal finance writer specializing in credit card loyalty programs, travel benefits, and consumer protections. He previously covered travel rewards credit cards, budget travel, and aviation news at SmarterTravel Media. His money-saving tips have appeared in the Washington Post, the Wall Street Journal, Consumer Reports, MarketWatch, Vice, People, the Zoe Report, and elsewhere.</p>
+    </div>
+  
+    <!-- About the Reviewer -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/reviewer.png" alt="Jason Steele" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Reviewer</h3>
+          <h4 class="profile-name">Jason Steele</h4>
+        </div>
+      </div>
+      <p>Jason Steele is a professional journalist and credit card expert who has been contributing to online publications since 2008. He was one of the original contributors to The Points Guy, and his work has been appearing there since 2011. He has also contributed to over 100 of the leading personal finance and travel outlets. He’s frequently interviewed and quoted by mainstream outlets on the subjects of credit cards and travel. Jason is passionate about travel rewards credit cards, which he uses to earn rewards that he can redeem for him and his family to travel around the world. Jason is also the founder and producer of CardCon, a conference for credit and credit card journalists that’s held annually.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    
+
+
+
+    
+    
+
+
+
+        
+    
+      
+      
+      
+  
+
+<div id="footer-placeholder"></div>
+  <script src="/credit-cards/js/cardIssuerComponents/americanExpress.js"></script>
+</body>
+</html>

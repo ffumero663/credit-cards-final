@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chase</title>
+  <link rel="stylesheet" href="/credit-cards/css/card-issuer-components/chase.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+  <div id="header-placeholder"></div>
+  <div class="background-photo">
+    <div class="header">
+      <div class="bank-logo">
+        <img src="/credit-cards/images/CardIssuer/centered-logo/chase.png" alt="Chase">
+      </div>
+      <h4 class="advertisor">
+        <a id="disclosure-link" href="#">ADVERTISER DISCLOSURE</a>
+      </h4>
+    </div>
+
+    <div id="disclosure-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <div class="modal-header">Advertiser Disclosure</div>
+        <div class="modal-body">
+          <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+          <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+        </div>
+        <div class="modal-footer">
+          <button id="ok-btn" class="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Flex container for the sidebar and main content -->
+    <div class="flex-container">
+      <div id="on-this-page-panel"></div> <!-- Sidebar Panel -->
+      <div class="main-content">
+        <h1 id="our-top-picks-section">Best Chase credit cards for 2024</h1>
+        <p>Written by: <a href="#">Joey Robinson</a> | Edited by: <a href="#">Courtney Mihocik</a> | Reviewed by: <a href="#">Stephanie Zito </a> | October 15, 2024</p>
+        <br>
+        <p>Our partner Chase offers some of the most popular credit cards around. Their lineup includes top-of-the-line rewards, travel, business credit cards and more. With so many options to choose from, we’ve got you covered with everything you need to know to help you find the best Chase credit card for you.</p>
+        <br>
+        <div class="how-we-choose">
+          <div class="title">
+            <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+            <h2>How we Choose</h2>
+          </div>
+          <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+    
+        </div>
+      
+        <div class="summary">
+          <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+            <img src="/credit-cards/images/CardIssuer/new-icons/plus-icon-banks.png" alt="plus icon">
+          </button>
+        
+          <div id="summary-text" class="hidden">
+            <h2 style="color: #fff;">Here are Creditcards.com’s best Chase credit cards of 2024: </h2>
+            <br>
+            <ul class="ul-best-credit-cards">
+              <li><a href="#">Chase Sapphire Preferred® Card</a> – Best overall flexible travel awards</li>
+              <li><a href="#">Ink Business Unlimited® Credit Card</a> – Best for flat-rate business rewards</li>
+              <li><a href="#">Chase Sapphire Reserve®</a> – Best for travel</li>
+              <li><a href="#">Southwest Rapid Rewards® Plus Credit Card</a> – Best Southwest card with a low annual fee</li>
+              <li><a href="#">Southwest Rapid Rewards® Priority Credit Card</a> – Best for Southwest benefits</li>
+              <li><a href="#">Chase Slate Edge℠</a> – Best for balance transfers</li>
+              <li><a href="#">United℠ Explorer Card</a> – Best for United miles</li>
+          </ul>          
+            <br>
+            <p style="color: black;">Additional Options:</p>
+            <ul>
+              <li>Best for flat-rate cash back: Chase Freedom Unlimited®</li>
+              <li>Best for flexible cash back: Chase Freedom Flex®</li>
+              <li>Best for no-annual-fee business card: Ink Business Cash® Credit Card:</li>
+              <li>Best for overall business rewards value: Ink Business Preferred® Credit Card</li>
+              <li>Best for annual free night award: Marriott Bonvoy Boundless® Credit Card</li>
+              <li>Best for Marriott rewards: Marriott Bonvoy Bold® Credit Card</li>
+              <li>Best for Southwest travel: Southwest Rapid Rewards Premier® Credit Card</li>
+            </ul>    
+          </div>
+        </div>
+      </div>
+      </div>
+     
+      
+
+     
+
+      <div class="filter-bar">
+        <div class="filter-label">
+            <span>FILTER CARDS BY CATEGORY:</span>
+        </div>
+        <div class="filter-buttons">
+            <button id="all-cat" class="filter-button active"><i class="fas fa-th"></i> All Categories</button>
+            <button id="cash-back" class="filter-button"><i class="fas fa-wallet"></i> Cash Back</button>
+            <button id="travel" class="filter-button"><i class="fas fa-plane"></i> Travel</button>
+            <button id="business" class="filter-button"><i class="fas fa-briefcase"></i> Business</button>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+      <!-- Column 1: Platinum Card -->
+      <div class="card all-cat">
+          <p class="category-label">BEST FOR OVERALL FLEXIBLE TRAVEL REWARDS</p>
+          <h2>Chase Sapphire Preferred® Card</h2>
+          <img src="/credit-cards/images/credit-card-images-apr/Chase Sapphire Preferred® Card.png" alt="Chase Sapphire Preferred® Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.9</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare1">
+              <label for="compare1">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Chase's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>5x</strong> &nbsp;&nbsp;&nbsp;&nbsp; 5x on travel purchased through Chase Travel℠.</li>
+                  <li><strong>3x</strong> &nbsp;&nbsp;&nbsp;&nbsp; 3x on dining, select streaming services and online groceries.</li>
+                  <li><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp; 2x on all other travel purchases.</li>
+                  <li><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp; 1x on all other purchases.</li>
+              </ul>
+          </div>
+          <br>
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>$300 Chase Travel℠ Credit + 60,000</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$95</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>20.99% - 27.99% variable</strong></li>
+            </ul>
+          </div>
+      </div>
+  
+      <!-- Column 2: Gold Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR FLAT-RATE BUSINESS REWARDS</p>
+          <h2>Ink Business Unlimited® Credit Card</h2>
+          <img src="/credit-cards/images/credit-card-images-apr/Ink Business Unlimited® Credit Card.png" alt="Ink Business Unlimited® Credit Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★☆</span>
+              <span class="rating-value">4.0</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare2">
+              <label for="compare2">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Chase's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>1.5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5% cash back on every purchase made for your business</li>
+              </ul>
+          </div>
+
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>Earn $900 bonus cash back</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$0</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>17.99% - 23.99% variable</strong></li>
+            </ul>
+          </div>
+
+        
+      </div>
+  
+      <!-- Column 3: Blue Cash Everyday Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR TRAVEL</p>
+          <h2>Chase Sapphire Reserve®</h2>
+          <img src="/credit-cards/images/CreditCardImg/Chase Sapphire Reserve®.png" alt="Chase Sapphire Reserve®" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">5.0</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare3">
+              <label for="compare3">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>740-850 (Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Chase's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>10x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 10x total points on hotels and car rentals when you purchase travel through Chase Travel℠.</li>
+                  <li><strong>5x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5x total points on flights through Chase Travel℠.</li>
+                  <li><strong>3x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3x points on other travel and dining.</li>
+                  <li><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1 point per $1 spent on all other purchases.</li>
+              </ul>
+          </div>
+
+          <div></div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>60,000 bonus points</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$550</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>21.99% - 28.99% variable</strong></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class=" cash-back">
+
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Ink Business Unlimited® Credit Card</h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/credit-card-images-apr/Ink Business Unlimited® Credit Card.png" alt="Ink Business Unlimited Credit Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star half">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">4.0</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Ink Business Unlimited® Credit Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>1.5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5% cash back on every purchase made for your business.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn $900 bonus cash back</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 23.99% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Chase's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareInkBusinessUnlimited" name="compare">
+                  <label for="compareInkBusinessUnlimited" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+      
+        
+       
+        
+
+
+        
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      <div class="unique-card-content travel">
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Chase Sapphire Preferred® Card</h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/credit-card-images-apr/Chase Sapphire Preferred® Card.png" alt="Chase Sapphire Preferred Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">4.9</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Chase Sapphire Preferred® Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>5x</strong> &nbsp;&nbsp;&nbsp;&nbsp;5x on travel purchased through Chase Travel<sup>℠</sup>.</p>
+                  <p class="unique-rewards-rate"><strong>3x</strong> &nbsp;&nbsp;&nbsp;&nbsp;3x on dining, select streaming services and online groceries.</p>
+                  <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;2x on all other travel purchases.</p>
+                  <p class="unique-rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;1x on all other purchases.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> $300 Chase Travel<sup>℠</sup> Credit + 60,000 bonus points</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.99% - 27.99% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Chase's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareChaseSapphirePreferred" name="compare">
+                  <label for="compareChaseSapphirePreferred" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <div class="unique-credit-card-detail">
+        <h4 class="unique-card-category">Chase Sapphire Reserve® Card</h4>
+        <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+                <img src="/credit-cards/images/CreditCardImg/Chase Sapphire Reserve®.png" alt="Chase Sapphire Reserve Card">
+                <div class="unique-rating">
+                    <span class="unique-rating-label">Our rating:</span>
+                    <span class="unique-stars">
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                    </span>
+                    <span class="unique-rating-number">5.0</span>
+                    <span class="info-icon">&#8505;</span>
+                </div>
+            </div>
+    
+            <!-- Card Info -->
+            <div class="unique-card-info">
+                <h2 class="unique-card-name">Chase Sapphire Reserve® Card</h2>
+                <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                <p class="unique-rewards-rate"><strong>10x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 10x total points on hotels and car rentals when you purchase travel through Chase Travel<sup>℠</sup>.</p>
+                <p class="unique-rewards-rate"><strong>5x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5x total points on flights through Chase Travel<sup>℠</sup>.</p>
+                <p class="unique-rewards-rate"><strong>3x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3x points on other travel and dining.</p>
+                <p class="unique-rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1 point per $1 spent on all other purchases.</p>
+                <br>
+                <div class="unique-card-details-summary-inline">
+                    <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 60,000 bonus points</p>
+                    <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $550</p>
+                    <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 21.99% - 28.99% variable</p>
+                    <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+                </div>
+                <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                <p class="unique-secure-site-note">at Chase's secure site</p>
+            </div>
+        </div>
+    
+        <!-- Additional Information -->
+        <div class="unique-extra-info">
+            <div class="unique-compare-checkbox">
+                <input type="checkbox" id="compareChaseSapphireReserve" name="compare">
+                <label for="compareChaseSapphireReserve" style="color: black;">Add to compare</label>
+            </div>
+        </div>
+    
+        <!-- Editor's Take & Card Details Accordion -->
+        <div class="unique-accordion">
+            <div class="unique-accordion-item">
+                <h5>Editor's take</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+                <h5>Card details</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="unique-credit-card-detail">
+      <h4 class="unique-card-category">United℠ Explorer Card</h4>
+      <div class="unique-card-detail-container">
+          
+          <!-- Card Image -->
+          <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/United℠ Explorer Card.png" alt="United Explorer Card">
+              <div class="unique-rating">
+                  <span class="unique-rating-label">Our rating:</span>
+                  <span class="unique-stars">
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star half">&#9733;</span>
+                      <span class="empty">&#9733;</span>
+                  </span>
+                  <span class="unique-rating-number">3.9</span>
+                  <span class="info-icon">&#8505;</span>
+              </div>
+          </div>
+  
+          <!-- Card Info -->
+          <div class="unique-card-info">
+              <h2 class="unique-card-name">United℠ Explorer Card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2 miles per $1 spent on dining, hotel stays, and United<sup>®</sup> purchases.</p>
+              <p class="unique-rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;1 mile per $1 spent on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                  <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 50,000 bonus miles</p>
+                  <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $95, waived first year</p>
+                  <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 21.49% - 28.49% variable</p>
+                  <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Chase's secure site</p>
+          </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="unique-extra-info">
+          <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compareUnitedExplorer" name="compare">
+              <label for="compareUnitedExplorer" style="color: black;">Add to compare</label>
+          </div>
+      </div>
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="unique-accordion">
+          <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+          <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+      </div>
+  </div>
+  
+    
+      
+
+  <div class="unique-credit-card-detail">
+    <h4 class="unique-card-category">Southwest Rapid Rewards® Plus Credit Card</h4>
+    <div class="unique-card-detail-container">
+        
+        <!-- Card Image -->
+        <div class="unique-card-image">
+            <img src="/credit-cards/images/CreditCardImg/Southwest Rapid Rewards® Plus Credit Card.png" alt="Southwest Rapid Rewards Plus Credit Card">
+            <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star full">&#9733;</span>
+                    <span class="unique-star half">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.7</span>
+                <span class="info-icon">&#8505;</span>
+            </div>
+        </div>
+
+        <!-- Card Info -->
+        <div class="unique-card-info">
+            <h2 class="unique-card-name">Southwest Rapid Rewards® Plus Credit Card</h2>
+            <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+            <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on Southwest® purchases.</p>
+            <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on local transit and commuting, including rideshare.</p>
+            <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on internet, cable, and phone services; select streaming.</p>
+            <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on Rapid Rewards® hotel and car rental partners.</p>
+            <p class="unique-rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X points on all other purchases.</p>
+            <br>
+            <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 50,000 points.</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $69</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.99% - 27.99% variable</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+            </div>
+            <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+            <p class="unique-secure-site-note">at Chase's secure site</p>
+        </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="unique-extra-info">
+        <div class="unique-compare-checkbox">
+            <input type="checkbox" id="compareSouthwestPlus" name="compare">
+            <label for="compareSouthwestPlus" style="color: black;">Add to compare</label>
+        </div>
+    </div>
+
+    <!-- Editor's Take & Card Details Accordion -->
+    <div class="unique-accordion">
+        <div class="unique-accordion-item">
+            <h5>Editor's take</h5>
+            <span class="accordion-icon">+</span>
+        </div>
+        <div class="unique-accordion-item">
+            <h5>Card details</h5>
+            <span class="accordion-icon">+</span>
+        </div>
+    </div>
+</div>
+
+      
+        
+          
+
+<div class="unique-credit-card-detail">
+  <h4 class="unique-card-category">Southwest Rapid Rewards® Priority Credit Card</h4>
+  <div class="unique-card-detail-container">
+      
+      <!-- Card Image -->
+      <div class="unique-card-image">
+          <img src="/credit-cards/images/CreditCardImg/Southwest Rapid Rewards® Priority Credit Card.png" alt="Southwest Rapid Rewards Priority Credit Card">
+          <div class="unique-rating">
+              <span class="unique-rating-label">Our rating:</span>
+              <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+                  <span class="empty">&#9733;</span>
+              </span>
+              <span class="unique-rating-number">4.1</span>
+              <span class="info-icon">&#8505;</span>
+          </div>
+      </div>
+
+      <!-- Card Info -->
+      <div class="unique-card-info">
+          <h2 class="unique-card-name">Southwest Rapid Rewards® Priority Credit Card</h2>
+          <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+          <p class="unique-rewards-rate"><strong>3x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3X points on Southwest® purchases.</p>
+          <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on local transit and commuting, including rideshare.</p>
+          <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on internet, cable, and phone services; select streaming.</p>
+          <p class="unique-rewards-rate"><strong>2x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2X points on Rapid Rewards® hotel and car rental partners.</p>
+          <p class="unique-rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1X points on all other purchases.</p>
+          <br>
+          <div class="unique-card-details-summary-inline">
+              <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn 50,000 points.</p>
+              <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $149</p>
+              <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.99% - 27.99% variable</p>
+              <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+          </div>
+          <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+          <p class="unique-secure-site-note">at Chase's secure site</p>
+      </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="unique-extra-info">
+      <div class="unique-compare-checkbox">
+          <input type="checkbox" id="compareSouthwestPriority" name="compare">
+          <label for="compareSouthwestPriority" style="color: black;">Add to compare</label>
+      </div>
+  </div>
+
+  <!-- Editor's Take & Card Details Accordion -->
+  <div class="unique-accordion">
+      <div class="unique-accordion-item">
+          <h5>Editor's take</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+      <div class="unique-accordion-item">
+          <h5>Card details</h5>
+          <span class="accordion-icon">+</span>
+      </div>
+  </div>
+</div>
+     
+
+
+      
+
+    
+  
+
+  
+  </div>
+
+
+      
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="unique-card-content business">
+        
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Ink Business Unlimited® Credit Card</h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/credit-card-images-apr/Ink Business Unlimited® Credit Card.png" alt="Ink Business Unlimited Credit Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star half">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">4.0</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Ink Business Unlimited® Credit Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>1.5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5% cash back on every purchase made for your business.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> Earn $900 bonus cash back</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 23.99% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Chase's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareInkBusinessUnlimited" name="compare">
+                  <label for="compareInkBusinessUnlimited" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+      
+        
+       
+        
+  
+
+    </div>
+
+
+
+    <div class="container">
+      <div id="on-this-page-panel-2"></div>
+      <div class="article-starter">
+        <div class="article-border">
+        <p style=" font-style: italic;">All information about The Chase Freedom Flex, the Marriott Bonvoy Bold Credit Card, the Marriott Bonvoy Boundless Credit Card and the Southwest Rapid Rewards Premier Credit Card has been collected independently by CreditCards.com and has not been reviewed by the issuer.</p>
+        </div>  
+        <h2>Best Chase credit cards compared</h2>
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Card Name</th>
+                  <th>Best For</th>
+                  <th>Annual Fee</th>
+                  <th>Review Score</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Chase Sapphire Preferred® Card</td>
+                  <td>Best for overall flexible travel rewards</td>
+                  <td>$95</td>
+                  <td><a href="#">4.9 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Ink Business Unlimited® Credit Card</td>
+                  <td>Flat-rate business rewards</td>
+                  <td>$0</td>
+                  <td><a href="#">4.0 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Chase Sapphire Reserve®</td>
+                  <td>Travel</td>
+                  <td>$550</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Southwest Rapid Rewards® Plus Credit Card</td>
+                  <td>Southwest card with a low annual fee</td>
+                  <td>$69</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Southwest Rapid Rewards® Priority Credit Card</td>
+                  <td>Southwest benefits</td>
+                  <td>$149</td>
+                  <td><a href="#">4.1 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Chase Slate Edge℠</td>
+                  <td>Balance transfers</td>
+                  <td>$0</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>United℠ Explorer Card</td>
+                  <td>United miles</td>
+                  <td>$0 Intro for First Year, then $95</td>
+                  <td><a href="#">3.9 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Chase Freedom Unlimited®</td>
+                  <td>Flat-rate cash back</td>
+                  <td>$0</td>
+                  <td><a href="#">4.8 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Chase Freedom Flex®</td>
+                  <td>Flexible cash back</td>
+                  <td>$0</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Ink Business Cash® Credit Card</td>
+                  <td>No annual fee business card</td>
+                  <td>$0</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Ink Business Preferred® Credit Card</td>
+                  <td>Overall business rewards value</td>
+                  <td>$95</td>
+                  <td><a href="#">4.4 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Marriott Bonvoy Boundless Credit Card</td>
+                  <td>Best for annual free night award</td>
+                  <td>$95</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Marriott Bonvoy Bold Credit Card</td>
+                  <td>Marriott rewards</td>
+                  <td>$0</td>
+                  <td><a href="#">3.7 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Southwest Rapid Rewards® Premier Credit Card</td>
+                  <td>Southwest travel</td>
+                  <td>$99</td>
+                  <td><a href="#">4.2 / 5</a></td>
+              </tr>
+          </tbody>
+      </table>
+      
+      
+        
+      
+      
+      
+        
+        <h2 style="font-size: 28px;" id="chase-credit-card-details-section" class="section-offset" >Editor’s picks: Chase credit card details</h2>
+
+        <h3>Best for overall flexible travel rewards: Chase Sapphire Preferred® Card</h3>
+        <ul>
+            <li><strong>Best features:</strong> As a premier Ultimate Rewards card, the Sapphire Preferred allows you to get 25% more value when you redeem for future travel through the Chase Travel<sup>℠</sup> portal. Plus, its 5X points on travel purchased through the Chase portal, 3X points on dining and 2X points on other travel purchases and 1X points on all other purchases give you ample opportunity to earn points in the portal.</li>
+            
+            <li><strong>Biggest drawbacks:</strong> Despite being a top travel card, this option misses on some luxury travel perks, such as airport lounge access.</li>
+            
+            <li><strong>Alternative:</strong> Although it’s a great travel card, those who want a luxurious experience along with perks like complimentary anniversary bonus miles and annual travel credit will want to consider an upgrade to the <a href="#">Capital One Venture X Rewards Credit Card</a>.</li>
+            
+            <li><strong>Bottom line:</strong> The Chase Sapphire Preferred is versatile and a great option for travelers thanks to its travel rewards program and generous sign-up bonus.</li>
+        </ul>
+        <p>Read our <a href="#">Chase Sapphire Preferred review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+        
+        <h3>Best for flat-rate business rewards: Ink Business Unlimited® Credit Card</h3>
+        <ul>
+            <li><strong>Best features:</strong> This card offers 1.5% cash back on all purchases made for your business. Your rewards can be redeemed for statement credits, gift cards, travel rewards, cash deposits and more. Also, they can be transferred in the Ultimate Rewards portal, where rewards can receive a significant boost in value. Rewards are non-expiring and uncapped.</li>
+            
+            <li><strong>Biggest drawbacks:</strong> Though it earns flat-rate cash back, there are no bonus categories offering better rates. This card also comes with a 3% foreign transaction fee.</li>
+            
+            <li><strong>Alternative:</strong> If your business expenses tend to fall in specific categories like office supplies, gas and restaurants, it’s worth the time to capitalize on bonus reward rates offered by the <a href="#">Ink Business Cash® Credit Card</a>.</li>
+            
+            <li><strong>Bottom line:</strong> Small-business owners looking for an affordable card to help boost rewards should look to the Ink Business Unlimited.</li>
+        </ul>
+        <p>Read our <a href="#">Ink Business Unlimited review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+        
+        <h3>Best for travel: Chase Sapphire Reserve®</h3>
+<ul>
+    <li><strong>Best features:</strong> The Sapphire Reserve rewards cardholders annually through a $300 travel credit. After that travel credit is earned, the real fun begins. That’s when cardholders can earn big, first when you use the Chase Portal for travel purchases: 10X points on hotels and car rentals as well as 5X points on air travel. You’ll also earn 3X points on other travel purchases after the $300 credit. You’ll also get 3X points on dining at restaurants. These rewards are unlimited and won’t expire, and there are no blackout dates or expiration dates when redeeming travel.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> In addition to the high annual fee ($550), this card doesn’t come with an introductory APR offer.</li>
+    
+    <li><strong>Alternative:</strong> The <a href="#">Capital One Venture X Rewards Credit Card</a> is a close contender to the Sapphire Reserve but has a smaller $395 annual fee and larger sign-up bonus. Learn more about <a href="#">Capital One Venture X vs. Chase Sapphire Reserve</a>.</li>
+    
+    <li><strong>Bottom line:</strong> Travelers looking for a more luxurious experience on their rewards-earned trips should look into the Sapphire Reserve. If this card fits your lifestyle, the strong rewards, bonuses and travel perks make the price tag worth it.</li>
+</ul>
+<p>Read our <a href="#">Chase Sapphire Reserve review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for Southwest with a low annual fee: Southwest Rapid Rewards® Plus Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Cardholders will be rewarded for their loyalty with a 3,000 point bonus each account anniversary. The card also features 2X points on Southwest purchases, 2X points on purchases with the airline’s hotel and car rental partners and 1X points on other purchases. With an annual fee of just $69, this card still offers a generous sign-up bonus: Earn 50,000 bonus points after spending $1,000 on purchases in the first 3 months from account opening.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Southwest’s flight network is more limited than other major airlines, and there isn’t much flexibility in rewards redemption.</li>
+    
+    <li><strong>Alternative:</strong> If you want the best prices and are not loyal to one airline, you might be better off with a general travel rewards card. The <a href="#">Capital One Venture Rewards Credit Card</a> has a higher annual fee ($95) but offers higher rewards for your hotel and car rental purchases (when booked through Capital One Travel), as well as your everyday purchases outside of travel.</li>
+    
+    <li><strong>Bottom line:</strong> If you’re interested in an affordable airline card and like to travel with Southwest, the Southwest Rapid Rewards® Plus Credit Card is a solid option.</li>
+</ul>
+<p>Read our <a href="#">Southwest Rapid Rewards Plus credit card review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for Southwest benefits: Southwest Rapid Rewards® Priority Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Much like the Southwest Rapid Rewards Premier, this card also offers the opportunity to earn the sign-up bonus: Earn 50,000 bonus points after spending $1,000 on purchases in the first 3 months from account opening. Cardholders can earn rewards in numerous categories, including 3X points on Southwest purchases and 2X points on Rapid Rewards hotel and car rental partner purchases, plus 7,500 points each account anniversary.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The card doesn’t offer luxury perks like lounge access, and rewards can’t be transferred to other airlines or partner networks.</li>
+    
+    <li><strong>Alternative:</strong> Travelers looking for more flexibility may get more value out of the <a href="#">Capital One Venture Rewards Credit Card</a>. The $95 annual fee is smaller, and the 5 miles per dollar on hotels, vacation rentals and rental cars (when booked through Capital One Travel), along with 2 miles per dollar on every other eligible purchase may be a better fit for people who don’t fly Southwest often.</li>
+    
+    <li><strong>Bottom line:</strong> If you fly often with Southwest, this is a great addition to your wallet. Not only does it make the travel experience easier, there’s significant savings to be had even with the annual fee.</li>
+</ul>
+<p>Read our <a href="#">Southwest Rapid Rewards Priority credit card review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for balance transfers: Chase Slate Edge℠</h3>
+<ul>
+    <li><strong>Best features:</strong> Cardholders can reduce their APR by 2% each account anniversary that they pay their balance on time and spend at least $1,000 with the card in the previous year. Chase also offers a one-time credit limit review for a higher limit when they spend $500 in the first six months.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> While the intro APR period is competitive, it’s not the longest available. Furthermore, to take advantage of the card’s best features, you have to reach certain spending thresholds, which defeats the purpose of paying down debt with a balance transfer card.</li>
+    
+    <li><strong>Alternative:</strong> Some of the <a href="#">best balance transfer credit cards</a>, such as the <a href="#">Wells Fargo Reflect® Card</a>, offer longer intro periods and focus solely on paying off debt instead of incentivizing spending.</li>
+    
+    <li><strong>Bottom line:</strong> The Slate Edge’s unique feature to reduce your APR on your account anniversary is a boon, but the spending requirements for eligibility may make it harder to pay off debt with a balance transfer.</li>
+</ul>
+<p>Read our <a href="#">Chase Slate Edge review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for United Miles: United℠ Explorer Card</h3>
+<ul>
+    <li><strong>Best features:</strong> This United card is packed with rewards and benefits: Earn 2X miles at restaurants and hotel stays, 2X miles on United purchases and 1X miles elsewhere. Cardmembers also earn 25% back as a statement credit on United in-flight purchases. Other notable perks include priority boarding, access to the United Club with two one-time passes each anniversary year, up to a $100 credit toward Global Entry or TSA PreCheck, and your first checked bag is free.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There is limited flexibility when it comes to redeeming and transferring miles.</li>
+    
+    <li><strong>Alternative:</strong> If you are not loyal to United, the <a href="#">Capital One Venture Rewards Credit Card</a> lets you earn unlimited double miles on all of your everyday purchases along with 5 miles per dollar on hotels, vacation rentals and rental cars booked through Capital One Travel.</li>
+    
+    <li><strong>Bottom line:</strong> The features and benefits on this card make it a worthwhile choice for people who regularly fly on United Airlines. And thanks to the annual fee being waived for the first year ($0 introductory annual fee for the first year, then $95), the occasional traveler will also be able to make good use of this card.</li>
+</ul>
+<p>Read our <a href="#">United Explorer card review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for flat-rate cash back: Chase Freedom Unlimited®</h3>
+<ul>
+    <li><strong>Best features:</strong> This card gives significant and unlimited cash back across multiple categories. Your cash back will never expire, so you won’t have to worry about using rewards within a certain time period. Plus, you can use your cash back toward gift cards, travel or Amazon.com purchases and even have the option of transferring points to combine with other cards in Ultimate Rewards.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> A travel credit card that charges a foreign transaction fee doesn’t offer the best value when traveling overseas or making purchases with foreign merchants.</li>
+    
+    <li><strong>Alternative:</strong> If you don’t want to keep track of bonus rewards categories, a flat-rate credit card like the <a href="#">Wells Fargo Active Cash® Card</a> keeps things simple by offering 2% cash rewards on your purchases.</li>
+    
+    <li><strong>Bottom line:</strong> People who spend across several categories can benefit from Chase Freedom Unlimited’s widespread cash back offerings. If you’re looking for a card with no annual fee that can add some cash to your wallet, this is a great choice.</li>
+</ul>
+<p>Read our <a href="#">Chase Freedom Unlimited review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for flexible cash back: Chase Freedom Flex®</h3>
+<ul>
+    <li><strong>Best features:</strong> Active cardholders who want to take advantage of bonus rewards are best suited for this card. Freedom Flex cardholders can earn 5% cash back in rotating bonus categories each quarter (on up to $1,500), 5% cash back on travel purchased through Chase Travel<sup>℠</sup>, 3% back at drugstores and restaurants and 1% back on all other purchases.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The 5% cash back rates on rotating categories are capped at a $1,500 limit each quarter (then 1%). Also, remembering to activate the rotating bonus categories can be a tedious (yet essential) task.</li>
+    
+    <li><strong>Alternative:</strong> Someone looking for widespread rewards without having to jump through a lot of hoops will likely get more value out of the flat-rate <a href="#">Chase Freedom Unlimited</a>.</li>
+    
+    <li><strong>Bottom line:</strong> It takes a little extra work to reap the full benefits of Chase’s rotating categories schedule, but the right cardholders can make it worthwhile.</li>
+</ul>
+<p>Read our <a href="#">Chase Freedom Flex review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for no-annual-fee business card: Ink Business Cash® Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Like the Ink Business Unlimited, you can connect this no-annual-fee card with the premier Ultimate Rewards cards to enjoy a boost in rewards toward travel in the future. Also, as a sign-up bonus, you can earn $350 when you spend $3,000 on purchases in the first three months and an additional $400 when you spend $6,000 on purchases in the first six months after account opening.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There’s a $25,000 annual limit on bonus categories, so if your purchases exceed that amount in the 5% or 2% categories in a year, the earnings rate will reduce to 1%. There’s also a $2,000 minimum to redeem rewards.</li>
+    
+    <li><strong>Alternative:</strong> Businesses that spend heavily in areas that fall outside the Ink Business Cash bonus categories may prefer a flat-rate card like the <a href="#">American Express Blue Business Cash<sup>™</sup> Card</a>. All eligible purchases earn 2% on up to $50,000 per calendar year (then 1%).</li>
+    
+    <li><strong>Bottom line:</strong> Thanks to a strong sign-up bonus and common rewards categories, the Ink Business Cash® Credit Card is a great no-annual-fee credit card for small businesses.</li>
+</ul>
+<p>Read our <a href="#">Ink Business Cash review</a>.</p>
+
+
+<h3>Best for overall business rewards value: Ink Business Preferred® Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> The Ink Business Preferred will reward you with the same 25% boost toward travel redemptions made in the Chase Travel portal that the Sapphire Preferred offers. Earn 90,000 points after a $8,000 spend within the first three months and earn 3X points on the first $150,000 spent each year on combined purchases on travel and select business categories. This card also comes with the ability to transfer points and features travel and purchase protection.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There is no intro APR offer for purchases or balance transfers, and your spending will need to align with the select rewards categories to get the best value.</li>
+    
+    <li><strong>Alternative:</strong> Startups and small businesses that spend a lot outside this card’s bonus categories or have a tight budget preventing them from hitting the sign-up bonus requirement should look to the <a href="#">American Express Blue Business Cash<sup>™</sup> Card</a>.</li>
+    
+    <li><strong>Bottom line:</strong> Small business owners looking to earn rewards points rather than cash back should consider this card. Access to the Chase Travel portal and heightened rewards in common categories can provide serious value to business expenses.</li>
+</ul>
+<p>Read our <a href="#">Ink Business Preferred review</a>.</p>
+
+<h3>Best for annual free night award: Marriott Bonvoy Boundless® Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Cardholders will receive a free night stay each anniversary. The comped night surely helps make up for the $95 annual fee, but let’s not forget about the contribution from earning 6X points at participating Marriott Bonvoy hotels and at least 2X points on all other purchases.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Room availability can be low during busy times of the year. Also, your anniversary free night award is only eligible on standard rooms valued at 35,000 points or less.</li>
+    
+    <li><strong>Alternative:</strong> Annual-fee-averse travelers or those who don’t plan on spending enough to justify the $95 annual price may want to consider the <a href="#">Discover it<sup>®</sup> Miles</a>.</li>
+    
+    <li><strong>Bottom line:</strong> If Marriott is your hotel of choice, this card can take your capabilities to a new level. Although there is an annual cost, typical travelers can easily out earn the fee with hotel perks, rewards points and bonus offers.</li>
+</ul>
+<p>Read our <a href="#">Marriott Bonvoy Boundless credit card review</a>.</p>
+
+<h3>Best for Marriott Rewards: Marriott Bonvoy Bold® Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> If you stay often with the world’s largest hotel network, you may want to check in with this card. This no-annual-fee card not only gives consumers a chance to redeem points for a variety of hotel rewards, it provides a fast track to Marriott Silver Elite status. Plus, points can be combined with cash to pay for hotel stays. So you won’t have to worry about meeting a minimum before redeeming.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The rewards offered by the card aren’t as valuable as some other <a href="#">travel card options</a>. You might also run into some booking problems if you’re looking to book stays during busy times of the year.</li>
+    
+    <li><strong>Alternative:</strong> If you frequent other hotels outside of Marriott, a general travel rewards card like the <a href="#">Discover it<sup>®</sup> Miles</a> could be a better fit.</li>
+    
+    <li><strong>Bottom line:</strong> If you tend to stay with Marriott, this could add a lot of value to your travels. There’s no annual fee and a slew of hotel perks.</li>
+</ul>
+<p>Read our <a href="#">Marriott Bonvoy Bold review</a> or jump back to this <a href="#">card’s offer details</a>.</p>
+
+<h3>Best for Southwest travel: Southwest Rapid Rewards® Premier Credit Card</h3>
+<ul>
+    <li><strong>Best features:</strong> In addition to long-term 3X points earned on Southwest purchases, cardholders can earn a welcome offer: Earn 50,000 bonus points after spending $1,000 on purchases in the first 3 months from account opening.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Your rewards tickets can’t be used on layover flights, and there are limited options for booking international travel.</li>
+    
+    <li><strong>Alternative:</strong> Even frequent Southwest flyers will want to take a look at the versatile <a href="#">Capital One Venture Rewards Credit Card</a>. It won’t help you qualify for the Companion Pass<sup>®</sup>, but depending on your spending habits, the sign-up bonus, rewards (including a minimum of 2X miles on all eligible purchases) and other perks may be more to your liking.</li>
+    
+    <li><strong>Bottom line:</strong> The Southwest Rapid Rewards Premier<sup>®</sup> Credit Card makes traveling easier and more affordable for loyal Southwest travelers who commit to the airline.</li>
+</ul>
+<p>Read our <a href="#">Southwest Rapid Rewards Premier credit card review</a>.</p>
+
+
+
+<h3 id="what-is-chase-section">What is Chase?</h3>
+<p>JPMorgan Chase Bank & Co., or Chase Bank, is a national bank and one of the largest credit card issuers in the world. Chase credit cards are best known for their generous sign-up bonuses and boosted redemption travel rewards. But depending on the card, you’re likely to find a slew of additional perks like high rewards rates on everyday spending, lengthy introductory offers, and generous consumer protections.</p>
+
+<h3>Where is Chase accepted?</h3>
+<p>Whether you are traveling domestically or abroad, you can shop with confidence knowing that your Chase credit card is on the Visa or Mastercard network, which means you can use the card at millions of merchants both nationwide and internationally. These networks offer broader global acceptance than American Express and Discover, and your card may come with an EMV chip that offers payment security while overseas. Plus, some Chase cards will not charge foreign transaction fees.</p>
+
+<h3 id="credit-score-needed-section">What credit score is needed for Chase credit cards?</h3>
+<p>Chase’s credit cards typically require a good-to-excellent credit score (670 or above) to be approved. That’s because Chase’s personal and business options come packed with top-notch rewards, travel benefits and generous welcome offers.</p>
+<p>If you have a suboptimal score, improving your credit before applying for a Chase card is probably your best option. However, there are certain circumstances (like if you are a student with a limited credit history) where they may approve you for a card with a sub-670 credit score. Chase will review your full credit history and annual income before coming to a decision.</p>
+
+<h3 id="choose-a-card-section">How to choose a Chase credit card</h3>
+<p>The best Chase credit card for you will come down to your lifestyle and finances. When you know the credit card features that matter most, you’ll then have to sort through all the options available to you. To make it easier, a tool like CardMatch™ can help you identify the cards you are likely to qualify for based on your credit profile. It takes seconds and won’t affect your credit score (unless you decide to apply).</p>
+<p>Here are the types of people likely to get the most benefit from having a Chase credit card along with those who will find greater value with another credit card issuer.</p>
+
+
+<div style="display: flex; justify-content: space-between; padding: 20px;"> 
+  <!-- Who Should Get a Chase Card Section -->
+  <div style="width: 45%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3>Who should get a Chase card</h3>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li><strong>Rewards chasers:</strong> If you’re looking for high-end rewards across multiple categories and worthwhile sign-up bonuses, Chase has several options, and a savvy cardholder can capitalize by pairing more than one. Complementary rewards cards can take your earnings capability to a whole new level and give you a chance to take advantage of multiple sign-up bonuses. Also, with the boosts available through the Chase Ultimate Rewards portal, cardholders can squeeze even more value out of their rewards cards.</li>
+      <br>
+      <li><strong>Travelers:</strong> The Ultimate Rewards portal is a major reason Chase has some of the best travel cards on the market. When using points for travel in the portal, you can receive as much as 50% extra points-value with a card like the Sapphire Reserve. The Ultimate Rewards program also serves as the connection to the long list of <a href="#">Chase’s airline and hotel partners</a>, allowing you to transfer points and book travel through a wide variety of options.</li>
+      <br>
+      <li><strong>Airline and hotel loyalists:</strong> Through partnerships with companies like Southwest, Marriott, United, Hyatt, British Airways and others, Chase offers a selection of airline and hotel cards that can get loyal customers rewarded. Frequent guests of Chase’s partners can take advantage of room and flight upgrades, free night’s stays, huge rewards rates and a variety of other benefits.</li>
+    </ul>
+  </div>
+
+  <!-- Who Should Skip a Chase Card Section -->
+  <div style="width: 45%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3>Who should skip a Chase card</h3>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li><strong>Credit builders:</strong> Although Chase has a variety of credit cards for many types of cardholders, someone trying to rebuild their credit score or credit newcomers will have to look elsewhere. With so many high-end rewards cards, Chase’s options typically require high credit scores. Those wanting to open a credit card account with Chase may have to start elsewhere on their journey, but that doesn’t mean it’s not a real possibility for the future. <a href="#">Secured cards</a> and cards for <a href="#">limited credit history</a> can be great tools to help build your credit score.</li>
+      <br>
+      <li><strong>Debt consolidators:</strong> If you’re looking to open a credit card to gather outstanding balances and pay down your debt, a <a href="#">balance transfer credit card</a> can be a wonderful route. Although many Chase cards feature 0% intro APR offers on purchases, they don’t extend the same offers to balance transfers.</li>
+      <br>
+      <li><strong>Road trippers:</strong> If you drive for work, often travel on the road or spend a large portion of your money on gas for any reason, you might want to look elsewhere. While Chase has answers for nearly any type of rewards-hunter, someone who seems to be constantly fueling up might have better luck with one of the <a href="#">top gas credit cards</a>.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<h3 id="benefits-section">What are the benefits of having a Chase credit card?</h3>
+<p>Chase gives you numerous reasons to consider one of their cards, including generous welcome offers, 0% APR opportunities, high-rate cash back rewards, a worthwhile travel program and more. When carrying a Chase card, you can expect the following as a baseline to your benefits:</p>
+<ul>
+  <li><strong>Travel benefits: </strong>Many Chase cards feature insurance for things like flight cancellations, rental car collision damage, emergency care when abroad and more. You might be eligible for flight upgrades, complimentary in-flight meals and breakfast at your hotels, free checked bags and annual statement credits for travel. You can use the rewards portal to transfer points at a 1:1 or better rate to JetBlue, Southwest, United, Marriott, Hyatt and more.</li>
+  <li><strong>Exclusive opportunities: </strong>You’ll have to keep an eye out for particular offers and partners, but a Chase card can often be a ticket into a highly sought-after vacation spot, event, restaurant or club.</li>
+  <li><strong>Acces to your FICO score: </strong>Chase Credit Journey is a useful perk for keeping track of your financial progress, you’ll be able to monitor your credit score any time and it won’t impact your credit.</li>
+  <li><strong>Theft and damage: </strong>Chase cards will often give protection against damage and theft, meaning if you buy an expensive item (TV, laptop, etc.) but don’t get insurance with the retailer, you may be eligible for reimbursement through your card if something goes wrong.</li>
+  <li><strong>Automotive: </strong>Chase offers 24/7 access to a variety of roadside assistance services while traveling in the U.S. and Canada for a flat fee, plus primary auto rental collision damage waivers.</li>
+  <li><strong>Price protection: </strong>With this perk, you can typically get reimbursed for the difference between what you paid for an item and the new (lower) price that it’s currently selling for.</li>
+  <li><strong>Return protection: </strong>This benefit is useful when you’ve bought something and its return window has closed or the store you bought it from doesn’t allow returns. There may be limitations with what you can do, but it may save you when you have to take something back.</li>
+  <li><strong>Fraud protection: </strong>Your Chase card will be protected from unauthorized charges. Chase will help keep watch for unusual transactions, and reporting suspicious or unauthorized activity should keep any unwanted charges off of your account.</li>
+</ul>
+
+
+<h3>What is the Chase Ultimate Rewards program?</h3>
+<p>Chase cards feature things like rental car insurance, select complimentary hotel upgrades, purchase coverage and more. But the most notable extra that comes along with Chase credit cards is access to the Chase Travel portal. Within the portal, there are a number of ways to use your points when you’re ready to take advantage of your well-earned rewards:</p>
+
+<h3>Redemption options</h3>
+<ul >
+    <li><strong>Travel partner transfers:</strong> Move your points to any of Chase’s airline or hotel partners at 1:1 value with select cards.</li>
+    <li><strong>Boosted rewards:</strong> It depends on your card(s), but you can get 25% or 50% more value out of your points when redeeming for travel in the portal. Chase’s high rewards rates and supercharged value allows for some of the most powerful travel cards on the market.</li>
+    <li><strong>Shop Through Chase:</strong> A way for cardholders to spend with select partners, you can use your points with stores like Nike, Apple, Walgreens, Home Depot and more. Some offers may be for a limited time, but you can earn as high as 10 points per dollar or take advantage of a 30% discount with this feature.</li>
+    <li><strong>Chase Dining:</strong> You can use your points towards takeout, reservations and exclusive culinary experiences that wouldn’t otherwise be available.</li>
+    <li><strong>Chase Experiences:</strong> Concert-goers, sports fans and adventurers may love the doors Chase opens here. You’ll find a wide variety of entertainment options and exclusive experiences made available to you in the travel portal.</li>
+</ul>
+
+<p>Your capabilities in Chase Ultimate Rewards will vary depending on your card, but rewards chasers and travel-happy cardholders have a lot of opportunities thanks to the portal.</p>
+
+<h3 id="chase-credit-card-worth-it-section">Is a Chase credit card worth it?</h3>
+<p>Simply put, yes. Chase is one of the most well-respected credit card providers in the world. If your credit score allows it and you find one tailored to your interests, a Chase credit card will add some convenience and benefit to your life.</p>
+
+<p>There are choices for small-business owners, family shoppers, frequent flyers, hotel regulars and more. And even if a Chase card comes with an annual fee, there are plenty of ways to still make it worthwhile.</p>
+
+<p>Start with the sign-up bonus. Chase gives some of the best welcome bonuses on the market. So be sure to look for cards with terms within your budget and hit the spending requirement to get some early rewards. On top of the initial earnings, be sure to use your card when spending in its specialized rewards categories. Regularly capitalizing on the high rates will save you a little extra and lead to bigger rewards. Finally, as a general rule for making any credit card worth it: Don’t overspend, and pay on time to protect your credit card and avoid costly and unnecessary fees and interest.</p>
+
+<h3 id="our-methodology">How we picked the best Chase credit cards</h3>
+<p><strong>Research Methodology:</strong> We analyzed Chase’s suite of credit cards to identify their top credit cards currently on the market. The major factors we considered were:</p>
+<ul>
+    <li><strong>Base rewards program:</strong> Does the card provide ways to earn worthwhile rewards? Thanks to Chase Ultimate Rewards, most Chase cards have strong rewards structures. We sought out the best ones to capitalize on.</li>
+    <li><strong>Available bonuses:</strong> Many Chase cards feature welcome bonuses and other promotional offers, giving out bundles of points, cash back or a free night at a hotel. Finding bonuses that are worth the spending and effort helped narrow down our top options.</li>
+    <li><strong>Rewards flexibility:</strong> With so many hotel, airline and travel choices available, we looked to find cards that give you worthwhile redemption and transfer options when it comes to redeeming rewards. Although some of the cards here have an obvious partner, you might be surprised at what you’re capable of doing with your points.</li>
+    <li><strong>Other rates and fees:</strong> We also looked at whether the card carried reasonable APRs, has an introductory APR offer and whether it comes with an annual fee. If a card is pricey in these departments, other important factors should make up for the costs.</li>
+</ul>
+
+
+
+
+<h3>Additional information on Chase credit cards</h3>
+<p>For more information on all things Chase credit cards, continue reading content from our credit card experts:</p>
+<ul>
+    <li><a href="#">Chase Offers program guide</a></li>
+    <li><a href="#">How to transfer a balance to a Chase credit card</a></li>
+    <li><a href="#">Guide to the Chase Ultimate Rewards Portal</a></li>
+    <li><a href="#">How to get preapproved for a Chase card</a></li>
+</ul>
+
+<div class="article-border"></div>
+
+
+
+<h3 id="frequently-asked-questions-section">Frequently asked questions</h3>
+<br>
+<br>
+
+<div class="rest-of-container-two">
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What is the best Chase credit card?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>As it is with all credit cards, the best card will depend on how it fits the consumer. That being said, the best overall card Chase offers for the average consumer is the Chase Sapphire Preferred. A great option for most, it brings well-rounded rewards, low cost of cardholding and a lucrative sign-up bonus anyone could appreciate.</p>
+      <p>If your definition of “best” means the one that can bring the most value, however, then the top Chase card is the Chase Sapphire Reserve. The $550 annual fee isn’t for everyone, but calculated cardholders can enjoy its earning power, a generous rewards system and a long list of luxury perks.</p>
+    </div>
+  </div>
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Is it hard to get a Chase credit card?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>If you’re still working on establishing your credit score, it could be. Chase cards typically require good or excellent credit scores to be approved, so it’s recommended you have a score around 670 or better before applying. It’s not all about credit score, however; Chase will also take a look at any recent credit accounts you’ve opened and your annual income before giving a yes/no.</p>
+      <p>While Chase doesn’t offer <a href="#">secured credit cards</a> or <a href="#">cards for bad credit</a>, sometimes applying for one can be the fastest route to a Chase credit card. Using a credit card to <a href="#">build your credit score</a> is a great way to start the journey toward a card that brings rewards.</p>
+    </div>
+  </div>
+
+
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What is the Chase 5/24 rule?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>The unofficial Chase 5/24 rule is that you can’t have five or more personal credit card accounts opened in the 24 months prior to your application to be approved for a Chase card. One of the stricter card provider limitations, this goes for cards from any issuer and even for accounts that you’ve closed.</p>
+    </div>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>Will business credit cards add to my Chase 5/24?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>Typically, small-business credit cards won’t count towards the 5/24 rule. However, since Chase has never explicitly laid out the terms of the 5/24 rule, there may be exceptions.</p>
+    </div>
+  </div>
+
+  <div class="accordion-container">
+    <div class="accordion-item-types-credits">
+      <h5>What is the Chase Trifecta?</h5>
+      <span class="accordion-icon-types-credits">+</span>
+    </div>
+    <div class="accordion-panel-types-credits">
+      <p>The Chase Trifecta is a common strategy used by experienced travelers who want to maximize their rewards earning potential. It involves using three Chase credit cards that earn <a href="#">Ultimate Rewards points</a> – one of which will be a travel card. The combination of these cards allows users to capitalize on each one’s individual perks and earning rates.</p>
+
+<p>To take advantage of the Chase Trifecta, use the Chase card that earns the most points on each of your purchases. And since Chase lets you <a href="#">transfer Chase Ultimate Rewards points</a> from one card to another, you can then move all the points you earn to the Chase travel card. That’s where the points are likely to be worth more when you book travel through the Chase Ultimate portal.</p>
+
+<p>As an added perk, each of these cards may come with its own <a href="#">Chase sign-up bonus</a>, adding further value to your wallet.</p>
+
+<p>To learn more, check out this article on how to <a href="#">earn more Ultimate Rewards points with the Chase Trifecta</a>. You’ll see how to rack up rewards using the Chase Sapphire Reserve, Chase Freedom Flex and Chase Freedom Unlimited as well as what to watch out for if you plan to juggle multiple Chase credit cards.</p>
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+ 
+
+  <br>
+
+  <div class="before-footer">
+    <!-- About the Author -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/author.png" alt="Garrett Yarbrough" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Author</h3>
+          <h4 class="profile-name">Garrett Yarbrough</h4>
+        </div>
+      </div>
+      <p>Garrett Yarbrough is a staff writer for CreditCards.com, specializing in product news and recommendations. He strives to make navigating credit cards, earning rewards, and credit building smooth sailing for his readers.</p>
+    </div>
+  
+    <!-- About the Editor -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/editor.png" alt="Tracy Stewart" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Editor</h3>
+          <h4 class="profile-name">Tracy Stewart</h4>
+        </div>
+      </div>
+      <p>Tracy Stewart is a personal finance writer specializing in credit card loyalty programs, travel benefits, and consumer protections. He previously covered travel rewards credit cards, budget travel, and aviation news at SmarterTravel Media. His money-saving tips have appeared in the Washington Post, the Wall Street Journal, Consumer Reports, MarketWatch, Vice, People, the Zoe Report, and elsewhere.</p>
+    </div>
+  
+    <!-- About the Reviewer -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/reviewer.png" alt="Jason Steele" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Reviewer</h3>
+          <h4 class="profile-name">Jason Steele</h4>
+        </div>
+      </div>
+      <p>Jason Steele is a professional journalist and credit card expert who has been contributing to online publications since 2008. He was one of the original contributors to The Points Guy, and his work has been appearing there since 2011. He has also contributed to over 100 of the leading personal finance and travel outlets. He’s frequently interviewed and quoted by mainstream outlets on the subjects of credit cards and travel. Jason is passionate about travel rewards credit cards, which he uses to earn rewards that he can redeem for him and his family to travel around the world. Jason is also the founder and producer of CardCon, a conference for credit and credit card journalists that’s held annually.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    
+    
+    
+
+
+
+    
+    
+
+
+
+        
+    
+      
+      
+      
+  
+    <div id="footer-placeholder"></div>
+  <script src="/credit-cards/js/cardIssuerComponents/chase.js"></script>
+  
+</body>
+</html>

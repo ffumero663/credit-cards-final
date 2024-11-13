@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Navigation with Icons</title>
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <!-- Include Font Awesome for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="sec-nav-bar">
+    <ul class="sec-nav-list">
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-best-cards/best-cards.html'" class="sec-nav-link">
+          <i class="fas fa-award"></i>
+          <span>Best Credit Cards</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-zero-apr/zero-apr.html'" class="sec-nav-link">
+          <i class="fas fa-percentage"></i>
+          <span>0% APR</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-balance-transfer/balance-transfer.html'" class="sec-nav-link">
+          <i class="fas fa-exchange-alt"></i>
+          <span>Balance Transfer</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-cash-back/cash-back.html'" class="sec-nav-link">
+          <i class="fas fa-hand-holding-usd"></i>
+          <span>Cash Back</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-travel/travel.html'" class="sec-nav-link">
+          <i class="fas fa-plane"></i>
+          <span>Travel</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-rewards/rewards.html'" class="sec-nav-link">
+          <i class="fas fa-gift"></i>
+          <span>Rewards</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-business/business.html'" class="sec-nav-link">
+          <i class="fas fa-briefcase"></i>
+          <span>Business</span>
+        </button>
+      </li>
+      <li class="sec-nav-item">
+        <button onclick="window.location.href='/credit-cards/html/button-components/component-no-annual-fee/no-annual-fee.html'" class="sec-nav-link">
+          <i class="fas fa-calendar-alt"></i>
+          <span>No Annual Fee</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    // Function to handle page-specific highlighting
+function setActiveLink() {
+  const navItems = document.querySelectorAll('.sec-nav-item');
+
+  // Get the current page URL
+  const currentPage = window.location.pathname;
+
+  // Loop through each nav item and check if its link matches the current page
+  navItems.forEach(item => {
+    const link = item.querySelector('a').getAttribute('href');
+    
+    // If the current page matches the href of the item, set it as selected
+    if (currentPage.includes(link)) {
+      item.classList.add('sec-selected');
+    } else {
+      item.classList.remove('sec-selected');
+    }
+  });
+}
+
+// Set the active link when the page loads
+setActiveLink();
+
+// Add click event listeners to handle the selected state dynamically
+const navItems = document.querySelectorAll('.sec-nav-item');
+navItems.forEach(item => {
+  item.addEventListener('click', function () {
+    // Remove 'sec-selected' class from all items
+    navItems.forEach(nav => nav.classList.remove('sec-selected'));
+    
+    // Add 'sec-selected' class to the clicked item
+    this.classList.add('sec-selected');
+  });
+});
+
+  
+
+  </script>
+
+</body>
+</html>
+

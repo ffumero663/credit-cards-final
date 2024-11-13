@@ -4,7 +4,7 @@ fetch('header.html')
     document.getElementById('header-placeholder').innerHTML = data;
   });
 
-fetch('/credit-cards/html/footer.html')
+fetch('footer.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer-placeholder').innerHTML = data;

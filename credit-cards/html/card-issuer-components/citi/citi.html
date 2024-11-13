@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citi</title>
+  <link rel="stylesheet" href="/credit-cards/css/card-issuer-components/citi.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+  <div id="header-placeholder"></div>
+  <div class="background-photo">
+    <div class="header">
+      <div class="bank-logo">
+        <img src="/credit-cards/images/CardIssuer/centered-logo/citi.png" alt="Chase">
+      </div>
+      <h4 class="advertisor">
+        <a id="disclosure-link" href="#">ADVERTISER DISCLOSURE</a>
+      </h4>
+    </div>
+
+    <div id="disclosure-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <div class="modal-header">Advertiser Disclosure</div>
+        <div class="modal-body">
+          <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+          <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+        </div>
+        <div class="modal-footer">
+          <button id="ok-btn" class="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Flex container for the sidebar and main content -->
+    <div class="flex-container">
+      <div id="on-this-page-panel"></div> <!-- Sidebar Panel -->
+      <div class="main-content">
+        <h1 id="our-top-picks-section">Best Citi® Credit Cards</h1>
+        <p>Written by: <a href="#">Tracy Stewart</a> | Reviewed by: <a href="#">Stephanie Zito </a> | Novemeber 4, 2024</p>
+        <br>
+        <p>As one of America’s oldest operating banks, Citibank’s wide range of services mean that you won’t have much problem finding the right card to fit your needs. Citi offers cards designed around everything from rewards to balance transfers – and even credit-building.</p>
+        <p style="font-style: italic;">Citi is an advertising partner.</p>
+        <br>
+        <div class="how-we-choose">
+          <div class="title">
+            <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+            <h2>How we Choose</h2>
+          </div>
+          <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+    
+        </div>
+      
+        <div class="summary">
+          <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+            <img src="/credit-cards/images/CardIssuer/new-icons/plus-icon-banks.png" alt="plus icon">
+          </button>
+        
+          <div id="summary-text" class="hidden">
+            <h2>The Best Citi Credit Cards for 2024</h2>
+<ul class="ul-best-credit-cards">
+    <li><a href="#">Citi Custom Cash® Card</a> – Best for cash back + sign-up bonus</li>
+    <li><a href="#">Citi Double Cash® Card</a> – Best for cash back</li>
+    <li><a href="#">Citi Strata Premier<sup>℠</sup> Card</a> – Best for travel</li>
+    <li><a href="#">Citi® Diamond Preferred® Card</a> – Best for long intro APR period</li>
+    <li><a href="#">Citi Rewards+<sup>®</sup> Card</a> – Best for bonus rewards points</li>
+    <li><a href="#">Costco Anywhere Visa® Card by Citi</a> – Best for gas</li>
+    <li><a href="#">Citi® / AAdvantage® Executive World Elite Mastercard®</a> – Best for lounge access</li>
+    <li><a href="#">Costco Anywhere Visa® Business Card by Citi</a> – Best for entrepreneurs</li>
+</ul>          
+
+<p style="color: black;">Additional Options:</p>
+<ul>
+    <li>Citi® Secured Mastercard®: Best for building credit</li>
+    <li>American Airlines AAdvantage® MileUp®: Best for American Airlines purchases</li>
+</ul>
+    
+          </div>
+        </div>
+      </div>
+      </div>
+     
+      
+
+     
+
+      <div class="filter-bar">
+        <div class="filter-label">
+            <span>FILTER CARDS BY CATEGORY:</span>
+        </div>
+        <div class="filter-buttons">
+            <button id="all-cat" class="filter-button active"><i class="fas fa-th"></i> All Categories</button>
+            <button id="cash-back" class="filter-button"><i class="fas fa-wallet"></i> Cash Back</button>
+            <button id="travel" class="filter-button"><i class="fas fa-plane"></i> Travel</button>
+            <button id="rewards" class="filter-button"><i class="fas fa-gift"></i> Rewards</button>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+      <!-- Column 1: Platinum Card -->
+      <div class="card all-cat">
+          <p class="category-label">BEST FOR CASH BACK + SIGN-UP BONUS</p>
+          <h2>Citi Custom Cash® Card</h2>
+          <img src="/credit-cards/images/CreditCardImg/CitiBankCustomCash.png" alt="Citi Custom Cash® Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.5</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare1">
+              <label for="compare1">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Citi's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 5% cash back on purchases in your top eligible spend category each billing cycle, up to the first $500 spent, 1% cash back thereafter. </li>
+                  <li><strong>4%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Special Travel Offer: Earn an additional 4% cash back on hotels, car rentals, and attractions booked on Citi Travel℠ portal through 6/30/2026. </li>
+                  <li><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1% cash back on all other purchases. </li>
+              </ul>
+          </div>
+          <br>
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>$200</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$0</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>18.74% - 28.74% variable</strong></li>
+            </ul>
+          </div>
+      </div>
+  
+      <!-- Column 2: Gold Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR CASH BACK</p>
+          <h2>Citi Double Cash® Card</h2>
+          <img src="/credit-cards/images/credit-card-images-apr/Citi Double Cash® Card.png" alt="Citi Double Cash® Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★☆</span>
+              <span class="rating-value">4.1</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare2">
+              <label for="compare2">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Citi's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2% on every purchase with unlimited 1% cash back when you buy, plus an additional 1% as you pay for those purchases. To earn cash back, pay at least the minimum due on time.</li>
+                  <li><strong>5%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Plus, a special travel offer, earn 5% total cash back on hotel, car rentals and attractions booked on the Citi Travel℠ portal through 12/31/25.</li>
+              </ul>
+          </div>
+
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>$200 cash back</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$0</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>18.74% - 28.74% variable</strong></li>
+            </ul>
+
+            
+          </div>
+
+        
+      </div>
+  
+      <!-- Column 3: Blue Cash Everyday Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR TRAVEL</p>
+          <h2>Citi Strata Premier℠ Card</h2>
+          <img src="/credit-cards/images/credit-card-images-apr/Citi Strata Premier℠ Card.png" alt="Citi Strata Premier℠ Card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">4.6</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare3">
+              <label for="compare3">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670-850 (Good to Excellent)More information</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Citi's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                <li><strong>10X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 10 points per $1 spent on Hotels, Car Rentals, and Attractions booked on CitiTravel.com.</li>
+                <li><strong>3X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3 points per $1 on Air Travel and Other Hotel Purchases, at Restaurants, Supermarkets, Gas and EV Charging Stations.</li>
+                <li><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1 Point per $1 spent on all other purchases</li>
+              </ul>
+          </div>
+
+          <div></div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>70,000 bonus points</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$95</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>20.74% - 28.74% variable</strong></li>
+            </ul>
+          </div>
+
+          
+        </div>
+
+        <div class="all-cat">
+          <div class="unique-credit-card-detail">
+            <h4 class="unique-card-category">BEST FOR LONG INTRO APR PERIOD</h4>
+            <div class="unique-card-detail-container">
+                
+                <!-- Card Image -->
+                <div class="unique-card-image">
+                    <img src="/credit-cards/images/credit-card-images-apr/Citi® Diamond Preferred® Card.png" alt="Citi Diamond Preferred Card">
+                    <div class="unique-rating">
+                        <span class="unique-rating-label">Our rating:</span>
+                        <span class="unique-stars">
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="unique-star full">&#9733;</span>
+                            <span class="empty">&#9733;</span>
+                        </span>
+                        <span class="unique-rating-number">3.9</span>
+                        <span class="info-icon">&#8505;</span>
+                    </div>
+                </div>
+        
+                <!-- Card Info -->
+                <div class="unique-card-info">
+                    <h2 class="unique-card-name">Citi® Diamond Preferred® Card</h2>
+                    <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                    <p class="unique-rewards-rate">This card doesn't offer cash back, miles, or points</p>
+                    <br>
+                    <div class="unique-card-details-summary-inline">
+                        <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+                        <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                        <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.74% - 28.49% variable</p>
+                        <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                    </div>
+                    <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                    <p class="unique-secure-site-note">at Citi's secure site</p>
+                </div>
+            </div>
+        
+            <!-- Additional Information -->
+            <div class="unique-extra-info">
+                <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+                <div class="unique-compare-checkbox">
+                    <input type="checkbox" id="compareCitiDiamondPreferred" name="compare">
+                    <label for="compareCitiDiamondPreferred" style="color: black;">Add to compare</label>
+                </div>
+            </div>
+        
+            <!-- Editor's Take & Card Details Accordion -->
+            <div class="unique-accordion">
+                <div class="unique-accordion-item">
+                    <h5>Editor's take</h5>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="unique-accordion-item">
+                    <h5>Card details</h5>
+                    <span class="accordion-icon">+</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">BEST FOR BONUS REWARDS POINTS</h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/Citi Rewards+® Card.png" alt="Citi Rewards+ Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">3.9</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Citi Rewards+® Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;Special offer: earn 5 ThankYou® Points per $1 spent on hotel, car rentals and attractions booked on CitiTravel.com through December 31, 2025.</p>
+                  <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;Earn 2X ThankYou® Points at Supermarkets and Gas Stations for the first $6,000 per year and then 1X Points thereafter.</p>
+                  <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;Earn 1X ThankYou® Points on All Other Purchases.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 20,000 points</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.24% - 28.24% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Citi's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareCitiRewardsPlus" name="compare">
+                  <label for="compareCitiRewardsPlus" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+      
+      <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">BEST FOR GAS PURCHASES</h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/Costco Anywhere Visa® Card by Citi.png" alt="Costco Anywhere Visa Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star half">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">2.3</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Costco Anywhere Visa® Card by Citi</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>4%</strong> &nbsp;&nbsp;&nbsp;4% cash back on eligible gas and EV charging purchases for the first $7,000 per year and then 1% thereafter</p>
+                  <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;3% cash back on restaurants and eligible travel purchases</p>
+                  <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;2% cash back on all other purchases from Costco and Costco.com</p>
+                  <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;1% cash back on all other purchases</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 27.99% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Citi's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareCostcoAnywhere" name="compare">
+                  <label for="compareCostcoAnywhere" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="unique-credit-card-detail">
+        <h4 class="unique-card-category">BEST FOR LOUNGE ACCESS</h4>
+        <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+                <img src="/credit-cards/images/CreditCardImg/Citi® : AAdvantage® Executive World Elite Mastercard®.png" alt="Citi AAdvantage Executive World Elite Mastercard">
+                <div class="unique-rating">
+                    <span class="unique-rating-label">Our rating:</span>
+                    <span class="unique-stars">
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star half">&#9733;</span>
+                    </span>
+                    <span class="unique-rating-number">4.5</span>
+                    <span class="info-icon">&#8505;</span>
+                </div>
+            </div>
+    
+            <!-- Card Info -->
+            <div class="unique-card-info">
+                <h2 class="unique-card-name">Citi® / AAdvantage® Executive World Elite Mastercard®</h2>
+                <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                <p class="unique-rewards-rate"><strong>4X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4x AAdvantage® miles for every $1 spent on eligible American Airlines purchases.</p>
+                <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;1 AAdvantage® mile for every $1 spent on other purchases.</p>
+                <br>
+                <div class="unique-card-details-summary-inline">
+                    <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 70,000 miles</p>
+                    <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $595</p>
+                    <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.74% - 29.74% variable</p>
+                    <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                </div>
+                <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                <p class="unique-secure-site-note">at Citi's secure site</p>
+            </div>
+        </div>
+    
+        <!-- Additional Information -->
+        <div class="unique-extra-info">
+            <div class="unique-compare-checkbox">
+                <input type="checkbox" id="compareCitiAAdvantageExecutive" name="compare">
+                <label for="compareCitiAAdvantageExecutive" style="color: black;">Add to compare</label>
+            </div>
+        </div>
+    
+        <!-- Editor's Take & Card Details Accordion -->
+        <div class="unique-accordion">
+            <div class="unique-accordion-item">
+                <h5>Editor's take</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+                <h5>Card details</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="unique-credit-card-detail">
+        <h4 class="unique-card-category">BEST FOR TRAVELING ENTREPRENEURS</h4>
+        <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+                <img src="/credit-cards/images/CreditCardImg/Costco Anywhere Visa® Business Card by Citi.png" alt="Costco Anywhere Visa Business Card by Citi">
+                <div class="unique-rating">
+                    <span class="unique-rating-label">Our rating:</span>
+                    <span class="unique-stars">
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </span>
+                    <span class="unique-rating-number">2.1</span>
+                    <span class="info-icon">&#8505;</span>
+                </div>
+            </div>
+    
+            <!-- Card Info -->
+            <div class="unique-card-info">
+                <h2 class="unique-card-name">Costco Anywhere Visa® Business Card by Citi</h2>
+                <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                <p class="unique-rewards-rate"><strong>4%</strong> &nbsp;&nbsp;&nbsp;&nbsp;4% cash back on eligible gas and EV charging purchases for the first $7,000 per year and then 1% thereafter.</p>
+                <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% cash back on restaurants and eligible travel purchases.</p>
+                <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;2% cash back on all other purchases from Costco and Costco.com.</p>
+                <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% cash back on all other purchases.</p>
+                <br>
+                <div class="unique-card-details-summary-inline">
+                    <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+                    <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                    <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 27.99% variable</p>
+                    <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+                </div>
+                <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                <p class="unique-secure-site-note">at Citi's secure site</p>
+            </div>
+        </div>
+    
+        <!-- Additional Information -->
+        <div class="unique-extra-info">
+            <div class="unique-compare-checkbox">
+                <input type="checkbox" id="compareCostcoAnywhereBusiness" name="compare">
+                <label for="compareCostcoAnywhereBusiness" style="color: black;">Add to compare</label>
+            </div>
+        </div>
+    
+        <!-- Editor's Take & Card Details Accordion -->
+        <div class="unique-accordion">
+            <div class="unique-accordion-item">
+                <h5>Editor's take</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+                <h5>Card details</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+        </div>
+    </div>
+    
+      
+
+
+
+        
+          
+
+
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class=" cash-back">
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category"></h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/Citi Rewards+® Card.png" alt="Citi Rewards+ Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">3.9</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Citi Rewards+® Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;5X ThankYou® Points on hotel, car rentals, and attractions booked on CitiTravel.com through December 31, 2025.</p>
+                  <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;2X ThankYou® Points at supermarkets and gas stations (up to $6,000 per year, then 1X thereafter).</p>
+                  <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;&nbsp;&nbsp;1X ThankYou® Points on all other purchases.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 20,000 points</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.24% - 28.24% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Citi's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareCitiRewardsPlus" name="compare">
+                  <label for="compareCitiRewardsPlus" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+      
+
+      <div class="unique-credit-card-detail">
+        <h4 class="unique-card-category">More cash back cards from Citi</h4>
+        <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+                <img src="/credit-cards/images/CreditCardImg/Costco Anywhere Visa® Card by Citi.png" alt="Costco Anywhere Visa Card by Citi">
+                <div class="unique-rating">
+                    <span class="unique-rating-label">Our rating:</span>
+                    <span class="unique-stars">
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star full">&#9733;</span>
+                        <span class="unique-star half">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </span>
+                    <span class="unique-rating-number">2.3</span>
+                    <span class="info-icon">&#8505;</span>
+                </div>
+            </div>
+    
+            <!-- Card Info -->
+            <div class="unique-card-info">
+                <h2 class="unique-card-name">Costco Anywhere Visa® Card by Citi</h2>
+                <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                <p class="unique-rewards-rate"><strong>4%</strong> &nbsp;&nbsp;&nbsp;&nbsp;4% cash back on eligible gas and EV charging (up to $7,000 annually), then 1% thereafter.</p>
+                <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% cash back on restaurants and eligible travel purchases.</p>
+                <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;2% cash back on purchases from Costco and Costco.com.</p>
+                <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% cash back on all other purchases.</p>
+                <br>
+                <div class="unique-card-details-summary-inline">
+                    <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+                    <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                    <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 27.99% variable</p>
+                    <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+                </div>
+                <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                <p class="unique-secure-site-note">at Citi's secure site</p>
+            </div>
+        </div>
+    
+        <!-- Additional Information -->
+        <div class="unique-extra-info">
+            <div class="unique-compare-checkbox">
+                <input type="checkbox" id="compareCostcoAnywhereVisa" name="compare">
+                <label for="compareCostcoAnywhereVisa" style="color: black;">Add to compare</label>
+            </div>
+        </div>
+    
+        <!-- Editor's Take & Card Details Accordion -->
+        <div class="unique-accordion">
+            <div class="unique-accordion-item">
+                <h5>Editor's take</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+                <h5>Card details</h5>
+                <span class="accordion-icon">+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="unique-credit-card-detail">
+      <h4 class="unique-card-category"></h4>
+      <div class="unique-card-detail-container">
+          
+          <!-- Card Image -->
+          <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/Costco Anywhere Visa® Business Card by Citi.png" alt="Costco Anywhere Visa Business Card by Citi">
+              <div class="unique-rating">
+                  <span class="unique-rating-label">Our rating:</span>
+                  <span class="unique-stars">
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="unique-star full">&#9733;</span>
+                      <span class="empty">&#9733;</span>
+                      <span class="empty">&#9733;</span>
+                      <span class="empty">&#9733;</span>
+                  </span>
+                  <span class="unique-rating-number">2.1</span>
+                  <span class="info-icon">&#8505;</span>
+              </div>
+          </div>
+  
+          <!-- Card Info -->
+          <div class="unique-card-info">
+              <h2 class="unique-card-name">Costco Anywhere Visa® Business Card by Citi</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>4%</strong> &nbsp;&nbsp;&nbsp;&nbsp;4% cash back on eligible gas and EV charging purchases for the first $7,000 per year and then 1% thereafter.</p>
+              <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;3% cash back on restaurants and eligible travel purchases.</p>
+              <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;2% cash back on all other purchases from Costco and Costco.com.</p>
+              <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;1% cash back on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                  <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> No current offer</p>
+                  <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                  <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 19.99% - 27.99% variable</p>
+                  <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Citi's secure site</p>
+          </div>
+      </div>
+  
+      <!-- Additional Information -->
+      <div class="unique-extra-info">
+          <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compareCostcoAnywhereVisaBusiness" name="compare">
+              <label for="compareCostcoAnywhereVisaBusiness" style="color: black;">Add to compare</label>
+          </div>
+      </div>
+  
+      <!-- Editor's Take & Card Details Accordion -->
+      <div class="unique-accordion">
+          <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+          <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+          </div>
+      </div>
+  </div>
+  
+    
+
+        
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      <div class="unique-card-content travel">
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category"></h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/Citi® : AAdvantage® Executive World Elite Mastercard®.png" alt="Citi AAdvantage Executive World Elite Mastercard">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star half">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">4.5</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Citi® / AAdvantage® Executive World Elite Mastercard®</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>4x</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 4x AAdvantage® miles for every $1 spent on eligible American Airlines purchases.</p>
+                  <p class="unique-rewards-rate"><strong>1x</strong> &nbsp;&nbsp;&nbsp;&nbsp;1 AAdvantage® mile for every $1 spent on other purchases.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 70,000 miles</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $595</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.74% - 29.74% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Citi's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareCitiAAdvantageExecutive" name="compare">
+                  <label for="compareCitiAAdvantageExecutive" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+      
+        
+    
+  
+
+  
+  </div>
+
+
+      
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="unique-card-content rewards">
+        
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category"></h4>
+          <div class="unique-card-detail-container">
+              
+              <!-- Card Image -->
+              <div class="unique-card-image">
+                  <img src="/credit-cards/images/CreditCardImg/Citi Rewards+® Card.png" alt="Citi Rewards+ Card">
+                  <div class="unique-rating">
+                      <span class="unique-rating-label">Our rating:</span>
+                      <span class="unique-stars">
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="unique-star full">&#9733;</span>
+                          <span class="empty">&#9733;</span>
+                      </span>
+                      <span class="unique-rating-number">3.9</span>
+                      <span class="info-icon">&#8505;</span>
+                  </div>
+              </div>
+      
+              <!-- Card Info -->
+              <div class="unique-card-info">
+                  <h2 class="unique-card-name">Citi Rewards+® Card</h2>
+                  <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+                  <p class="unique-rewards-rate"><strong>5X</strong> &nbsp;&nbsp;Special offer: earn 5 ThankYou® Points per $1 spent on hotel, car rentals, and attractions <br> booked on CitiTravel.com through December 31, 2025.</p>
+                  <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;Earn 2X ThankYou® Points at Supermarkets and Gas Stations for the first $6,000 per year and <br> then 1X Points thereafter.</p>
+                  <p class="unique-rewards-rate"><strong>1X</strong> &nbsp;&nbsp;Earn 1X ThankYou® Points on All Other Purchases.</p>
+                  <br>
+                  <div class="unique-card-details-summary-inline">
+                      <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 20,000 points</p>
+                      <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                      <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.24% - 28.24% variable</p>
+                      <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+                  </div>
+                  <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+                  <p class="unique-secure-site-note">at Citi's secure site</p>
+              </div>
+          </div>
+      
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+              <div class="unique-compare-checkbox">
+                  <input type="checkbox" id="compareCitiRewardsPlus" name="compare">
+                  <label for="compareCitiRewardsPlus" style="color: black;">Add to compare</label>
+              </div>
+          </div>
+      
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+              <div class="unique-accordion-item">
+                  <h5>Editor's take</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+              <div class="unique-accordion-item">
+                  <h5>Card details</h5>
+                  <span class="accordion-icon">+</span>
+              </div>
+          </div>
+      </div>
+      
+        
+  
+
+    </div>
+
+
+
+    <div class="container">
+      <div id="on-this-page-panel-2"></div>
+      <div class="article-starter">
+        <div class="article-border">
+        <p style=" font-style: italic;">All information about Citi Rewards+SM Student Card, CitiBusiness AAdvantage Platinum Select Mastercard and the Citi Secured Mastercard have been collected independently by CreditCards.com and has not been reviewed by the issuer. The issuer did not provide the content, nor is it responsible for its accuracy.</p>
+        </div>  
+        <div class="article-border">
+          <h3>A guide to Citi credit cards</h3>
+          <p>Citi, one of the nation’s largest and longest-established banks, offers plenty of opportunity in the world of credit cards. With Citi, you can find lucrative cash back, strong travel rewards, chances to build your credit, worthwhile perks and more. In addition to their slew of credit card benefits and rewards, Citi serves as a bank for people seeking mortgages, investing services and more. We’ll fill you in on the need-to-know when it comes to Citi’s credit card offers, finding the right option, and making the card work for you.</p>
+        </div>
+        <h2>Comparing the best Citi credit cards</h2>
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Credit card</th>
+                  <th>Best for</th>
+                  <th>CreditCards.com Rating</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><a href="#">Citi Custom Cash® Card</a></td>
+                  <td>Cash back + sign-up bonus</td>
+                  <td><a href="#">4.1 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Citi Double Cash® Card</a></td>
+                  <td>Cash back</td>
+                  <td><a href="#">4.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Citi Strata Premier<sup>SM</sup> Card</a></td>
+                  <td>Travel</td>
+                  <td><a href="#">4.6 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Citi Rewards+® Card</a></td>
+                  <td>Bonus rewards points</td>
+                  <td><a href="#">3.9 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Costco Anywhere Visa® Card by Citi</a></td>
+                  <td>Gas purchases</td>
+                  <td><a href="#">2.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Citi® / AAdvantage® Executive World Elite Mastercard®</a></td>
+                  <td>Lounge access</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Costco Anywhere Visa® Business Card by Citi</a></td>
+                  <td>Entrepreneurs</td>
+                  <td><a href="#">2.1 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Citi® Diamond Preferred® Card</a></td>
+                  <td>Long intro APR period</td>
+                  <td><a href="#">3.9 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">American Airlines AAdvantage® MileUp®</a></td>
+                  <td>American Airlines purchases</td>
+                  <td><a href="#">3.2 / 5</a></td>
+              </tr>
+              <tr>
+                  <td><a href="#">Citi® Secured Mastercard</a></td>
+                  <td>Building your credit</td>
+                  <td><a href="#">3.1 / 5</a></td>
+              </tr>
+          </tbody>
+      </table>
+      
+      
+      
+        
+      
+      
+      
+        
+      <h2 style="font-size: 28px;" id="citi-credit-card-details-section" class="section-offset" >Editor’s picks: Citi credit card details</h2>
+
+      <h3>Best for cash back + sign-up bonus: Citi Custom Cash® Card</h3>
+<ul>
+    <li><strong>Best features:</strong> This no annual fee card gets you 5% cash back on purchases for the first $500 spent in your top eligible spend category each billing cycle (then 1%). The 5% rate automatically adjusts to your spending rather than the task of sorting out rotating spend categories on your own. Your purchases outside of the top spend category will earn 1% cash back. New cardholders can also earn $200 in cash back (paid out in ThankYou points) after spending $1,500 in the first six months of account opening. There's also a 15-month 0% intro APR on balance transfers and purchases (18.74% - 28.74% Variable APR afterwards).</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The $500 cap on your bonus rate each billing cycle is less than ideal, totaling just $6,000 in annual spending. While the card’s intro APR offer on balance transfers is great, there’s a $5 or 5% transfer fee on any balance moved. Also, there’s no annual bonuses or high-rate offers outside of your top category.</li>
+    
+    <li><strong>Alternatives:</strong> Those looking for a flexible cash back card with similar options should look to the <a href="#">Bank of America® Customized Cash Rewards credit card’s</a> offer of 3% cash back in the category of your choice and 2% back at wholesale clubs and grocery stores (on up to $2,500 in combined choice category/grocery store/wholesale club quarterly purchases, then 1%).</li>
+    
+    <li><strong>Bottom line:</strong> Shoppers with spending habits that vary month to month can really benefit from this card’s user-friendly rewards structure. Consistent 5% cash back is a great rate for any credit card, especially one with no annual fee.</li>
+</ul>
+<p>Read our <a href="#">Citi Custom Cash® Card review</a>.</p>
+
+<h3>Best for cash back: Citi Double Cash® Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Cardholders who stay on top of their payments get an unlimited 2% cash back on every purchase, a huge earnings opportunity for big spenders. To incentivize good habits, it’s 1% cash back on every purchase (excluding gift cards), plus an additional 1% as you pay off those purchases. Your cash back rewards can be converted to <a href="#">ThankYou points</a>, which can be redeemed for travel purchases, gift cards and more for a rate of $1 cash back to 100 ThankYou points. Additionally, this no annual fee card offers an introductory 18-month 0% APR on balance transfers (18.74% - 28.74% Variable APR thereafter).</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Your full rewards rate depends on you making sufficient payments.</li>
+    
+    <li><strong>Alternatives:</strong> Someone on the hunt for consistent 2% cash rewards might prefer the <a href="#">Wells Fargo Active Cash® Card</a>. Earn 2% cash rewards on purchases and take advantage of an introductory offer of $200 cash rewards bonus after you spend at least $500 in purchases in your first three months.</li>
+    
+    <li><strong>Bottom line:</strong> Unlimited 2% cash back can benefit nearly anyone as an everyday card, but it does require a certain level of financial discipline to reap the full benefits. If you can stay on top of payments, the lack of complicated rewards and a strong balance transfer offer make this a great choice for someone looking for a straightforward option or a chance at tackling their debt.</li>
+</ul>
+<p>Read our <a href="#">Citi Double Cash® Card review</a>.</p>
+
+<h3>Best for travel: Citi Strata Premier<sup>SM</sup> Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Along with its terrific mix of everyday bonus categories — which make it easy to earn points even without a huge travel spend — this card stands out for its generous annual hotel benefit, which is worth twice as much as similar perks on competing cards.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The annual hotel benefit carries a high spending requirement (at least $500 in a single hotel booking), which may not fit your travel plans or hotel booking preferences.</li>
+    
+    <li><strong>Alternatives:</strong> The Chase Sapphire Preferred® Card is a great alternative if you travel frequently since it carries a high rewards rate on all travel booked through Chase Travel<sup>℠</sup> (not just hotels and rental cars) as well as a uniquely high point redemption value for a mid-tier travel card (1.25 cents per point when you use points via Chase Travel).</li>
+    
+    <li><strong>Bottom line:</strong> If you’re looking for a standalone rewards card that can help you rack up points for your next trip, this card is easily one of the best out there.</li>
+</ul>
+<p>Read our <a href="#">Citi Strata Premier<sup>SM</sup> Card review</a>.</p>
+
+<h3>Best for bonus rewards points: Citi Rewards+® Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Earn 2X points at supermarkets and gas stations, with every purchase rounded up to the nearest 10 points. This automatically adds impact to your small purchases, making a $2 pack of gum worth 10 points or boosting an $11 lunch to 20 points. New cardholders will also appreciate a solid sign-up bonus: Earn 20,000 ThankYou points if you spend $1,500 in the first three months (redeemable for $200 in gift cards at thankyou.com). To cap it off, as an annual bonus you’ll get back 10% of all the points you’ve redeemed each year (up to 100,000 points per year) and there’s no limit or expiration on the points you earn.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Your earnings in the 2X categories are limited to $6,000 per year, then dropping to 1X. Additionally, although there are several redemption options, the only worthwhile choices are electing for travel or gift cards.</li>
+    
+    <li><strong>Alternatives:</strong> Shoppers looking to earn on groceries and gas purchases should check out the numerous lucrative cash back options offered by the <a href="#">Blue Cash Preferred® Card from American Express</a>.</li>
+    
+    <li><strong>Bottom line:</strong> If you want an easy-to-understand everyday rewards card, this is a great choice. There are no rotating categories to keep track of and you can squeeze extra value out of any small purchase thanks to its rounding up feature. Hopeful cardholders should check out our <a href="#">guide to the Citi Rewards+® Card</a>.</li>
+</ul>
+<p>Read our <a href="#">Citi Rewards+® Card review</a>.</p>
+
+<h3>Best for gas: Costco Anywhere Visa® Card by Citi</h3>
+<ul>
+    <li><strong>Best features:</strong> This card can net you 4% cash back on eligible gas and EV charging purchases (up to $7,000 per year, then 1%). You’ll earn 3% back at restaurants and on eligible travel, plus 2% back at Costco and 1% elsewhere. There’s also no annual fee with your paid Costco membership ($60).</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There’s no annual bonus or sign-up bonus, and if you’re not already a member of the store you’ll need to pay the $60 annual membership fee to carry the card. In addition, it’s not always easy to tell whether your local gas stations will earn you the 4% rewards, but cardholders can check the <a href="#">merchant’s category codes</a>, or MCC codes, to find the right spots to fill up.</li>
+    
+    <li><strong>Alternatives:</strong> Shoppers into the idea of a gas-and-wholesale card should look into the <a href="#">Sam’s Club Mastercard</a>. Get 5% cash back on your first $6,000 spent on gas each year, plus 3% back on dining and 1% elsewhere for a lesser annual membership cost ($45).</li>
+    
+    <li><strong>Bottom line:</strong> Costco members and those who spend a lot of time on the road are in for a smooth ride with this card, but someone who wants a well-rounded and lucrative rewards card should look to other options.</li>
+</ul>
+<p>Read our <a href="#">Costco Anywhere Visa® Card by Citi review</a>.</p>
+
+<h3>Best for lounge access: Citi®/AAdvantage® Executive World Elite Mastercard®</h3>
+<ul>
+    <li><strong>Best features:</strong> Its most notable feature is free Admirals Club access, a huge perk for travel lovers. You’ll also get a statement credit of up to $100 for Global Entry/TSA Precheck every four years. People who fly often will appreciate the 4 miles per $1 on eligible American Airlines purchases and after spending $150,000 in a calendar year, cardmembers can earn a total of 5 miles per dollar on eligible American Airlines purchases for the remainder of the calendar year. This can be a good card to get before booking your next vacation as it takes a bit of spending to hit the high-value sign-up bonus: Earn 70,000 American Airlines AAdvantage® bonus miles after spending $7,000 within the first three months of account opening.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Unless you’re a frequent American Airlines flyer, it’ll be hard to make the $595 annual fee worth it.</li>
+    
+    <li><strong>Alternatives:</strong> Travelers who are looking to earn huge rewards and don’t mind a steep annual fee could benefit from the versatility of the <a href="#">Capital One Venture X Rewards Credit Card</a>. Earn 10X miles on hotels and rental cars booked through Capital One Travel and take advantage of a welcome offer that nets you 75,000 Bonus Miles after you spend $4,000 on purchases within your first three months.</li>
+    
+    <li><strong>Bottom line:</strong> If you fly American and want access to private airport lounges and the convenience of skipping long TSA lines, this is a great choice for you.</li>
+</ul>
+<p>Read our <a href="#">Citi®/AAdvantage® Executive World Elite Mastercard® review</a>.</p>
+
+<h3>Best for entrepreneurs: Costco Anywhere Visa® Business Card by Citi</h3>
+<ul>
+    <li><strong>Best features:</strong> Like Citi’s other Costco-partnered card, it’s 4% cash back on eligible gas and EV charging purchases (up to $7,000 per year and then 1% thereafter), 3% for eligible travel and dining and 2% at the wholesale store. Your rewards are unlimited and can be redeemed at Costco for cash or merchandise.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There are some restrictions when it comes to your cash back rewards. They’re only issued once a year in February, expire December 31 of that same year, and are only redeemable at Costco. Also, while there’s no annual fee, the $60 Costco membership is essential to earning rewards.</li>
+    
+    <li><strong>Alternatives:</strong> If you’re searching for a strong cash-back business card, the <a href="#">Ink Business Cash® Credit Card</a> earns 5% cash back on your first $25,000 spent on internet, cable and phone services per year, plus 2% back on gas and dining (up to $25,000 in purchases per year) and 1% elsewhere.</li>
+    
+    <li><strong>Bottom line:</strong> This is a good fit for small business owners who buy some of their inventory in bulk through the wholesaler or who are simply just regular Costco shoppers who want solid rewards.</li>
+</ul>
+<p>Read our <a href="#">Costco Anywhere Visa® Business Card by Citi review</a>.</p>
+
+<h3>Best for building credit: Citi® Secured Mastercard®</h3>
+<ul>
+    <li><strong>Best features:</strong> When getting started, your initial credit limit will be equal to your security deposit ($200 to $2,500), so you essentially get to choose your own credit limit. If you can afford it, having more available credit can improve your <a href="#">credit utilization</a> – which makes up 30% of your credit score. Unlike many <a href="#">secured cards</a>, this card comes with no annual fee.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There are no ongoing rewards here and limited perks. Plus, it has a relatively high variable APR.</li>
+    
+    <li><strong>Alternatives:</strong> A strong option of this kind, the <a href="#">Discover it® Secured Credit Card</a> offers cardholders 2% cash back at gas stations and restaurants (up to $1,000 in purchases per quarter), plus 1% back on all other purchases.</li>
+    
+    <li><strong>Bottom line:</strong> If you’re paying your balance in full each month, you can build credit at no cost to you thanks to the lack of an annual fee. Someone looking to build their credit towards the long-term alternative of <a href="#">graduating to an unsecured card</a> can benefit here.</li>
+</ul>
+<p>Read our <a href="#">Citi® Secured Mastercard® review</a>.</p>
+
+<h3>Best for long intro APR period: Citi® Diamond Preferred® Card</h3>
+<ul>
+    <li><strong>Best features:</strong> Cardholders receive a 0% introductory APR for 21 months on balance transfers made in the first four months (then 17.74% - 28.49% (Variable) APR). You’ll also get a 12-month 0% introductory APR on purchases (then 17.74% - 28.49% (Variable) APR). Plus, there’s no annual fee and there are a few ancillary perks to enjoy, like access to Citi Entertainment®, Citi Flex Plan, Citi Easy Deals program and the <a href="#">Citi Flex Loans program</a>.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> There’s no rewards structure and you’ll face a balance transfer fee of 5% (or $5, whichever is higher). Also, one of the <a href="#">differences when compared to the Citi Simplicity® Card</a> is that the Diamond Preferred charges up to a $41 late payment fee and up to 29.99% variable penalty APR.</li>
+    
+    <li><strong>Alternatives:</strong> Someone looking to take a different route to tackle their debt may be interested in the <a href="#">BankAmericard® credit card</a> and its 0% intro APR on purchases and balance transfers made within the first 60 days only for the first 21 billing cycles (16.24% to 26.24% variable afterward).</li>
+    
+    <li><strong>Bottom line:</strong> If you’ve planned out <a href="#">combating your debt problem</a> and the fee and terms fit your needs, the Citi Diamond Preferred is an attractive option for anyone hoping to pay down debt or finance a big purchase.</li>
+</ul>
+<p>Read our <a href="#">Citi Diamond Preferred® Card review</a>.</p>
+
+
+<h3>Best for American Airlines purchases: American Airlines AAdvantage® MileUp®</h3>
+<ul>
+    <li><strong>Best features:</strong> You get 2 miles per dollar on eligible American Airlines purchases and when shopping at the grocery store and 1 mile per dollar in other categories. It has an affordable sign-up bonus of 10,000 miles and a $50 statement credit if you spend $500 in your first three months. Miles don’t expire as long as you use your card every 18 months and there’s no limit to how much you can earn. There’s also no annual fee and a 25% discount on American Airlines in-flight purchases when using your card.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Some flight redemptions are met with blackout dates and limited seats. Also, cardholders sometimes run into complicated routing rules and there are no stopovers allowed.</li>
+    
+    <li><strong>Alternatives:</strong> Another no annual fee option, the <a href="#">Bank of America® Travel Rewards credit card</a> doesn’t limit you to just one airline. Cardmembers earn a solid 1.5x points on all purchases.</li>
+    
+    <li><strong>Bottom line:</strong> For American Airlines frequent flyers, this is a great choice to start earning miles. However, someone who doesn’t have any allegiance to any particular airline would benefit more from a versatile <a href="#">travel card</a>.</li>
+</ul>
+<p>Read our <a href="#">American Airlines AAdvantage MileUp review</a>.</p>
+       
+    
+ <div class="article-border"></div>   
+
+<h3 id="what-is-citi-section">What is Citi?</h3>
+<p>Citibank, a division of Citigroup, is a full-service bank that provides mortgages, checking and savings accounts, credit cards, and more.</p>
+<p>One of North America’s oldest banks in continuous operation, Citibank is steeped in the United States’ banking history. It was <a href="#">founded in 1812 as City Bank of New York</a>, with Samuel Osgood as the founding president. In 1968, Citibank introduced its first credit card, known as the Everything Card, later partnering with Mastercard. In the 1970s, Citibank was one of the first American banks to introduce automatic teller machines to its customers.</p>
+<p>Today, Citibank has 2,649 branches throughout the world, 723 of which are located in the United States. Citibank’s U.S. presence is focused primarily in the metropolitan areas around New York, Los Angeles, San Francisco, Chicago, Washington D.C., and Miami. As Citi has expanded to new locations over the years, the bank’s selection of credit cards has grown just as significantly, now providing options for nearly any type of consumer.</p>
+
+<h3 id="choose-a-card-section">How to choose a Citi credit card</h3>
+<p>Using tools like our <a href="#">CardMatch™</a> feature can help you get an idea of what you could qualify for based on your credit profile and make it easier to sort through your options. You can even <a href="#">see what Citi cards you may be prequalified for</a> before making any choices.</p>
+<p>Your budget, where you spend and what you do in your everyday life all matter when finding the right card. Take a second to consider what you need most out of a credit card – it’ll make your application process simpler from there.</p>
+
+<h3>Debt relief</h3>
+<p>Citi has several options with long introductory APR periods, perfect for consolidating outstanding credit card debt to pay off while temporarily avoiding interest. The Citi Simplicity and Diamond Preferred cards each bring a generous introductory APR period, and those who don’t want to lose out on rewards while tackling debt could look at the Citi Rewards+ or Citi Custom Cash’s intro APR offers.</p>
+
+<h3>Well-rounded cash back</h3>
+<p>The unique offer of the Citi Custom Cash makes it a very strong cash back option for any shopper, especially those with a particularly high spending category. The Citi Double Cash also brings plenty to the plate with it’s 2% effective cash back rate on all purchases (1% when you buy and 1% as you pay).</p>
+
+<h3>Airline miles</h3>
+<p>Citi offers several high-value airline cards for American Airline loyalists. Those who want the elite travel experience should consider the slew of perks that come with the Citi/AAdvantage Executive World Elite Mastercard, but those who are getting started with earning flight rewards might see more appeal in the less expensive American Airlines AAdvantage MileUp.</p>
+
+<h3>Gas rewards</h3>
+<p>You’ll have to be at least interested in being a Costco member to take advantage here, but everyday credit card users and small business owners who have an especially high budget on gas or electric vehicle charging will love the 4% cash back (on up to $7,000 worth at the pump per year, then 1%) brought by the Costco Anywhere Visa Card and the Costco Anywhere Visa Business.</p>
+
+
+<h3>Credit building</h3>
+<p>Those who are just starting with their credit-building journeys or recovering after a depleted score could benefit from a secured option. The Citi Secured Mastercard is a no-frills card that comes without an annual fee, so you can save on extra costs to make payments that eventually build your score.</p>
+
+
+<h3 id="programs-section">What programs does Citi offer?</h3>
+<p>Citi’s catalog of cards brings a lot to the table. On top of the main attractions like cash back rewards, travel points and debt relief opportunities, Citi’s cards come with some strong additional benefits and user-friendly programs to make them worthwhile. <a href="#">Earning ThankYou rewards</a> and taking advantage of Citi’s other offers might be easy, but it’s always important to make sure the card’s perks and other extras actually apply to your lifestyle and finances; a mismatched card and cardholder can cause problems.</p>
+<p>Besides each card’s respective rates and rewards, many Citi credit cards come equipped with useful add-ons, such as standard travel, shopping and security perks like account monitoring, fraud protection and a free concierge service.</p>
+<p>We’ve included a list of other Citi credit card benefits, headlined by Citi Easy Deals and the Citi Entertainment® program.</p>
+
+<h3>Citi Easy Deals</h3>
+<p>Cardholders with either the Citi Simplicity or Citi Diamond Preferred can qualify for discounts on restaurants, merchandise and more through Citi Easy Deals. Easy Deals operates according to tiers – depending on certain annual spending requirements, users can climb and access more deals. Although most of the discounts aren’t anything you couldn’t get from online coupons, the meatier travel and gift card deals in the upper tiers could be worth your while.</p>
+<ul>
+  <li><strong>Base tier</strong> – Gives you access upon registration to local offers for restaurants, shops and services.</li>
+  <li><strong>Enhanced tier</strong> – In addition to Base tier benefits, spend $100 in purchases on your eligible credit card in one calendar year for access to savings on gift cards and magazines.</li>
+  <li><strong>Plus tier</strong> – In addition to Base and Enhanced benefits, spend $500 in purchases on your eligible credit card in one calendar year for access to savings on merchandise, travel and Daily Deals.</li>
+</ul>
+
+<h3>Citi Entertainment</h3>
+<p>With Citi Entertainment, qualifying cardholders gain access to reserved pre-sale tickets for events in four categories: music, sports, dining and “theater and more.” Users subscribed to Citi Entertainment’s email list can score first dibs on special deals like LiveNation virtual concert tickets and other livestream events. Although other issuers offer similar experience access programs, like Capital One Access and Chase Experiences, Citi Entertainment comes at no added cost and pretty much every Citi card (even select debit cards) is eligible. Cards with Citi Entertainment will have the Visa, Mastercard or American Express logo on them.</p>
+
+<h3><a href="#">Other Citi credit card benefits</a></h3>
+<h4>Travel and Shopping</h4>
+<ul>
+  <li>Citi® Concierge</li>
+  <li>PayPal and mobile wallet card linking</li>
+  <li>Travel notice</li>
+</ul>
+<h4>Security</h4>
+<ul>
+  <li><a href="#">Citi Flex Loan for eligible cardholders</a></li>
+  <li>$0 liability on unauthorized charges</li>
+  <li>Virtual account numbers</li>
+  <li>Free monthly FICO® Score</li>
+  <li>Citi® Quick Lock mobile app account freezing</li>
+  <li>Customizable account alerts</li>
+  <li>Fraud early warning</li>
+</ul>
+
+<h3>How we picked the best Citi credit cards</h3>
+<p>In order to determine which Citi credit cards are best, we’ve examined Citi’s top credit card offers and narrowed down based off of the following key components:</p>
+<ul>
+  <li><strong>Rewards program: </strong>We review rewards categories, rates and fees, program partners and other key details to assess overall value.</li>
+  <li><strong>Special features: </strong>Does the card have unique features or standout advantages over other cards?</li>
+  <li><strong>Rates and fees: </strong>Are rates and fees associated with the card comparable to the value offered by its rewards program?</li>
+</ul>
+<p>Citi may be without some of the bells and whistles other cards offer in the way of perks, but its cash back, ThankYou Points, and travel rewards programs offer a lot of value, particularly if you already bank with Citi. Still having difficulty deciding between card offers? Check out this <a href="#">guide to choosing a credit card.</a></p>
+
+<h3 id="our-methodology">More information on Citi credit cards</h3>
+<p>For more information on all things Citi credit cards, continue reading content from our credit card experts:</p>
+<ul>
+    <li><a href="#">Maximize your earnings with Citi Rewards+</a></li>
+    <li><a href="#">How to transfer a balance to a Citi credit card</a></li>
+    <li><a href="#">Introducing the Citi ThankYou trifecta</a></li>
+</ul>
+
+<div class="article-border"></div>
+
+
+  <br>
+
+  <div class="before-footer">
+    <!-- About the Author -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/author.png" alt="Garrett Yarbrough" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Author</h3>
+          <h4 class="profile-name">Garrett Yarbrough</h4>
+        </div>
+      </div>
+      <p>Garrett Yarbrough is a staff writer for CreditCards.com, specializing in product news and recommendations. He strives to make navigating credit cards, earning rewards, and credit building smooth sailing for his readers.</p>
+    </div>
+  
+    <!-- About the Editor -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/editor.png" alt="Tracy Stewart" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Editor</h3>
+          <h4 class="profile-name">Tracy Stewart</h4>
+        </div>
+      </div>
+      <p>Tracy Stewart is a personal finance writer specializing in credit card loyalty programs, travel benefits, and consumer protections. He previously covered travel rewards credit cards, budget travel, and aviation news at SmarterTravel Media. His money-saving tips have appeared in the Washington Post, the Wall Street Journal, Consumer Reports, MarketWatch, Vice, People, the Zoe Report, and elsewhere.</p>
+    </div>
+  
+    <!-- About the Reviewer -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/reviewer.png" alt="Jason Steele" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Reviewer</h3>
+          <h4 class="profile-name">Jason Steele</h4>
+        </div>
+      </div>
+      <p>Jason Steele is a professional journalist and credit card expert who has been contributing to online publications since 2008. He was one of the original contributors to The Points Guy, and his work has been appearing there since 2011. He has also contributed to over 100 of the leading personal finance and travel outlets. He’s frequently interviewed and quoted by mainstream outlets on the subjects of credit cards and travel. Jason is passionate about travel rewards credit cards, which he uses to earn rewards that he can redeem for him and his family to travel around the world. Jason is also the founder and producer of CardCon, a conference for credit and credit card journalists that’s held annually.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    
+    
+    
+
+
+
+    
+    
+
+
+
+        
+    
+      
+      
+      
+  
+    <div id="footer-placeholder"></div>
+  <script src="/credit-cards/js/cardIssuerComponents/citi.js"></script>
+  
+</body>
+</html>

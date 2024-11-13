@@ -164,7 +164,7 @@ a:hover{
 
 .bank-logo img {
   height: 70px;
-  margin-left: 560px;
+  margin-left: 650px;
   margin-top: -20px;
   
 
@@ -225,6 +225,10 @@ a:hover{
   border-bottom: 1px solid #b6b4b4;
 }
 
+.empty{
+  position: relative;
+  color: #ccc; /* Gray color for the half star (background) */
+}
 
 
 /* Main content styling */
@@ -344,7 +348,7 @@ a:hover{
   color: white;
   padding: 20px;
   gap: 20px;
-  width: 99vw;
+  width: 100vw;
   margin: 0; /* Ensure no margin on all sides */
   padding: 40px;
   box-sizing: border-box;
@@ -375,7 +379,7 @@ a:hover{
 }
 
 .text-container {
-  max-width: 600px;
+  width: 100%;
   
 }
 

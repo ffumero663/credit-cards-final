@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank of America</title>
+  <link rel="stylesheet" href="/credit-cards/css/card-issuer-components/bank-of-america.css">
+  <link rel="stylesheet" href="/credit-cards/css/footer.css">
+  <link rel="stylesheet" href="/credit-cards/css/header-inside-buttons.css">
+  <link rel="stylesheet" href="/credit-cards/css/on-this-page.css">
+  <link rel="stylesheet" href="/credit-cards/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+  <div id="header-placeholder"></div>
+  <div class="background-photo">
+    <div class="header">
+      <div class="bank-logo">
+        <img src="/credit-cards/images/CardIssuer/centered-logo/bank-of-america.png" alt="American Express">
+      </div>
+      <h4 class="advertisor">
+        <a id="disclosure-link" href="#">ADVERTISER DISCLOSURE</a>
+      </h4>
+    </div>
+
+    <div id="disclosure-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <div class="modal-header">Advertiser Disclosure</div>
+        <div class="modal-body">
+          <p>CreditCards.com is an independent, advertising-supported comparison service. The offers that appear on this site are from companies from which CreditCards.com receives compensation. This compensation may impact how and where products appear on this site, including, for example, the order in which they may appear within listing categories. Other factors, such as our own proprietary website rules and the likelihood of applicants' credit approval also impact how and where products appear on this site. CreditCards.com does not include the entire universe of available financial or credit offers.</p>
+          <p>CCDC has partnerships with issuers including, but not limited to, American Express, Bank of America, Capital One, Chase, Citi and Discover.</p>
+        </div>
+        <div class="modal-footer">
+          <button id="ok-btn" class="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Flex container for the sidebar and main content -->
+    <div class="flex-container">
+      <div id="on-this-page-panel"></div> <!-- Sidebar Panel -->
+      <div class="main-content">
+        <h1 id="our-top-picks-section">Best Bank of America® Credit Cards</h1>
+        <p>Written by: <a href="#">Aaron Broverman</a> | Edited by: <a href="#">Laura Mohammad</a> | Reviewed by: <a href="#">Stephanie Zito</a> | October 22, 2024</p>
+        <br>
+        <p>Known for outstanding customer service and major rewards, our partner American Express offers some of the best credit cards around for people with good or excellent credit. Whether you’re looking to earn cash back or get rewards for travel or your business, there’s an Amex card for you.</p>
+        <br>
+        <div class="how-we-choose">
+          <div class="title">
+            <img src="/credit-cards/images/ButtonComponents/starIcon.png" alt="star icon">
+            <h2>How we Choose</h2>
+          </div>
+          <p>Our <a>editorial team</a> and <a>expert review board</a> provide an unbiased analysis of the products we feature. Our comparison service is compensated by our credit card company partners, and may influence where or how products are featured on the site. This site does not include all credit card companies or all available credit card offers. Please note: The star-rating system on this page is based on our independent <a>card scoring methodology</a> and is not influenced by advertisers or card issuers. Learn more about our <a>partners</a> and <a>how we make money.</a></p>
+    
+        </div>
+      
+        <div class="summary">
+          <button id="summary-btn" class="summary-btn" onclick="textAppear()">Summary
+            <img src="/credit-cards/images/CardIssuer/new-icons/plus-icon-banks.png" alt="plus icon">
+          </button>
+        
+          <div id="summary-text" class="hidden">
+            <h2 style="color: #fff;">Creditcards.com’s Best Bank of America Credit Cards of 2024: </h2>
+            <br>
+            <ul class="ul-best-credit-cards">
+              <li><a href="#">Bank of America® Travel Rewards credit card:</a> Best for travel</li>
+              <li><a href="#">Bank of America® Customized Cash Rewards credit card:</a> Best for cash back</li>
+              <li><a href="#">BankAmericard® credit card:</a> Best for balance transfers</li>
+              <li><a href="#">Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card:</a> Best for small business</li>
+              <li><a href="#">Bank of America® Unlimited Cash Rewards credit card:</a> Best for flat rate cash back</li>
+              <li><a href="#">Bank of America® Premium Rewards® credit card:</a> Best for sign-up bonus</li>
+              <li><a href="#">Alaska Airlines Visa Signature® credit card:</a> Best for frequent Alaska Airlines flyers</li>
+              <li><a href="#">Bank of America® Business Advantage Unlimited Cash Rewards Mastercard® credit card:</a> Best business credit card</li>
+              <li><a href="#">Bank of America® Business Advantage Travel Rewards World Mastercard® credit card:</a> Best for business travel</li>
+              <li><a href="#">Bank of America® Platinum Plus® Mastercard® Business Card:</a> Best for low interest</li>
+              <li><a href="#">Bank of America® Unlimited Cash Rewards credit card for Students:</a> Best cash back card for students</li>
+              <li><a href="#">Bank of America® Travel Rewards credit card for Students:</a> Best travel card for students</li>
+            </ul>
+            
+            
+          </div>
+        </div>
+      </div>
+      </div>
+     
+      
+
+     
+
+      <div class="filter-bar">
+        <div class="filter-label">
+            <span>FILTER CARDS BY CATEGORY:</span>
+        </div>
+        <div class="filter-buttons">
+            <button id="all-cat" class="filter-button active"><i class="fas fa-th"></i> All Categories</button>
+            <button id="cash-back" class="filter-button"><i class="fas fa-wallet"></i> Cash Back</button>
+            <button id="travel" class="filter-button"><i class="fas fa-plane"></i> Travel</button>
+            <button id="business" class="filter-button"><i class="fas fa-briefcase"></i> Business</button>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+      <!-- Column 1: Platinum Card -->
+      <div class="card all-cat">
+          <p class="category-label">BEST FOR TRAVEL</p>
+          <h2>Bank of America® Travel Rewards credit card</h2>
+          <img src="/credit-cards/images/CreditCardImg/Bank of America® Travel Rewards credit card.png" alt="Bank of America® Travel Rewards credit card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★☆</span>
+              <span class="rating-value">4.1</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare1">
+              <label for="compare1">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Bank of America's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>1.5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5 points per $1 spent on all purchases, with no annual fee and no foreign transaction fees and your points don't expire as long as your account remains open.</li>
+              </ul>
+          </div>
+          <br>
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>25,000 points</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$0</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>18.74% - 28.74% Variable APR on purchases and balance transfers</strong></li>
+            </ul>
+          </div>
+      </div>
+  
+      <!-- Column 2: Gold Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST FOR CASH BACK</p>
+          <h2>Bank of America® Customized Cash Rewards credit card</h2>
+          <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Customized Cash Rewards credit card.png" alt="Bank of America® Customized Cash Rewards credit card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★☆</span>
+              <span class="rating-value">4.4</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare2">
+              <label for="compare2">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>670–850 (Good to Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Bank of America's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3% cash back in the category of your choice (up to $2,500 in combined choice category/grocery store/wholesale club quarterly purchases).</li>
+                  <li><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn automatic 2% at grocery stores and wholesale clubs (up to $2,500 in combined choice category/grocery store/wholesale club quarterly purchases).</li>
+                  <li><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1% on all other purchases.</li>
+              </ul>
+          </div>
+
+          <div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>$200</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$0</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>18.74% - 28.74% Variable APR on purchases and balance transfers</strong></li>
+            </ul>
+          </div>
+
+        
+      </div>
+  
+      <!-- Column 3: Blue Cash Everyday Card -->
+      <div class="card all-cat" >
+          <p class="category-label">BEST BANK OF AMERICA BUSINESS CARD</p>
+          <h2>Bank of America® Business Advantage</h2>
+          <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card.png" alt="Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card" class="card-image">
+          <div class="rating">
+              <span>Our rating: </span>
+              <span class="stars">★★★★☆</span>
+              <span class="rating-value">3.9</span>
+          </div>
+          <p style="color: black;"><a href="#" class="terms-link">See Rates & Fees</a>, Terms Apply</p>
+          <div class="compare">
+              <input type="checkbox" id="compare3">
+              <label for="compare3">Add to compare</label>
+          </div>
+          <p class="credit-score">Recommended credit: <br><strong>740-850 (Excellent)</strong></p>
+          <button class="apply-button">Apply now <i class="lock-icon fas fa-lock"></i></button>
+          <p class="secure-note">at Bank of America's secure site</p>
+          <div class="rewards-rate">
+              <h3>Rewards rate</h3>
+              <ul>
+                  <li><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3% cash back in the category of your choice (for the first $50,000 in combined choice category/dining purchases each calendar year, 1% thereafter).</li>
+                  <li><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2% cash back on dining purchases (for the first $50,000 in combined choice category/dining purchases each calendar year, 1% thereafter).</li>
+                  <li><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1% cash back on all other purchases.</li>
+              </ul>
+          </div>
+
+          <div></div>
+            <ul class="offer-fee-apr">
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Intro Offer<strong>$300</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Annual fee  <strong>$0</strong></li>
+              <li style="color: black; list-style-type: none; margin-right: 50px;">Regular APR <strong>17.99% - 27.99% Variable APR on purchases and balance transfers</strong></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class=" cash-back">
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Bank of America® Credit Cards</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Customized Cash Rewards credit card.png" alt="Bank of America® Customized Cash Rewards credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.4</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Customized Cash Rewards credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>3%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 3% cash back in the category of your choice (up to $2,500 in combined choice <br>category/grocery store/wholesale club quarterly purchases).</p>
+              <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn automatic 2% at grocery stores and wholesale clubs (up to $2,500 in combined <br>choice category/grocery store/wholesale club quarterly purchases).</p>
+              <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1% on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> $200</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.74% - 28.74% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+ 
+      
+       
+        
+
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">More Cash Back Cards from Bank of America</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card.png" alt="Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="empty">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">3.9</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Business Advantage Customized <br>Cash Rewards Mastercard® credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>3%</strong>&nbsp;&nbsp;&nbsp;&nbsp; Earn 3% cash back in the category of your choice (for the first $50,000 in <br>combined choice category/dining purchases each calendar year, 1% thereafter).</p>
+              <p class="unique-rewards-rate"><strong>2%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 2% cash back on dining purchases (for the first $50,000 in combined <br>choice category/dining purchases each calendar year, 1% thereafter).</p>
+              <p class="unique-rewards-rate"><strong>1%</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn 1% cash back on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> $300</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 27.99% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      <div class="unique-card-content travel">
+
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Bank of America® Credit Cards</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/Bank of America® Travel Rewards credit card.png" alt="Bank of America® Travel Rewards credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="empty">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.1</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Travel Rewards credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>1.5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5 points per $1 spent on all purchases, with no annual fee and no foreign <br>transaction fees, and your points don’t expire as long as your account remains open.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 25,000 points</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 18.74% - 28.74% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">More Travel Cards from Bank of America</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Premium Rewards® credit card.png" alt="Bank of America® Premium Rewards® credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.4</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Premium Rewards® credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>2X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 2 points for every $1 spent on travel and dining purchases.</p>
+              <p class="unique-rewards-rate"><strong>1.5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5 points for every $1 spent on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 60,000 points</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.74% - 28.74% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Alaska Airlines Credit Card</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/CreditCardImg/Alaska Airlines Visa Signature® credit card.png" alt="Alaska Airlines Visa Signature® credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">4.5</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Alaska Airlines Visa Signature® credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>3 miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 3 miles for every $1 spent on eligible Alaska Airlines purchases.</p>
+              <p class="unique-rewards-rate"><strong>2 miles</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 2 miles for every $1 spent on eligible gas, EV charging station, cable, <br>streaming services and local transit (including ride share) purchases.</p>
+              <p class="unique-rewards-rate"><strong>1 mile</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1 mile per $1 spent on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 60,000 bonus miles plus Alaska's Famous Companion Fare™</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $95</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 20.74% - 28.74% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 670-850 (Good to Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Bank of America® Business Cards</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card.png" alt="Bank of America® Business Advantage Travel Rewards World Mastercard® credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="empty">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">3.9</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Business Advantage <br>Travel Rewards World Mastercard® credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>1.5X</strong> &nbsp;&nbsp;&nbsp;&nbsp;Earn unlimited 1.5 points for every $1 spent on purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 30,000 points</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 27.99% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+          
+
+        
+
+
+      
+
+    
+  
+
+  
+  </div>
+
+
+      
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="unique-card-content business">
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Bank of America® Business Cards</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card.png" alt="Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="empty">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">3.9</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Business Advantage Customized Cash <br> Rewards Mastercard® credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>3%</strong> Earn 3% cash back in the category of your choice (for the first $50,000 in combined <br> choice category/dining purchases each calendar year, 1% thereafter).</p>
+              <p class="unique-rewards-rate"><strong>2%</strong> Earn 2% cash back on dining purchases (for the first $50,000 in combined choice <br>category/dining purchases each calendar year, 1% thereafter).</p>
+              <p class="unique-rewards-rate"><strong>1%</strong> Earn 1% cash back on all other purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> $300</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 27.99% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">More Business Cards from Bank of America</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Platinum Plus® Mastercard® Business card.png" alt="Bank of America® Platinum Plus® Mastercard® Business card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star half">&#9733;</span>
+                  <span class="unique-star empty">&#9733;</span>
+                  <span class="unique-star empty">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">2.6</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Platinum Plus® Mastercard® Business card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong> This card doesn’t offer cash back, miles, or points.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> $300</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 15.99% - 26.99% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="unique-credit-card-detail">
+          <h4 class="unique-card-category">Bank of America® Business Cards</h4>
+          <div class="unique-card-detail-container">
+            
+            <!-- Card Image -->
+            <div class="unique-card-image">
+              <img src="/credit-cards/images/credit-card-images-apr/Bank of America® Business Advantage Travel Rewards World Mastercard® credit card.png" alt="Bank of America® Business Advantage Travel Rewards World Mastercard® credit card">
+        
+              <div class="unique-rating">
+                <span class="unique-rating-label">Our rating:</span>
+                <span class="unique-stars">
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star full">&#9733;</span>
+                  <span class="unique-star empty">&#9733;</span>
+                </span>
+                <span class="unique-rating-number">3.9</span>
+                <span class="info-icon">&#8505;</span>
+              </div>
+            </div>
+        
+            <!-- Card Info -->
+            <div class="unique-card-info">
+              <h2 class="unique-card-name">Bank of America® Business Advantage Travel <br>Rewards World Mastercard® credit card</h2>
+              <p class="unique-rewards-rate"><strong>Rewards rate:</strong></p>
+              <p class="unique-rewards-rate"><strong>1.5X</strong> Earn unlimited 1.5 points for every $1 spent on purchases.</p>
+              <br>
+              <div class="unique-card-details-summary-inline">
+                <p class="unique-rewards-rate-description"><strong>Intro offer:</strong> 30,000 points</p>
+                <p class="unique-rewards-rate-description"><strong>Annual fee:</strong> $0</p>
+                <p class="unique-rewards-rate-description"><strong>Regular APR:</strong> 17.99% - 27.99% Variable APR on purchases and balance transfers</p>
+                <p class="unique-rewards-rate-description"><strong>Recommended credit:</strong> 740-850 (Excellent)</p>
+              </div>
+              <button class="unique-apply-button">Apply now <span class="lock-icon">🔒</span></button>
+              <p class="unique-secure-site-note">at Bank of America's secure site</p>
+            </div>
+          </div>
+        
+          <!-- Additional Information -->
+          <div class="unique-extra-info">
+            <a href="#" class="unique-rates-fees-link">See Rates & Fees</a>
+            <div class="unique-compare-checkbox">
+              <input type="checkbox" id="compare17" name="compare">
+              <label for="compare17" style="color: black;">Add to compare</label>
+            </div>
+          </div>
+        
+          <!-- Editor's Take & Card Details Accordion -->
+          <div class="unique-accordion">
+            <div class="unique-accordion-item">
+              <h5>Editor's take</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="unique-accordion-item">
+              <h5>Card details</h5>
+              <span class="accordion-icon">+</span>
+            </div>
+          </div>
+        </div>
+        
+  
+
+    </div>
+
+
+
+    <div class="container">
+      <div id="on-this-page-panel-2"></div>
+      <div class="article-starter">
+        <div class="article-border">
+        <p style=" font-style: italic;">All information about the BankAmericard credit card has been collected independently by CreditCards.com. The issuer did not provide the content, nor is it responsible for its accuracy. </p>
+        </div>  
+        <h2>Comparing the best Bank of America credit cards</h2>
+        <p>Comparing the best Bank of America credit cards</p>
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Credit Card</th>
+                  <th>Best For</th>
+                  <th>Annual Fee</th>
+                  <th>CreditCards.com Rating</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Bank of America® Travel Rewards credit card</td>
+                  <td>Travel</td>
+                  <td>$0</td>
+                  <td><a href="#">3.7 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Customized Cash Rewards credit card</td>
+                  <td>Cash back</td>
+                  <td>$0</td>
+                  <td><a href="#">4.2 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>BankAmericard® credit card</td>
+                  <td>Balance transfers</td>
+                  <td>$0</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card</td>
+                  <td>Cash back on business expenses</td>
+                  <td>$0</td>
+                  <td><a href="#">3.4 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Unlimited Cash Rewards credit card</td>
+                  <td>Flat rate cash back</td>
+                  <td>$0</td>
+                  <td><a href="#">3.3 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Premium Rewards® credit card</td>
+                  <td>Sign-up bonus</td>
+                  <td>$95</td>
+                  <td><a href="#">4.4 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Alaska Airlines Visa Signature® credit card</td>
+                  <td>Frequent Alaska Airlines flyers</td>
+                  <td>$95</td>
+                  <td><a href="#">4.5 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Business Advantage Unlimited Cash Rewards Mastercard® credit card</td>
+                  <td>Business credit card</td>
+                  <td>$0</td>
+                  <td><a href="#">3.4 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Business Advantage Travel Rewards World Mastercard® credit card</td>
+                  <td>Business travel purchases</td>
+                  <td>$0</td>
+                  <td><a href="#">3.2 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Platinum Plus® Mastercard® Business card</td>
+                  <td>Low interest rate</td>
+                  <td>$0</td>
+                  <td><a href="#">2.6 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Unlimited Cash Rewards credit card for Students</td>
+                  <td>Cash back for students</td>
+                  <td>$0</td>
+                  <td><a href="#">4.2 / 5</a></td>
+              </tr>
+              <tr>
+                  <td>Bank of America® Travel Rewards credit card for Students</td>
+                  <td>Travel for students</td>
+                  <td>$0</td>
+                  <td><a href="#">4.2 / 5</a></td>
+              </tr>
+          </tbody>
+        </table>
+        
+      
+      
+      
+        
+        <h2 style="font-size: 28px;" id="bank-of-america-credit-card-details-section" class="section-offset" >Editor’s picks: A closer look at our top-rated Bank of America credit cards
+        </h2>
+        <h3>Best for travel: Bank of America® Travel Rewards credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> This card is free from blackout dates, so flights and hotel stays can be scheduled on your own time. As a welcome offer, new accounts have the opportunity to earn an online bonus of 25,000 points after spending $1,000 in the first 90 days of account opening – a $250 value when redeeming on travel purchases. Also, rather than booking through a designated travel portal, you can redeem your points for any travel and dining purchases made on your credit card within the last 12 months, including third-party sites like Expedia or Travelocity.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Although the card has cash redemption options, they’re not very valuable. One point is worth just .006 cents. This card may not be worth it for those not eligible to sign up for Bank of America Preferred Rewards, as the 25% to 75% increase is a necessity to maximize value and compete with other top travel cards.</li>
+    
+    <li><strong>Alternatives:</strong> A fan-favorite travel card, the <a href="#">Chase Sapphire Preferred® Card</a> offers a good rewards rate and a valuable sign-up bonus. If you redeem all 60,000 points (after spending $4,000 in the first three months to earn the bonus) for travel in the Chase Travel<sup>SM</sup> portal, they are worth $750. Plus, get up to $300 in statement credits on Chase Travel purchases within your first year, for a total value of up to $1,050 in Chase Travel<sup>SM</sup>.</li>
+    
+    <li><strong>Bottom line:</strong> Cardholders will enjoy widespread travel rewards with the freedom to book their well-earned vacations with the travel brands of their choice. Every purchase made is rewarded with 1.5 points per dollar, and points are unlimited and won’t expire as long as your account stays open. Purchases made through the Bank of America Travel Center will earn a boosted 3X points and there’s no annual fee, no foreign transaction fees, car rental insurance, concierge services and other perks for the on-the-go lifestyle.</li>
+</ul>
+<p>Read our <a href="#">Bank of America Travel Rewards credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for cash back: Bank of America® Customized Cash Rewards credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> This no annual fee card comes with a valuable sign-up bonus opportunity: Cardholders earn $200 in online cash rewards when they spend $1,000 in their first 90 days. Plus, there’s an intro APR on new purchases and on balance transfers completed within the first 60 days. Bank of America members can also take advantage of the valuable boosts available through Preferred Rewards and several <a href="#">Customized Cash Rewards benefits</a>.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The bonus 3% and 2% cash back rates are subject to that $2,500 combined purchase cap each quarter, then 1%. Also, when it comes to redeeming your rewards you’ll be limited to cash back options, like statement credits, checks or direct deposit into a Bank of America checking or savings account.</li>
+    
+    <li><strong>Alternatives:</strong> The <a href="#">Citi Double Cash® Card</a> is one of the highest earning flat-rate cards available, and it doesn’t come with an annual fee. The downside is that it doesn’t come with an intro purchase APR either, so you’ll be on the hook for interest on any purchases you make with this card.</li>
+    
+    <li><strong>Bottom line:</strong> True to its name, this card allows you to custom-pick your own 3% cash back bonus category. Cardholders can select between gas, online shopping, dining, travel, drug stores or home improvements and furnishing as their high-rate category. The card also features a strong 2% cash back on grocery store and wholesale club purchases to further its everyday impact (up to $2,500 in combined quarterly purchases on your 2% and 3% categories).</li>
+</ul>
+<p>Read our <a href="#">Bank of America Customized Cash Rewards credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<h3>Best for balance transfers: BankAmericard® credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> Its lengthy balance transfer offer makes it an excellent card for paying down card debt.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The intro APR is attractive, but the balance transfer fee (3% of the amount of each transaction) isn’t as low as other cards in this category. Another potential deal breaker for some: this card has no rewards program.</li>
+    
+    <li><strong>Alternatives:</strong> The <a href="#">Citi Simplicity® Card</a> offers one of the longest introductory APR periods on both balance transfers available. Like with the BankAmericard, you won’t be charged a penalty APR with the Citi Simplicity, but Citi’s competing card goes the extra mile by never charging a late payment fee.</li>
+    
+    <li><strong>Bottom line:</strong> Anyone considering a balance transfer will appreciate BankAmericard’s lengthy intro APR period, valid for balance transfers initiated within the first 60 days of account opening. A 3% intro balance transfer fee applies for 60 days from account opening, then 4%.</li>
+</ul>
+<p>Read our <a href="#">BankAmericard® credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for small business: Bank of America® Business Advantage Customized Cash Rewards Mastercard® credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> For an option with no annual fee, this card’s impact is strong. For some added flexibility, the cash you earn never expires and you can change your bonus category on a monthly basis. As an added perk, purchases are welcomed with an intro APR offer.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> As with most cash back cards, there are limited redemption options. Cardholders can only redeem earnings for a check, statement credit or deposit into a Bank of America account. Another limiting feature, rewards can’t be moved to other loyalty programs. Also, if your business spends heavily, there could be more fruitful options. Earnings in the 2% and 3% categories are capped at a combined total of $50,000 annually.</li>
+    
+    <li><strong>Alternatives:</strong> If you’re a big spender, as many small business owners are, the <a href="#">Capital One Spark Cash Plus</a> is a strong alternative. This card earns an impressive 2% cash back on every purchase with no spending caps.</li>
+    
+    <li><strong>Bottom line:</strong> You’ll open new doors for your small business, giving access to 3% cash back on a category of your choice (office supply stores, TV/telecom and wireless, computer services, gas, travel, and business consulting services), 2% cash back at restaurants and 1% on all other purchases (on the first $50,000 in combined 3% and 2% category purchases). The 3% and 2% categories have a combined limit of $50,000 on purchases each year. The sign-up bonus is easily attainable if your company has an upcoming large purchase to make: Earn a $300 statement credit after spending $3,000 with your card in the first 90 days.</li>
+</ul>
+<p>Read our <a href="#">Bank of America Business Advantage Customized Cash Rewards Mastercard review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<h3>Best for flat rate cash back: Bank of America® Unlimited Cash Rewards credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> The sign-up bonus of $200 online cash rewards after making at least $1,000 in purchases in the first 90 days of account opening is both affordable and worthwhile. The no annual fee card also comes with a lengthy introductory APR on balance transfers made in the first 60 days and on purchases.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Being a Bank of America member goes a long way here, and in order to be eligible for Preferred Rewards you’ll need at least $20,000 across Bank of America and/or Merrill accounts. If you’re not looking to commit to that level, this card loses out on lots of value.</li>
+    
+    <li><strong>Alternatives:</strong> Not only does the <a href="#">Chase Freedom Unlimited®</a> card’s cash back rate on general purchases (1.5%) match that of the Unlimited Cash Rewards card, but it also offers bonus cash back year-round on travel booked with Chase Travel<sup>SM</sup>, dining and drugstore purchases.</li>
+    
+    <li><strong>Bottom line:</strong> Bank of America members will be nicely rewarded when carrying this new rewards card. Get unlimited 1.5% cash back no matter the purchase category. Existing Bank of America customers have the opportunity to boost their earnings even more (Preferred Rewards members earn 25% to 75% more cash back on every purchase).</li>
+</ul>
+<p>Read our <a href="#">Bank of America® Unlimited Cash Rewards credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best sign-up bonus: Bank of America® Premium Rewards® credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> Appropriately named, this card offers some top-tier rewards: 2X points on travel and dining purchases, as well as 1.5X points on all other purchases. Points are unlimited, won’t expire and can be redeemed for any purchase at a rate of 1 cent per point. Additionally, cardholders will be given an annual bonus of up to $100 for airline incidentals and up to $100 in credit toward TSA PreCheck or Global Entry every four years. They will also have access to features like trip delay reimbursement, travel accident insurance, lost luggage reimbursement and an array of other perks.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> This card has a $95 annual fee and requires a credit score over 670 to qualify, so the lucrative rewards don’t come without an initial cost and a little exclusivity. Also, points aren’t transferable, which could limit what you do with your earnings.</li>
+    
+    <li><strong>Alternatives:</strong> Like the Bank of America Premium Rewards credit card, the <a href="#">Chase Sapphire Preferred®</a> card sets itself apart by offering some of the most generous travel insurance protections you can get on a card that costs less than $100 a year to own. In addition, it lets you transfer your points on a one-to-one basis to a variety of travel rewards programs.</li>
+    
+    <li><strong>Bottom line:</strong> This card comes with several benefits, most notably the welcome offer – earn 60,000 online bonus points after spending $4,000 in the first 90 days. With smart shopping and redeeming through Bank of America, this sign-up bonus alone can be worth $600 in travel purchases.</li>
+</ul>
+<p>Read our <a href="#">Bank of America Premium Rewards credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<h3>Best for frequent Alaska Airlines flyers: Alaska Airlines Visa Signature® credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> The Alaska Airlines companion fare from $122 ($99 companion fare, plus taxes and fees from $23) each account anniversary (after you spend $6,000 or more on purchases within the prior anniversary year) and free checked bag (for you and up to six people on the same reservation) give this card more long-term value than many of its counterparts. Alaska Airlines does have a wide network of domestic and international partners, so your miles have some value outside of flights with the carrier.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> While the annual fee is reasonable relative to the card’s perks, you’ll still have to shoulder a $95 charge each year, so be sure you frequent the airline enough to justify adding the card to your wallet.</li>
+    
+    <li><strong>Alternatives:</strong> For travelers seeking a more flexible rewards structure with a sizable sign-up bonus, the <a href="#">Chase Sapphire Preferred</a> is a strong choice.</li>
+    
+    <li><strong>Bottom line:</strong> This card carries all the hallmarks of a solid airline credit card (decent rewards, a lucrative sign-up bonus and several airline-centric perks) for a reasonable $95 annual fee.</li>
+</ul>
+<p>Read our <a href="#">Alaska Airlines Visa Signature credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best business credit card: Bank of America® Business Advantage Unlimited Cash Rewards Mastercard® credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> The sign-up bonus is relatively easy to qualify for (earn a $300 statement credit after you spend at least $3,000 on net purchases in your first 90 days). There’s also an intro APR on purchases. There’s no need to track or enroll in bonus categories to maximize earnings.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The card charges a pricey 4% balance transfer fee. You’ll also pay a 3% foreign transaction fee. There’s no intro APR offer on balance transfers and you could find lengthier intro APR offers on purchases on the market.</li>
+    
+    <li><strong>Alternatives:</strong> Depending on your spending habits, the <a href="#">American Express Blue Business Cash™ Card</a> could easily offer more value than the Business Advantage Unlimited Cash Rewards card. That’s because the card offers a higher flat rewards rate while also charging no annual fee, with the caveat that its 2% cash back rate only applies to the first $50,000 you spend each year.</li>
+    
+    <li><strong>Bottom line:</strong> The card offers decent rewards, particularly for a no annual fee business credit card, but the earnings can get a bit sweeter for Bank of America customers who are eligible for up to a 25% to 75% rewards boost through the Preferred Rewards program.</li>
+</ul>
+<p>Read our <a href="#">Bank of America Business Advantage Unlimited Cash Rewards Mastercard credit card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for business travel: Bank of America® Business Advantage Travel Rewards World Mastercard® credit card</h3>
+<ul>
+    <li><strong>Best features:</strong> For a no annual fee card, the yearly rewards value is tough to beat. There’s no rush to redeem, as points don’t expire and there’s no limit on how much you can earn. Plus, cardholders won’t be victim to blackout dates when booking travel, so business trips can fit your calendar’s demands. This card also comes with a generous intro APR offer on purchases, allowing some leeway on any early-on business expenses.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Points earned can’t be transferred to other loyalty programs and any travel you want to book must be through Bank of America.</li>
+    
+    <li><strong>Alternatives:</strong> If you want to earn rewards to use on travel with a flat-rate card for everyday business spending, you should also consider the <a href="#">Capital One Spark Miles for Business</a>, which earns a flat 2X miles per dollar across all purchases and you’ll redeem miles for a travel credit or by transferring miles to partners.</li>
+    
+    <li><strong>Bottom line:</strong> For a solid travel business card, look no further. As a sign-up bonus, you can earn 30,000 bonus points after a $3,000 spend in net purchases within your first 90 days of card membership, which can be used as a $300 statement credit on travel or towards dining purchases. The card also features 3X points when spending on travel through the Bank of America® Travel Center and 1.5X points on all other purchases.</li>
+</ul>
+<p>Read our <a href="#">Bank of America Business Advantage Travel Rewards Mastercard review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best for low interest: Bank of America® Platinum Plus® Mastercard® Business card</h3>
+<ul>
+    <li><strong>Best features:</strong> As a solid welcome bonus, the Platinum Plus Mastercard offers a $300 statement credit if you spend $3,000 in your first 90 days as a cardholder. And to boost your business’ abilities, this card offers benefits like free employee cards, a cash flow management tool to help track revenues and a slew of perks to ease any business travel experiences.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> Unlike most business cards, this option doesn’t provide a way of earning regular rewards. Although it’s a valuable money-saving option, your business may benefit more from a card that rewards your spending and has more premium benefits.</li>
+    
+    <li><strong>Alternatives:</strong> This card’s $0 annual fee is a plus, but there are other no-annual-fee cards that offer better benefits and rewards including the <a href="#">Ink Business Unlimited® Credit Card</a>, which offers a high rate of 1.5-percent cash back on every purchase.</li>
+    
+    <li><strong>Bottom line:</strong> This card’s variable APR is a top-notch rate for any business credit card. Boosting its affordability, this card also features no annual fee and an intro purchase APR offer. This card’s intro offer window and low APR provide a rare level of freedom to those carrying a balance.</li>
+</ul>
+<p>Read our <a href="#">Bank of America Platinum Plus Mastercard Business card review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best Cash Back Card for Students: Bank of America® Unlimited Cash Rewards credit card for Students</h3>
+<ul>
+    <li><strong>Best features:</strong> The unlimited 1.5% cash back rate and welcome offer make it a solid card for students who need a simple, go-to credit card for all their purchases.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The card doesn’t feature any bonus categories, which could cap its earning potential. Also, the card charges foreign transaction fees.</li>
+    
+    <li><strong>Alternative:</strong> The Discover it® Student Cash Back credit card earns elevated cash back on rotating bonus categories. The card matches all cash back earned in the first year at the end of the year, which can significantly increase your earning potential.</li>
+    
+    <li><strong>Bottom line:</strong> Earning a flat rate of 1.5% cash back on all eligible purchases makes this a solid option to earn rewards on unlimited everyday spending.</li>
+</ul>
+<p>Read our <a href="#">Bank of America® Unlimited Cash Rewards credit card for Students review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+<h3>Best Travel Card for Students: Bank of America® Travel Rewards credit card for Students</h3>
+<ul>
+    <li><strong>Best features:</strong> Instead of booking travel, you can redeem points to cover travel-related purchases on your statement in the past 12 months, making it a flexible travel card for students. Plus, it doesn’t have any foreign transaction fees, so students studying abroad can use it.</li>
+    
+    <li><strong>Biggest drawbacks:</strong> The card doesn’t feature any bonus categories, which could cap its earning potential. Also, points only get full value when you redeem them for travel or dining purchases, limiting their overall value.</li>
+    
+    <li><strong>Alternative:</strong> The <a href="#">Capital One Savor Student Cash Rewards Credit Card</a> has numerous bonus categories, including 5% cash back on hotels and rental cars booked through Capital One Travel. If your spending aligns with these categories, you could earn significantly more with this card.</li>
+    
+    <li><strong>Bottom line:</strong> Earning a flat rate of 1.5X points without the hassle of foreign transaction fees makes this a simple and easy choice for spending abroad.</li>
+</ul>
+<p>Read our <a href="#">Bank of America® Travel Rewards credit card for Students review</a> or jump back to this card’s <a href="#">offer details</a>.</p>
+
+
+<div class="article-border"></div>
+<br>
+
+<h3 id="what-is-bank-of-america-section">What is Bank of America?</h3>
+<p>Bank of America is a full-service bank with all types of accounts, credit cards and even physical locations. On top of their large selection of credit cards, Bank of America ranks amongst the top of all banks. And its impressive reputation has allowed it to enter into partnerships with Visa and Mastercard, which process charges at retailers across the globe.</p>
+<p>Most of Bank of America’s cards require good or excellent credit scores, but they’re worthwhile for cardholders looking for business rewards, cash back, welcome bonuses and more. Its international connections make for a great suite of travel opportunities, and the <a href="#">Preferred Rewards program</a> turns their credit cards into valuable assets.</p>
+
+<h3>Where is Bank of America accepted?</h3>
+<p>Bank of America issues credit cards on both the Visa and Mastercard network, the two most widely accepted credit card networks out there. That means that no matter which type of Bank of America credit card you ultimately choose, you can be confident that your card will be accepted by the majority of merchants around the world.</p>
+
+
+<h3 id="what-credit-score-needed-section">What credit score is needed for Bank of America credit cards?</h3>
+<p>With so many of their cards giving worthwhile cash back, travel rewards or APR offers, the majority of Bank of America’s options require a good (670 to 739) or better credit score to get approved. An excellent score will almost surely get you in the door for most of their cards, but someone still improving their credit score should take their time before applying. You can check to see if you <a href="#">prequalify with Bank of America</a> ahead of time to avoid a hit to your credit before applying, and if you don’t get the answer you’re looking for, there are other options and <a href="#">secured cards that can boost your score</a>.</p>
+
+<h3 id="how-to-choose-a-card-section">How to choose a Bank of America credit card</h3>
+<p>The process of choosing a credit card is the same no matter the issuer. You should evaluate your own spending habits, check your credit score, consider the benefits that would actually help your lifestyle and use tools like our <a href="#">CardMatch feature</a> to find cards in your selection pool based on your credit profile. Once you have a better idea of what you’re looking for, you can see if any of Bank of America’s cards fit your needs.</p>
+
+<div style="display: flex; justify-content: space-between; padding: 20px;"> 
+  <!-- Pros Section -->
+  <div style="width: 45%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3>Who should get a Bank of America card</h3>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li><strong>Cash back chasers:</strong> If you want easy earnings and want to avoid worrying about spending in the right spots or meeting certain criteria to earn strong cash back rates, Bank of America has two great options for you. The Unlimited Cash Rewards card gives shoppers a consistently solid cash back rate and the Customized Cash Rewards card allows you to decide where you want to earn most, so consider your spending before deciding which would better suit you.</li>
+      <br>
+      <li><strong>Frequent travelers:</strong> Travelers looking for well-rounded rewards that can turn into a nice vacation should consider the Bank of America Travel Rewards credit card thanks to its 3X points when making purchases using the Bank of America Travel Center and helpful benefits for when you’re on the go. Another great travel companion for rewards hunters is the Bank of America Premium Rewards card, offering useful travel perks as well as 2X points on travel and dining and the power to turn points into your next trip. Consistent Alaska Airlines flyers also have some strong choices to consider thanks to Bank of America.</li>
+      <br>
+      <li><strong>Small business owners:</strong> Entrepreneurial spenders have several options to choose from when looking at Bank of America’s selection of cards. Making a decision all depends on your business expenses and what you’re looking for. Someone who wants easy-to-capitalize cash back should look at the Business Advantage Customized Cash Rewards Mastercard’s flexible rewards program. More on-the-go business owners could be best off with the Alaska Airlines Visa® Business card or Business Advantage Travel Rewards World Mastercard and someone who’s prepared to take on some debt to grow their business may want to explore what’s offered by the Platinum Plus Mastercard Business card.</li>
+    </ul>
+  </div>
+
+  <!-- Cons Section -->
+  <div style="width: 45%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <h3>Who should skip a Bank of America card</h3>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li><strong>Credit newcomers:</strong> If you’re just getting started on your credit journey, the suite of Bank of America cards might be outside of your credit range in the beginning. That being said, you should <a href="#">check your credit score</a> to see what your options are – a Bank of America card might be available to you. If not, look to <a href="#">student cards</a>, secured options and other cards for improving credit that can get you started the right way.</li>
+      <br>
+      <li><strong>Luxury travelers:</strong> Although Bank of America has great travel cards, those looking for the VIP experience when traversing the airport and soaring through the sky will have to look elsewhere. If you want things like airport lounge access, priority boarding, free upgrades and more, some <a href="#">premium cards</a> can be your ticket in – just be ready for a hefty annual fee.</li>
+      <br>
+      <li><strong>Previously committed bankers:</strong> If you are already tied to another major bank and have no plans of moving your money, a Bank of America card might not be the most valuable choice. With Bank of America’s rewards structure, being a Preferred Rewards member is an essential to get the most out of your credit card. And in order to do so, it’s required that you have at least $20,000 in accounts with Bank of America or Merrill Lynch. Those who don’t have any intentions of taking advantage of the rewards program should look elsewhere when choosing a card.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<h3 id="what-are-the-benefits-section">What are the benefits of having a Bank of America credit card?</h3>
+<p>On top of top-notch rewards, welcome bonuses and introductory APR offers, Bank of America cards provide a number of attractive benefits and programs for different types of consumers. You can get access to the following through most Bank of America’s cards:</p>
+<ul>
+  <li><strong>Travel insurance:</strong> The top Bank of America travel cards will help take some of the stress away from your journeys, offering auto rental collision waivers, trip cancellation insurance, delayed trip reimbursement and more.</li>
+  
+  <li><strong>Travel credits:</strong> You can get regular statement credits for airline incidental travel purchases (up to $100 per year) as well as another $100 every 4 years to go towards TSA Precheck or Global Entry.</li>
+  
+  <li><strong>Access to your FICO score:</strong> A perk useful for keeping track of your financial progress, you’ll be able to monitor your credit score with a Bank of America card.</li>
+  
+  <li><strong>Museums on Us:</strong> Bank of America grants access to your choice of <a href="#">more than 200 U.S. museums for free</a> on the first full weekend of each month.</li>
+  
+  <li><strong>Luggage reimbursement:</strong> Certain Bank of America cards might be a saving grace thanks to their baggage delay reimbursement and lost luggage benefits. If anything were to happen to your items while traveling, contacting your card provider might be a necessary step.</li>
+  
+  <li><strong>Return protection:</strong> If a merchant won’t take back an eligible item within 90 days, Bank of America will cover your return amount for certain eligible purchases.</li>
+  
+  <li><strong>Purchase security:</strong> When you buy something with certain Bank of America cards, your purchases can be protected for a predetermined period of time and up to a certain amount. You’ll have to check your cardholder agreement, as the terms of some benefits vary card by card.</li>
+  
+  <li><strong>Roadside assistance:</strong> If anything were to ever go wrong when you’re in the car, roadside dispatch is a useful benefit to have in your back pocket.</li>
+  
+  <li><strong>General security:</strong> As a major provider, Bank of America’s cards feature standards like protection against unauthorized charges, identity protection, mobile banking, customizable alerts and more.</li>
+</ul>
+
+
+
+<h3>What programs does Bank of America offer?</h3>
+<p>Designed for loyal Bank of America users, <a href="#">the Preferred Rewards program</a> will take your earnings to new heights, as well as provide savings on stock trades, auto loans and mortgages – even transactions with non-Bank of America ATMs. While the Preferred Rewards program starts at $20,000 in a Bank of America account, the Platinum Honors status requires a balance of over $100,000.</p>
+<p>The program is divided into three tiers. Gold Preferred Rewards members earn a 5% savings interest rate booster and a 25% credit card rewards bonus with an account balance of $20,000 to $50,000. Platinum Preferred Rewards members earn a 10% savings interest rate booster and a 50% credit card rewards bonus with an account balance of $50,000 to $100,000. Platinum Honors Rewards members earn a 20% savings interest rate booster and a 75% credit card rewards bonus with an account balance of $100,000 or higher. Here are the benefits that Preferred Rewards tiers offer:</p>
+
+
+<table>
+  <thead>
+      <tr>
+          <th>Rewards</th>
+          <th>Gold</th>
+          <th>Platinum</th>
+          <th>Platinum Honors</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Required balance</td>
+          <td>$20k-$50k</td>
+          <td>$50k-$100k</td>
+          <td>$100k+</td>
+      </tr>
+      <tr>
+          <td>Rewards savings interest rate booster</td>
+          <td>5%</td>
+          <td>10%</td>
+          <td>20%</td>
+      </tr>
+      <tr>
+          <td>Credit card rewards bonus</td>
+          <td>25%</td>
+          <td>50%</td>
+          <td>75%</td>
+      </tr>
+      <tr>
+          <td>Non-Bank of America transactions</td>
+          <td>12 a year</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+      </tr>
+      <tr>
+          <td>Merrill Guided Investing</td>
+          <td>0.05% program fee discount</td>
+          <td>0.10% program fee discount</td>
+          <td>0.15% program fee discount</td>
+      </tr>
+      <tr>
+          <td>Priority client service</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+      <tr>
+          <td>Mortgage reduced origination fee, new or refinance</td>
+          <td>$200</td>
+          <td>$400</td>
+          <td>$600</td>
+      </tr>
+      <tr>
+          <td>Home equity discount</td>
+          <td>0.125%</td>
+          <td>0.250%</td>
+          <td>0.375%</td>
+      </tr>
+      <tr>
+          <td>Auto loan discount, new or refinance</td>
+          <td>0.25%</td>
+          <td>0.35%</td>
+          <td>0.50%</td>
+      </tr>
+      <tr>
+          <td>No monthly maintenance fees on up to 4 eligible checking and 4 savings accounts</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+      <tr>
+          <td>No fees on select services, including standard check orders, cashier’s checks, incoming domestic wire transfers and more</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+<h3>Preferred Rewards redemption options</h3>
+<p>In addition to the can’t-miss points boost and bountiful benefits, the Bank of America Preferred Rewards program is versatile: You aren’t tied down to specific travel partners, for example, and you can even get a check cut for your rewards, if you so desire. Here are ways you can redeem your points:</p>
+<ul>
+  <li><strong>Gift cards. </strong>You can redeem from Lands’ End to iTunes, starting at 1:1 for your points.</li>
+  <li><strong>Travel. </strong>Bank of America doesn’t have partners, so you can use your points to book directly with an airline, hotel or rental car company.</li>
+  <li><strong>Cash. </strong>Redeem as a statement credit.</li>
+  <li><strong>Deposit in Bank of America account. </strong>With the Bank of America® Customized Cash Rewards credit card, redeem cash back into a checking or savings account – and even get up to 75% extra value for qualifying Preferred Rewards customers. You can even redeem rewards automatically to the account of your choice.</li>
+  <li><strong>Merrill. </strong>With the Premium Rewards Card, deposit into a Merrill account such as savings, checking or a <a href="#">529 plan.</a></li>
+  <li><strong>Personal check. </strong>Allow for 14 days for this option.</li>
+</ul>
+<p>With all the perks, impactful savings opportunities and flexible ways to redeem, becoming a member of the program is a must if you want to get value out of your regular purchases. See our <a href="#">guide to the Preferred Rewards program</a> for further tips on how to utilize your Bank of America credit card.</p>
+
+<h3 id="bank-of-america-worth-it-section">Is a Bank of America credit card worth it?</h3>
+<p>Thanks to the bank’s success over the years, it’s able to provide some very worthwhile cards. As is with any credit card, as long as you find a match for your spending habits and the right perks that will help you, Bank of America’s options provide plenty of value. Of course, there are cases where a cardholder enters into the wrong contract, but doing your homework ahead of time will prevent this from happening. Bank of America’s only catch – most don’t come anywhere close to their true potential without being a Preferred Rewards member.</p>
+<p>When looking at any credit card, be sure its key perks align with your goals. Bank of America has choices for intro APR, balance transfers, lucrative cash back, small business owners, travel-happy spenders and more. So if you know your spending habits and budget, you’ll have no problem finding the right Bank of America credit card for you.</p>
+
+
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/BNxaBAyEsYQ" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+
+
+
+
+<h3 id="our-methodology">How we picked the best Bank of America credit cards</h3>
+<p><strong>Methodology:</strong> When determining which Bank of America credit cards are the best in key categories such as rewards, cash back and <a href="#">travel</a>, we consider the following:</p>
+<ul>
+    <li><strong>Benefits:</strong> Does the card offer a competitive range of benefits and special features such as purchase security, extended warranty, travel assistance and ID theft services?</li>
+    
+    <li><strong>Rates and fees:</strong> Are rates and annual fees reasonable in relation to the benefits and rewards offered? Are <a href="#">foreign transaction fees</a> and APR rates competitive?</li>
+    
+    <li><strong>Rewards program:</strong> We examine rewards offered in popular card categories including travel, cash back, and business, against spend requirements to assess value.</li>
+</ul>
+<p>Deciding which Bank of America credit card is right for you will depend on your unique spending habits and financial goals. Learn more on <a href="#">how to choose the best credit card</a>.</p>
+
+<h3>More information on Bank of America credit cards</h3>
+<p>For more information on all things Bank of America credit cards, continue reading content from our credit card experts:</p>
+<ul>
+    <li><a href="#">BankAmeriDeals program guide</a></li>
+    <li><a href="#">How to transfer a balance to a Bank of America credit card</a></li>
+    <li><a href="#">How to get preapproved for a Bank of America card</a></li>
+    <li><a href="#">How to get a cash advance with Bank of America</a></li>
+    <li><a href="#">How to request a credit limit increase with Bank of America</a></li>
+    <li><a href="#">How to add an authorized user to a Bank of America credit card</a></li>
+</ul>
+<div class="article-border"></div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+  <br>
+
+  <div class="before-footer">
+    <!-- About the Author -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/author.png" alt="Garrett Yarbrough" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Author</h3>
+          <h4 class="profile-name">Garrett Yarbrough</h4>
+        </div>
+      </div>
+      <p>Garrett Yarbrough is a staff writer for CreditCards.com, specializing in product news and recommendations. He strives to make navigating credit cards, earning rewards, and credit building smooth sailing for his readers.</p>
+    </div>
+  
+    <!-- About the Editor -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/editor.png" alt="Tracy Stewart" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Editor</h3>
+          <h4 class="profile-name">Tracy Stewart</h4>
+        </div>
+      </div>
+      <p>Tracy Stewart is a personal finance writer specializing in credit card loyalty programs, travel benefits, and consumer protections. He previously covered travel rewards credit cards, budget travel, and aviation news at SmarterTravel Media. His money-saving tips have appeared in the Washington Post, the Wall Street Journal, Consumer Reports, MarketWatch, Vice, People, the Zoe Report, and elsewhere.</p>
+    </div>
+  
+    <!-- About the Reviewer -->
+    <div class="before-footer-section">
+      <div class="profile-header">
+        <img src="/credit-cards/images/best-card-images/reviewer.png" alt="Jason Steele" class="profile-image">
+        <div class="profile-info">
+          <h3>About the Reviewer</h3>
+          <h4 class="profile-name">Jason Steele</h4>
+        </div>
+      </div>
+      <p>Jason Steele is a professional journalist and credit card expert who has been contributing to online publications since 2008. He was one of the original contributors to The Points Guy, and his work has been appearing there since 2011. He has also contributed to over 100 of the leading personal finance and travel outlets. He’s frequently interviewed and quoted by mainstream outlets on the subjects of credit cards and travel. Jason is passionate about travel rewards credit cards, which he uses to earn rewards that he can redeem for him and his family to travel around the world. Jason is also the founder and producer of CardCon, a conference for credit and credit card journalists that’s held annually.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    
+    
+    
+
+
+
+    
+    
+
+
+
+        
+    
+      
+      
+      
+  
+    <div id="footer-placeholder"></div>
+  <script src="/credit-cards/js/cardIssuerComponents/bankOfAmerica.js"></script>
+  
+</body>
+</html>
