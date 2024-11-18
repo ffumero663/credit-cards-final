@@ -109,3 +109,18 @@ fetch('/credit-cards/html/button-components/component-cash-back/on-this-page.htm
       })
     })
   })
+
+  function toggleAccordion(element) {
+    console.log("Accordion toggled"); // Add this to check
+    const content = element.nextElementSibling;
+    const icon = element.querySelector('.accordion-icon');
+    
+    // Toggle content visibility
+    if (content.style.display === "flex") {
+      content.style.display = "none";
+      icon.textContent = "+";
+    } else {
+      content.style.display = "flex";
+      icon.textContent = "-";
+    }
+  }

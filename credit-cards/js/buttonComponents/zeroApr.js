@@ -112,3 +112,20 @@ fetch('/credit-cards/html/header-inside-buttons.html')
     })
   })
 
+
+
+  function toggleAccordion(element) {
+    console.log("Accordion toggled"); // Add this to check
+    const content = element.nextElementSibling;
+    const icon = element.querySelector('.accordion-icon');
+    
+    // Toggle content visibility
+    if (content.style.display === "flex") {
+      content.style.display = "none";
+      icon.textContent = "+";
+    } else {
+      content.style.display = "flex";
+      icon.textContent = "-";
+    }
+  }
+
