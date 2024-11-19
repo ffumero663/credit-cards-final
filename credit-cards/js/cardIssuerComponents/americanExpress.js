@@ -149,3 +149,19 @@ fetch('/credit-cards/html/card-issuer-components/american-express/on-this-page.h
         });
     });
 });
+
+
+function toggleAccordion(element) {
+  console.log("Accordion toggled"); // Add this to check
+  const content = element.nextElementSibling;
+  const icon = element.querySelector('.accordion-icon');
+  
+  // Toggle content visibility
+  if (content.style.display === "flex") {
+    content.style.display = "none";
+    icon.textContent = "+";
+  } else {
+    content.style.display = "flex";
+    icon.textContent = "-";
+  }
+}
