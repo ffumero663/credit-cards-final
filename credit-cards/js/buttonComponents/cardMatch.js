@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Enable the submit button when checkbox is checked
-  agreeCheckboxTwo.onchange = function() {
+  agreeCheckboxTwo.onchange = function () {
     if (agreeCheckboxTwo.checked) {
       submitButtonTwo.disabled = false;
       submitButtonTwo.classList.add('active'); // Change style to make it look active
@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitButtonTwo.classList.remove('active');
     }
   };
+  
 });
 
 
@@ -163,6 +164,53 @@ function toggleAccordion(element) {
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const submitButton = document.querySelector('#disclosure-btn'); // Submit button
+  const emailInput = document.querySelector('#email-address'); // Email input field
 
+  submitButton.addEventListener('click', async (event) => {
+    event.preventDefault(); // Prevent default form submission
 
+    // Validate the email input field
+    if (!emailInput.checkValidity()) {
+      emailInput.reportValidity();
+      return;
+    }
 
+    const email = emailInput.value.trim(); // Get the email address
+    console.log("Sending email:", email); // Debug log for email
+
+    const thankYouModal = document.getElementById("thank-you-modal");
+
+    try {
+      // Send email to backend
+      const response = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }), // Send email to backend
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Email sent successfully:", result); // Debug log
+        thankYouModal.style.display = "flex"; // Show the Thank You modal
+      } else {
+        const errorResult = await response.json();
+        console.error("Backend error:", errorResult); // Debug log
+        alert(`Failed to send email: ${errorResult.message}`);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error); // Debug log
+      alert("An error occurred while sending the email.");
+    }
+  });
+
+  // Function to close the Thank You modal
+  const closeModalButton = document.querySelector('.close-btn');
+  closeModalButton.addEventListener('click', () => {
+    const thankYouModal = document.getElementById("thank-you-modal");
+    thankYouModal.style.display = "none";
+  });
+});

@@ -379,7 +379,9 @@ a{
   margin-bottom: 5px;
   color: #000533;
   font-size: 0.875rem !important;
-  white-space: nowrap;
+  max-width: 800px;
+
+
 
 
 }
@@ -541,13 +543,14 @@ a{
   display: none;
 }
 
-.container{
+.container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 20px !important;
-  margin-top: 0%;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adjusts spacing between the panel and the content */
+  margin: 20px;
 }
+
 
 .container h1{
   margin: 0;
@@ -587,6 +590,20 @@ a{
   margin-top: 10px;
 }
 
+/* Specific styles for the Highlights list */
+.highlight-list {
+  padding-left: 0; /* Remove left padding to prevent space for bullet points */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* If you want to maintain the list style without affecting the layout, apply it to the Highlights list */
+.highlight-list li {
+  margin-bottom: 8px;
+  list-style-type: disc; /* Ensure that only the Highlights section has bullet points */
+}
+
+
 .accordion-content {
   display: none; /* Hidden by default */
   padding: 15px;
@@ -596,8 +613,7 @@ a{
 }
 
 .accordion-content li {
-  margin-bottom: 10px;
-  list-style: disc;
+  list-style: none;
 }
 
 .accordion-content h3 {
@@ -656,17 +672,20 @@ a{
 }
 
 
+/* Keep the rest of the table styling as it is */
 .table-container {
+  display: table;
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
 }
 
 .table-row {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 10px 15px;
   border-top: 1px solid #ddd;
+  min-width: 75vw;
+  
 }
 
 .table-row:nth-child(even) {
@@ -674,10 +693,10 @@ a{
 }
 
 .table-cell {
-  padding: 10px;
-  font-size: 16px;
+  display: table-cell;
+  padding: 8px 12px;
+  text-align: left;
 }
-
 .left {
   font-weight: bold;
   color: #1a1a1a; /* Dark text for labels */

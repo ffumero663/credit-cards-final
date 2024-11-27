@@ -26,9 +26,9 @@
 }
 
 .footer-container-one img {
-  min-height: 40px;
-  min-width: 60px;
-  margin: 30px;
+  max-height: 40px;
+  max-width: auto;
+  margin: 10px;
 }
 
 .footer-text{

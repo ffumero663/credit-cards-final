@@ -249,6 +249,7 @@ a{
   justify-content: space-between;
   padding: 15px 0;
   border-top: 1px solid #ddd;
+  min-width: 75vw;
 }
 
 .table-row:nth-child(even) {
@@ -428,6 +429,7 @@ a{
   font-weight: bold;
   margin-bottom: 5px;
   color: #000533;
+  max-width: 800px;
 
 }
 

@@ -1,7 +1,9 @@
-a{
-  color: #1542f8 ;
-  text-decoration: underline ;
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
 
 
 .modal {
@@ -123,6 +125,10 @@ a{
   display: flex;
   flex-direction: column;
   width: 48%; /* Ensures equal width for both input fields */
+}
+
+.form-group label{
+  text-align: left;
 }
 
 .gray-star{
@@ -390,7 +396,6 @@ p {
 
 .form-group-sectionseven label{
   text-align: left;
-  margin-right: 400px;
   font-size: 14px;
   font-weight: lighter;
   color: #969595;
@@ -535,12 +540,14 @@ p {
   padding-top: 20px;
   color: #333;
   
+  
 }
 
 .modal-footer-two  input{
   height: 20px;
   width: 20px;
   margin-top: 10px;
+
 }
 
 .modal-footer-two button{
@@ -567,7 +574,61 @@ p {
 
 
 
+.thank-you-container {
+  display: none; /* Initially hidden */
+  position: fixed; /* Fixed position to cover the whole viewport */
+  z-index: 1000; /* Ensure it appears on top of other elements */
+  top: 0; /* Start at the top */
+  left: 0; /* Start at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
 
+/* The modal content (centered box) */
+.thank-you-content {
+  background-color: #fff; /* White background for the box */
+  padding: 20px; /* Space inside the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  text-align: center; /* Center text */
+  max-width: 800px; /* Limit the width of the box */
+  min-height: 300px;
+  width: 90%; /* Responsive width */
+  font-size: 20px;
+  
+}
+
+
+
+.back-home-content {
+  display: inline-block; /* Make the anchor behave like a block element (button-like) */
+  background-color: #1542f8; /* Same background color */
+  color: white !important; /* Ensure the text is white */
+  text-align: center; /* Center the text inside the button */
+  text-decoration: none; /* Remove the underline */
+  padding: 15px 20px; /* Add padding for the button size */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Adjust font size for readability */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Change the cursor to a pointer for interactivity */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 30px;
+}
+
+/* Add hover effect */
+.back-home-content:hover {
+  background-color: #0039d9; /* Slightly darker shade on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.back-home-content a{
+  color: rgb(245, 238, 238) !important; /* Ensure the text is white */
+  text-decoration: none;
+
+}
 
 
 
